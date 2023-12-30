@@ -536,7 +536,8 @@ struct RegisterLeaderBoardInput_tEF2715C45D3C5848422628B56BF3C221814058CD  : pub
 	Nullable_1_tF8BFF19FF240C9F0A45168187CD7106BAA146A99 ___U3CMinScoreU3Ek__BackingField;
 	Nullable_1_tF8BFF19FF240C9F0A45168187CD7106BAA146A99 ___U3CMaxScoreU3Ek__BackingField;
 	uint8_t ___U3CScoresToRetainU3Ek__BackingField;
-	bool ___U3CScoresOrderU3Ek__BackingField;
+	bool ___U3CIsAscendingU3Ek__BackingField;
+	bool ___U3CAllowMultipleScoresU3Ek__BackingField;
 };
 struct SoarClient_tA2DE5564FE70D7339FBE13826153FED8CA67B189  : public TransactionalBaseClient_1_tC76FBB9F1F172B54440EC86A3202B55B6F5EBF2B
 {
@@ -965,8 +966,9 @@ inline uint64_t Nullable_1_get_Value_m8110F0280E87FBA9BDFB4E501153B826525A522D (
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Nullable_1_tF8BFF19FF240C9F0A45168187CD7106BAA146A99 RegisterLeaderBoardInput_get_MaxScore_mCF272745612547FF03CB4B04371CF1B53C7D80DD_inline (RegisterLeaderBoardInput_tEF2715C45D3C5848422628B56BF3C221814058CD* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint8_t RegisterLeaderBoardInput_get_ScoresToRetain_mF2C8402BCE880D82D3DDC4EC1AD330BD122F3C19_inline (RegisterLeaderBoardInput_tEF2715C45D3C5848422628B56BF3C221814058CD* __this, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool RegisterLeaderBoardInput_get_ScoresOrder_m61B126D931033D5AFCA5720D8FE91F2F1DCA10C4_inline (RegisterLeaderBoardInput_tEF2715C45D3C5848422628B56BF3C221814058CD* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool RegisterLeaderBoardInput_get_IsAscending_m9AD462013BEA43B6C988326DE5DFD0C14ABFCC2B_inline (RegisterLeaderBoardInput_tEF2715C45D3C5848422628B56BF3C221814058CD* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Serialization_WriteBool_m6702BE7FDEC5843B6BF2DA12856ED8AF594BBBB3 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_data, bool ___1_value, int32_t ___2_offset, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool RegisterLeaderBoardInput_get_AllowMultipleScores_mDA3E75F241ACC0A61AB875D8B98B0EA3B85798C4_inline (RegisterLeaderBoardInput_tEF2715C45D3C5848422628B56BF3C221814058CD* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Deserialization_GetU64_mC98F85DD4A05F61BE85FE5859415236D81086FAD (ReadOnlySpan_1_tA850A6C0E88ABBA37646A078ACBC24D6D5FD9B4D ___0_data, int32_t ___1_offset, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Game_get_ACCOUNT_DISCRIMINATOR_mA1AFF38A85F80595DE7518164A1B113A92473A02 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Game__ctor_mA2808CF0B9C6A0464AB7A1F39F4AEACD14165EE9 (Game_t75314BDF8C78014BD94DED6B3E5BB90616AA1A56* __this, const RuntimeMethod* method) ;
@@ -2254,18 +2256,33 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RegisterLeaderBoardInput_set_ScoresToRet
 		return;
 	}
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RegisterLeaderBoardInput_get_ScoresOrder_m61B126D931033D5AFCA5720D8FE91F2F1DCA10C4 (RegisterLeaderBoardInput_tEF2715C45D3C5848422628B56BF3C221814058CD* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RegisterLeaderBoardInput_get_IsAscending_m9AD462013BEA43B6C988326DE5DFD0C14ABFCC2B (RegisterLeaderBoardInput_tEF2715C45D3C5848422628B56BF3C221814058CD* __this, const RuntimeMethod* method) 
 {
 	{
-		bool L_0 = __this->___U3CScoresOrderU3Ek__BackingField;
+		bool L_0 = __this->___U3CIsAscendingU3Ek__BackingField;
 		return L_0;
 	}
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RegisterLeaderBoardInput_set_ScoresOrder_m8BF29498F422385A8D1D1D0217AC65987DE8EEA6 (RegisterLeaderBoardInput_tEF2715C45D3C5848422628B56BF3C221814058CD* __this, bool ___0_value, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RegisterLeaderBoardInput_set_IsAscending_m123D4FEDF12B225873512053733126CD3E2B6B7D (RegisterLeaderBoardInput_tEF2715C45D3C5848422628B56BF3C221814058CD* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
 		bool L_0 = ___0_value;
-		__this->___U3CScoresOrderU3Ek__BackingField = L_0;
+		__this->___U3CIsAscendingU3Ek__BackingField = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RegisterLeaderBoardInput_get_AllowMultipleScores_mDA3E75F241ACC0A61AB875D8B98B0EA3B85798C4 (RegisterLeaderBoardInput_tEF2715C45D3C5848422628B56BF3C221814058CD* __this, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = __this->___U3CAllowMultipleScoresU3Ek__BackingField;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RegisterLeaderBoardInput_set_AllowMultipleScores_m216A9DB89E0807847C100C6B1B3173A732C73F93 (RegisterLeaderBoardInput_tEF2715C45D3C5848422628B56BF3C221814058CD* __this, bool ___0_value, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = ___0_value;
+		__this->___U3CAllowMultipleScoresU3Ek__BackingField = L_0;
 		return;
 	}
 }
@@ -2432,14 +2449,21 @@ IL_00ed:
 		V_0 = ((int32_t)il2cpp_codegen_add(L_52, 1));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_53 = ___0__data;
 		bool L_54;
-		L_54 = RegisterLeaderBoardInput_get_ScoresOrder_m61B126D931033D5AFCA5720D8FE91F2F1DCA10C4_inline(__this, NULL);
+		L_54 = RegisterLeaderBoardInput_get_IsAscending_m9AD462013BEA43B6C988326DE5DFD0C14ABFCC2B_inline(__this, NULL);
 		int32_t L_55 = V_0;
 		Serialization_WriteBool_m6702BE7FDEC5843B6BF2DA12856ED8AF594BBBB3(L_53, L_54, L_55, NULL);
 		int32_t L_56 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_56, 1));
-		int32_t L_57 = V_0;
-		int32_t L_58 = ___1_initialOffset;
-		return ((int32_t)il2cpp_codegen_subtract(L_57, L_58));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_57 = ___0__data;
+		bool L_58;
+		L_58 = RegisterLeaderBoardInput_get_AllowMultipleScores_mDA3E75F241ACC0A61AB875D8B98B0EA3B85798C4_inline(__this, NULL);
+		int32_t L_59 = V_0;
+		Serialization_WriteBool_m6702BE7FDEC5843B6BF2DA12856ED8AF594BBBB3(L_57, L_58, L_59, NULL);
+		int32_t L_60 = V_0;
+		V_0 = ((int32_t)il2cpp_codegen_add(L_60, 1));
+		int32_t L_61 = V_0;
+		int32_t L_62 = ___1_initialOffset;
+		return ((int32_t)il2cpp_codegen_subtract(L_61, L_62));
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RegisterLeaderBoardInput__ctor_mCDC0A436333535DF8FEA4B43D3C99709A405FA1F (RegisterLeaderBoardInput_tEF2715C45D3C5848422628B56BF3C221814058CD* __this, const RuntimeMethod* method) 
@@ -2855,10 +2879,17 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint8_t RegisterLeaderBoardInput_
 		return L_0;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool RegisterLeaderBoardInput_get_ScoresOrder_m61B126D931033D5AFCA5720D8FE91F2F1DCA10C4_inline (RegisterLeaderBoardInput_tEF2715C45D3C5848422628B56BF3C221814058CD* __this, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool RegisterLeaderBoardInput_get_IsAscending_m9AD462013BEA43B6C988326DE5DFD0C14ABFCC2B_inline (RegisterLeaderBoardInput_tEF2715C45D3C5848422628B56BF3C221814058CD* __this, const RuntimeMethod* method) 
 {
 	{
-		bool L_0 = __this->___U3CScoresOrderU3Ek__BackingField;
+		bool L_0 = __this->___U3CIsAscendingU3Ek__BackingField;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool RegisterLeaderBoardInput_get_AllowMultipleScores_mDA3E75F241ACC0A61AB875D8B98B0EA3B85798C4_inline (RegisterLeaderBoardInput_tEF2715C45D3C5848422628B56BF3C221814058CD* __this, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = __this->___U3CAllowMultipleScoresU3Ek__BackingField;
 		return L_0;
 	}
 }

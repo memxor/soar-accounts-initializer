@@ -24,7 +24,7 @@
     {
       "Annotation": "BuildPlayerDataGenerator Library/BuildPlayerData/Editor/TypeDb-All.json",
       "DisplayName": "BuildPlayerDataGenerator TypeDb-All",
-      "Action": "\"/media/home/Local/Unity/2022.3.8f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/media/home/Local/Unity/2022.3.8f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"/media/home/Local/Unity/Projects/SoarInit/Library/ScriptAssemblies/Assembly-CSharp.dll\" -a=\"/media/home/Local/Unity/Projects/SoarInit/Library/ScriptAssemblies/com.solana.unity_sdk.dll\" -a=\"/media/home/Local/Unity/Projects/SoarInit/Library/ScriptAssemblies/UniTask.Addressables.dll\" -a=\"/media/home/Local/Unity/Projects/SoarInit/Library/ScriptAssemblies/UniTask.dll\" -a=\"/media/home/Local/Unity/Projects/SoarInit/Library/ScriptAssemblies/UniTask.DOTween.dll\" -a=\"/media/home/Local/Unity/Projects/SoarInit/Library/ScriptAssemblies/UniTask.Linq.dll\" -a=\"/media/home/Local/Unity/Projects/SoarInit/Library/ScriptAssemblies/UniTask.TextMeshPro.dll\" -a=\"/media/home/Local/Unity/Projects/SoarInit/Library/ScriptAssemblies/Unity.TextMeshPro.dll\" -a=\"/media/home/Local/Unity/Projects/SoarInit/Library/ScriptAssemblies/Unity.Timeline.dll\" -a=\"/media/home/Local/Unity/Projects/SoarInit/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll\" -a=\"/media/home/Local/Unity/Projects/SoarInit/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll\" -a=\"/media/home/Local/Unity/Projects/SoarInit/Library/ScriptAssemblies/Unity.VisualScripting.State.dll\" -a=\"/media/home/Local/Unity/Projects/SoarInit/Library/ScriptAssemblies/UnityEngine.TestRunner.dll\" -a=\"/media/home/Local/Unity/Projects/SoarInit/Library/ScriptAssemblies/UnityEngine.UI.dll\" -a=\"/media/home/Local/Unity/Projects/SoarInit/Library/ScriptAssemblies/UnityGifDecoder.dll\" -a=\"/media/home/Local/Unity/Projects/SoarInit/Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/Avro.dll\" -a=\"/media/home/Local/Unity/Projects/SoarInit/Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/BouncyCastle.Crypto.dll\" -a=\"/media/home/Local/Unity/Projects/SoarInit/Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/Chaos.NaCl.dll\" -a=\"/media/home/Local/Unity/Projects/SoarInit/Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/NativeWebSocket.dll\" -a=\"/media/home/Local/Unity/Projects/SoarInit/Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/Solana.Unity.Dex.dll\" -a=\"/media/home/Local/Unity/Projects/SoarInit/Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/Solana.Unity.Extensions.dll\" -a=\"/media/home/Local/Unity/Projects/SoarInit/Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/Solana.Unity.KeyStore.dll\" -a=\"/media/home/Local/Unity/Projects/SoarInit/Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/Solana.Unity.Metaplex.dll\" -a=\"/media/home/Local/Unity/Projects/SoarInit/Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/Solana.Unity.Programs.dll\" -a=\"/media/home/Local/Unity/Projects/SoarInit/Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/Solana.Unity.Rpc.dll\" -a=\"/media/home/Local/Unity/Projects/SoarInit/Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/Solana.Unity.SessionKeys.dll\" -a=\"/media/home/Local/Unity/Projects/SoarInit/Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/Solana.Unity.Soar.dll\" -a=\"/media/home/Local/Unity/Projects/SoarInit/Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/Solana.Unity.Wallet.dll\" -a=\"/media/home/Local/Unity/Projects/SoarInit/Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/System.CodeDom.dll\" -a=\"/media/home/Local/Unity/Projects/SoarInit/Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/websocket-sharp-latest.dll\" -a=\"/media/home/Local/Unity/Projects/SoarInit/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll\" -a=\"/media/home/Local/Unity/Projects/SoarInit/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime/Newtonsoft.Json.dll\" -a=\"/media/home/Local/Unity/Projects/SoarInit/Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator/ReportGeneratorMerged.dll\" -a=\"/media/home/Local/Unity/Projects/SoarInit/Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll\" -s=\"/media/home/Local/Unity/2022.3.8f1/Editor/Data/Managed/UnityEngine\" -s=\"/media/home/Local/Unity/2022.3.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx\" -s=\"/media/home/Local/Unity/2022.3.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard\" -s=\"/media/home/Local/Unity/2022.3.8f1/Editor/Data/NetStandard/Extensions/2.0.0\" -s=\"/media/home/Local/Unity/2022.3.8f1/Editor/Data/NetStandard/ref/2.1.0\" -s=\"/media/home/Local/Unity/2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/Managed\" -s=\"/media/home/Local/Unity/Projects/SoarInit/Library/ScriptAssemblies\" -s=\"/media/home/Local/Unity/Projects/SoarInit/Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages\" -s=\"/media/home/Local/Unity/Projects/SoarInit/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom\" -s=\"/media/home/Local/Unity/Projects/SoarInit/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime\" -s=\"/media/home/Local/Unity/Projects/SoarInit/Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator\" -s=\"/media/home/Local/Unity/Projects/SoarInit/Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Dependencies/NCalc\" -o=\"Library/BuildPlayerData/Editor\" -rn=\"\" -tn=\"TypeDb-All.json\"",
+      "Action": "\"/media/home/Local/Unity/2022.3.8f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/media/home/Local/Unity/2022.3.8f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/ScriptAssemblies/Assembly-CSharp.dll\" -a=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/ScriptAssemblies/com.solana.unity_sdk.dll\" -a=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/ScriptAssemblies/UniTask.Addressables.dll\" -a=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/ScriptAssemblies/UniTask.dll\" -a=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/ScriptAssemblies/UniTask.DOTween.dll\" -a=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/ScriptAssemblies/UniTask.Linq.dll\" -a=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/ScriptAssemblies/UniTask.TextMeshPro.dll\" -a=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/ScriptAssemblies/Unity.TextMeshPro.dll\" -a=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/ScriptAssemblies/Unity.Timeline.dll\" -a=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll\" -a=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll\" -a=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/ScriptAssemblies/Unity.VisualScripting.State.dll\" -a=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/ScriptAssemblies/UnityEngine.TestRunner.dll\" -a=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/ScriptAssemblies/UnityEngine.UI.dll\" -a=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/ScriptAssemblies/UnityGifDecoder.dll\" -a=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/Avro.dll\" -a=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/BouncyCastle.Crypto.dll\" -a=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/Chaos.NaCl.dll\" -a=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/NativeWebSocket.dll\" -a=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/Solana.Unity.Dex.dll\" -a=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/Solana.Unity.Extensions.dll\" -a=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/Solana.Unity.KeyStore.dll\" -a=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/Solana.Unity.Metaplex.dll\" -a=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/Solana.Unity.Programs.dll\" -a=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/Solana.Unity.Rpc.dll\" -a=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/Solana.Unity.SessionKeys.dll\" -a=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/Solana.Unity.Soar.dll\" -a=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/Solana.Unity.Wallet.dll\" -a=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/System.CodeDom.dll\" -a=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/websocket-sharp-latest.dll\" -a=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll\" -a=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime/Newtonsoft.Json.dll\" -a=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator/ReportGeneratorMerged.dll\" -a=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll\" -s=\"/media/home/Local/Unity/2022.3.8f1/Editor/Data/Managed/UnityEngine\" -s=\"/media/home/Local/Unity/2022.3.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx\" -s=\"/media/home/Local/Unity/2022.3.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard\" -s=\"/media/home/Local/Unity/2022.3.8f1/Editor/Data/NetStandard/Extensions/2.0.0\" -s=\"/media/home/Local/Unity/2022.3.8f1/Editor/Data/NetStandard/ref/2.1.0\" -s=\"/media/home/Local/Unity/2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/Managed\" -s=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/ScriptAssemblies\" -s=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages\" -s=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom\" -s=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime\" -s=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator\" -s=\"/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Dependencies/NCalc\" -o=\"Library/BuildPlayerData/Editor\" -rn=\"\" -tn=\"TypeDb-All.json\"",
       "Inputs": [
         "/media/home/Local/Unity/2022.3.8f1/Editor/Data/Tools/netcorerun/netcorerun",
         "/media/home/Local/Unity/2022.3.8f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe",
@@ -43,21 +43,21 @@
         "Library/ScriptAssemblies/UnityEngine.TestRunner.dll",
         "Library/ScriptAssemblies/UnityEngine.UI.dll",
         "Library/ScriptAssemblies/UnityGifDecoder.dll",
-        "Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/Avro.dll",
-        "Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/BouncyCastle.Crypto.dll",
-        "Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/Chaos.NaCl.dll",
-        "Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/NativeWebSocket.dll",
-        "Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/Solana.Unity.Dex.dll",
-        "Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/Solana.Unity.Extensions.dll",
-        "Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/Solana.Unity.KeyStore.dll",
-        "Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/Solana.Unity.Metaplex.dll",
-        "Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/Solana.Unity.Programs.dll",
-        "Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/Solana.Unity.Rpc.dll",
-        "Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/Solana.Unity.SessionKeys.dll",
-        "Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/Solana.Unity.Soar.dll",
-        "Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/Solana.Unity.Wallet.dll",
-        "Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/System.CodeDom.dll",
-        "Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/websocket-sharp-latest.dll",
+        "Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/Avro.dll",
+        "Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/BouncyCastle.Crypto.dll",
+        "Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/Chaos.NaCl.dll",
+        "Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/NativeWebSocket.dll",
+        "Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/Solana.Unity.Dex.dll",
+        "Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/Solana.Unity.Extensions.dll",
+        "Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/Solana.Unity.KeyStore.dll",
+        "Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/Solana.Unity.Metaplex.dll",
+        "Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/Solana.Unity.Programs.dll",
+        "Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/Solana.Unity.Rpc.dll",
+        "Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/Solana.Unity.SessionKeys.dll",
+        "Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/Solana.Unity.Soar.dll",
+        "Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/Solana.Unity.Wallet.dll",
+        "Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/System.CodeDom.dll",
+        "Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/websocket-sharp-latest.dll",
         "Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll",
         "Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime/Newtonsoft.Json.dll",
         "Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator/ReportGeneratorMerged.dll",
@@ -198,49 +198,49 @@
       "File": "Library/Bee/2000b0aESkipCompile-inputdata.json"
     },
     {
-      "File": "Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/Avro.dll"
+      "File": "Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/Avro.dll"
     },
     {
-      "File": "Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/BouncyCastle.Crypto.dll"
+      "File": "Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/BouncyCastle.Crypto.dll"
     },
     {
-      "File": "Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/Chaos.NaCl.dll"
+      "File": "Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/Chaos.NaCl.dll"
     },
     {
-      "File": "Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/NativeWebSocket.dll"
+      "File": "Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/NativeWebSocket.dll"
     },
     {
-      "File": "Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/Solana.Unity.Dex.dll"
+      "File": "Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/Solana.Unity.Dex.dll"
     },
     {
-      "File": "Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/Solana.Unity.Extensions.dll"
+      "File": "Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/Solana.Unity.Extensions.dll"
     },
     {
-      "File": "Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/Solana.Unity.KeyStore.dll"
+      "File": "Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/Solana.Unity.KeyStore.dll"
     },
     {
-      "File": "Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/Solana.Unity.Metaplex.dll"
+      "File": "Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/Solana.Unity.Metaplex.dll"
     },
     {
-      "File": "Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/Solana.Unity.Programs.dll"
+      "File": "Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/Solana.Unity.Programs.dll"
     },
     {
-      "File": "Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/Solana.Unity.Rpc.dll"
+      "File": "Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/Solana.Unity.Rpc.dll"
     },
     {
-      "File": "Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/Solana.Unity.SessionKeys.dll"
+      "File": "Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/Solana.Unity.SessionKeys.dll"
     },
     {
-      "File": "Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/Solana.Unity.Soar.dll"
+      "File": "Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/Solana.Unity.Soar.dll"
     },
     {
-      "File": "Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/Solana.Unity.Wallet.dll"
+      "File": "Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/Solana.Unity.Wallet.dll"
     },
     {
-      "File": "Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/System.CodeDom.dll"
+      "File": "Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/System.CodeDom.dll"
     },
     {
-      "File": "Library/PackageCache/com.solana.unity_sdk@6020a32a25/Packages/websocket-sharp-latest.dll"
+      "File": "Library/PackageCache/com.solana.unity_sdk@1d9473cacc/Packages/websocket-sharp-latest.dll"
     },
     {
       "File": "Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
@@ -332,6 +332,6 @@
   "SharedResources": [],
   "Scanners": [],
   "Identifier": "Library/Bee/2000b0aESkipCompile.dag.json",
-  "PayloadsFile": "/media/home/Local/Unity/Projects/SoarInit/Library/Bee/2000b0aESkipCompile.dag.payloads",
+  "PayloadsFile": "/media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Library/Bee/2000b0aESkipCompile.dag.payloads",
   "RelativePathToRoot": "../.."
 }

@@ -65,8 +65,10 @@ extern void RegisterLeaderBoardInput_get_MinScore_mADB6F70EE1C98696E1943E6E856BD
 extern void RegisterLeaderBoardInput_get_MaxScore_mCF272745612547FF03CB4B04371CF1B53C7D80DD (void);
 extern void RegisterLeaderBoardInput_get_ScoresToRetain_mF2C8402BCE880D82D3DDC4EC1AD330BD122F3C19 (void);
 extern void RegisterLeaderBoardInput_set_ScoresToRetain_m17995F8EA743D8A637915DAD87DA42FAF00FCD08 (void);
-extern void RegisterLeaderBoardInput_get_ScoresOrder_m61B126D931033D5AFCA5720D8FE91F2F1DCA10C4 (void);
-extern void RegisterLeaderBoardInput_set_ScoresOrder_m8BF29498F422385A8D1D1D0217AC65987DE8EEA6 (void);
+extern void RegisterLeaderBoardInput_get_IsAscending_m9AD462013BEA43B6C988326DE5DFD0C14ABFCC2B (void);
+extern void RegisterLeaderBoardInput_set_IsAscending_m123D4FEDF12B225873512053733126CD3E2B6B7D (void);
+extern void RegisterLeaderBoardInput_get_AllowMultipleScores_mDA3E75F241ACC0A61AB875D8B98B0EA3B85798C4 (void);
+extern void RegisterLeaderBoardInput_set_AllowMultipleScores_m216A9DB89E0807847C100C6B1B3173A732C73F93 (void);
 extern void RegisterLeaderBoardInput_Serialize_mEBF296150294B3F349F0D97B801DBDFF6F1CBC4B (void);
 extern void RegisterLeaderBoardInput__ctor_mCDC0A436333535DF8FEA4B43D3C99709A405FA1F (void);
 extern void Game_get_ACCOUNT_DISCRIMINATOR_mA1AFF38A85F80595DE7518164A1B113A92473A02 (void);
@@ -78,7 +80,7 @@ extern void Game_get_Auth_mBA8AC52DE438F549754735A5AE0D3863680A8970 (void);
 extern void Game_set_Auth_m3954182567174C3D87B57FA340B725C162CD2B61 (void);
 extern void Game_Deserialize_mC47424A13B72C067B40F704B8056C4B2781F179A (void);
 extern void Game__ctor_mA2808CF0B9C6A0464AB7A1F39F4AEACD14165EE9 (void);
-static Il2CppMethodPointer s_methodPointers[66] = 
+static Il2CppMethodPointer s_methodPointers[68] = 
 {
 	SoarClient__ctor_m15AA69799ED3AD6202E2833D2B300E26D4A1D24F,
 	SoarClient_GetGameAsync_m6B9219C6BAEA8EE42566056F64B7369BB1732BB9,
@@ -133,8 +135,10 @@ static Il2CppMethodPointer s_methodPointers[66] =
 	RegisterLeaderBoardInput_get_MaxScore_mCF272745612547FF03CB4B04371CF1B53C7D80DD,
 	RegisterLeaderBoardInput_get_ScoresToRetain_mF2C8402BCE880D82D3DDC4EC1AD330BD122F3C19,
 	RegisterLeaderBoardInput_set_ScoresToRetain_m17995F8EA743D8A637915DAD87DA42FAF00FCD08,
-	RegisterLeaderBoardInput_get_ScoresOrder_m61B126D931033D5AFCA5720D8FE91F2F1DCA10C4,
-	RegisterLeaderBoardInput_set_ScoresOrder_m8BF29498F422385A8D1D1D0217AC65987DE8EEA6,
+	RegisterLeaderBoardInput_get_IsAscending_m9AD462013BEA43B6C988326DE5DFD0C14ABFCC2B,
+	RegisterLeaderBoardInput_set_IsAscending_m123D4FEDF12B225873512053733126CD3E2B6B7D,
+	RegisterLeaderBoardInput_get_AllowMultipleScores_mDA3E75F241ACC0A61AB875D8B98B0EA3B85798C4,
+	RegisterLeaderBoardInput_set_AllowMultipleScores_m216A9DB89E0807847C100C6B1B3173A732C73F93,
 	RegisterLeaderBoardInput_Serialize_mEBF296150294B3F349F0D97B801DBDFF6F1CBC4B,
 	RegisterLeaderBoardInput__ctor_mCDC0A436333535DF8FEA4B43D3C99709A405FA1F,
 	Game_get_ACCOUNT_DISCRIMINATOR_mA1AFF38A85F80595DE7518164A1B113A92473A02,
@@ -154,7 +158,7 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[2] =
 	{ 0x06000004, U3CGetGameAsyncU3Ed__13_MoveNext_mC6361413724857BA80BD2E0117608DC13B99B4FA_AdjustorThunk },
 	{ 0x06000005, U3CGetGameAsyncU3Ed__13_SetStateMachine_m363DF778EC673C12775E9EDEF8BE193AD113EFC3_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[66] = 
+static const int32_t s_InvokerIndices[68] = 
 {
 	2779,
 	2209,
@@ -211,6 +215,8 @@ static const int32_t s_InvokerIndices[66] =
 	4847,
 	5829,
 	4847,
+	5829,
+	4847,
 	2034,
 	6043,
 	8998,
@@ -227,7 +233,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Solana_Unity_Soar_CodeGenModule;
 const Il2CppCodeGenModule g_Solana_Unity_Soar_CodeGenModule = 
 {
 	"Solana.Unity.Soar.dll",
-	66,
+	68,
 	s_methodPointers,
 	2,
 	s_adjustorThunks,

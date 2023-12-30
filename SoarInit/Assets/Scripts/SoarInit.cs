@@ -25,6 +25,7 @@ public class SoarInit : MonoBehaviour
     public TMP_InputField leaderboardDescription;
     public TMP_InputField leaderboardScoresToRetain;
     public TMP_Dropdown leaderboardScoresOrder;
+    public TMP_Dropdown leaderboardMultilpeScore;
     public TextMeshProUGUI leaderboardOutput;
 
     public async void SoarGameInit()
@@ -92,7 +93,8 @@ public class SoarInit : MonoBehaviour
             Description = leaderboardDescription.text,
             NftMeta = new PublicKey(leaderboardNftMeta.text),
             ScoresToRetain = byte.Parse(leaderboardScoresToRetain.text),
-            ScoresOrder = leaderboardScoresOrder.value != 0
+            IsAscending = leaderboardScoresOrder.value == 0,
+            AllowMultipleScores = leaderboardMultilpeScore.value == 0
         };
 
         var addLeaderboardAccounts = new AddLeaderboardAccounts()

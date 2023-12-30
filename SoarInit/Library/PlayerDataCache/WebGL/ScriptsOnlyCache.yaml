@@ -167,55 +167,55 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16882}
     - Class: 114
-      Script: {instanceID: 17282}
+      Script: {instanceID: 17286}
     - Class: 114
-      Script: {instanceID: 17602}
-    - Class: 114
-      Script: {instanceID: 17726}
+      Script: {instanceID: 17608}
     - Class: 114
       Script: {instanceID: 17734}
     - Class: 114
-      Script: {instanceID: 17932}
+      Script: {instanceID: 17742}
     - Class: 114
-      Script: {instanceID: 18238}
+      Script: {instanceID: 17946}
     - Class: 114
-      Script: {instanceID: 18342}
+      Script: {instanceID: 18256}
     - Class: 114
-      Script: {instanceID: 18432}
+      Script: {instanceID: 18360}
     - Class: 114
-      Script: {instanceID: 18768}
+      Script: {instanceID: 18450}
     - Class: 114
-      Script: {instanceID: 18792}
+      Script: {instanceID: 18788}
     - Class: 114
-      Script: {instanceID: 19094}
+      Script: {instanceID: 18814}
     - Class: 114
-      Script: {instanceID: 19256}
+      Script: {instanceID: 19116}
     - Class: 114
-      Script: {instanceID: 19334}
+      Script: {instanceID: 19280}
     - Class: 114
-      Script: {instanceID: 19352}
+      Script: {instanceID: 19358}
     - Class: 114
-      Script: {instanceID: 19626}
+      Script: {instanceID: 19376}
     - Class: 114
-      Script: {instanceID: 20166}
+      Script: {instanceID: 19650}
     - Class: 114
-      Script: {instanceID: 20230}
+      Script: {instanceID: 20196}
     - Class: 114
-      Script: {instanceID: 20296}
+      Script: {instanceID: 20262}
     - Class: 114
-      Script: {instanceID: 20366}
+      Script: {instanceID: 20330}
     - Class: 114
-      Script: {instanceID: 21114}
+      Script: {instanceID: 20400}
     - Class: 114
-      Script: {instanceID: 21456}
+      Script: {instanceID: 21152}
     - Class: 114
-      Script: {instanceID: 21464}
+      Script: {instanceID: 21496}
     - Class: 114
-      Script: {instanceID: 21898}
+      Script: {instanceID: 21504}
     - Class: 114
-      Script: {instanceID: 22586}
+      Script: {instanceID: 21944}
     - Class: 114
-      Script: {instanceID: 40928}
+      Script: {instanceID: 22636}
+    - Class: 114
+      Script: {instanceID: 22964}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -289,7 +289,7 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionStayMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 9bd4a02eff9ceade1f5f4889fe8dda81
+      Hash: 390e92547fa282f658bff2b29bf84eae
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: SoarInit
@@ -1093,6 +1093,12 @@ ScriptsOnlyBuild:
     className: Variables
   - hash:
       serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: OpenLink
+  - hash:
+      serializedVersion: 2
       Hash: f6831ac80ec81c5d5b370c0ed0fee997
     assemblyName: Unity.VisualScripting.State
     namespaceName: Unity.VisualScripting
@@ -1145,13 +1151,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: OpenLink
   platform: 20
   scenePathNames:
   - Assets/Scenes/Initialization.unity
-  playerPath: /media/home/Local/Unity/Projects/SoarInit/Build/SoarInit
+  playerPath: /media/home/Local/Unity/Projects/soar-accounts-initializer/SoarInit/Build/SoarInit
