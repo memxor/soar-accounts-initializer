@@ -312,30 +312,6 @@ struct List_1_t6B6870E67A637BF2D941B5C5884E053B438F4F6D  : public RuntimeObject
 	int32_t ____version;
 	RuntimeObject* ____syncRoot;
 };
-struct RequestResult_1_tF25E3B2C01F82A444D7625EB9C476DC8437EBA24  : public RuntimeObject
-{
-	bool ___U3CWasHttpRequestSuccessfulU3Ek__BackingField;
-	bool ___U3CWasRequestSuccessfullyHandledU3Ek__BackingField;
-	String_t* ___U3CReasonU3Ek__BackingField;
-	RuntimeObject* ___U3CResultU3Ek__BackingField;
-	int32_t ___U3CHttpStatusCodeU3Ek__BackingField;
-	int32_t ___U3CServerErrorCodeU3Ek__BackingField;
-	ErrorData_t49373BB7C78A299593CF1FF546FFB3DCC8A9E5B8* ___U3CErrorDataU3Ek__BackingField;
-	String_t* ___U3CRawRpcRequestU3Ek__BackingField;
-	String_t* ___U3CRawRpcResponseU3Ek__BackingField;
-};
-struct RequestResult_1_tE6E5810F227563C57A60E9A0FC27EC0C855521A2  : public RuntimeObject
-{
-	bool ___U3CWasHttpRequestSuccessfulU3Ek__BackingField;
-	bool ___U3CWasRequestSuccessfullyHandledU3Ek__BackingField;
-	String_t* ___U3CReasonU3Ek__BackingField;
-	String_t* ___U3CResultU3Ek__BackingField;
-	int32_t ___U3CHttpStatusCodeU3Ek__BackingField;
-	int32_t ___U3CServerErrorCodeU3Ek__BackingField;
-	ErrorData_t49373BB7C78A299593CF1FF546FFB3DCC8A9E5B8* ___U3CErrorDataU3Ek__BackingField;
-	String_t* ___U3CRawRpcRequestU3Ek__BackingField;
-	String_t* ___U3CRawRpcResponseU3Ek__BackingField;
-};
 struct ResultWrapper_2_t8BAFD757F33FD8F7EE8AAAEAB7A03489BD5AA72E  : public RuntimeObject
 {
 	RequestResult_1_t8FF863D369FC7B36364D9AB901041DC97502B757* ___U3COriginalRequestU3Ek__BackingField;
@@ -444,22 +420,6 @@ struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_pinvoke
 struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_com
 {
 };
-struct WalletBase_tE7399DAC18D87A7C5C59CA1F0167A846B117FC6E  : public RuntimeObject
-{
-	int32_t ___U3CRpcClusterU3Ek__BackingField;
-	int32_t ___RpcMaxHits;
-	int32_t ___RpcMaxHitsPerSeconds;
-	Dictionary_2_tF3F1C88EE9E77181DC4D168743A985E62F591479* ____rpcClusterMap;
-	Dictionary_2_t291007AFA4B4075BA87D802F2E42017CB8C857C9* ___RPCNameMap;
-	String_t* ___CustomRpcUri;
-	String_t* ___CustomStreamingRpcUri;
-	RuntimeObject* ____activeRpcClient;
-	RuntimeObject* ____activeStreamingRpcClient;
-	TaskCompletionSource_1_tB4EF81F69CCF7C4F0D956F9B26127C0634A24A37* ____webSocketConnection;
-	Account_t15F1801E39C4C126421D353BFA50F8BD35957596* ___U3CAccountU3Ek__BackingField;
-	Mnemonic_t075F032FA5F0717CC413E47365DAC5B205E70F6D* ___U3CMnemonicU3Ek__BackingField;
-	RuntimeObject* ____commitmentCache;
-};
 struct WebGLCopyAndPasteAPI_tE7FDE1B28BCCC7FCC2B5673745BCA7FDD2AA0DFC  : public RuntimeObject
 {
 };
@@ -480,24 +440,6 @@ struct Nullable_1_tF8BFF19FF240C9F0A45168187CD7106BAA146A99
 {
 	bool ___hasValue;
 	uint64_t ___value;
-};
-struct TMP_TextProcessingStack_1_tA5C8CED87DD9E73F6359E23B334FFB5B6F813FD4 
-{
-	FontWeightU5BU5D_t2A406B5BAB0DD0F06E7F1773DB062E4AF98067BA* ___itemStack;
-	int32_t ___index;
-	int32_t ___m_DefaultItem;
-	int32_t ___m_Capacity;
-	int32_t ___m_RolloverSize;
-	int32_t ___m_Count;
-};
-struct TMP_TextProcessingStack_1_t243EA1B5D7FD2295D6533B953F0BBE8F52EFB8A0 
-{
-	HorizontalAlignmentOptionsU5BU5D_t4D185662282BFB910D8B9A8199E91578E9422658* ___itemStack;
-	int32_t ___index;
-	int32_t ___m_DefaultItem;
-	int32_t ___m_Capacity;
-	int32_t ___m_RolloverSize;
-	int32_t ___m_Count;
 };
 struct TMP_TextProcessingStack_1_tFBA719426D68CE1F2B5849D97AF5E5D65846290C 
 {
@@ -654,6 +596,15 @@ struct Double_tE150EF3D1D43DEE85D533810AB4C742307EEDE5F
 {
 	double ___m_value;
 };
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2  : public ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F
+{
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_pinvoke
+{
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_com
+{
+};
 struct Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C 
 {
 	int32_t ___m_value;
@@ -716,33 +667,6 @@ struct Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6
 	float ___m13;
 	float ___m23;
 	float ___m33;
-};
-struct Navigation_t4D2E201D65749CF4E104E8AC1232CF1D6F14795C 
-{
-	int32_t ___m_Mode;
-	bool ___m_WrapAround;
-	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnUp;
-	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnDown;
-	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnLeft;
-	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnRight;
-};
-struct Navigation_t4D2E201D65749CF4E104E8AC1232CF1D6F14795C_marshaled_pinvoke
-{
-	int32_t ___m_Mode;
-	int32_t ___m_WrapAround;
-	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnUp;
-	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnDown;
-	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnLeft;
-	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnRight;
-};
-struct Navigation_t4D2E201D65749CF4E104E8AC1232CF1D6F14795C_marshaled_com
-{
-	int32_t ___m_Mode;
-	int32_t ___m_WrapAround;
-	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnUp;
-	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnDown;
-	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnLeft;
-	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnRight;
 };
 struct Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D 
 {
@@ -972,6 +896,14 @@ struct ColorBlock_tDD7C62E7AFE442652FC98F8D058CE8AE6BFD7C11
 	float ___m_ColorMultiplier;
 	float ___m_FadeDuration;
 };
+struct ColorMode_tA7A815AAB9F175EFBA0AE0814E55728432A880BF 
+{
+	int32_t ___value__;
+};
+struct Commitment_t6EB7EC814929527FEE8C61EFF3E7CC856C930B5A 
+{
+	int32_t ___value__;
+};
 struct Delegate_t  : public RuntimeObject
 {
 	intptr_t ___method_ptr;
@@ -1094,10 +1026,26 @@ struct Extents_tA2D2F95811D0A18CB7AC3570D2D8F8CD3AF4C4A8
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___min;
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___max;
 };
+struct FontStyles_t9E611EE6BBE6E192A73EAFF7872596517C527FF5 
+{
+	int32_t ___value__;
+};
+struct FontWeight_tA2585C0A73B70D31CE71E7843149098A5E16BC80 
+{
+	int32_t ___value__;
+};
 struct HighlightState_tE4F50287E5E2E91D42AB77DEA281D88D3AD6A28B 
 {
 	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___color;
 	TMP_Offset_t2262BE4E87D9662487777FF8FFE1B17B0E4438C6 ___padding;
+};
+struct HorizontalAlignmentOptions_tCC21260E9FBEC656BA7783643ED5F44AFF7955A1 
+{
+	int32_t ___value__;
+};
+struct HttpStatusCode_t530B6899270B44ED560C3872DB5F9698FB7D7374 
+{
+	int32_t ___value__;
 };
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C  : public RuntimeObject
 {
@@ -1126,12 +1074,40 @@ struct RegisterLeaderBoardInput_tEF2715C45D3C5848422628B56BF3C221814058CD  : pub
 	bool ___U3CIsAscendingU3Ek__BackingField;
 	bool ___U3CAllowMultipleScoresU3Ek__BackingField;
 };
+struct RpcCluster_t2AAFB854993AA2F8AE9DC35249DAE1B16B7B5535 
+{
+	int32_t ___value__;
+};
 struct RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 
 {
 	intptr_t ___value;
 };
 struct SoarClient_tA2DE5564FE70D7339FBE13826153FED8CA67B189  : public TransactionalBaseClient_1_tC76FBB9F1F172B54440EC86A3202B55B6F5EBF2B
 {
+};
+struct TMP_TextElementType_t51EE6662436732F22C6B599F5757B7F35F706342 
+{
+	int32_t ___value__;
+};
+struct TextAlignmentOptions_tF3FA9020F7E2AF1A48660044540254009A22EF01 
+{
+	int32_t ___value__;
+};
+struct TextOverflowModes_t7DCCD00C16E3223CE50CDDCC53F785C0405BE203 
+{
+	int32_t ___value__;
+};
+struct TextRenderFlags_tE023FF398ECFE57A1DBC6FD2A1AF4AE9620F6E1C 
+{
+	int32_t ___value__;
+};
+struct TextureMappingOptions_t0E1A47C529DEB45A875486256E7026E97C940DAE 
+{
+	int32_t ___value__;
+};
+struct TouchScreenKeyboardType_t3F5A06315B263282460BE67DE01393B6FB3780C1 
+{
+	int32_t ___value__;
 };
 struct VertexGradient_t2C057B53C0EA6E987C2B7BAB0305E686DA1C9A8F 
 {
@@ -1140,11 +1116,105 @@ struct VertexGradient_t2C057B53C0EA6E987C2B7BAB0305E686DA1C9A8F
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___bottomLeft;
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___bottomRight;
 };
+struct VertexSortingOrder_t95B7AEDBDCAACC3459B6476E5CCC594A6422FFA8 
+{
+	int32_t ___value__;
+};
+struct VerticalAlignmentOptions_tCEF70AF60282B71AEEE14D51253CE6A61E72D855 
+{
+	int32_t ___value__;
+};
+struct CharacterValidation_t5DAA94F9780B40CCF419821363E89B30E2EF7380 
+{
+	int32_t ___value__;
+};
+struct ContentType_t7E546E516F92E955324D479BB71667931F1A7956 
+{
+	int32_t ___value__;
+};
+struct InputType_t036D7DF2772E6C8C7DB969C7501F6513339572D4 
+{
+	int32_t ___value__;
+};
+struct LineType_tC4DBAA8629361B209A2BA0625320B24FC4566B6B 
+{
+	int32_t ___value__;
+};
+struct Mode_t2D49D0E10E2FDA0026278C2400C16033888D0542 
+{
+	int32_t ___value__;
+};
+struct Transition_tF856A77C9FAC6D26EA3CA158CF68B739D35397B3 
+{
+	int32_t ___value__;
+};
+struct CharacterValidation_t14B82768014D219C74BC91657D6B013A0CAFF2B9 
+{
+	int32_t ___value__;
+};
+struct ContentType_tC6315BB238AB8B34EEAC496ECDA3F92692694276 
+{
+	int32_t ___value__;
+};
+struct InputType_tF2224DC7469AAC22BF653D00F6E29F8739175DA1 
+{
+	int32_t ___value__;
+};
+struct LineType_t004C9AD8E9A2D86ABDE2F2F55F09446F6E46AF6E 
+{
+	int32_t ___value__;
+};
+struct TextInputSources_t41387D6C9CB16E60390F47A15AEB8185BE966D26 
+{
+	int32_t ___value__;
+};
+struct RequestResult_1_tF25E3B2C01F82A444D7625EB9C476DC8437EBA24  : public RuntimeObject
+{
+	bool ___U3CWasHttpRequestSuccessfulU3Ek__BackingField;
+	bool ___U3CWasRequestSuccessfullyHandledU3Ek__BackingField;
+	String_t* ___U3CReasonU3Ek__BackingField;
+	RuntimeObject* ___U3CResultU3Ek__BackingField;
+	int32_t ___U3CHttpStatusCodeU3Ek__BackingField;
+	int32_t ___U3CServerErrorCodeU3Ek__BackingField;
+	ErrorData_t49373BB7C78A299593CF1FF546FFB3DCC8A9E5B8* ___U3CErrorDataU3Ek__BackingField;
+	String_t* ___U3CRawRpcRequestU3Ek__BackingField;
+	String_t* ___U3CRawRpcResponseU3Ek__BackingField;
+};
+struct RequestResult_1_tE6E5810F227563C57A60E9A0FC27EC0C855521A2  : public RuntimeObject
+{
+	bool ___U3CWasHttpRequestSuccessfulU3Ek__BackingField;
+	bool ___U3CWasRequestSuccessfullyHandledU3Ek__BackingField;
+	String_t* ___U3CReasonU3Ek__BackingField;
+	String_t* ___U3CResultU3Ek__BackingField;
+	int32_t ___U3CHttpStatusCodeU3Ek__BackingField;
+	int32_t ___U3CServerErrorCodeU3Ek__BackingField;
+	ErrorData_t49373BB7C78A299593CF1FF546FFB3DCC8A9E5B8* ___U3CErrorDataU3Ek__BackingField;
+	String_t* ___U3CRawRpcRequestU3Ek__BackingField;
+	String_t* ___U3CRawRpcResponseU3Ek__BackingField;
+};
+struct TMP_TextProcessingStack_1_tA5C8CED87DD9E73F6359E23B334FFB5B6F813FD4 
+{
+	FontWeightU5BU5D_t2A406B5BAB0DD0F06E7F1773DB062E4AF98067BA* ___itemStack;
+	int32_t ___index;
+	int32_t ___m_DefaultItem;
+	int32_t ___m_Capacity;
+	int32_t ___m_RolloverSize;
+	int32_t ___m_Count;
+};
 struct TMP_TextProcessingStack_1_t57AECDCC936A7FF1D6CF66CA11560B28A675648D 
 {
 	HighlightStateU5BU5D_tA878A0AF1F4F52882ACD29515AADC277EE135622* ___itemStack;
 	int32_t ___index;
 	HighlightState_tE4F50287E5E2E91D42AB77DEA281D88D3AD6A28B ___m_DefaultItem;
+	int32_t ___m_Capacity;
+	int32_t ___m_RolloverSize;
+	int32_t ___m_Count;
+};
+struct TMP_TextProcessingStack_1_t243EA1B5D7FD2295D6533B953F0BBE8F52EFB8A0 
+{
+	HorizontalAlignmentOptionsU5BU5D_t4D185662282BFB910D8B9A8199E91578E9422658* ___itemStack;
+	int32_t ___index;
+	int32_t ___m_DefaultItem;
 	int32_t ___m_Capacity;
 	int32_t ___m_RolloverSize;
 	int32_t ___m_Count;
@@ -1166,6 +1236,33 @@ struct MulticastDelegate_t_marshaled_pinvoke : public Delegate_t_marshaled_pinvo
 struct MulticastDelegate_t_marshaled_com : public Delegate_t_marshaled_com
 {
 	Delegate_t_marshaled_com** ___delegates;
+};
+struct Navigation_t4D2E201D65749CF4E104E8AC1232CF1D6F14795C 
+{
+	int32_t ___m_Mode;
+	bool ___m_WrapAround;
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnUp;
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnDown;
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnLeft;
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnRight;
+};
+struct Navigation_t4D2E201D65749CF4E104E8AC1232CF1D6F14795C_marshaled_pinvoke
+{
+	int32_t ___m_Mode;
+	int32_t ___m_WrapAround;
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnUp;
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnDown;
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnLeft;
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnRight;
+};
+struct Navigation_t4D2E201D65749CF4E104E8AC1232CF1D6F14795C_marshaled_com
+{
+	int32_t ___m_Mode;
+	int32_t ___m_WrapAround;
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnUp;
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnDown;
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnLeft;
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnRight;
 };
 struct TMP_LineInfo_tB75C1965B58DB7B3A046C8CA55AD6AB92B6B17B3 
 {
@@ -1189,6 +1286,22 @@ struct TMP_LineInfo_tB75C1965B58DB7B3A046C8CA55AD6AB92B6B17B3
 	float ___marginRight;
 	int32_t ___alignment;
 	Extents_tA2D2F95811D0A18CB7AC3570D2D8F8CD3AF4C4A8 ___lineExtents;
+};
+struct WalletBase_tE7399DAC18D87A7C5C59CA1F0167A846B117FC6E  : public RuntimeObject
+{
+	int32_t ___U3CRpcClusterU3Ek__BackingField;
+	int32_t ___RpcMaxHits;
+	int32_t ___RpcMaxHitsPerSeconds;
+	Dictionary_2_tF3F1C88EE9E77181DC4D168743A985E62F591479* ____rpcClusterMap;
+	Dictionary_2_t291007AFA4B4075BA87D802F2E42017CB8C857C9* ___RPCNameMap;
+	String_t* ___CustomRpcUri;
+	String_t* ___CustomStreamingRpcUri;
+	RuntimeObject* ____activeRpcClient;
+	RuntimeObject* ____activeStreamingRpcClient;
+	TaskCompletionSource_1_tB4EF81F69CCF7C4F0D956F9B26127C0634A24A37* ____webSocketConnection;
+	Account_t15F1801E39C4C126421D353BFA50F8BD35957596* ___U3CAccountU3Ek__BackingField;
+	Mnemonic_t075F032FA5F0717CC413E47365DAC5B205E70F6D* ___U3CMnemonicU3Ek__BackingField;
+	RuntimeObject* ____commitmentCache;
 };
 struct U3CSoarGameInitU3Ed__13_t4669C49F1E342648BD8918C75890E66FC504D907 
 {
@@ -3048,20 +3161,21 @@ IL_0251_1:
 
 CATCH_026e:
 	{
-		V_11 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+		Exception_t* L_95 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+		V_11 = L_95;
 		__this->___U3CU3E1__state = ((int32_t)-2);
-		AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* L_95 = (AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D*)(&__this->___U3CU3Et__builder);
-		Exception_t* L_96 = V_11;
-		AsyncVoidMethodBuilder_SetException_mD9A6F5D1A99A62AC9DF322901BFDE05193CB177B(L_95, L_96, NULL);
-		IL2CPP_POP_ACTIVE_EXCEPTION();
+		AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* L_96 = (AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D*)(&__this->___U3CU3Et__builder);
+		Exception_t* L_97 = V_11;
+		AsyncVoidMethodBuilder_SetException_mD9A6F5D1A99A62AC9DF322901BFDE05193CB177B(L_96, L_97, NULL);
+		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_029a;
 	}
 
 IL_0287:
 	{
 		__this->___U3CU3E1__state = ((int32_t)-2);
-		AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* L_97 = (AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D*)(&__this->___U3CU3Et__builder);
-		AsyncVoidMethodBuilder_SetResult_m008490FDF057D5F5D871F537C7A58BE36027F3DC(L_97, NULL);
+		AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* L_98 = (AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D*)(&__this->___U3CU3Et__builder);
+		AsyncVoidMethodBuilder_SetResult_m008490FDF057D5F5D871F537C7A58BE36027F3DC(L_98, NULL);
 	}
 
 IL_029a:
@@ -3527,16 +3641,17 @@ IL_0310_1:
 
 CATCH_032d:
 	{
-		V_13 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+		Exception_t* L_116 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+		V_13 = L_116;
 		__this->___U3CU3E1__state = ((int32_t)-2);
 		__this->___U3CtxU3E5__2 = (Transaction_tF08921A667DF081293AFC7D00C3BA4E3512A8470*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtxU3E5__2), (void*)(Transaction_tF08921A667DF081293AFC7D00C3BA4E3512A8470*)NULL);
 		__this->___U3CgameU3E5__3 = (PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CgameU3E5__3), (void*)(PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751*)NULL);
-		AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* L_116 = (AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D*)(&__this->___U3CU3Et__builder);
-		Exception_t* L_117 = V_13;
-		AsyncVoidMethodBuilder_SetException_mD9A6F5D1A99A62AC9DF322901BFDE05193CB177B(L_116, L_117, NULL);
-		IL2CPP_POP_ACTIVE_EXCEPTION();
+		AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* L_117 = (AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D*)(&__this->___U3CU3Et__builder);
+		Exception_t* L_118 = V_13;
+		AsyncVoidMethodBuilder_SetException_mD9A6F5D1A99A62AC9DF322901BFDE05193CB177B(L_117, L_118, NULL);
+		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_0375;
 	}
 
@@ -3547,8 +3662,8 @@ IL_0354:
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtxU3E5__2), (void*)(Transaction_tF08921A667DF081293AFC7D00C3BA4E3512A8470*)NULL);
 		__this->___U3CgameU3E5__3 = (PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CgameU3E5__3), (void*)(PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751*)NULL);
-		AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* L_118 = (AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D*)(&__this->___U3CU3Et__builder);
-		AsyncVoidMethodBuilder_SetResult_m008490FDF057D5F5D871F537C7A58BE36027F3DC(L_118, NULL);
+		AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* L_119 = (AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D*)(&__this->___U3CU3Et__builder);
+		AsyncVoidMethodBuilder_SetResult_m008490FDF057D5F5D871F537C7A58BE36027F3DC(L_119, NULL);
 	}
 
 IL_0375:

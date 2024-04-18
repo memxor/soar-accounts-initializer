@@ -241,6 +241,7 @@ struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
 struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB;
 struct DerObjectIdentifierU5BU5D_t5D61227577C3BB3814DC6B7D30D7C415908301A8;
 struct ECFieldElementU5BU5D_t7EB3591892546AF0010AE6A2231A6305FCB8D475;
+struct ECPointU5BU5D_t9D317957BA54459FC0B18095D2E18CCDC6E14C44;
 struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C;
 struct IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832;
 struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
@@ -1453,6 +1454,15 @@ struct ElGamalKeyParameters_t126F968475ADA59A097315B96748B141D99F2149  : public 
 {
 	ElGamalParameters_tE8F2F2C16AA149A56A4381AF3A5990DF14051E5E* ___parameters;
 };
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2  : public ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F
+{
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_pinvoke
+{
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_com
+{
+};
 struct FixedPointCombMultiplier_t2043E4D252CAD0C975E9A06B5ECFC66A7853CFB0  : public AbstractECMultiplier_t4282AB551F51759A9F137A03C5CF4D3806A20462
 {
 };
@@ -1719,6 +1729,14 @@ struct RsaPrivateCrtKeyParameters_t110F226B12978BEE4EF18276F6640A756068AB7F  : p
 struct RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 
 {
 	intptr_t ___value;
+};
+struct Algorithm_tD18E9771BE2D646C2777B6FDC155C47D560832AD 
+{
+	int32_t ___value__;
+};
+struct Algorithm_tA0E18D6E28E34818E80441110463917144258D2F 
+{
+	int32_t ___value__;
 };
 struct CryptoException_t4AD3626BE1D22C083AB2877DC9E63B19B51F1D26  : public Exception_t
 {
@@ -9868,15 +9886,17 @@ IL_0013:
 
 CATCH_0059:
 	{
-		InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB* L_20 = (InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB_il2cpp_TypeInfo_var)));
-		InvalidOperationException__ctor_mE4CB6F4712AB6D99A2358FBAE2E052B3EE976162(L_20, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralFBC66F6D17F9A514EDB0F0D5EC7EBBDBABEF3B5A)), NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_20, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&DsaDigestSigner_GenerateSignature_m0D6CB25D268F790CE2EFA566F4FDA88926AAFAB9_RuntimeMethod_var)));
+		Exception_t* L_20 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+		InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB* L_21 = (InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB_il2cpp_TypeInfo_var)));
+		InvalidOperationException__ctor_mE4CB6F4712AB6D99A2358FBAE2E052B3EE976162(L_21, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralFBC66F6D17F9A514EDB0F0D5EC7EBBDBABEF3B5A)), NULL);
+		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_21, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&DsaDigestSigner_GenerateSignature_m0D6CB25D268F790CE2EFA566F4FDA88926AAFAB9_RuntimeMethod_var)));
 	}
 
 IL_0065:
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_21 = V_2;
-		return L_21;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_22 = V_2;
+		return L_22;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DsaDigestSigner_Reset_m99A3E64879D7F75DFA74A2650BB131B472A6B432 (DsaDigestSigner_tEA744A0C779B118C78A3AD118186949DF0CF5DAB* __this, const RuntimeMethod* method) 
@@ -12647,20 +12667,22 @@ IL_0013:
 
 CATCH_0082:
 	{
-		V_5 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
-		Exception_t* L_29 = V_5;
-		String_t* L_30;
-		L_30 = VirtualFuncInvoker0< String_t* >::Invoke(5, L_29);
-		Exception_t* L_31 = V_5;
-		SignatureException_tC3FA11DA9FFBCB0470D3E332AE17B91F98697BD1* L_32 = (SignatureException_tC3FA11DA9FFBCB0470D3E332AE17B91F98697BD1*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&SignatureException_tC3FA11DA9FFBCB0470D3E332AE17B91F98697BD1_il2cpp_TypeInfo_var)));
-		SignatureException__ctor_m642A6785E61316FB24DB3DE2D3024011884F6D1E(L_32, L_30, L_31, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_32, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Gost3410DigestSigner_GenerateSignature_mE68E6ED20FAEAE304F4E16B842432120C1C1C132_RuntimeMethod_var)));
+		Exception_t* L_29 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+		V_5 = L_29;
+		Exception_t* L_30 = V_5;
+		String_t* L_31;
+		L_31 = VirtualFuncInvoker0< String_t* >::Invoke(5, L_30);
+		Exception_t* L_32 = V_5;
+		SignatureException_tC3FA11DA9FFBCB0470D3E332AE17B91F98697BD1* L_33 = (SignatureException_tC3FA11DA9FFBCB0470D3E332AE17B91F98697BD1*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&SignatureException_tC3FA11DA9FFBCB0470D3E332AE17B91F98697BD1_il2cpp_TypeInfo_var)));
+		SignatureException__ctor_m642A6785E61316FB24DB3DE2D3024011884F6D1E(L_33, L_31, L_32, NULL);
+		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_33, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Gost3410DigestSigner_GenerateSignature_mE68E6ED20FAEAE304F4E16B842432120C1C1C132_RuntimeMethod_var)));
 	}
 
 IL_0093:
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_33 = V_4;
-		return L_33;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_34 = V_4;
+		return L_34;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Gost3410DigestSigner_Reset_mE908D3C19BC253934D73434E555EC63C165FA1B8 (Gost3410DigestSigner_t4A0BE5AD6FC3803461B17F6AAB40A279D5618CF8* __this, const RuntimeMethod* method) 
@@ -15484,22 +15506,24 @@ IL_003a:
 
 CATCH_00f8:
 	{
-		V_10 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
-		Exception_t* L_56 = V_10;
-		String_t* L_57;
-		L_57 = VirtualFuncInvoker0< String_t* >::Invoke(5, L_56);
+		Exception_t* L_56 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+		V_10 = L_56;
+		Exception_t* L_57 = V_10;
 		String_t* L_58;
-		L_58 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral06603A99EF2E406A5DE5600058CFF9E04D3307D5)), L_57, NULL);
-		Exception_t* L_59 = V_10;
-		CryptoException_t4AD3626BE1D22C083AB2877DC9E63B19B51F1D26* L_60 = (CryptoException_t4AD3626BE1D22C083AB2877DC9E63B19B51F1D26*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&CryptoException_t4AD3626BE1D22C083AB2877DC9E63B19B51F1D26_il2cpp_TypeInfo_var)));
-		CryptoException__ctor_m5589570661107E9BDD2F5D8DA3D67E4FC77D9A62(L_60, L_58, L_59, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_60, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&SM2Signer_GenerateSignature_m3C0D6C87BB7171E98655D1B947E50B7DD15BFF62_RuntimeMethod_var)));
+		L_58 = VirtualFuncInvoker0< String_t* >::Invoke(5, L_57);
+		String_t* L_59;
+		L_59 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral06603A99EF2E406A5DE5600058CFF9E04D3307D5)), L_58, NULL);
+		Exception_t* L_60 = V_10;
+		CryptoException_t4AD3626BE1D22C083AB2877DC9E63B19B51F1D26* L_61 = (CryptoException_t4AD3626BE1D22C083AB2877DC9E63B19B51F1D26*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&CryptoException_t4AD3626BE1D22C083AB2877DC9E63B19B51F1D26_il2cpp_TypeInfo_var)));
+		CryptoException__ctor_m5589570661107E9BDD2F5D8DA3D67E4FC77D9A62(L_61, L_59, L_60, NULL);
+		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_61, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&SM2Signer_GenerateSignature_m3C0D6C87BB7171E98655D1B947E50B7DD15BFF62_RuntimeMethod_var)));
 	}
 
 IL_0113:
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_61 = V_9;
-		return L_61;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_62 = V_9;
+		return L_62;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* SM2Signer_GetZ_m563C82550029772B1674D8F93D9ABA60FCB3B526 (SM2Signer_tEE6E42FCE4F424B5F60861B230B2E3DB78933E21* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_userID, const RuntimeMethod* method) 

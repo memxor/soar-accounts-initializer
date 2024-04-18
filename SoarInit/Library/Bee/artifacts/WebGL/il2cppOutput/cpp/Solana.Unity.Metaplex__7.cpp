@@ -13,6 +13,7 @@
 
 struct BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4;
 struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
+struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB;
 struct AuctionHouse_tCD14E98C37C0B4366B535BAD301A711F9D0C08E6;
 struct AuctioneerBuyAccounts_t63DCCD7DEE137F520D34A1EC1EC760DAA0DCADB1;
 struct AuctioneerCancelAccounts_t4C0F7C3F746A76CAEB24174129041B9B2D68E71C;
@@ -550,6 +551,15 @@ struct Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3
 {
 	uint8_t ___m_value;
 };
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2  : public ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F
+{
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_pinvoke
+{
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_com
+{
+};
 struct Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C 
 {
 	int32_t ___m_value;
@@ -587,6 +597,14 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915
 struct ByReference_1_t9C85BCCAAF8C525B6C06B07E922D8D217BE8D6FC 
 {
 	intptr_t ____value;
+};
+struct AuctionHouseErrorKind_t2A17DBA0818A43D329626E69EAFFFA74F56D60E5 
+{
+	uint32_t ___value__;
+};
+struct AuthorityScope_tC877D69FE24A0C491615C8D33BEC1F2B57E567CF 
+{
+	uint8_t ___value__;
 };
 struct BidReceipt_tFA3083919E7B654AE92776CE2D0D3764D1CB5C66  : public RuntimeObject
 {
@@ -790,6 +808,14 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AuctioneerUser_set_Auctionee
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AuctioneerUser_set_AuctionHouse_mBDFE6C5F235E7974FA5BF67EA68F7F24E3F3204D_inline (AuctioneerUser_t0C8A77969AB8D65DBABB2C12263E1263BE3AEBA4* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___0_value, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AuctioneerUser_set_Bump_m4829681C648F09E733876661DCB75646B1F94C41_inline (AuctioneerUser_t0C8A77969AB8D65DBABB2C12263E1263BE3AEBA4* __this, uint8_t ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ThrowHelper_ThrowArgumentOutOfRangeException_mD7D90276EDCDF9394A8EA635923E3B48BB71BD56 (const RuntimeMethod* method) ;
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -6231,6 +6257,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrintPurchaseReceiptAccounts__ctor_m5F75
 		return;
 	}
 }
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

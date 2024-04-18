@@ -126,6 +126,7 @@ struct EntryU5BU5D_t68A3C3C2FF61504922EC13C363BED0E17D474FA8;
 struct EntryU5BU5D_t35030C67317CFD76395CF623751D571A97DFB1E5;
 struct EntryU5BU5D_t18E2846B028F7F1F3FB655F30FA14F00DA8F16AD;
 struct EntryU5BU5D_tFDD3ED397689A7E87D3CD5A24AB952D32BADDDD4;
+struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB;
 struct ComputedTransitionPropertyU5BU5D_t25B9E78F5276CDA297C8215C316452CAB8219E82;
 struct EphemeronU5BU5D_t4F80428A1142C3102C946127F8190063001742E8;
 struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C;
@@ -524,20 +525,6 @@ struct Entry_t532FECF491646E3372F9D145FEC277E0C5089CBC
 	int32_t ___key;
 	float ___value;
 };
-struct Entry_tFF4285DE3B86A2B349258B4BD7E12C0EE4A4B74A 
-{
-	int32_t ___hashCode;
-	int32_t ___next;
-	int32_t ___key;
-	int32_t ___value;
-};
-struct Entry_t4D5A107E6414D8B9DE012405A201C46AACFACF98 
-{
-	int32_t ___hashCode;
-	int32_t ___next;
-	int32_t ___key;
-	RuntimeObject* ___value;
-};
 struct Entry_tFFDF932514D611FAE4AB69C8DDC8FA5F889B6438 
 {
 	int32_t ___hashCode;
@@ -560,13 +547,6 @@ struct Entry_tF9C4D725857FFCC0AD98E4629FD00A7E064A0C1C
 	bool ___value;
 };
 struct Entry_t3E9BC9EC2D9161E6078E219EF6BEE9162020CD39 
-{
-	int32_t ___hashCode;
-	int32_t ___next;
-	RuntimeObject* ___key;
-	int32_t ___value;
-};
-struct Entry_t1FBA063A7158A877EF3D4306E7BE0559C3A13202 
 {
 	int32_t ___hashCode;
 	int32_t ___next;
@@ -625,27 +605,6 @@ struct Enumerator_tEF9F573FE3A4BCCBD6E5BAE8B3B58D2632575AE8
 struct Enumerator_tEFD5647D865118F5BEF24F2C40367BADA8A6518E 
 {
 	Dictionary_2_t4B29EB34D6BDD7CF67CE77D60AC718EB61186713* ____dictionary;
-	int32_t ____index;
-	int32_t ____version;
-	int32_t ____currentKey;
-};
-struct Enumerator_tA87BA4DD2B30A3C2128B2881B958E66972D900D9 
-{
-	Dictionary_2_t1BADE94A7E53FAAFB3B9C0BB4DF061F13C8A1298* ____dictionary;
-	int32_t ____index;
-	int32_t ____version;
-	int32_t ____currentKey;
-};
-struct Enumerator_t620F0178779FC22FFA2126D9010177FA1FE3DCF1 
-{
-	Dictionary_2_t1BADE94A7E53FAAFB3B9C0BB4DF061F13C8A1298* ____dictionary;
-	int32_t ____index;
-	int32_t ____version;
-	int32_t ____currentValue;
-};
-struct Enumerator_tF119E0D034DE2970D049BD22C731B81DD15F2F13 
-{
-	Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71* ____dictionary;
 	int32_t ____index;
 	int32_t ____version;
 	int32_t ____currentKey;
@@ -740,13 +699,6 @@ struct Enumerator_t49B8BEA40FEF5C3B12986F016B11C9E4E8A486F9
 	int32_t ____index;
 	int32_t ____version;
 	RuntimeObject* ____currentKey;
-};
-struct Enumerator_t7B58C8B8A2CB9EC9F2C9407CC3343E88CC43BEFC 
-{
-	Dictionary_2_t2A9A7F3ECFC3483F89253F3C4BB5BE98A37F6EF3* ____dictionary;
-	int32_t ____index;
-	int32_t ____version;
-	int32_t ____currentValue;
 };
 struct Enumerator_t65CC956745B1180C04CE6C6910FB27C5F32BB9FF 
 {
@@ -844,16 +796,6 @@ struct KeyValuePair_2_t891D449DA189ED572EFC0E4457FE9D980AF86555
 	int32_t ___key;
 	float ___value;
 };
-struct KeyValuePair_2_tC032038170A998E9F4AE89CDC2DBC2E5F88F91E3 
-{
-	int32_t ___key;
-	int32_t ___value;
-};
-struct KeyValuePair_2_tF70DDE0C5A349727371FB070D433FA147032A13B 
-{
-	int32_t ___key;
-	RuntimeObject* ___value;
-};
 struct KeyValuePair_2_t88288FD7C987CABEE070E49639E8603D27AF799F 
 {
 	int64_t ___key;
@@ -870,11 +812,6 @@ struct KeyValuePair_2_t7E5E41B933054DBF6F52C6CDF0BC2CB4B1606423
 	bool ___value;
 };
 struct KeyValuePair_2_tF11CA6D20F09EC4DAB7CB3C2C394F6F2C394E6B8 
-{
-	RuntimeObject* ___key;
-	int32_t ___value;
-};
-struct KeyValuePair_2_t35AA315F507A224F8B43D106DA0814C9811D8A7E 
 {
 	RuntimeObject* ___key;
 	int32_t ___value;
@@ -1003,6 +940,15 @@ struct DictionaryEntry_t171080F37B311C25AA9E75888F9C9D703FA721BB_marshaled_com
 	Il2CppIUnknown* ____key;
 	Il2CppIUnknown* ____value;
 };
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2  : public ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F
+{
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_pinvoke
+{
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_com
+{
+};
 struct Ephemeron_t74F279F5E7CF4A0CFC21C822431DD840572C6DA2 
 {
 	RuntimeObject* ___key;
@@ -1069,11 +1015,6 @@ struct Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C
 {
 	float ___m_value;
 };
-struct StyleValueHandle_t5831643AAA7AD8C5C43A4498C5E0A2545F78227D 
-{
-	int32_t ___m_ValueType;
-	int32_t ___valueIndex;
-};
 struct TextureId_tFF4B4AAE53408AB10B0B89CCA5F7B50CF2535E58 
 {
 	int32_t ___m_Index;
@@ -1118,21 +1059,6 @@ struct DefaultEventInterests_tF62D361FCDFA26C0E0A55ECCD8C20A64B3F2D8F0
 {
 	int32_t ___DefaultActionCategories;
 	int32_t ___DefaultActionAtTargetCategories;
-};
-struct PseudoStateData_tE5B3EBF682E8DE88E9325F44841D5B95FEB6F3A8 
-{
-	int32_t ___state;
-	bool ___negate;
-};
-struct PseudoStateData_tE5B3EBF682E8DE88E9325F44841D5B95FEB6F3A8_marshaled_pinvoke
-{
-	int32_t ___state;
-	int32_t ___negate;
-};
-struct PseudoStateData_tE5B3EBF682E8DE88E9325F44841D5B95FEB6F3A8_marshaled_com
-{
-	int32_t ___state;
-	int32_t ___negate;
 };
 struct FontAssetRef_t7B8E634754BC5683F1E6601D7CD0061285A28FF3 
 {
@@ -1207,13 +1133,6 @@ struct Entry_tE8A84B93BCCEA1FC321B6098FA0DDC8449273A50
 	RuntimeObject* ___key;
 	DefaultEventInterests_tF62D361FCDFA26C0E0A55ECCD8C20A64B3F2D8F0 ___value;
 };
-struct Entry_t7570C0657D5A1E8127DA80AE9CF398FAE7F58164 
-{
-	int32_t ___hashCode;
-	int32_t ___next;
-	RuntimeObject* ___key;
-	PseudoStateData_tE5B3EBF682E8DE88E9325F44841D5B95FEB6F3A8 ___value;
-};
 struct Enumerator_t8047E7290DCEBDCE374684E2523B5F7D33219C66 
 {
 	Dictionary_2_t325E0994DB9C0744932C602369C10E8ED56E7FF6* ____dictionary;
@@ -1242,22 +1161,6 @@ struct Enumerator_tA3F2F8897842D04021CC3E38CF56AECF65CC936C
 	int32_t ____index;
 	int32_t ____version;
 	FontAssetRef_t7B8E634754BC5683F1E6601D7CD0061285A28FF3 ____currentValue;
-};
-struct Enumerator_t8DF1CA72CF7DFF457C48D34AD99CED4444D65D04 
-{
-	Dictionary_2_t1BADE94A7E53FAAFB3B9C0BB4DF061F13C8A1298* ____dictionary;
-	int32_t ____version;
-	int32_t ____index;
-	KeyValuePair_2_tC032038170A998E9F4AE89CDC2DBC2E5F88F91E3 ____current;
-	int32_t ____getEnumeratorRetType;
-};
-struct Enumerator_t72F234BE749BE6BA202FC41626B5E819E4F208B4 
-{
-	Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71* ____dictionary;
-	int32_t ____version;
-	int32_t ____index;
-	KeyValuePair_2_tF70DDE0C5A349727371FB070D433FA147032A13B ____current;
-	int32_t ____getEnumeratorRetType;
 };
 struct Enumerator_t4C4D76999C59C2C8EE1ECB1779C9A5355F666161 
 {
@@ -1296,14 +1199,6 @@ struct Enumerator_t2F28D1CFE62CD55B7184C7D9DD43CCC9C03CC5EF
 	int32_t ____version;
 	int32_t ____index;
 	KeyValuePair_2_tF11CA6D20F09EC4DAB7CB3C2C394F6F2C394E6B8 ____current;
-	int32_t ____getEnumeratorRetType;
-};
-struct Enumerator_tB389395A2FD246B4D96A33CFE98D146137FA3ED6 
-{
-	Dictionary_2_t2A9A7F3ECFC3483F89253F3C4BB5BE98A37F6EF3* ____dictionary;
-	int32_t ____version;
-	int32_t ____index;
-	KeyValuePair_2_t35AA315F507A224F8B43D106DA0814C9811D8A7E ____current;
 	int32_t ____getEnumeratorRetType;
 };
 struct Enumerator_t94AEE59300B379FF13424743ADEE68A3E360D190  : public RuntimeObject
@@ -1349,13 +1244,6 @@ struct Enumerator_t3291C0B560F6D6FB0C547A9125DCE8771C1E5ED7
 	int32_t ____version;
 	DefaultEventInterests_tF62D361FCDFA26C0E0A55ECCD8C20A64B3F2D8F0 ____currentValue;
 };
-struct Enumerator_tD42EF8486BD7939DA5CDB5992F8D7872324DAEA7 
-{
-	Dictionary_2_t377C2B6CAA20982B0AC7A180E3800172E88C8BDE* ____dictionary;
-	int32_t ____index;
-	int32_t ____version;
-	PseudoStateData_tE5B3EBF682E8DE88E9325F44841D5B95FEB6F3A8 ____currentValue;
-};
 struct Enumerator_t61FE3CBD85AB1FECAD90EC6ACFD9E968519764BD 
 {
 	Dictionary_2_t1A4804CA9724B6CE01D6ECABE81CE0848CBA80B4* ____dictionary;
@@ -1393,11 +1281,6 @@ struct KeyValuePair_2_tF782B1A6AA6C522B31FCFF4348B0A811764938A6
 {
 	RuntimeObject* ___key;
 	DefaultEventInterests_tF62D361FCDFA26C0E0A55ECCD8C20A64B3F2D8F0 ___value;
-};
-struct KeyValuePair_2_t852F23A435B740B3D14D3CE08B14FFD4690334E7 
-{
-	RuntimeObject* ___key;
-	PseudoStateData_tE5B3EBF682E8DE88E9325F44841D5B95FEB6F3A8 ___value;
 };
 struct ValueTuple_2_tF943CED1BB379DB9A6A283EA86C36B9CF55A0C68 
 {
@@ -1446,10 +1329,18 @@ struct ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C_marshaled_com
 	float ___dpiScaling;
 	ComputedTransitionProperty_tD8E4D8EB5DD69E063944F27A48D9263F4F1354E1_marshaled_com* ___computedTransitions;
 };
+struct FontFeatureLookupFlags_t2000121BA341A3CAE5E0D4FAC6AA4378FE14AE1B 
+{
+	int32_t ___value__;
+};
 struct GlyphAdjustmentRecord_tC7A1B2E0AC7C4ED9CDB8E95E48790A46B6F315F7 
 {
 	uint32_t ___m_GlyphIndex;
 	GlyphValueRecord_t780927A39D46924E0D546A2AE5DDF1BB2B5A9C8E ___m_GlyphValueRecord;
+};
+struct Int32Enum_tCBAC8BA2BFF3A845FA599F303093BBBA374B6F0C 
+{
+	int32_t ___value__;
 };
 struct MarkToBaseAdjustmentRecord_t4BE0F5A88932146F70A2B521176BDA91A20D8607 
 {
@@ -1465,20 +1356,27 @@ struct MarkToMarkAdjustmentRecord_tD53618A3728435D5C904857DAC644EE27640807C
 	uint32_t ___m_CombiningMarkGlyphID;
 	MarkPositionAdjustment_t2523798D56F14A93A080D9D1298498325A51F436 ___m_CombiningMarkPositionAdjustment;
 };
-struct StylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2 
+struct PseudoStates_tF4AB056E8743741BCE464A0983A060A53AAB7E4D 
 {
-	StyleSheet_t6FAF43FCDB45BC6BED0522A222FD4C1A9BB10428* ___sheet;
-	StyleValueHandle_t5831643AAA7AD8C5C43A4498C5E0A2545F78227D ___handle;
+	int32_t ___value__;
 };
-struct StylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2_marshaled_pinvoke
+struct StyleValueType_tC3253FE046DBB95224A74D13B534D015CC4AADDE 
 {
-	StyleSheet_t6FAF43FCDB45BC6BED0522A222FD4C1A9BB10428* ___sheet;
-	StyleValueHandle_t5831643AAA7AD8C5C43A4498C5E0A2545F78227D ___handle;
+	int32_t ___value__;
 };
-struct StylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2_marshaled_com
+struct Entry_tFF4285DE3B86A2B349258B4BD7E12C0EE4A4B74A 
 {
-	StyleSheet_t6FAF43FCDB45BC6BED0522A222FD4C1A9BB10428* ___sheet;
-	StyleValueHandle_t5831643AAA7AD8C5C43A4498C5E0A2545F78227D ___handle;
+	int32_t ___hashCode;
+	int32_t ___next;
+	int32_t ___key;
+	int32_t ___value;
+};
+struct Entry_t4D5A107E6414D8B9DE012405A201C46AACFACF98 
+{
+	int32_t ___hashCode;
+	int32_t ___next;
+	int32_t ___key;
+	RuntimeObject* ___value;
 };
 struct Entry_tA76B18EF78BF0132EE1736D5F5B829D890C26E5C 
 {
@@ -1494,12 +1392,12 @@ struct Entry_t84DA02BD5D35BD14E3E2A36ADA597F80595E867A
 	RuntimeObject* ___key;
 	ValueTuple_2_tF943CED1BB379DB9A6A283EA86C36B9CF55A0C68 ___value;
 };
-struct Entry_t6C6FFC8A6877137F14C5BA9B9205BADAE8258F98 
+struct Entry_t1FBA063A7158A877EF3D4306E7BE0559C3A13202 
 {
 	int32_t ___hashCode;
 	int32_t ___next;
 	RuntimeObject* ___key;
-	StylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2 ___value;
+	int32_t ___value;
 };
 struct Entry_tEC1A94D2B396350073237678CBE5013D9C23336F 
 {
@@ -1531,6 +1429,27 @@ struct Enumerator_tF2693BFBAEDE29C1C53E7902D8473588EE7AD73C
 	KeyValuePair_2_t39179BF27CE980AB00F738EC85DF2D428FAAB65A ____current;
 	int32_t ____getEnumeratorRetType;
 };
+struct Enumerator_tA87BA4DD2B30A3C2128B2881B958E66972D900D9 
+{
+	Dictionary_2_t1BADE94A7E53FAAFB3B9C0BB4DF061F13C8A1298* ____dictionary;
+	int32_t ____index;
+	int32_t ____version;
+	int32_t ____currentKey;
+};
+struct Enumerator_t620F0178779FC22FFA2126D9010177FA1FE3DCF1 
+{
+	Dictionary_2_t1BADE94A7E53FAAFB3B9C0BB4DF061F13C8A1298* ____dictionary;
+	int32_t ____index;
+	int32_t ____version;
+	int32_t ____currentValue;
+};
+struct Enumerator_tF119E0D034DE2970D049BD22C731B81DD15F2F13 
+{
+	Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71* ____dictionary;
+	int32_t ____index;
+	int32_t ____version;
+	int32_t ____currentKey;
+};
 struct Enumerator_tD7BA2337B8262AA806307C5AD27F6EFA326C9A4B 
 {
 	Dictionary_2_t37F557505423C20CABB84F18ADA6FE019FD5411F* ____dictionary;
@@ -1553,6 +1472,13 @@ struct Enumerator_t8C0D13C987D0C420909FBA05B487A5EA1B420643
 	KeyValuePair_2_tE15BD34F75B584F06758FD8C5E0A50897E927167 ____current;
 	int32_t ____getEnumeratorRetType;
 };
+struct Enumerator_t7B58C8B8A2CB9EC9F2C9407CC3343E88CC43BEFC 
+{
+	Dictionary_2_t2A9A7F3ECFC3483F89253F3C4BB5BE98A37F6EF3* ____dictionary;
+	int32_t ____index;
+	int32_t ____version;
+	int32_t ____currentValue;
+};
 struct Enumerator_tBA7AAF43F891354915750F2F82541E1BC34AE3BF 
 {
 	Dictionary_2_t61287F587BEBE6E14046F1E7BF0DEFBD6A5F503E* ____dictionary;
@@ -1560,13 +1486,6 @@ struct Enumerator_tBA7AAF43F891354915750F2F82541E1BC34AE3BF
 	int32_t ____index;
 	KeyValuePair_2_t55881AA547C2F1917F237C157330C775282585E2 ____current;
 	int32_t ____getEnumeratorRetType;
-};
-struct Enumerator_t5E82A55D6760BF9756E363B5F35D95D0BE5F0AA2 
-{
-	Dictionary_2_t834D336DF500618699E81CE51EB7F877BDC3656A* ____dictionary;
-	int32_t ____index;
-	int32_t ____version;
-	StylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2 ____currentValue;
 };
 struct Enumerator_t598538E185ADFA10868FF9ADC47046D729703F83 
 {
@@ -1584,20 +1503,22 @@ struct Enumerator_t990F31763A954208E96D5C0860C93AAAE8B8CEB1
 	KeyValuePair_2_tF782B1A6AA6C522B31FCFF4348B0A811764938A6 ____current;
 	int32_t ____getEnumeratorRetType;
 };
-struct Enumerator_tE506445EC02F2FBF2A0176A4BD4BBFFBCF214672 
-{
-	Dictionary_2_t377C2B6CAA20982B0AC7A180E3800172E88C8BDE* ____dictionary;
-	int32_t ____version;
-	int32_t ____index;
-	KeyValuePair_2_t852F23A435B740B3D14D3CE08B14FFD4690334E7 ____current;
-	int32_t ____getEnumeratorRetType;
-};
 struct Enumerator_t58CDF2B582BA728F39BC1121E418921CC9D9E757 
 {
 	Dictionary_2_tC58BED428F0C45B2320DCA085F781540D1CC3A26* ____dictionary;
 	int32_t ____index;
 	int32_t ____version;
 	MarkToBaseAdjustmentRecord_t4BE0F5A88932146F70A2B521176BDA91A20D8607 ____currentValue;
+};
+struct KeyValuePair_2_tC032038170A998E9F4AE89CDC2DBC2E5F88F91E3 
+{
+	int32_t ___key;
+	int32_t ___value;
+};
+struct KeyValuePair_2_tF70DDE0C5A349727371FB070D433FA147032A13B 
+{
+	int32_t ___key;
+	RuntimeObject* ___value;
 };
 struct KeyValuePair_2_tA1F840CB30C9D8AC1E1F1BC4347D21B598D5F0D5 
 {
@@ -1609,10 +1530,10 @@ struct KeyValuePair_2_tAE53A0563024233C7E279CA0548B5FD56EE422DA
 	RuntimeObject* ___key;
 	ValueTuple_2_tF943CED1BB379DB9A6A283EA86C36B9CF55A0C68 ___value;
 };
-struct KeyValuePair_2_t1F6CA1DFD5BE9F6E000B16910DAC52C42E9B1567 
+struct KeyValuePair_2_t35AA315F507A224F8B43D106DA0814C9811D8A7E 
 {
 	RuntimeObject* ___key;
-	StylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2 ___value;
+	int32_t ___value;
 };
 struct KeyValuePair_2_t0E8812AC4D80B043BFD698E2819090063F0B82C8 
 {
@@ -1630,12 +1551,55 @@ struct GlyphPairAdjustmentRecord_t6E4295094D349DBF22BC59116FBC8F22EA55420E
 	GlyphAdjustmentRecord_tC7A1B2E0AC7C4ED9CDB8E95E48790A46B6F315F7 ___m_SecondAdjustmentRecord;
 	int32_t ___m_FeatureLookupFlags;
 };
+struct StyleValueHandle_t5831643AAA7AD8C5C43A4498C5E0A2545F78227D 
+{
+	int32_t ___m_ValueType;
+	int32_t ___valueIndex;
+};
+struct PseudoStateData_tE5B3EBF682E8DE88E9325F44841D5B95FEB6F3A8 
+{
+	int32_t ___state;
+	bool ___negate;
+};
+struct PseudoStateData_tE5B3EBF682E8DE88E9325F44841D5B95FEB6F3A8_marshaled_pinvoke
+{
+	int32_t ___state;
+	int32_t ___negate;
+};
+struct PseudoStateData_tE5B3EBF682E8DE88E9325F44841D5B95FEB6F3A8_marshaled_com
+{
+	int32_t ___state;
+	int32_t ___negate;
+};
+struct Entry_t7570C0657D5A1E8127DA80AE9CF398FAE7F58164 
+{
+	int32_t ___hashCode;
+	int32_t ___next;
+	RuntimeObject* ___key;
+	PseudoStateData_tE5B3EBF682E8DE88E9325F44841D5B95FEB6F3A8 ___value;
+};
 struct Entry_t58E99ABABD435BCC040760EDD6D161FA4AFAD578 
 {
 	int32_t ___hashCode;
 	int32_t ___next;
 	uint32_t ___key;
 	GlyphPairAdjustmentRecord_t6E4295094D349DBF22BC59116FBC8F22EA55420E ___value;
+};
+struct Enumerator_t8DF1CA72CF7DFF457C48D34AD99CED4444D65D04 
+{
+	Dictionary_2_t1BADE94A7E53FAAFB3B9C0BB4DF061F13C8A1298* ____dictionary;
+	int32_t ____version;
+	int32_t ____index;
+	KeyValuePair_2_tC032038170A998E9F4AE89CDC2DBC2E5F88F91E3 ____current;
+	int32_t ____getEnumeratorRetType;
+};
+struct Enumerator_t72F234BE749BE6BA202FC41626B5E819E4F208B4 
+{
+	Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71* ____dictionary;
+	int32_t ____version;
+	int32_t ____index;
+	KeyValuePair_2_tF70DDE0C5A349727371FB070D433FA147032A13B ____current;
+	int32_t ____getEnumeratorRetType;
 };
 struct Enumerator_tA15B32F25A359C55D4D86237A8978FEAC69D95EA 
 {
@@ -1653,13 +1617,20 @@ struct Enumerator_t4406448D8DA41CB3EF3D9424236E210138495479
 	KeyValuePair_2_tAE53A0563024233C7E279CA0548B5FD56EE422DA ____current;
 	int32_t ____getEnumeratorRetType;
 };
-struct Enumerator_t40E1AAA6125CAE802A28A66BA82099F5D1E79AB8 
+struct Enumerator_tB389395A2FD246B4D96A33CFE98D146137FA3ED6 
 {
-	Dictionary_2_t834D336DF500618699E81CE51EB7F877BDC3656A* ____dictionary;
+	Dictionary_2_t2A9A7F3ECFC3483F89253F3C4BB5BE98A37F6EF3* ____dictionary;
 	int32_t ____version;
 	int32_t ____index;
-	KeyValuePair_2_t1F6CA1DFD5BE9F6E000B16910DAC52C42E9B1567 ____current;
+	KeyValuePair_2_t35AA315F507A224F8B43D106DA0814C9811D8A7E ____current;
 	int32_t ____getEnumeratorRetType;
+};
+struct Enumerator_tD42EF8486BD7939DA5CDB5992F8D7872324DAEA7 
+{
+	Dictionary_2_t377C2B6CAA20982B0AC7A180E3800172E88C8BDE* ____dictionary;
+	int32_t ____index;
+	int32_t ____version;
+	PseudoStateData_tE5B3EBF682E8DE88E9325F44841D5B95FEB6F3A8 ____currentValue;
 };
 struct Enumerator_t59B0A23755E2C1B1D034EE63B28EFBBDC49CA6F7 
 {
@@ -1684,10 +1655,52 @@ struct Enumerator_t653E8F6C23776D157FBF8ED62E0724568CB28DE1
 	KeyValuePair_2_t0B919637EB4D5BC74B591B6C4C2C30BF1FE6D201 ____current;
 	int32_t ____getEnumeratorRetType;
 };
+struct KeyValuePair_2_t852F23A435B740B3D14D3CE08B14FFD4690334E7 
+{
+	RuntimeObject* ___key;
+	PseudoStateData_tE5B3EBF682E8DE88E9325F44841D5B95FEB6F3A8 ___value;
+};
 struct KeyValuePair_2_t757A11D5E61E20A1FA1D66746C464E68C7970041 
 {
 	uint32_t ___key;
 	GlyphPairAdjustmentRecord_t6E4295094D349DBF22BC59116FBC8F22EA55420E ___value;
+};
+struct StylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2 
+{
+	StyleSheet_t6FAF43FCDB45BC6BED0522A222FD4C1A9BB10428* ___sheet;
+	StyleValueHandle_t5831643AAA7AD8C5C43A4498C5E0A2545F78227D ___handle;
+};
+struct StylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2_marshaled_pinvoke
+{
+	StyleSheet_t6FAF43FCDB45BC6BED0522A222FD4C1A9BB10428* ___sheet;
+	StyleValueHandle_t5831643AAA7AD8C5C43A4498C5E0A2545F78227D ___handle;
+};
+struct StylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2_marshaled_com
+{
+	StyleSheet_t6FAF43FCDB45BC6BED0522A222FD4C1A9BB10428* ___sheet;
+	StyleValueHandle_t5831643AAA7AD8C5C43A4498C5E0A2545F78227D ___handle;
+};
+struct Entry_t6C6FFC8A6877137F14C5BA9B9205BADAE8258F98 
+{
+	int32_t ___hashCode;
+	int32_t ___next;
+	RuntimeObject* ___key;
+	StylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2 ___value;
+};
+struct Enumerator_t5E82A55D6760BF9756E363B5F35D95D0BE5F0AA2 
+{
+	Dictionary_2_t834D336DF500618699E81CE51EB7F877BDC3656A* ____dictionary;
+	int32_t ____index;
+	int32_t ____version;
+	StylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2 ____currentValue;
+};
+struct Enumerator_tE506445EC02F2FBF2A0176A4BD4BBFFBCF214672 
+{
+	Dictionary_2_t377C2B6CAA20982B0AC7A180E3800172E88C8BDE* ____dictionary;
+	int32_t ____version;
+	int32_t ____index;
+	KeyValuePair_2_t852F23A435B740B3D14D3CE08B14FFD4690334E7 ____current;
+	int32_t ____getEnumeratorRetType;
 };
 struct Enumerator_t2109EA80E2E4988CA1C768B20F7097AE9321280A 
 {
@@ -1695,6 +1708,19 @@ struct Enumerator_t2109EA80E2E4988CA1C768B20F7097AE9321280A
 	int32_t ____version;
 	int32_t ____index;
 	KeyValuePair_2_t757A11D5E61E20A1FA1D66746C464E68C7970041 ____current;
+	int32_t ____getEnumeratorRetType;
+};
+struct KeyValuePair_2_t1F6CA1DFD5BE9F6E000B16910DAC52C42E9B1567 
+{
+	RuntimeObject* ___key;
+	StylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2 ___value;
+};
+struct Enumerator_t40E1AAA6125CAE802A28A66BA82099F5D1E79AB8 
+{
+	Dictionary_2_t834D336DF500618699E81CE51EB7F877BDC3656A* ____dictionary;
+	int32_t ____version;
+	int32_t ____index;
+	KeyValuePair_2_t1F6CA1DFD5BE9F6E000B16910DAC52C42E9B1567 ____current;
 	int32_t ____getEnumeratorRetType;
 };
 struct GC_t920F9CF6EBB7C787E5010A4352E1B587F356DC58_StaticFields

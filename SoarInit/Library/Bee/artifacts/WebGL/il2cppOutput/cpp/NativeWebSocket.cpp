@@ -277,10 +277,6 @@ struct String_t  : public RuntimeObject
 	int32_t ____stringLength;
 	Il2CppChar ____firstChar;
 };
-struct SynchronizationContext_tCDB842BBE53B050802CBBB59C6E6DC45B5B06DC0  : public RuntimeObject
-{
-	int32_t ____props;
-};
 struct Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572  : public RuntimeObject
 {
 	int32_t ___m_taskId;
@@ -406,13 +402,6 @@ struct IntPtr_t
 {
 	void* ___m_value;
 };
-struct MessageEventArgs_t8D441959C71C2C2F63301CA26EEDB385A62ABC11  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
-{
-	String_t* ____data;
-	bool ____dataSet;
-	uint8_t ____opcode;
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ____rawData;
-};
 struct TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A 
 {
 	int64_t ____ticks;
@@ -430,6 +419,10 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915
 		};
 		uint8_t Void_t4861ACF8F4594C3437BB48B6E56783494B843915__padding[1];
 	};
+};
+struct CompressionMethod_t08551D3C097515ECA5240365FA5F2A69AB43B91E 
+{
+	uint8_t ___value__;
 };
 struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B  : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D
 {
@@ -548,6 +541,10 @@ struct Exception_t_marshaled_com
 	Il2CppSafeArray* ___native_trace_ips;
 	int32_t ___caught_in_unmanaged;
 };
+struct HideFlags_tC514182ACEFD3B847988C45D5DB812FF6DB1BF4A 
+{
+	int32_t ___value__;
+};
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C  : public RuntimeObject
 {
 	intptr_t ___m_CachedPtr;
@@ -560,9 +557,70 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_com
 {
 	intptr_t ___m_CachedPtr;
 };
+struct Opcode_tCE3B0DBA0A8D58941A3F1FA3C09BF49C1B9B1EE4 
+{
+	uint8_t ___value__;
+};
+struct RuntimePlatform_t9A8AAF204603076FCAAECCCC05DA386AEE7BF66E 
+{
+	int32_t ___value__;
+};
 struct RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B 
 {
 	intptr_t ___value;
+};
+struct SynchronizationContextProperties_t5ED82C778B4C396AD94A93CFBEF00022BDECF058 
+{
+	int32_t ___value__;
+};
+struct TaskCreationOptions_tB15CB42D61B8958640A7C702A79097B56D5C7ABA 
+{
+	int32_t ___value__;
+};
+struct WebSocketCloseCode_t233EE90E74C1B280016DE278E95BBF37339B64CE 
+{
+	int32_t ___value__;
+};
+struct WebSocketState_t9E8FA1BB93913C0B051F9902E3B6C0BAEF42DA18 
+{
+	int32_t ___value__;
+};
+struct WebSocketState_t4FA659C22701ACE27339365D39462C4C453FB82E 
+{
+	uint16_t ___value__;
+};
+struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+struct MessageEventArgs_t8D441959C71C2C2F63301CA26EEDB385A62ABC11  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	String_t* ____data;
+	bool ____dataSet;
+	uint8_t ____opcode;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ____rawData;
+};
+struct MulticastDelegate_t  : public Delegate_t
+{
+	DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771* ___delegates;
+};
+struct MulticastDelegate_t_marshaled_pinvoke : public Delegate_t_marshaled_pinvoke
+{
+	Delegate_t_marshaled_pinvoke** ___delegates;
+};
+struct MulticastDelegate_t_marshaled_com : public Delegate_t_marshaled_com
+{
+	Delegate_t_marshaled_com** ___delegates;
+};
+struct SynchronizationContext_tCDB842BBE53B050802CBBB59C6E6DC45B5B06DC0  : public RuntimeObject
+{
+	int32_t ____props;
+};
+struct Type_t  : public MemberInfo_t
+{
+	RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B ____impl;
 };
 struct WebSocket_t14BF4D314E0C236502942A07A2B1FEF59172D28C  : public RuntimeObject
 {
@@ -612,28 +670,6 @@ struct WebSocket_t14BF4D314E0C236502942A07A2B1FEF59172D28C  : public RuntimeObje
 	EventHandler_1_t011D6A9F3944F82F2146438E79391DBC343A801E* ___OnError;
 	EventHandler_1_t41A73EC8BDB892BCF0AB6B6004774F0BDB8D3065* ___OnMessage;
 	EventHandler_tC6323FD7E6163F965259C33D72612C0E5B9BAB82* ___OnOpen;
-};
-struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
-{
-};
-struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
-{
-};
-struct MulticastDelegate_t  : public Delegate_t
-{
-	DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771* ___delegates;
-};
-struct MulticastDelegate_t_marshaled_pinvoke : public Delegate_t_marshaled_pinvoke
-{
-	Delegate_t_marshaled_pinvoke** ___delegates;
-};
-struct MulticastDelegate_t_marshaled_com : public Delegate_t_marshaled_com
-{
-	Delegate_t_marshaled_com** ___delegates;
-};
-struct Type_t  : public MemberInfo_t
-{
-	RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B ____impl;
 };
 struct WebSocketException_t0F2D023349DF8288C6B80FD7CAFCA217C19581C9  : public Exception_t
 {
@@ -707,14 +743,6 @@ struct String_t_StaticFields
 {
 	String_t* ___Empty;
 };
-struct SynchronizationContext_tCDB842BBE53B050802CBBB59C6E6DC45B5B06DC0_StaticFields
-{
-	Type_t* ___s_cachedPreparedType1;
-	Type_t* ___s_cachedPreparedType2;
-	Type_t* ___s_cachedPreparedType3;
-	Type_t* ___s_cachedPreparedType4;
-	Type_t* ___s_cachedPreparedType5;
-};
 struct Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572_StaticFields
 {
 	int32_t ___s_taskIdCounter;
@@ -765,12 +793,13 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
 {
 	int32_t ___OffsetOfInstanceIDInCPlusPlusObject;
 };
-struct WebSocket_t14BF4D314E0C236502942A07A2B1FEF59172D28C_StaticFields
+struct SynchronizationContext_tCDB842BBE53B050802CBBB59C6E6DC45B5B06DC0_StaticFields
 {
-	int32_t ____maxRetryCountForConnect;
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___EmptyBytes;
-	int32_t ___FragmentLength;
-	RandomNumberGenerator_t4E862666A2F7D55324960670C7A1B4C2D40222F3* ___RandomNumber;
+	Type_t* ___s_cachedPreparedType1;
+	Type_t* ___s_cachedPreparedType2;
+	Type_t* ___s_cachedPreparedType3;
+	Type_t* ___s_cachedPreparedType4;
+	Type_t* ___s_cachedPreparedType5;
 };
 struct Type_t_StaticFields
 {
@@ -781,6 +810,13 @@ struct Type_t_StaticFields
 	MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553* ___FilterAttribute;
 	MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553* ___FilterName;
 	MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553* ___FilterNameIgnoreCase;
+};
+struct WebSocket_t14BF4D314E0C236502942A07A2B1FEF59172D28C_StaticFields
+{
+	int32_t ____maxRetryCountForConnect;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___EmptyBytes;
+	int32_t ___FragmentLength;
+	RandomNumberGenerator_t4E862666A2F7D55324960670C7A1B4C2D40222F3* ___RandomNumber;
 };
 struct MainThreadUtil_tD6E790915B75506EFFD174D01BD840DD274A82DC_StaticFields
 {
@@ -1348,8 +1384,9 @@ IL_0016_1:
 
 CATCH_0018:
 	{
+		Exception_t* L_2 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
 		V_0 = (bool)0;
-		IL2CPP_POP_ACTIVE_EXCEPTION();
+		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_001f;
 	}
 
@@ -1360,8 +1397,8 @@ IL_001d:
 
 IL_001f:
 	{
-		bool L_2 = V_0;
-		return L_2;
+		bool L_3 = V_0;
+		return L_3;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RuntimePlatforms_IsWebGL_mF94C10DD66EA7D0F9078219C12ACB07252DC0A5E (const RuntimeMethod* method) 
@@ -1733,6 +1770,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebSocketCloseEventHandler_Invoke_mA6BD7
 	typedef void (*FunctionPointerType) (RuntimeObject*, int32_t, const RuntimeMethod*);
 	((FunctionPointerType)__this->___invoke_impl)((Il2CppObject*)__this->___method_code, ___0_closeCode, reinterpret_cast<RuntimeMethod*>(__this->___method));
 }
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

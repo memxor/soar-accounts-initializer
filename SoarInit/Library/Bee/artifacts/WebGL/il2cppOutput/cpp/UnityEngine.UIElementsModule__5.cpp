@@ -182,6 +182,7 @@ struct HashSet_1_tF6058CA088C8647427AA5C209C6D23F523EF0E45;
 struct IEnumerable_1_tF95C9E01A913DD50575531C8305932628663D9E9;
 struct IEnumerable_1_t349E66EC5F09B881A8E52EE40A1AB9EC60E08E44;
 struct IEnumerable_1_t09818F564E5BA56DE9E5FD10F593FE841827BBCD;
+struct IEnumerator_1_t73FD060C436E3C4264A734C8F8DCC01DFF6046B8;
 struct IEqualityComparer_1_t39D49543B3C85EBF15ECF30545F171B5FB7ACD1D;
 struct IEqualityComparer_1_tDDAFF6D050787FED8C1C71CF045D67E5872C0EE3;
 struct KeyCollection_tC7B3E92FF6C51EC5733FE0C01C1DB738E0552418;
@@ -278,6 +279,7 @@ struct KeyValuePair_2U5BU5D_t36E55AF09115A7E0BE74BE21214CCEF280C4CD38;
 struct KeyValuePair_2U5BU5D_t24106F942F9C97A5DE3B2856DED26A446C4C55ED;
 struct BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4;
 struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
+struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB;
 struct ComputedTransitionPropertyU5BU5D_t25B9E78F5276CDA297C8215C316452CAB8219E82;
 struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771;
 struct DisplayU5BU5D_tAD77D7EE2B839E3EDA0D1C0028B64F867F400C7F;
@@ -345,6 +347,7 @@ struct EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398;
 struct Exception_t;
 struct FocusChangeDirection_t95F4784CF68331792EB9077AEAB01E17822991EF;
 struct FocusController_t5D2E45F2CCBE3B7082DE4088EE03C2E8F736011A;
+struct FocusEvent_tC285901ACF2EA5EB98D216AC0ADD95937DBBD40F;
 struct Focusable_t39F2BAF0AF6CA465BC2BEDAF9B5B2CF379B846D0;
 struct GUILayoutEntry_tDF59F19DD000820F64B356D5092C4BEDFE109D5F;
 struct GUILayoutGroup_tD08496E80F283C290B5B90D7BFB3C9C7CC33CD8D;
@@ -1146,15 +1149,6 @@ struct UIRAtlasAllocator_t70FA0F3477E077A18096F66B51F6A2B205825BD7  : public Run
 struct UIRUtility_tBBCA94052EAE57F0A59876553C582FFCF52E706C  : public RuntimeObject
 {
 };
-struct UxmlAttributeDescription_t742D021489DB2B564142146CAAAC3F9191825EF2  : public RuntimeObject
-{
-	String_t* ___U3CnameU3Ek__BackingField;
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___m_ObsoleteNames;
-	String_t* ___U3CtypeU3Ek__BackingField;
-	String_t* ___U3CtypeNamespaceU3Ek__BackingField;
-	int32_t ___U3CuseU3Ek__BackingField;
-	UxmlTypeRestriction_t2C4CE1ED76502CDF80010880E058AF0582910A92* ___U3CrestrictionU3Ek__BackingField;
-};
 struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F  : public RuntimeObject
 {
 };
@@ -1163,12 +1157,6 @@ struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_pinvoke
 };
 struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_com
 {
-};
-struct VisualElementFocusRing_t8965E2C7F4AC653F2C416E2B81F66E51FE8EEFE3  : public RuntimeObject
-{
-	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___root;
-	int32_t ___U3CdefaultFocusOrderU3Ek__BackingField;
-	List_1_tD83E9FC86E76D3E92623990C84D4238B8EA05D5B* ___m_FocusRing;
 };
 struct VisualTreeUpdater_tFDE7D9F9A146A26B2ED69565B7BD142B416AB9C9  : public RuntimeObject
 {
@@ -1237,18 +1225,6 @@ struct KeyValuePair_2_t505A343A26517F6679CE90A143FD6590F5400A93
 	int32_t ___key;
 	Panel_t2B0DCF68A7A5EBC347FAE66F046EA98B53AF1AB9* ___value;
 };
-struct NativeArray_1_t7E7FEB7601A0E8158B43F2495CB02DBB211ADF51 
-{
-	void* ___m_Buffer;
-	int32_t ___m_Length;
-	int32_t ___m_AllocatorLabel;
-};
-struct NativeArray_1_t1319594EE236701FE431CF2885AEB88373076DA8 
-{
-	void* ___m_Buffer;
-	int32_t ___m_Length;
-	int32_t ___m_AllocatorLabel;
-};
 struct NativeSlice_1_t0D1A1AB7A9C4768B84EB7420D04A90920533C78A 
 {
 	uint8_t* ___m_Buffer;
@@ -1290,14 +1266,6 @@ struct StyleDataRef_1_t9CB834B90E638D92A3BE5123B0D3989697AA87FC
 {
 	RefCounted_t812D790A2C787F18230F9234F6C9B84D4AC1A85A* ___m_Ref;
 };
-struct TypedUxmlAttributeDescription_1_t7ECE12D1C0C385835D77803906F54B792532FD39  : public UxmlAttributeDescription_t742D021489DB2B564142146CAAAC3F9191825EF2
-{
-	bool ___U3CdefaultValueU3Ek__BackingField;
-};
-struct TypedUxmlAttributeDescription_1_tF8E164DB2A1FE613654370D348F4C3680DA42A03  : public UxmlAttributeDescription_t742D021489DB2B564142146CAAAC3F9191825EF2
-{
-	int32_t ___U3CdefaultValueU3Ek__BackingField;
-};
 struct UxmlFactory_2_t885CE124C6F6A5A625EFB5E207B18271EE8A07FF  : public BaseUxmlFactory_2_t8AD5A29733F47D36FE4524252C42FDBE00603258
 {
 };
@@ -1321,23 +1289,6 @@ struct Alloc_t78312CFE58F38082281E80E297AE6176BD2BD8AE_marshaled_com
 	uint32_t ___size;
 	Il2CppIUnknown* ___handle;
 	int32_t ___shortLived;
-};
-struct Angle_t0229F612898D65B3CC646C40A32D93D8A33C1DFC 
-{
-	float ___m_Value;
-	int32_t ___m_Unit;
-};
-struct BMPAlloc_t29DA9D09157B8BAD2D5643711A53A5F11D216D30 
-{
-	int32_t ___page;
-	uint16_t ___pageLine;
-	uint8_t ___bitIndex;
-	uint8_t ___ownedState;
-};
-struct BackgroundRepeat_t446EC7315DED2C6822F1047B7587C3018BFB277F 
-{
-	int32_t ___x;
-	int32_t ___y;
 };
 struct BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73 
 {
@@ -1471,18 +1422,14 @@ struct Double_tE150EF3D1D43DEE85D533810AB4C742307EEDE5F
 {
 	double ___m_value;
 };
-struct DynamicAtlas_tA1A51ADBE1DBFD82F6D52D5CA4D09D82F89678A8  : public AtlasBase_t196C45243F41C19DC6258965057BBAA150D278BC
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2  : public ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F
 {
-	Dictionary_2_tF1C3BFA70D6875EEF369CE69E661C6B617B5BEC0* ___m_Database;
-	DynamicAtlasPage_t11FF826FFD13D59816B4F99A0C21CF8205A68F6E* ___m_PointPage;
-	DynamicAtlasPage_t11FF826FFD13D59816B4F99A0C21CF8205A68F6E* ___m_BilinearPage;
-	int32_t ___m_ColorSpace;
-	List_1_t4DF09B0E9A8F312FB7592EC9D366F0808C94DCE6* ___m_Panels;
-	int32_t ___m_MinAtlasSize;
-	int32_t ___m_MaxAtlasSize;
-	int32_t ___m_MaxSubTextureSize;
-	int32_t ___m_ActiveFilters;
-	DynamicAtlasCustomFilter_tD33BC519AF0B6E7D8C273CB64D900DF5FEB1E3C6* ___m_CustomFilter;
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_pinvoke
+{
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_com
+{
 };
 struct EventDebuggerLogIMGUICall_t1B803273A4B133D61B1FB9289278542A8739C4A8 
 {
@@ -1534,17 +1481,6 @@ struct IntPtr_t
 struct KeyboardNavigationManipulator_t7E9BA3568ADC1660C4E09B924ECD457E33B835B3  : public Manipulator_tD5727ABA1F5AD1A50927212FAEB090E6BBCB4EBE
 {
 	Action_2_t4FD84D64C1341169AC2F73750A356411BCEAF88A* ___m_Action;
-};
-struct Length_t90BB06D47DD6DB461ED21BD3E3241FAB6C824256 
-{
-	float ___m_Value;
-	int32_t ___m_Unit;
-};
-struct ManipulatorActivationFilter_t866A0295DA75EA271B30BDC1F9EEA2C4FDEB1A81 
-{
-	int32_t ___U3CbuttonU3Ek__BackingField;
-	int32_t ___U3CmodifiersU3Ek__BackingField;
-	int32_t ___U3CclickCountU3Ek__BackingField;
 };
 struct Mathf_tE284D016E3B297B72311AAD9EB8F0E643F6A4682 
 {
@@ -1727,13 +1663,6 @@ struct Hierarchy_t4CF226F0EDE9C117C51C505730FC80641B1F1677_marshaled_com
 {
 	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___m_Owner;
 };
-struct Enumerator_tBB0972570BC76CC972EC093FEFFBFC844E64417F 
-{
-	List_1_t569CB45C96475FFA9C716A7CC2ADE24112D38121* ____list;
-	int32_t ____index;
-	int32_t ____version;
-	ManipulatorActivationFilter_t866A0295DA75EA271B30BDC1F9EEA2C4FDEB1A81 ____current;
-};
 struct Enumerator_tE92C1AC40A104A179B94F8A013728FD9314CFBD3 
 {
 	Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* ____dictionary;
@@ -1760,6 +1689,10 @@ struct KeyValuePair_2_t4C290F2D1C9380DD40293A4932828D7DCD4DC728
 	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___key;
 	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___value;
 };
+struct Allocator_t996642592271AAD9EE688F142741D512C07B5824 
+{
+	int32_t ___value__;
+};
 struct Allocator2D_t5B53CF899C3FABD99F29602424924ACAB9E2A157  : public RuntimeObject
 {
 	Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A ___m_MinSize;
@@ -1769,21 +1702,22 @@ struct Allocator2D_t5B53CF899C3FABD99F29602424924ACAB9E2A157  : public RuntimeOb
 	RowU5BU5D_tD00D1CA580C47C485027A84FED0305EF1055A67D* ___m_Rows;
 	List_1_tCD8F482BA6987909B251341014B70FB8CCFC735D* ___m_Areas;
 };
-struct BackgroundPosition_tF0822B29FC27A67205A9893EBE03D03B799B8B56 
+struct BackgroundPositionKeyword_tE680A05B983D256AADC8E2CF1CA169D004B8641B 
 {
-	int32_t ___keyword;
-	Length_t90BB06D47DD6DB461ED21BD3E3241FAB6C824256 ___offset;
+	int32_t ___value__;
 };
-struct BackgroundSize_t809883E2D7BB1D8D85B4C3E1DBE189F187DB25E7 
+struct BackgroundSizeType_tD194B20FF5086D494ABF8D799124D2FC4FFCC674 
 {
-	int32_t ___m_SizeType;
-	Length_t90BB06D47DD6DB461ED21BD3E3241FAB6C824256 ___m_X;
-	Length_t90BB06D47DD6DB461ED21BD3E3241FAB6C824256 ___m_Y;
+	int32_t ___value__;
 };
 struct Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Center;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Extents;
+};
+struct ClipMethod_t576E65D24928AB1D0072DB926DDFA98B84FBCEDB 
+{
+	int32_t ___value__;
 };
 struct ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0 
 {
@@ -1799,6 +1733,10 @@ struct ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0_marshaled_com
 {
 	int32_t ___isValid;
 	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___pageAndID;
+};
+struct ColorSpace_tD0808E0BE85FD3B9774234676F83A872F4EDA3C7 
+{
+	int32_t ___value__;
 };
 struct ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C 
 {
@@ -1841,6 +1779,10 @@ struct ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C_marshaled_com
 	int64_t ___matchingRulesHash;
 	float ___dpiScaling;
 	ComputedTransitionProperty_tD8E4D8EB5DD69E063944F27A48D9263F4F1354E1_marshaled_com* ___computedTransitions;
+};
+struct ContextType_t50FAC10DB1D4E29B37E532DED9CAA804FC4E59A0 
+{
+	int32_t ___value__;
 };
 struct Delegate_t  : public RuntimeObject
 {
@@ -1890,24 +1832,21 @@ struct Delegate_t_marshaled_com
 	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data;
 	int32_t ___method_is_virtual;
 };
+struct DispatchMode_t19462FC6D47F5BF63B55FBDEB5C7D498D50DB3DC 
+{
+	int32_t ___value__;
+};
 struct Display_t06A3B0F5169CA3C02A4D5171F27499A23D3581D1  : public RuntimeObject
 {
 	intptr_t ___nativeDisplay;
 };
-struct DynamicAtlasPage_t11FF826FFD13D59816B4F99A0C21CF8205A68F6E  : public RuntimeObject
+struct DisplayStyle_t87BEDA2F78F764785ED41FC5E622ECB0091B2459 
 {
-	TextureId_tFF4B4AAE53408AB10B0B89CCA5F7B50CF2535E58 ___U3CtextureIdU3Ek__BackingField;
-	RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* ___U3CatlasU3Ek__BackingField;
-	int32_t ___U3CformatU3Ek__BackingField;
-	int32_t ___U3CfilterModeU3Ek__BackingField;
-	Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A ___U3CminSizeU3Ek__BackingField;
-	Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A ___U3CmaxSizeU3Ek__BackingField;
-	int32_t ___m_1Padding;
-	int32_t ___m_2Padding;
-	Allocator2D_t5B53CF899C3FABD99F29602424924ACAB9E2A157* ___m_Allocator;
-	TextureBlitter_t8340FC58AD5F14B6A8DD133968F4C8427C79FCB7* ___m_Blitter;
-	Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A ___m_CurrentSize;
-	bool ___U3CdisposedU3Ek__BackingField;
+	int32_t ___value__;
+};
+struct DynamicAtlasFilters_t77D7D10C660BD87504D2E24529954A1D811A0EB8 
+{
+	int32_t ___value__;
 };
 struct Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB  : public RuntimeObject
 {
@@ -1921,22 +1860,17 @@ struct Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB_marshaled_com
 {
 	intptr_t ___m_Ptr;
 };
-struct EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C  : public RuntimeObject
+struct EventCategory_tCFC347F164A2525B4C39DA6A9B7A9B5A541E3FFA 
 {
-	int32_t ___U3CeventCategoryU3Ek__BackingField;
-	int64_t ___U3CtimestampU3Ek__BackingField;
-	uint64_t ___U3CeventIdU3Ek__BackingField;
-	uint64_t ___U3CtriggerEventIdU3Ek__BackingField;
-	int32_t ___U3CpropagationU3Ek__BackingField;
-	PropagationPaths_tA17A0F2CAFF1A86B552ED6D984DAA2F14AB2B0E5* ___U3CpathU3Ek__BackingField;
-	int32_t ___U3ClifeCycleStatusU3Ek__BackingField;
-	RuntimeObject* ___U3CleafTargetU3Ek__BackingField;
-	RuntimeObject* ___m_Target;
-	List_1_t6FBD33EFCD307A54E0E8F62AAA0677E2ADAE58D3* ___U3CskipElementsU3Ek__BackingField;
-	int32_t ___U3CpropagationPhaseU3Ek__BackingField;
-	RuntimeObject* ___m_CurrentTarget;
-	Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* ___m_ImguiEvent;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___U3CoriginalMousePositionU3Ek__BackingField;
+	int32_t ___value__;
+};
+struct EventModifiers_t48244B043FBB42CDD555C6AC43279EC7158777AC 
+{
+	int32_t ___value__;
+};
+struct EventType_tC62F0D77DB08D7326B58B2D8CF43BD45CFD3203E 
+{
+	int32_t ___value__;
 };
 struct Exception_t  : public RuntimeObject
 {
@@ -1995,6 +1929,10 @@ struct Exception_t_marshaled_com
 	Il2CppSafeArray* ___native_trace_ips;
 	int32_t ___caught_in_unmanaged;
 };
+struct FilterMode_t4AD57F1A3FE272D650E0E688BA044AE872BD2A34 
+{
+	int32_t ___value__;
+};
 struct GUILayoutEntry_tDF59F19DD000820F64B356D5092C4BEDFE109D5F  : public RuntimeObject
 {
 	float ___minWidth;
@@ -2006,6 +1944,38 @@ struct GUILayoutEntry_tDF59F19DD000820F64B356D5092C4BEDFE109D5F  : public Runtim
 	int32_t ___stretchHeight;
 	bool ___consideredForMargin;
 	GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580* ___m_Style;
+};
+struct HideFlags_tC514182ACEFD3B847988C45D5DB812FF6DB1BF4A 
+{
+	int32_t ___value__;
+};
+struct HierarchyChangeType_t4AB1A5DF8963637F09533BEB1BE11C663EAB78AF 
+{
+	int32_t ___value__;
+};
+struct Int32Enum_tCBAC8BA2BFF3A845FA599F303093BBBA374B6F0C 
+{
+	int32_t ___value__;
+};
+struct KeyCode_t75B9ECCC26D858F55040DDFF9523681E996D17E9 
+{
+	int32_t ___value__;
+};
+struct KeyboardNavigationOperation_tCEB962A6C192C10343A351F0415BD8084E3B8635 
+{
+	int32_t ___value__;
+};
+struct LanguageDirection_t30A3B6BBCEE6A6F57641E4E008E0DCC40603558C 
+{
+	int32_t ___value__;
+};
+struct LengthUnit_t746199A94302055274F284E176E01D38EE8A669A 
+{
+	int32_t ___value__;
+};
+struct MarkerFlags_t58228A99AC6567F565911ED792189DBBDFF83E30 
+{
+	uint16_t ___value__;
 };
 struct MeshWriteData_tE09883A6419D2A92CC453702AD6D30486B44F5F9  : public RuntimeObject
 {
@@ -2022,10 +1992,13 @@ struct MeshWriteDataInterface_t4B491D82F64E6765793116BF09FE1DF58C42F61F
 	int32_t ___vertexCount;
 	int32_t ___indexCount;
 };
-struct MouseManipulator_tE6C609D476BDF311E2934791E620CF833BB4097D  : public Manipulator_tD5727ABA1F5AD1A50927212FAEB090E6BBCB4EBE
+struct MouseButton_tEF578B8F208D798E053BC320C29FCBB655E24454 
 {
-	List_1_t569CB45C96475FFA9C716A7CC2ADE24112D38121* ___U3CactivatorsU3Ek__BackingField;
-	ManipulatorActivationFilter_t866A0295DA75EA271B30BDC1F9EEA2C4FDEB1A81 ___m_currentActivator;
+	int32_t ___value__;
+};
+struct NavigationDeviceType_t848E9C4AEC98044C60FBD9CCF9A460289562D90C 
+{
+	int32_t ___value__;
 };
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C  : public RuntimeObject
 {
@@ -2042,6 +2015,10 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_com
 struct ObjectGUIState_t7BE88DC8B9C7187A77D63BBCBE9DB7B674863C15  : public RuntimeObject
 {
 	intptr_t ___m_Ptr;
+};
+struct OwnedState_t0957CA36E21DE8A443B616EBE83B25CCCA70B5A4 
+{
+	uint8_t ___value__;
 };
 struct PanelClearSettings_tA3D8EE9A4864781CE3E5FED5225C6FB37ED66EE7 
 {
@@ -2061,9 +2038,878 @@ struct PanelClearSettings_tA3D8EE9A4864781CE3E5FED5225C6FB37ED66EE7_marshaled_co
 	int32_t ___clearColor;
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color;
 };
+struct PanelScaleMode_t3E197E96ADB48A57291EB6A97ECA17277A72B16F 
+{
+	int32_t ___value__;
+};
+struct PanelScreenMatchMode_t55EF21EB86F03FC7E17800DD95CBED44B23C6F70 
+{
+	int32_t ___value__;
+};
+struct PenStatus_tCAD6543115EF443E17410B52D37EC67BCC88ABB8 
+{
+	int32_t ___value__;
+};
+struct PickingMode_t5699BF9E5F2587E0D297984D5BF5B63B768E66AC 
+{
+	int32_t ___value__;
+};
 struct ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD 
 {
 	intptr_t ___m_Ptr;
+};
+struct PropagationPhase_tF3BE8BF5ED45FC52A828B7B6F078B64F01FAE6D6 
+{
+	int32_t ___value__;
+};
+struct PseudoStates_tF4AB056E8743741BCE464A0983A060A53AAB7E4D 
+{
+	int32_t ___value__;
+};
+struct RenderDataDirtyTypes_tEF0AE4EB7DF790A711AA45103050432B8FEDB907 
+{
+	int32_t ___value__;
+};
+struct RenderDataFlags_t5FE970B94CB31B4691C29B856A2A5848BDEACB66 
+{
+	int32_t ___value__;
+};
+struct RenderHints_t4032FC4AB3FD946FD2A484865B8861730D9035E7 
+{
+	int32_t ___value__;
+};
+struct RenderTextureFormat_tB6F1ED5040395B46880CE00312D2FDDBF9EEB40F 
+{
+	int32_t ___value__;
+};
+struct RepaintData_t90534752135661579EC254884F550545D001B5EA  : public RuntimeObject
+{
+	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___U3CcurrentOffsetU3Ek__BackingField;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___U3CmousePositionU3Ek__BackingField;
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___U3CcurrentWorldClipU3Ek__BackingField;
+	Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* ___U3CrepaintEventU3Ek__BackingField;
+};
+struct Repeat_tC0330B75B12D24B063BA5151AF3BB73B85D8B840 
+{
+	int32_t ___value__;
+};
+struct RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B 
+{
+	intptr_t ___value;
+};
+struct SafeHandleAccess_tAD4EC3E34693AFDD4B0003EED6CEF0F2818A1583 
+{
+	intptr_t ___m_Handle;
+};
+struct Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Scale;
+	bool ___m_IsNone;
+};
+struct Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7_marshaled_pinvoke
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Scale;
+	int32_t ___m_IsNone;
+};
+struct Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7_marshaled_com
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Scale;
+	int32_t ___m_IsNone;
+};
+struct ScaleMode_t16AD656758EE54C56B3DA34FE4F2033C9C2EE13D 
+{
+	int32_t ___value__;
+};
+struct SelectionType_t606E5DED60240D7E52388344A8A1EF4EC4E54079 
+{
+	int32_t ___value__;
+};
+struct SpritePackingRotation_tB7E07D538FFBB0031B3C6FB2F987B8D64BC19000 
+{
+	int32_t ___value__;
+};
+struct TextCoreSettings_t3D724CD0811298B5AB1EA2041CE799CC25CDD115 
+{
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___faceColor;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___outlineColor;
+	float ___outlineWidth;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___underlayColor;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___underlayOffset;
+	float ___underlaySoftness;
+};
+struct TextureBlitter_t8340FC58AD5F14B6A8DD133968F4C8427C79FCB7  : public RuntimeObject
+{
+	BlitInfoU5BU5D_t090EAE36AF18528B2F72B1D3BBA4831E32F287BA* ___m_SingleBlit;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___m_BlitMaterial;
+	MaterialPropertyBlock_t2308669579033A857EFE6E4831909F638B27411D* ___m_Properties;
+	RectInt_t1744D10E1063135DA9D574F95205B98DAC600CB8 ___m_Viewport;
+	RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* ___m_PrevRT;
+	List_1_t0BE12F16A937298114B20824E93D706BCA5214D5* ___m_PendingBlits;
+	bool ___U3CdisposedU3Ek__BackingField;
+};
+struct TouchScreenKeyboardType_t3F5A06315B263282460BE67DE01393B6FB3780C1 
+{
+	int32_t ___value__;
+};
+struct TrickleDown_t862EABE449B6C94F79F2B1D713990C35ABADDF38 
+{
+	int32_t ___value__;
+};
+struct UIRenderDevice_t59628CBA89B4617E832C2B270E1C1A3931D01302  : public RuntimeObject
+{
+	bool ___m_MockDevice;
+	intptr_t ___m_DefaultStencilState;
+	intptr_t ___m_VertexDecl;
+	Page_tB4EA8095DF85BAF22AB8FCA71400121E721B57C9* ___m_FirstPage;
+	uint32_t ___m_NextPageVertexCount;
+	uint32_t ___m_LargeMeshVertexCount;
+	float ___m_IndexToVertexCountRatio;
+	List_1_tB86898E2E533634C35EC58EC5DAE3353038A9210* ___m_DeferredFrees;
+	List_1_tA79C35FB5E50135962B53960CB758B9262700632* ___m_Updates;
+	UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* ___m_Fences;
+	MaterialPropertyBlock_t2308669579033A857EFE6E4831909F638B27411D* ___m_StandardMatProps;
+	uint32_t ___m_FrameIndex;
+	uint32_t ___m_NextUpdateID;
+	DrawStatistics_t4AF06C67CEC7B97509EBAD48E3EE908301598E6F ___m_DrawStats;
+	LinkedPool_1_tD8A175EE023C8220138E51E722F4A20ACE9CA851* ___m_MeshHandles;
+	DrawParams_t523864F415D78BD8BB14E8B7BD349594D6187443* ___m_DrawParams;
+	TextureSlotManager_tB1F8E620AE296DE3728FAAFBE3CC85D2A176928D* ___m_TextureSlotManager;
+	uint32_t ___U3CmaxVerticesPerPageU3Ek__BackingField;
+	bool ___U3CbreakBatchesU3Ek__BackingField;
+	bool ___U3CdisposedU3Ek__BackingField;
+};
+struct UsageHints_t2C29E97E6A37FA32178EA7E8A715008BD4834C42 
+{
+	int32_t ___value__;
+};
+struct VersionChangeType_t8D9A58D958CC211E9300168DC98D3F7DF67594C3 
+{
+	int32_t ___value__;
+};
+struct Vertex_t016AC68A2E6C62576E65412BEC71544AFC01AFC7 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___tint;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___uv;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___xformClipPages;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___ids;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___flags;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___opacityColorPages;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___settingIndex;
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___circle;
+	float ___textureId;
+};
+struct VisualElementFlags_t4D1066E11400967A1A2DA7331391ACDC4AA14409 
+{
+	int32_t ___value__;
+};
+struct VisualTreeUpdatePhase_t1EF45877A1796DC3991B9FF3A6AD762BE02DF67D 
+{
+	int32_t ___value__;
+};
+struct YogaConfig_tA7EBAFAD020EA5AB3104A2C25AB95CC7CE6FB3E2  : public RuntimeObject
+{
+	intptr_t ____ygConfig;
+	Logger_t46343267554719FB4400A45A09F99A85BAFC6FA9* ____logger;
+};
+struct YogaNode_t9EE7C2B7C0BD1299C28837B1A66CF4660E724C8B  : public RuntimeObject
+{
+	intptr_t ____ygNode;
+	YogaConfig_tA7EBAFAD020EA5AB3104A2C25AB95CC7CE6FB3E2* ____config;
+	WeakReference_tD4B0518CE911FFD9FAAB3FCD492644A354312D8E* ____parent;
+	List_1_t64DBEA356CA65492D7B99EA75E290622AFCABD5B* ____children;
+	MeasureFunction_tFF5C288931BCD9972BF58C7247560B30D8ED91C8* ____measureFunction;
+	BaselineFunction_tC445BD8DBEF6E2D011F0761B6387F9DD019812E8* ____baselineFunction;
+	RuntimeObject* ____data;
+};
+struct Alloc2D_tB9971776E3506C8F38C7F3C66690F9AC0322542E 
+{
+	RectInt_t1744D10E1063135DA9D574F95205B98DAC600CB8 ___rect;
+	Row_t5CAF04F94A4359C08ADDBA867B0817101F351999* ___row;
+	Alloc_t78312CFE58F38082281E80E297AE6176BD2BD8AE ___alloc;
+};
+struct Alloc2D_tB9971776E3506C8F38C7F3C66690F9AC0322542E_marshaled_pinvoke
+{
+	RectInt_t1744D10E1063135DA9D574F95205B98DAC600CB8 ___rect;
+	Row_t5CAF04F94A4359C08ADDBA867B0817101F351999* ___row;
+	Alloc_t78312CFE58F38082281E80E297AE6176BD2BD8AE_marshaled_pinvoke ___alloc;
+};
+struct Alloc2D_tB9971776E3506C8F38C7F3C66690F9AC0322542E_marshaled_com
+{
+	RectInt_t1744D10E1063135DA9D574F95205B98DAC600CB8 ___rect;
+	Row_t5CAF04F94A4359C08ADDBA867B0817101F351999* ___row;
+	Alloc_t78312CFE58F38082281E80E297AE6176BD2BD8AE_marshaled_com ___alloc;
+};
+struct Unit_t21DCD5C095F7DC1A0B9A47CAF8CAD3E7776CD3DB 
+{
+	int32_t ___value__;
+};
+struct EventPropagation_t024AF56F7A787C03AA21B065B624553EF52E7B83 
+{
+	int32_t ___value__;
+};
+struct LifeCycleStatus_tEE500629F5431B574B8047EB70864747D348D38C 
+{
+	int32_t ___value__;
+};
+struct GUIGlobals_tA6082A955224515E1D82F5B41D84A0CD35A9CF10 
+{
+	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___matrix;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___contentColor;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___backgroundColor;
+	bool ___enabled;
+	bool ___changed;
+	int32_t ___displayIndex;
+};
+struct GUIGlobals_tA6082A955224515E1D82F5B41D84A0CD35A9CF10_marshaled_pinvoke
+{
+	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___matrix;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___contentColor;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___backgroundColor;
+	int32_t ___enabled;
+	int32_t ___changed;
+	int32_t ___displayIndex;
+};
+struct GUIGlobals_tA6082A955224515E1D82F5B41D84A0CD35A9CF10_marshaled_com
+{
+	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___matrix;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___contentColor;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___backgroundColor;
+	int32_t ___enabled;
+	int32_t ___changed;
+	int32_t ___displayIndex;
+};
+struct UxmlFactory_tF9683EC71E4F687E36692AD4C22A0F0A79BA5557  : public UxmlFactory_2_t885CE124C6F6A5A625EFB5E207B18271EE8A07FF
+{
+};
+struct Unit_t7A9C3ABB0618BEBFDC1813D07080CE0C145448ED 
+{
+	int32_t ___value__;
+};
+struct NativeColorPage_tD578D4E96ABBDBB0E6A608F6CE97A0362ABD7D4B 
+{
+	int32_t ___isValid;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___pageAndID;
+};
+struct MeshFlags_tC36F9F848F3DB16DF11E55B5CD6EC22E860876A3 
+{
+	int32_t ___value__;
+};
+struct Direction_t7783E528E50FAB7F36720CD0F263B96ED3DE80F8 
+{
+	int32_t ___value__;
+};
+struct LocationFlag_t967AE045AA727496F989291CFBC14F53964FCECB 
+{
+	int32_t ___value__;
+};
+struct AutoScope_tFB983697E28885CB10FFDB92D7EFD0615AEF3139 
+{
+	intptr_t ___m_Ptr;
+};
+struct AreaNode_tB9A4250EFEA8C60BEDFFDA3E78F20EA6DE77DA7D  : public RuntimeObject
+{
+	RectInt_t1744D10E1063135DA9D574F95205B98DAC600CB8 ___rect;
+	AreaNode_tB9A4250EFEA8C60BEDFFDA3E78F20EA6DE77DA7D* ___previous;
+	AreaNode_tB9A4250EFEA8C60BEDFFDA3E78F20EA6DE77DA7D* ___next;
+};
+struct Use_tB32C57550EDF1A878B28A5BD90C918FFBD876670 
+{
+	int32_t ___value__;
+};
+struct MeasureMode_t35F26AA967A10198AA0924BD26D23DA0D999BE53 
+{
+	int32_t ___value__;
+};
+struct RenderTargetMode_tAE75E29BB61A64BDE7646D5CBD353B64BCFA9F3A 
+{
+	int32_t ___value__;
+};
+struct UxmlTraits_t45D4AB9B0148A110826C5201495FF23814A12E4B  : public UxmlTraits_t3311A2EDB0705584A614B5511216DAD5279C4160
+{
+	UxmlStringAttributeDescription_t60C9BE81B6A3251AD7A38A90E46F240E016293EF* ___m_Name;
+	UxmlStringAttributeDescription_t60C9BE81B6A3251AD7A38A90E46F240E016293EF* ___m_ViewDataKey;
+	UxmlEnumAttributeDescription_1_tC4ABA6DF74F58C15F2597C1640A58CC16D9551B3* ___m_PickingMode;
+	UxmlStringAttributeDescription_t60C9BE81B6A3251AD7A38A90E46F240E016293EF* ___m_Tooltip;
+	UxmlEnumAttributeDescription_1_tBBB2CDD127ABE7FAC6ED7B5CA5A3911FF0AF7CE4* ___m_UsageHints;
+	UxmlIntAttributeDescription_tFDF4F77C2CD7C4790E8E135B0F353699D19CB5B4* ___U3CfocusIndexU3Ek__BackingField;
+	UxmlIntAttributeDescription_tFDF4F77C2CD7C4790E8E135B0F353699D19CB5B4* ___m_TabIndex;
+	UxmlBoolAttributeDescription_t86EA1242C539B39911E63699A4AE0C47918701CE* ___U3CfocusableU3Ek__BackingField;
+	UxmlStringAttributeDescription_t60C9BE81B6A3251AD7A38A90E46F240E016293EF* ___m_Class;
+	UxmlStringAttributeDescription_t60C9BE81B6A3251AD7A38A90E46F240E016293EF* ___m_ContentContainer;
+	UxmlStringAttributeDescription_t60C9BE81B6A3251AD7A38A90E46F240E016293EF* ___m_Style;
+};
+struct DefaultFocusOrder_t9EEC8B5DF0685386B41519B150765DD4F7905090 
+{
+	int32_t ___value__;
+};
+struct Enumerator_tCCBCF2C9B3430214A45D914A992967F411759F0F 
+{
+	List_1_tD0E79579A452BC4310A6C691B9494AB5F7DDD423* ____list;
+	int32_t ____index;
+	int32_t ____version;
+	KeyValuePair_2_t3F943F0F266B4D0F3E43C891A8B3046FE6B896A2 ____current;
+};
+struct Enumerator_t58DFBB2088CCE56327FE5B8D9D559E5D0B0B4DAA 
+{
+	List_1_t1B3C7A298FF79D2A925AC70758BE7C7D795235F7* ____list;
+	int32_t ____index;
+	int32_t ____version;
+	KeyValuePair_2_t4C290F2D1C9380DD40293A4932828D7DCD4DC728 ____current;
+};
+struct NativeArray_1_t7E7FEB7601A0E8158B43F2495CB02DBB211ADF51 
+{
+	void* ___m_Buffer;
+	int32_t ___m_Length;
+	int32_t ___m_AllocatorLabel;
+};
+struct NativeArray_1_t1319594EE236701FE431CF2885AEB88373076DA8 
+{
+	void* ___m_Buffer;
+	int32_t ___m_Length;
+	int32_t ___m_AllocatorLabel;
+};
+struct Angle_t0229F612898D65B3CC646C40A32D93D8A33C1DFC 
+{
+	float ___m_Value;
+	int32_t ___m_Unit;
+};
+struct BMPAlloc_t29DA9D09157B8BAD2D5643711A53A5F11D216D30 
+{
+	int32_t ___page;
+	uint16_t ___pageLine;
+	uint8_t ___bitIndex;
+	uint8_t ___ownedState;
+};
+struct BackgroundRepeat_t446EC7315DED2C6822F1047B7587C3018BFB277F 
+{
+	int32_t ___x;
+	int32_t ___y;
+};
+struct BaseVisualElementPanel_tE3811F3D1474B72CB6CD5BCEECFF5B5CBEC1E303  : public RuntimeObject
+{
+	Action_1_tF0C1AFCCE9CE63382F43540DC0DA04A8939A8A53* ___panelDisposed;
+	UIElementsBridge_tC28FCEDF493CD746D1973AB27BA2CBA393EB4BA8* ___m_UIElementsBridge;
+	float ___m_Scale;
+	YogaConfig_tA7EBAFAD020EA5AB3104A2C25AB95CC7CE6FB3E2* ___yogaConfig;
+	float ___m_PixelsPerPoint;
+	float ___U3CreferenceSpritePixelsPerUnitU3Ek__BackingField;
+	PanelClearSettings_tA3D8EE9A4864781CE3E5FED5225C6FB37ED66EE7 ___U3CclearSettingsU3Ek__BackingField;
+	bool ___U3CduringLayoutPhaseU3Ek__BackingField;
+	RepaintData_t90534752135661579EC254884F550545D001B5EA* ___U3CrepaintDataU3Ek__BackingField;
+	RuntimeObject* ___U3CcursorManagerU3Ek__BackingField;
+	ContextualMenuManager_tEE3B1F33FFFD180705467CA625AEBA0F5D63154B* ___U3CcontextualMenuManagerU3Ek__BackingField;
+	bool ___U3CdisposedU3Ek__BackingField;
+	ElementUnderPointer_tB43AD64F79C6F06829D8B90318AF1A6BBE9C1904* ___m_TopElementUnderPointers;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___standardShaderChanged;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___standardWorldSpaceShaderChanged;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___atlasChanged;
+	Action_1_t996DFD52B4BDA6CBE8058C13167C4D2B8C612CAA* ___updateMaterial;
+	HierarchyEvent_tB23E4347BC47656A014CA104A5B1DDC172A2A705* ___hierarchyChanged;
+	Action_1_tE55F8AC1EEC45D0C976E56B2950D65EC814C06E6* ___beforeUpdate;
+};
+struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+struct DynamicAtlas_tA1A51ADBE1DBFD82F6D52D5CA4D09D82F89678A8  : public AtlasBase_t196C45243F41C19DC6258965057BBAA150D278BC
+{
+	Dictionary_2_tF1C3BFA70D6875EEF369CE69E661C6B617B5BEC0* ___m_Database;
+	DynamicAtlasPage_t11FF826FFD13D59816B4F99A0C21CF8205A68F6E* ___m_PointPage;
+	DynamicAtlasPage_t11FF826FFD13D59816B4F99A0C21CF8205A68F6E* ___m_BilinearPage;
+	int32_t ___m_ColorSpace;
+	List_1_t4DF09B0E9A8F312FB7592EC9D366F0808C94DCE6* ___m_Panels;
+	int32_t ___m_MinAtlasSize;
+	int32_t ___m_MaxAtlasSize;
+	int32_t ___m_MaxSubTextureSize;
+	int32_t ___m_ActiveFilters;
+	DynamicAtlasCustomFilter_tD33BC519AF0B6E7D8C273CB64D900DF5FEB1E3C6* ___m_CustomFilter;
+};
+struct DynamicAtlasPage_t11FF826FFD13D59816B4F99A0C21CF8205A68F6E  : public RuntimeObject
+{
+	TextureId_tFF4B4AAE53408AB10B0B89CCA5F7B50CF2535E58 ___U3CtextureIdU3Ek__BackingField;
+	RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* ___U3CatlasU3Ek__BackingField;
+	int32_t ___U3CformatU3Ek__BackingField;
+	int32_t ___U3CfilterModeU3Ek__BackingField;
+	Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A ___U3CminSizeU3Ek__BackingField;
+	Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A ___U3CmaxSizeU3Ek__BackingField;
+	int32_t ___m_1Padding;
+	int32_t ___m_2Padding;
+	Allocator2D_t5B53CF899C3FABD99F29602424924ACAB9E2A157* ___m_Allocator;
+	TextureBlitter_t8340FC58AD5F14B6A8DD133968F4C8427C79FCB7* ___m_Blitter;
+	Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A ___m_CurrentSize;
+	bool ___U3CdisposedU3Ek__BackingField;
+};
+struct EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C  : public RuntimeObject
+{
+	int32_t ___U3CeventCategoryU3Ek__BackingField;
+	int64_t ___U3CtimestampU3Ek__BackingField;
+	uint64_t ___U3CeventIdU3Ek__BackingField;
+	uint64_t ___U3CtriggerEventIdU3Ek__BackingField;
+	int32_t ___U3CpropagationU3Ek__BackingField;
+	PropagationPaths_tA17A0F2CAFF1A86B552ED6D984DAA2F14AB2B0E5* ___U3CpathU3Ek__BackingField;
+	int32_t ___U3ClifeCycleStatusU3Ek__BackingField;
+	RuntimeObject* ___U3CleafTargetU3Ek__BackingField;
+	RuntimeObject* ___m_Target;
+	List_1_t6FBD33EFCD307A54E0E8F62AAA0677E2ADAE58D3* ___U3CskipElementsU3Ek__BackingField;
+	int32_t ___U3CpropagationPhaseU3Ek__BackingField;
+	RuntimeObject* ___m_CurrentTarget;
+	Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* ___m_ImguiEvent;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___U3CoriginalMousePositionU3Ek__BackingField;
+};
+struct GUILayoutGroup_tD08496E80F283C290B5B90D7BFB3C9C7CC33CD8D  : public GUILayoutEntry_tDF59F19DD000820F64B356D5092C4BEDFE109D5F
+{
+	List_1_tA5BCD116CC751A5F35C7D3D7B96DC3A5D22B9C82* ___entries;
+	bool ___isVertical;
+	bool ___resetCoords;
+	float ___spacing;
+	bool ___sameSize;
+	bool ___isWindow;
+	int32_t ___windowID;
+	int32_t ___m_Cursor;
+	int32_t ___m_StretchableCountX;
+	int32_t ___m_StretchableCountY;
+	bool ___m_UserSpecifiedWidth;
+	bool ___m_UserSpecifiedHeight;
+	float ___m_ChildMinWidth;
+	float ___m_ChildMaxWidth;
+	float ___m_ChildMinHeight;
+	float ___m_ChildMaxHeight;
+	int32_t ___m_MarginLeft;
+	int32_t ___m_MarginRight;
+	int32_t ___m_MarginTop;
+	int32_t ___m_MarginBottom;
+};
+struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+struct ImmediateModeException_t7A6F44A9035C26E64FF8BCD4964F7189506F063D  : public Exception_t
+{
+};
+struct Length_t90BB06D47DD6DB461ED21BD3E3241FAB6C824256 
+{
+	float ___m_Value;
+	int32_t ___m_Unit;
+};
+struct ManipulatorActivationFilter_t866A0295DA75EA271B30BDC1F9EEA2C4FDEB1A81 
+{
+	int32_t ___U3CbuttonU3Ek__BackingField;
+	int32_t ___U3CmodifiersU3Ek__BackingField;
+	int32_t ___U3CclickCountU3Ek__BackingField;
+};
+struct Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+struct MulticastDelegate_t  : public Delegate_t
+{
+	DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771* ___delegates;
+};
+struct MulticastDelegate_t_marshaled_pinvoke : public Delegate_t_marshaled_pinvoke
+{
+	Delegate_t_marshaled_pinvoke** ___delegates;
+};
+struct MulticastDelegate_t_marshaled_com : public Delegate_t_marshaled_com
+{
+	Delegate_t_marshaled_com** ___delegates;
+};
+struct Painter2D_t537467DC4761991243516EDAC5DA2949FEC24837  : public RuntimeObject
+{
+	MeshGenerationContext_tD1BD8DB52C7126A7987DE5DF1A4AF47A906EAF62* ___m_Ctx;
+	DetachedAllocator_tBE2444DA2373005B5DF5E6A96F8CDC329A9D701E* ___m_DetachedAllocator;
+	SafeHandleAccess_tAD4EC3E34693AFDD4B0003EED6CEF0F2818A1583 ___m_Handle;
+	bool ___m_Disposed;
+};
+struct ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+struct ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A_marshaled_pinvoke : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_pinvoke
+{
+};
+struct ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A_marshaled_com : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_com
+{
+};
+struct Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+struct Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+struct SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295  : public Exception_t
+{
+};
+struct Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+struct Type_t  : public MemberInfo_t
+{
+	RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B ____impl;
+};
+struct UxmlAttributeDescription_t742D021489DB2B564142146CAAAC3F9191825EF2  : public RuntimeObject
+{
+	String_t* ___U3CnameU3Ek__BackingField;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___m_ObsoleteNames;
+	String_t* ___U3CtypeU3Ek__BackingField;
+	String_t* ___U3CtypeNamespaceU3Ek__BackingField;
+	int32_t ___U3CuseU3Ek__BackingField;
+	UxmlTypeRestriction_t2C4CE1ED76502CDF80010880E058AF0582910A92* ___U3CrestrictionU3Ek__BackingField;
+};
+struct VisualElementFocusRing_t8965E2C7F4AC653F2C416E2B81F66E51FE8EEFE3  : public RuntimeObject
+{
+	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___root;
+	int32_t ___U3CdefaultFocusOrderU3Ek__BackingField;
+	List_1_tD83E9FC86E76D3E92623990C84D4238B8EA05D5B* ___m_FocusRing;
+};
+struct UxmlTraits_tC22B794B5E43920F0989281BB88F1F4115575065  : public UxmlTraits_t45D4AB9B0148A110826C5201495FF23814A12E4B
+{
+};
+struct NativeBorderParams_t40F3633B60F896E1FC11E7EA13E7DE1B723BC00A 
+{
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___rect;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___leftColor;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___topColor;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___rightColor;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___bottomColor;
+	float ___leftWidth;
+	float ___topWidth;
+	float ___rightWidth;
+	float ___bottomWidth;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___topLeftRadius;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___topRightRadius;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___bottomRightRadius;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___bottomLeftRadius;
+	NativeColorPage_tD578D4E96ABBDBB0E6A608F6CE97A0362ABD7D4B ___leftColorPage;
+	NativeColorPage_tD578D4E96ABBDBB0E6A608F6CE97A0362ABD7D4B ___topColorPage;
+	NativeColorPage_tD578D4E96ABBDBB0E6A608F6CE97A0362ABD7D4B ___rightColorPage;
+	NativeColorPage_tD578D4E96ABBDBB0E6A608F6CE97A0362ABD7D4B ___bottomColorPage;
+};
+struct NativeRectParams_t18E2E456D50F027D08BF8B4BCBD83DF7FDB1C02F 
+{
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___rect;
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___subRect;
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___uv;
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___uvRegion;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color;
+	int32_t ___scaleMode;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___topLeftRadius;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___topRightRadius;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___bottomRightRadius;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___bottomLeftRadius;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___contentSize;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___textureSize;
+	float ___texturePixelsPerPoint;
+	int32_t ___leftSlice;
+	int32_t ___topSlice;
+	int32_t ___rightSlice;
+	int32_t ___bottomSlice;
+	float ___sliceScale;
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___rectInset;
+	NativeColorPage_tD578D4E96ABBDBB0E6A608F6CE97A0362ABD7D4B ___colorPage;
+};
+struct BorderParams_t66CC80A4CCAC5C52D6384BE4E66A3230C7099B80 
+{
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___rect;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___playmodeTintColor;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___leftColor;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___topColor;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___rightColor;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___bottomColor;
+	float ___leftWidth;
+	float ___topWidth;
+	float ___rightWidth;
+	float ___bottomWidth;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___topLeftRadius;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___topRightRadius;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___bottomRightRadius;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___bottomLeftRadius;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___material;
+	ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0 ___leftColorPage;
+	ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0 ___topColorPage;
+	ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0 ___rightColorPage;
+	ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0 ___bottomColorPage;
+};
+struct BorderParams_t66CC80A4CCAC5C52D6384BE4E66A3230C7099B80_marshaled_pinvoke
+{
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___rect;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___playmodeTintColor;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___leftColor;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___topColor;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___rightColor;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___bottomColor;
+	float ___leftWidth;
+	float ___topWidth;
+	float ___rightWidth;
+	float ___bottomWidth;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___topLeftRadius;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___topRightRadius;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___bottomRightRadius;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___bottomLeftRadius;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___material;
+	ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0_marshaled_pinvoke ___leftColorPage;
+	ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0_marshaled_pinvoke ___topColorPage;
+	ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0_marshaled_pinvoke ___rightColorPage;
+	ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0_marshaled_pinvoke ___bottomColorPage;
+};
+struct BorderParams_t66CC80A4CCAC5C52D6384BE4E66A3230C7099B80_marshaled_com
+{
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___rect;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___playmodeTintColor;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___leftColor;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___topColor;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___rightColor;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___bottomColor;
+	float ___leftWidth;
+	float ___topWidth;
+	float ___rightWidth;
+	float ___bottomWidth;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___topLeftRadius;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___topRightRadius;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___bottomRightRadius;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___bottomLeftRadius;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___material;
+	ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0_marshaled_com ___leftColorPage;
+	ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0_marshaled_com ___topColorPage;
+	ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0_marshaled_com ___rightColorPage;
+	ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0_marshaled_com ___bottomColorPage;
+};
+struct Action_1_tF0C1AFCCE9CE63382F43540DC0DA04A8939A8A53  : public MulticastDelegate_t
+{
+};
+struct Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C  : public MulticastDelegate_t
+{
+};
+struct Action_1_tE55F8AC1EEC45D0C976E56B2950D65EC814C06E6  : public MulticastDelegate_t
+{
+};
+struct Action_1_t996DFD52B4BDA6CBE8058C13167C4D2B8C612CAA  : public MulticastDelegate_t
+{
+};
+struct Action_1_t3DC3411926243F1DB9C330F8E105B904E38C1A0B  : public MulticastDelegate_t
+{
+};
+struct Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87  : public MulticastDelegate_t
+{
+};
+struct Action_1_tEFD4B3570567C07AE1CC4A2D290987F4347F2F01  : public MulticastDelegate_t
+{
+};
+struct Action_2_t829FF86EEA250A853DF3A95B2C4DAC034707E20F  : public MulticastDelegate_t
+{
+};
+struct Action_2_t4FD84D64C1341169AC2F73750A356411BCEAF88A  : public MulticastDelegate_t
+{
+};
+struct Enumerator_tBB0972570BC76CC972EC093FEFFBFC844E64417F 
+{
+	List_1_t569CB45C96475FFA9C716A7CC2ADE24112D38121* ____list;
+	int32_t ____index;
+	int32_t ____version;
+	ManipulatorActivationFilter_t866A0295DA75EA271B30BDC1F9EEA2C4FDEB1A81 ____current;
+};
+struct EventBase_1_tE40FE9F8AB3B020689A80981F4566336B3EFA9B6  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
+{
+	int32_t ___m_RefCount;
+};
+struct EventBase_1_t7187CB27405B98ED004503ABE606225C50E656A0  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
+{
+	int32_t ___m_RefCount;
+};
+struct EventBase_1_tCDEFDAD598AAC8D3B106EB41834C9619E903374E  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
+{
+	int32_t ___m_RefCount;
+};
+struct EventBase_1_t730BB171C1C7F183359949BD5F4BA81AFE9A35CE  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
+{
+	int32_t ___m_RefCount;
+};
+struct EventBase_1_t9BC479C69F364D79EBE45165C2534831F440B61D  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
+{
+	int32_t ___m_RefCount;
+};
+struct EventBase_1_t1218DA3104C9EAD7C32A1D5B975FD26D77F76928  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
+{
+	int32_t ___m_RefCount;
+};
+struct EventBase_1_t06692607D03E5B5F275B33C5EACCE075D1C2AB05  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
+{
+	int32_t ___m_RefCount;
+};
+struct EventBase_1_tD898F1A47C14556B2F1F500078B600221F5D887E  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
+{
+	int32_t ___m_RefCount;
+};
+struct EventBase_1_tF3176CA51B64DBB3010435BA1986B05039647C37  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
+{
+	int32_t ___m_RefCount;
+};
+struct EventBase_1_t2B9B970022841F58172C0C783B7E1040BEF85AC1  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
+{
+	int32_t ___m_RefCount;
+};
+struct EventBase_1_t49C5D050F7E36AA2230E042A0ACB06DE32E81034  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
+{
+	int32_t ___m_RefCount;
+};
+struct EventBase_1_tBD3A3272CA5474A0EF4F4EFF8E1751F89428D493  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
+{
+	int32_t ___m_RefCount;
+};
+struct EventBase_1_t7D3D212E8AD9C53105AAC51DBD4FA5F700586F68  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
+{
+	int32_t ___m_RefCount;
+};
+struct EventBase_1_t1D0AAEBCAF4B558F0F7FDDA7060BF68A5C648C10  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
+{
+	int32_t ___m_RefCount;
+};
+struct EventBase_1_t6C339E78DC90E37A13879F0EF1449D7E9412953C  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
+{
+	int32_t ___m_RefCount;
+};
+struct EventBase_1_t4941B5AE834AA028696C83756491CE8884F30DDE  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
+{
+	int32_t ___m_RefCount;
+};
+struct EventBase_1_tC17F382C71F6951079D81E77988E6FEE8996FC5C  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
+{
+	int32_t ___m_RefCount;
+};
+struct EventBase_1_t2637736704939772A86A2904BCFD1B314097DD1E  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
+{
+	int32_t ___m_RefCount;
+};
+struct EventCallback_1_tCE5E8F1D2A7EE5EC636D68025C6D899BD17EF38B  : public MulticastDelegate_t
+{
+};
+struct EventCallback_1_tF213A6C7DEAE29A9970B73DB52E8778214E5CD9C  : public MulticastDelegate_t
+{
+};
+struct EventCallback_1_t537183F3C55578258C5DAF68E510087AD97961A7  : public MulticastDelegate_t
+{
+};
+struct EventCallback_1_tF39C691B05308835A836D33741E4656809B44C3C  : public MulticastDelegate_t
+{
+};
+struct EventCallback_1_tDFA2360CDCE536A2DE7FA625C0295865A67D40B4  : public MulticastDelegate_t
+{
+};
+struct Func_1_t56CE454A3A80718333300E3D7B3D8D8417ADDC5A  : public MulticastDelegate_t
+{
+};
+struct Func_1_tC616C4A4228ADCF53E433864B24C90514D3A0B7B  : public MulticastDelegate_t
+{
+};
+struct Func_2_t33ED521BE3A7E943FA8D764514952EDF1AF1C0FA  : public MulticastDelegate_t
+{
+};
+struct TypedUxmlAttributeDescription_1_t7ECE12D1C0C385835D77803906F54B792532FD39  : public UxmlAttributeDescription_t742D021489DB2B564142146CAAAC3F9191825EF2
+{
+	bool ___U3CdefaultValueU3Ek__BackingField;
+};
+struct TypedUxmlAttributeDescription_1_tF8E164DB2A1FE613654370D348F4C3680DA42A03  : public UxmlAttributeDescription_t742D021489DB2B564142146CAAAC3F9191825EF2
+{
+	int32_t ___U3CdefaultValueU3Ek__BackingField;
+};
+struct Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07  : public MulticastDelegate_t
+{
+};
+struct ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
+{
+	String_t* ____paramName;
+};
+struct BackgroundPosition_tF0822B29FC27A67205A9893EBE03D03B799B8B56 
+{
+	int32_t ___keyword;
+	Length_t90BB06D47DD6DB461ED21BD3E3241FAB6C824256 ___offset;
+};
+struct BackgroundSize_t809883E2D7BB1D8D85B4C3E1DBE189F187DB25E7 
+{
+	int32_t ___m_SizeType;
+	Length_t90BB06D47DD6DB461ED21BD3E3241FAB6C824256 ___m_X;
+	Length_t90BB06D47DD6DB461ED21BD3E3241FAB6C824256 ___m_Y;
+};
+struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+struct GetViewDataDictionary_tF745E6CC7E18A67630A2B294F0BBFB27C6E57638  : public MulticastDelegate_t
+{
+};
+struct HierarchyEvent_tB23E4347BC47656A014CA104A5B1DDC172A2A705  : public MulticastDelegate_t
+{
+};
+struct InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
+{
+};
+struct LoadResourceFunction_tA999A2DDCB9CDCF68E4274A58336A39ABB7AF850  : public MulticastDelegate_t
+{
+};
+struct MouseManipulator_tE6C609D476BDF311E2934791E620CF833BB4097D  : public Manipulator_tD5727ABA1F5AD1A50927212FAEB090E6BBCB4EBE
+{
+	List_1_t569CB45C96475FFA9C716A7CC2ADE24112D38121* ___U3CactivatorsU3Ek__BackingField;
+	ManipulatorActivationFilter_t866A0295DA75EA271B30BDC1F9EEA2C4FDEB1A81 ___m_currentActivator;
+};
+struct NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
+{
+};
+struct Panel_t2B0DCF68A7A5EBC347FAE66F046EA98B53AF1AB9  : public BaseVisualElementPanel_tE3811F3D1474B72CB6CD5BCEECFF5B5CBEC1E303
+{
+	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___m_RootContainer;
+	VisualTreeUpdater_tFDE7D9F9A146A26B2ED69565B7BD142B416AB9C9* ___m_VisualTreeUpdater;
+	RuntimeObject* ___m_StylePropertyAnimationSystem;
+	String_t* ___m_PanelName;
+	uint32_t ___m_Version;
+	uint32_t ___m_RepaintVersion;
+	uint32_t ___m_HierarchyVersion;
+	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___m_MarkerBeforeUpdate;
+	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___m_MarkerUpdate;
+	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___m_MarkerLayout;
+	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___m_MarkerBindings;
+	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___m_MarkerAnimations;
+	EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* ___U3CdispatcherU3Ek__BackingField;
+	TimerEventScheduler_tAF33EE8B1C54425235E4893B0C5088629FBE7862* ___m_Scheduler;
+	ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A* ___U3CownerObjectU3Ek__BackingField;
+	int32_t ___U3CcontextTypeU3Ek__BackingField;
+	SavePersistentViewData_tFE77B8450170D95B16B3017D62F81F2139D4F716* ___U3CsaveViewDataU3Ek__BackingField;
+	GetViewDataDictionary_tF745E6CC7E18A67630A2B294F0BBFB27C6E57638* ___U3CgetViewDataDictionaryU3Ek__BackingField;
+	FocusController_t5D2E45F2CCBE3B7082DE4088EE03C2E8F736011A* ___U3CfocusControllerU3Ek__BackingField;
+	EventInterests_tF375F3296A6689BC4B016F237123DB5457515EC8 ___U3CIMGUIEventInterestsU3Ek__BackingField;
+	bool ___m_JustReceivedFocus;
+	int32_t ___U3CIMGUIContainersCountU3Ek__BackingField;
+	IMGUIContainer_t2BB1312DCDFA8AC98E9ADA9EA696F2328A598A26* ___U3CrootIMGUIContainerU3Ek__BackingField;
+	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___m_StandardShader;
+	AtlasBase_t196C45243F41C19DC6258965057BBAA150D278BC* ___m_Atlas;
+	bool ___m_ValidatingLayout;
+};
+struct PanelSettings_t0621207D5DD3BB89DB587440E8F9E07234283DEC  : public ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A
+{
+	ThemeStyleSheet_t770F966C0D561FCCB90D490215FCE8B01B709553* ___themeUss;
+	RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* ___m_TargetTexture;
+	int32_t ___m_ScaleMode;
+	float ___m_ReferenceSpritePixelsPerUnit;
+	float ___m_Scale;
+	float ___m_ReferenceDpi;
+	float ___m_FallbackDpi;
+	Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A ___m_ReferenceResolution;
+	int32_t ___m_ScreenMatchMode;
+	float ___m_Match;
+	float ___m_SortingOrder;
+	int32_t ___m_TargetDisplay;
+	bool ___m_ClearDepthStencil;
+	bool ___m_ClearColor;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___m_ColorClearValue;
+	RuntimePanelAccess_t88FC30C79AE159279E2BB55A190D2E69259B7482* ___m_PanelAccess;
+	UIDocumentList_tA2A8305DE916298E4C586EC8235085560914E7C3* ___m_AttachedUIDocumentsList;
+	DynamicAtlasSettings_t183239B7B0968331CEA91684F0942D3189C50DC5* ___m_DynamicAtlasSettings;
+	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___m_AtlasBlitShader;
+	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___m_RuntimeShader;
+	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___m_RuntimeWorldShader;
+	PanelTextSettings_tB4960351E6865BC34421430949C4CA68E7425F25* ___textSettings;
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___m_TargetRect;
+	float ___m_ResolvedScale;
+	StyleSheet_t6FAF43FCDB45BC6BED0522A222FD4C1A9BB10428* ___m_OldThemeUss;
+	float ___U3CScreenDPIU3Ek__BackingField;
+	Func_2_t33ED521BE3A7E943FA8D764514952EDF1AF1C0FA* ___m_AssignedScreenToPanel;
 };
 struct RenderChainVEData_t582DE9DA38C6B608A9A38286FCF6FA70398B5847 
 {
@@ -2200,12 +3046,8 @@ struct RenderChainVEData_t582DE9DA38C6B608A9A38286FCF6FA70398B5847_marshaled_com
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___backgroundColor;
 	BasicNode_1_t7B4D545DCD6949B2E1C85D63DF038E44602F7DDB* ___textures;
 };
-struct RepaintData_t90534752135661579EC254884F550545D001B5EA  : public RuntimeObject
+struct RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27  : public Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700
 {
-	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___U3CcurrentOffsetU3Ek__BackingField;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___U3CmousePositionU3Ek__BackingField;
-	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___U3CcurrentWorldClipU3Ek__BackingField;
-	Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* ___U3CrepaintEventU3Ek__BackingField;
 };
 struct Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7 
 {
@@ -2225,47 +3067,17 @@ struct Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7_marshaled_com
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Axis;
 	int32_t ___m_IsNone;
 };
-struct RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B 
+struct SavePersistentViewData_tFE77B8450170D95B16B3017D62F81F2139D4F716  : public MulticastDelegate_t
 {
-	intptr_t ___value;
 };
-struct SafeHandleAccess_tAD4EC3E34693AFDD4B0003EED6CEF0F2818A1583 
+struct Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4  : public Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700
 {
-	intptr_t ___m_Handle;
 };
-struct Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7 
+struct TimeMsFunction_t1893856976EB95CF5608ACC3642AD8B79994CA2B  : public MulticastDelegate_t
 {
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Scale;
-	bool ___m_IsNone;
 };
-struct Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7_marshaled_pinvoke
+struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
 {
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Scale;
-	int32_t ___m_IsNone;
-};
-struct Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7_marshaled_com
-{
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Scale;
-	int32_t ___m_IsNone;
-};
-struct TextCoreSettings_t3D724CD0811298B5AB1EA2041CE799CC25CDD115 
-{
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___faceColor;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___outlineColor;
-	float ___outlineWidth;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___underlayColor;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___underlayOffset;
-	float ___underlaySoftness;
-};
-struct TextureBlitter_t8340FC58AD5F14B6A8DD133968F4C8427C79FCB7  : public RuntimeObject
-{
-	BlitInfoU5BU5D_t090EAE36AF18528B2F72B1D3BBA4831E32F287BA* ___m_SingleBlit;
-	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___m_BlitMaterial;
-	MaterialPropertyBlock_t2308669579033A857EFE6E4831909F638B27411D* ___m_Properties;
-	RectInt_t1744D10E1063135DA9D574F95205B98DAC600CB8 ___m_Viewport;
-	RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* ___m_PrevRT;
-	List_1_t0BE12F16A937298114B20824E93D706BCA5214D5* ___m_PendingBlits;
-	bool ___U3CdisposedU3Ek__BackingField;
 };
 struct UIRVEShaderInfoAllocator_t7A9BCF1924EA027462B8DBBAC7B15BCBCB5CC3BF 
 {
@@ -2306,670 +3118,29 @@ struct UIRVEShaderInfoAllocator_t7A9BCF1924EA027462B8DBBAC7B15BCBCB5CC3BF_marsha
 	NativeArray_1_t7E7FEB7601A0E8158B43F2495CB02DBB211ADF51 ___m_Transforms;
 	NativeArray_1_t1319594EE236701FE431CF2885AEB88373076DA8 ___m_ClipRects;
 };
-struct UIRenderDevice_t59628CBA89B4617E832C2B270E1C1A3931D01302  : public RuntimeObject
-{
-	bool ___m_MockDevice;
-	intptr_t ___m_DefaultStencilState;
-	intptr_t ___m_VertexDecl;
-	Page_tB4EA8095DF85BAF22AB8FCA71400121E721B57C9* ___m_FirstPage;
-	uint32_t ___m_NextPageVertexCount;
-	uint32_t ___m_LargeMeshVertexCount;
-	float ___m_IndexToVertexCountRatio;
-	List_1_tB86898E2E533634C35EC58EC5DAE3353038A9210* ___m_DeferredFrees;
-	List_1_tA79C35FB5E50135962B53960CB758B9262700632* ___m_Updates;
-	UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* ___m_Fences;
-	MaterialPropertyBlock_t2308669579033A857EFE6E4831909F638B27411D* ___m_StandardMatProps;
-	uint32_t ___m_FrameIndex;
-	uint32_t ___m_NextUpdateID;
-	DrawStatistics_t4AF06C67CEC7B97509EBAD48E3EE908301598E6F ___m_DrawStats;
-	LinkedPool_1_tD8A175EE023C8220138E51E722F4A20ACE9CA851* ___m_MeshHandles;
-	DrawParams_t523864F415D78BD8BB14E8B7BD349594D6187443* ___m_DrawParams;
-	TextureSlotManager_tB1F8E620AE296DE3728FAAFBE3CC85D2A176928D* ___m_TextureSlotManager;
-	uint32_t ___U3CmaxVerticesPerPageU3Ek__BackingField;
-	bool ___U3CbreakBatchesU3Ek__BackingField;
-	bool ___U3CdisposedU3Ek__BackingField;
-};
-struct UxmlBoolAttributeDescription_t86EA1242C539B39911E63699A4AE0C47918701CE  : public TypedUxmlAttributeDescription_1_t7ECE12D1C0C385835D77803906F54B792532FD39
-{
-};
-struct UxmlIntAttributeDescription_tFDF4F77C2CD7C4790E8E135B0F353699D19CB5B4  : public TypedUxmlAttributeDescription_1_tF8E164DB2A1FE613654370D348F4C3680DA42A03
-{
-};
-struct Vertex_t016AC68A2E6C62576E65412BEC71544AFC01AFC7 
-{
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position;
-	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___tint;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___uv;
-	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___xformClipPages;
-	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___ids;
-	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___flags;
-	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___opacityColorPages;
-	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___settingIndex;
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___circle;
-	float ___textureId;
-};
-struct YogaConfig_tA7EBAFAD020EA5AB3104A2C25AB95CC7CE6FB3E2  : public RuntimeObject
-{
-	intptr_t ____ygConfig;
-	Logger_t46343267554719FB4400A45A09F99A85BAFC6FA9* ____logger;
-};
-struct YogaNode_t9EE7C2B7C0BD1299C28837B1A66CF4660E724C8B  : public RuntimeObject
-{
-	intptr_t ____ygNode;
-	YogaConfig_tA7EBAFAD020EA5AB3104A2C25AB95CC7CE6FB3E2* ____config;
-	WeakReference_tD4B0518CE911FFD9FAAB3FCD492644A354312D8E* ____parent;
-	List_1_t64DBEA356CA65492D7B99EA75E290622AFCABD5B* ____children;
-	MeasureFunction_tFF5C288931BCD9972BF58C7247560B30D8ED91C8* ____measureFunction;
-	BaselineFunction_tC445BD8DBEF6E2D011F0761B6387F9DD019812E8* ____baselineFunction;
-	RuntimeObject* ____data;
-};
-struct Alloc2D_tB9971776E3506C8F38C7F3C66690F9AC0322542E 
-{
-	RectInt_t1744D10E1063135DA9D574F95205B98DAC600CB8 ___rect;
-	Row_t5CAF04F94A4359C08ADDBA867B0817101F351999* ___row;
-	Alloc_t78312CFE58F38082281E80E297AE6176BD2BD8AE ___alloc;
-};
-struct Alloc2D_tB9971776E3506C8F38C7F3C66690F9AC0322542E_marshaled_pinvoke
-{
-	RectInt_t1744D10E1063135DA9D574F95205B98DAC600CB8 ___rect;
-	Row_t5CAF04F94A4359C08ADDBA867B0817101F351999* ___row;
-	Alloc_t78312CFE58F38082281E80E297AE6176BD2BD8AE_marshaled_pinvoke ___alloc;
-};
-struct Alloc2D_tB9971776E3506C8F38C7F3C66690F9AC0322542E_marshaled_com
-{
-	RectInt_t1744D10E1063135DA9D574F95205B98DAC600CB8 ___rect;
-	Row_t5CAF04F94A4359C08ADDBA867B0817101F351999* ___row;
-	Alloc_t78312CFE58F38082281E80E297AE6176BD2BD8AE_marshaled_com ___alloc;
-};
-struct GUIGlobals_tA6082A955224515E1D82F5B41D84A0CD35A9CF10 
-{
-	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___matrix;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___contentColor;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___backgroundColor;
-	bool ___enabled;
-	bool ___changed;
-	int32_t ___displayIndex;
-};
-struct GUIGlobals_tA6082A955224515E1D82F5B41D84A0CD35A9CF10_marshaled_pinvoke
-{
-	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___matrix;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___contentColor;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___backgroundColor;
-	int32_t ___enabled;
-	int32_t ___changed;
-	int32_t ___displayIndex;
-};
-struct GUIGlobals_tA6082A955224515E1D82F5B41D84A0CD35A9CF10_marshaled_com
-{
-	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___matrix;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___contentColor;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___backgroundColor;
-	int32_t ___enabled;
-	int32_t ___changed;
-	int32_t ___displayIndex;
-};
-struct UxmlFactory_tF9683EC71E4F687E36692AD4C22A0F0A79BA5557  : public UxmlFactory_2_t885CE124C6F6A5A625EFB5E207B18271EE8A07FF
-{
-};
-struct NativeColorPage_tD578D4E96ABBDBB0E6A608F6CE97A0362ABD7D4B 
-{
-	int32_t ___isValid;
-	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___pageAndID;
-};
-struct AutoScope_tFB983697E28885CB10FFDB92D7EFD0615AEF3139 
-{
-	intptr_t ___m_Ptr;
-};
-struct AreaNode_tB9A4250EFEA8C60BEDFFDA3E78F20EA6DE77DA7D  : public RuntimeObject
-{
-	RectInt_t1744D10E1063135DA9D574F95205B98DAC600CB8 ___rect;
-	AreaNode_tB9A4250EFEA8C60BEDFFDA3E78F20EA6DE77DA7D* ___previous;
-	AreaNode_tB9A4250EFEA8C60BEDFFDA3E78F20EA6DE77DA7D* ___next;
-};
-struct UxmlTraits_t45D4AB9B0148A110826C5201495FF23814A12E4B  : public UxmlTraits_t3311A2EDB0705584A614B5511216DAD5279C4160
-{
-	UxmlStringAttributeDescription_t60C9BE81B6A3251AD7A38A90E46F240E016293EF* ___m_Name;
-	UxmlStringAttributeDescription_t60C9BE81B6A3251AD7A38A90E46F240E016293EF* ___m_ViewDataKey;
-	UxmlEnumAttributeDescription_1_tC4ABA6DF74F58C15F2597C1640A58CC16D9551B3* ___m_PickingMode;
-	UxmlStringAttributeDescription_t60C9BE81B6A3251AD7A38A90E46F240E016293EF* ___m_Tooltip;
-	UxmlEnumAttributeDescription_1_tBBB2CDD127ABE7FAC6ED7B5CA5A3911FF0AF7CE4* ___m_UsageHints;
-	UxmlIntAttributeDescription_tFDF4F77C2CD7C4790E8E135B0F353699D19CB5B4* ___U3CfocusIndexU3Ek__BackingField;
-	UxmlIntAttributeDescription_tFDF4F77C2CD7C4790E8E135B0F353699D19CB5B4* ___m_TabIndex;
-	UxmlBoolAttributeDescription_t86EA1242C539B39911E63699A4AE0C47918701CE* ___U3CfocusableU3Ek__BackingField;
-	UxmlStringAttributeDescription_t60C9BE81B6A3251AD7A38A90E46F240E016293EF* ___m_Class;
-	UxmlStringAttributeDescription_t60C9BE81B6A3251AD7A38A90E46F240E016293EF* ___m_ContentContainer;
-	UxmlStringAttributeDescription_t60C9BE81B6A3251AD7A38A90E46F240E016293EF* ___m_Style;
-};
-struct Enumerator_tCCBCF2C9B3430214A45D914A992967F411759F0F 
-{
-	List_1_tD0E79579A452BC4310A6C691B9494AB5F7DDD423* ____list;
-	int32_t ____index;
-	int32_t ____version;
-	KeyValuePair_2_t3F943F0F266B4D0F3E43C891A8B3046FE6B896A2 ____current;
-};
-struct Enumerator_t58DFBB2088CCE56327FE5B8D9D559E5D0B0B4DAA 
-{
-	List_1_t1B3C7A298FF79D2A925AC70758BE7C7D795235F7* ____list;
-	int32_t ____index;
-	int32_t ____version;
-	KeyValuePair_2_t4C290F2D1C9380DD40293A4932828D7DCD4DC728 ____current;
-};
-struct EventBase_1_tE40FE9F8AB3B020689A80981F4566336B3EFA9B6  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
-{
-	int32_t ___m_RefCount;
-};
-struct EventBase_1_t7187CB27405B98ED004503ABE606225C50E656A0  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
-{
-	int32_t ___m_RefCount;
-};
-struct EventBase_1_tCDEFDAD598AAC8D3B106EB41834C9619E903374E  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
-{
-	int32_t ___m_RefCount;
-};
-struct EventBase_1_t730BB171C1C7F183359949BD5F4BA81AFE9A35CE  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
-{
-	int32_t ___m_RefCount;
-};
-struct EventBase_1_t9BC479C69F364D79EBE45165C2534831F440B61D  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
-{
-	int32_t ___m_RefCount;
-};
-struct EventBase_1_t1218DA3104C9EAD7C32A1D5B975FD26D77F76928  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
-{
-	int32_t ___m_RefCount;
-};
-struct EventBase_1_t06692607D03E5B5F275B33C5EACCE075D1C2AB05  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
-{
-	int32_t ___m_RefCount;
-};
-struct EventBase_1_tD898F1A47C14556B2F1F500078B600221F5D887E  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
-{
-	int32_t ___m_RefCount;
-};
-struct EventBase_1_tF3176CA51B64DBB3010435BA1986B05039647C37  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
-{
-	int32_t ___m_RefCount;
-};
-struct EventBase_1_t2B9B970022841F58172C0C783B7E1040BEF85AC1  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
-{
-	int32_t ___m_RefCount;
-};
-struct EventBase_1_t49C5D050F7E36AA2230E042A0ACB06DE32E81034  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
-{
-	int32_t ___m_RefCount;
-};
-struct EventBase_1_tBD3A3272CA5474A0EF4F4EFF8E1751F89428D493  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
-{
-	int32_t ___m_RefCount;
-};
-struct EventBase_1_t7D3D212E8AD9C53105AAC51DBD4FA5F700586F68  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
-{
-	int32_t ___m_RefCount;
-};
-struct EventBase_1_t1D0AAEBCAF4B558F0F7FDDA7060BF68A5C648C10  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
-{
-	int32_t ___m_RefCount;
-};
-struct EventBase_1_t6C339E78DC90E37A13879F0EF1449D7E9412953C  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
-{
-	int32_t ___m_RefCount;
-};
-struct EventBase_1_t4941B5AE834AA028696C83756491CE8884F30DDE  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
-{
-	int32_t ___m_RefCount;
-};
-struct EventBase_1_tC17F382C71F6951079D81E77988E6FEE8996FC5C  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
-{
-	int32_t ___m_RefCount;
-};
-struct EventBase_1_t2637736704939772A86A2904BCFD1B314097DD1E  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
-{
-	int32_t ___m_RefCount;
-};
-struct BaseVisualElementPanel_tE3811F3D1474B72CB6CD5BCEECFF5B5CBEC1E303  : public RuntimeObject
-{
-	Action_1_tF0C1AFCCE9CE63382F43540DC0DA04A8939A8A53* ___panelDisposed;
-	UIElementsBridge_tC28FCEDF493CD746D1973AB27BA2CBA393EB4BA8* ___m_UIElementsBridge;
-	float ___m_Scale;
-	YogaConfig_tA7EBAFAD020EA5AB3104A2C25AB95CC7CE6FB3E2* ___yogaConfig;
-	float ___m_PixelsPerPoint;
-	float ___U3CreferenceSpritePixelsPerUnitU3Ek__BackingField;
-	PanelClearSettings_tA3D8EE9A4864781CE3E5FED5225C6FB37ED66EE7 ___U3CclearSettingsU3Ek__BackingField;
-	bool ___U3CduringLayoutPhaseU3Ek__BackingField;
-	RepaintData_t90534752135661579EC254884F550545D001B5EA* ___U3CrepaintDataU3Ek__BackingField;
-	RuntimeObject* ___U3CcursorManagerU3Ek__BackingField;
-	ContextualMenuManager_tEE3B1F33FFFD180705467CA625AEBA0F5D63154B* ___U3CcontextualMenuManagerU3Ek__BackingField;
-	bool ___U3CdisposedU3Ek__BackingField;
-	ElementUnderPointer_tB43AD64F79C6F06829D8B90318AF1A6BBE9C1904* ___m_TopElementUnderPointers;
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___standardShaderChanged;
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___standardWorldSpaceShaderChanged;
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___atlasChanged;
-	Action_1_t996DFD52B4BDA6CBE8058C13167C4D2B8C612CAA* ___updateMaterial;
-	HierarchyEvent_tB23E4347BC47656A014CA104A5B1DDC172A2A705* ___hierarchyChanged;
-	Action_1_tE55F8AC1EEC45D0C976E56B2950D65EC814C06E6* ___beforeUpdate;
-};
-struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
-{
-};
-struct GUILayoutGroup_tD08496E80F283C290B5B90D7BFB3C9C7CC33CD8D  : public GUILayoutEntry_tDF59F19DD000820F64B356D5092C4BEDFE109D5F
-{
-	List_1_tA5BCD116CC751A5F35C7D3D7B96DC3A5D22B9C82* ___entries;
-	bool ___isVertical;
-	bool ___resetCoords;
-	float ___spacing;
-	bool ___sameSize;
-	bool ___isWindow;
-	int32_t ___windowID;
-	int32_t ___m_Cursor;
-	int32_t ___m_StretchableCountX;
-	int32_t ___m_StretchableCountY;
-	bool ___m_UserSpecifiedWidth;
-	bool ___m_UserSpecifiedHeight;
-	float ___m_ChildMinWidth;
-	float ___m_ChildMaxWidth;
-	float ___m_ChildMinHeight;
-	float ___m_ChildMaxHeight;
-	int32_t ___m_MarginLeft;
-	int32_t ___m_MarginRight;
-	int32_t ___m_MarginTop;
-	int32_t ___m_MarginBottom;
-};
-struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
-{
-};
-struct ImmediateModeException_t7A6F44A9035C26E64FF8BCD4964F7189506F063D  : public Exception_t
-{
-};
-struct Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
-{
-};
-struct MulticastDelegate_t  : public Delegate_t
-{
-	DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771* ___delegates;
-};
-struct MulticastDelegate_t_marshaled_pinvoke : public Delegate_t_marshaled_pinvoke
-{
-	Delegate_t_marshaled_pinvoke** ___delegates;
-};
-struct MulticastDelegate_t_marshaled_com : public Delegate_t_marshaled_com
-{
-	Delegate_t_marshaled_com** ___delegates;
-};
-struct Painter2D_t537467DC4761991243516EDAC5DA2949FEC24837  : public RuntimeObject
-{
-	MeshGenerationContext_tD1BD8DB52C7126A7987DE5DF1A4AF47A906EAF62* ___m_Ctx;
-	DetachedAllocator_tBE2444DA2373005B5DF5E6A96F8CDC329A9D701E* ___m_DetachedAllocator;
-	SafeHandleAccess_tAD4EC3E34693AFDD4B0003EED6CEF0F2818A1583 ___m_Handle;
-	bool ___m_Disposed;
-};
-struct PointerManipulator_t54685840D83869016F04FD137BCC1B07016B2E72  : public MouseManipulator_tE6C609D476BDF311E2934791E620CF833BB4097D
-{
-	int32_t ___m_CurrentPointerId;
-};
-struct RenderChain_tCCA9360D5721E675E5632E4B2F4AF7CDC453E363  : public RuntimeObject
-{
-	RenderChainCommand_t4F70E36AF4BC3645C8F9C822B7A3ACE9CB815727* ___m_FirstCommand;
-	DepthOrderedDirtyTracking_t7972148BB4524E0E788C8D94A005C3BAF8C189A4 ___m_DirtyTracker;
-	LinkedPool_1_t2089E962DBA7DCED47F5B21A93012A52E885E94F* ___m_CommandPool;
-	BasicNodePool_1_tEF610BEFE1094E5737DC6F71292C727C8FFD0828* ___m_TexturePool;
-	List_1_tAF3B3F03351330B5C2EA012DB4C7E417DC6551AB* ___m_RenderNodesData;
-	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___m_DefaultShader;
-	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___m_DefaultWorldSpaceShader;
-	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___m_DefaultMat;
-	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___m_DefaultWorldSpaceMat;
-	bool ___m_BlockDirtyRegistration;
-	int32_t ___m_StaticIndex;
-	int32_t ___m_ActiveRenderNodes;
-	int32_t ___m_CustomMaterialCommands;
-	ChainBuilderStats_t6E755490CE0B312AE16FEBC6734C7F2836A8067C ___m_Stats;
-	uint32_t ___m_StatsElementsAdded;
-	uint32_t ___m_StatsElementsRemoved;
-	TextureRegistry_t888D6D46880722862102416F500D6784DDA46C1B* ___m_TextureRegistry;
-	OpacityIdAccelerator_t28773C62F594A1F6A4319298D6CAA31E16458EA7* ___U3CopacityIdAcceleratorU3Ek__BackingField;
-	bool ___U3CdisposedU3Ek__BackingField;
-	BaseVisualElementPanel_tE3811F3D1474B72CB6CD5BCEECFF5B5CBEC1E303* ___U3CpanelU3Ek__BackingField;
-	UIRenderDevice_t59628CBA89B4617E832C2B270E1C1A3931D01302* ___U3CdeviceU3Ek__BackingField;
-	AtlasBase_t196C45243F41C19DC6258965057BBAA150D278BC* ___U3CatlasU3Ek__BackingField;
-	VectorImageManager_tBABA8290D62F9BDB5DCE3CC8FDA877915D1DBFED* ___U3CvectorImageManagerU3Ek__BackingField;
-	TempAllocator_1_t3D5BCA4AD052923F7BE25B783A180559F1670526* ___U3CvertsPoolU3Ek__BackingField;
-	TempAllocator_1_tD7EBD4B5F72ACA4230D146F39013345C46D597D7* ___U3CindicesPoolU3Ek__BackingField;
-	JobManager_tC139532E48436E2DCB0FB9EB8C75E1EA244C6530* ___U3CjobManagerU3Ek__BackingField;
-	UIRVEShaderInfoAllocator_t7A9BCF1924EA027462B8DBBAC7B15BCBCB5CC3BF ___shaderInfoAllocator;
-	UIRStylePainter_t406D6C9F30B975CCE0D55D800B5A97504F26FEC8* ___U3CpainterU3Ek__BackingField;
-	bool ___U3CdrawStatsU3Ek__BackingField;
-	bool ___U3CdrawInCamerasU3Ek__BackingField;
-};
-struct ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
-{
-};
-struct ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A_marshaled_pinvoke : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_pinvoke
-{
-};
-struct ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A_marshaled_com : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_com
-{
-};
-struct Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
-{
-};
-struct Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
-{
-};
-struct SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295  : public Exception_t
-{
-};
-struct Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
-{
-};
-struct Type_t  : public MemberInfo_t
-{
-	RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B ____impl;
-};
-struct VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115  : public Focusable_t39F2BAF0AF6CA465BC2BEDAF9B5B2CF379B846D0
-{
-	int32_t ___U3CUnityEngine_UIElements_IStylePropertyAnimations_runningAnimationCountU3Ek__BackingField;
-	int32_t ___U3CUnityEngine_UIElements_IStylePropertyAnimations_completedAnimationCountU3Ek__BackingField;
-	String_t* ___m_Name;
-	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___m_ClassList;
-	List_1_t60F39D768DAD2345527AD3EE73FAB2667DF4F260* ___m_PropertyBag;
-	int32_t ___m_Flags;
-	String_t* ___m_ViewDataKey;
-	int32_t ___m_RenderHints;
-	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___lastLayout;
-	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___lastPseudoPadding;
-	RenderChainVEData_t582DE9DA38C6B608A9A38286FCF6FA70398B5847 ___renderChainData;
-	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___m_Layout;
-	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___m_BoundingBox;
-	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___m_WorldBoundingBox;
-	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___m_WorldTransformCache;
-	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___m_WorldTransformInverseCache;
-	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___m_WorldClip;
-	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___m_WorldClipMinusGroup;
-	bool ___m_WorldClipIsInfinite;
-	int32_t ___triggerPseudoMask;
-	int32_t ___dependencyPseudoMask;
-	int32_t ___m_PseudoStates;
-	int32_t ___U3CcontainedPointerIdsU3Ek__BackingField;
-	int32_t ___U3CpickingModeU3Ek__BackingField;
-	YogaNode_t9EE7C2B7C0BD1299C28837B1A66CF4660E724C8B* ___U3CyogaNodeU3Ek__BackingField;
-	ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C ___m_Style;
-	StyleVariableContext_tF74F2787CE1F6BEBBFBFF0771CF493AC9E403527* ___variableContext;
-	int32_t ___inheritedStylesHash;
-	uint32_t ___controlid;
-	int32_t ___imguiContainerDescendantCount;
-	bool ___U3CenabledSelfU3Ek__BackingField;
-	int32_t ___m_LanguageDirection;
-	int32_t ___m_LocalLanguageDirection;
-	Action_1_t3DC3411926243F1DB9C330F8E105B904E38C1A0B* ___U3CgenerateVisualContentU3Ek__BackingField;
-	int32_t ___m_SubRenderTargetMode;
-	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___m_defaultMaterial;
-	List_1_t96E9133B70FB6765E6B138E810D33E18901715DA* ___m_RunningAnimations;
-	uint32_t ___m_NextParentCachedVersion;
-	uint32_t ___m_NextParentRequiredVersion;
-	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___m_CachedNextParentWithEventCallback;
-	int32_t ___m_EventCallbackCategories;
-	int32_t ___m_CachedEventCallbackParentCategories;
-	int32_t ___m_DefaultActionEventCategories;
-	int32_t ___m_DefaultActionAtTargetEventCategories;
-	Hierarchy_t4CF226F0EDE9C117C51C505730FC80641B1F1677 ___U3ChierarchyU3Ek__BackingField;
-	bool ___U3CisRootVisualContainerU3Ek__BackingField;
-	bool ___U3CcacheAsBitmapU3Ek__BackingField;
-	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___m_PhysicalParent;
-	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___m_LogicalParent;
-	List_1_t6115BBE78FE9310B180A2027321DF46F2A06AC95* ___m_Children;
-	BaseVisualElementPanel_tE3811F3D1474B72CB6CD5BCEECFF5B5CBEC1E303* ___U3CelementPanelU3Ek__BackingField;
-	VisualTreeAsset_tFB5BF81F0780A412AE5A7C2C552B3EEA64EA2EEB* ___m_VisualTreeAssetSource;
-	InlineStyleAccess_t5CA7877999C9442491A220AE50D605C84D09A165* ___inlineStyleAccess;
-	List_1_tEA16F82F7871418E28EB6F551D77A8AD9F2E337F* ___styleSheetList;
-	TypeData_t01D670B4E71B5571B38C7412B1E652A47D6AF66A* ___m_TypeData;
-};
-struct UxmlTraits_tC22B794B5E43920F0989281BB88F1F4115575065  : public UxmlTraits_t45D4AB9B0148A110826C5201495FF23814A12E4B
-{
-};
-struct NativeBorderParams_t40F3633B60F896E1FC11E7EA13E7DE1B723BC00A 
-{
-	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___rect;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___leftColor;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___topColor;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___rightColor;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___bottomColor;
-	float ___leftWidth;
-	float ___topWidth;
-	float ___rightWidth;
-	float ___bottomWidth;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___topLeftRadius;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___topRightRadius;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___bottomRightRadius;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___bottomLeftRadius;
-	NativeColorPage_tD578D4E96ABBDBB0E6A608F6CE97A0362ABD7D4B ___leftColorPage;
-	NativeColorPage_tD578D4E96ABBDBB0E6A608F6CE97A0362ABD7D4B ___topColorPage;
-	NativeColorPage_tD578D4E96ABBDBB0E6A608F6CE97A0362ABD7D4B ___rightColorPage;
-	NativeColorPage_tD578D4E96ABBDBB0E6A608F6CE97A0362ABD7D4B ___bottomColorPage;
-};
-struct NativeRectParams_t18E2E456D50F027D08BF8B4BCBD83DF7FDB1C02F 
-{
-	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___rect;
-	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___subRect;
-	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___uv;
-	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___uvRegion;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color;
-	int32_t ___scaleMode;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___topLeftRadius;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___topRightRadius;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___bottomRightRadius;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___bottomLeftRadius;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___contentSize;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___textureSize;
-	float ___texturePixelsPerPoint;
-	int32_t ___leftSlice;
-	int32_t ___topSlice;
-	int32_t ___rightSlice;
-	int32_t ___bottomSlice;
-	float ___sliceScale;
-	NativeColorPage_tD578D4E96ABBDBB0E6A608F6CE97A0362ABD7D4B ___colorPage;
-};
-struct BorderParams_t66CC80A4CCAC5C52D6384BE4E66A3230C7099B80 
-{
-	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___rect;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___playmodeTintColor;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___leftColor;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___topColor;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___rightColor;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___bottomColor;
-	float ___leftWidth;
-	float ___topWidth;
-	float ___rightWidth;
-	float ___bottomWidth;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___topLeftRadius;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___topRightRadius;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___bottomRightRadius;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___bottomLeftRadius;
-	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___material;
-	ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0 ___leftColorPage;
-	ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0 ___topColorPage;
-	ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0 ___rightColorPage;
-	ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0 ___bottomColorPage;
-};
-struct BorderParams_t66CC80A4CCAC5C52D6384BE4E66A3230C7099B80_marshaled_pinvoke
-{
-	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___rect;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___playmodeTintColor;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___leftColor;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___topColor;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___rightColor;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___bottomColor;
-	float ___leftWidth;
-	float ___topWidth;
-	float ___rightWidth;
-	float ___bottomWidth;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___topLeftRadius;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___topRightRadius;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___bottomRightRadius;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___bottomLeftRadius;
-	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___material;
-	ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0_marshaled_pinvoke ___leftColorPage;
-	ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0_marshaled_pinvoke ___topColorPage;
-	ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0_marshaled_pinvoke ___rightColorPage;
-	ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0_marshaled_pinvoke ___bottomColorPage;
-};
-struct BorderParams_t66CC80A4CCAC5C52D6384BE4E66A3230C7099B80_marshaled_com
-{
-	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___rect;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___playmodeTintColor;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___leftColor;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___topColor;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___rightColor;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___bottomColor;
-	float ___leftWidth;
-	float ___topWidth;
-	float ___rightWidth;
-	float ___bottomWidth;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___topLeftRadius;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___topRightRadius;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___bottomRightRadius;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___bottomLeftRadius;
-	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___material;
-	ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0_marshaled_com ___leftColorPage;
-	ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0_marshaled_com ___topColorPage;
-	ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0_marshaled_com ___rightColorPage;
-	ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0_marshaled_com ___bottomColorPage;
-};
-struct RectangleParams_t0B5A63548DC33EE252AF81E242B719118C235A4B 
-{
-	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___rect;
-	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___uv;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color;
-	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___subRect;
-	BackgroundPosition_tF0822B29FC27A67205A9893EBE03D03B799B8B56 ___backgroundPositionX;
-	BackgroundPosition_tF0822B29FC27A67205A9893EBE03D03B799B8B56 ___backgroundPositionY;
-	BackgroundRepeat_t446EC7315DED2C6822F1047B7587C3018BFB277F ___backgroundRepeat;
-	BackgroundSize_t809883E2D7BB1D8D85B4C3E1DBE189F187DB25E7 ___backgroundSize;
-	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___texture;
-	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___sprite;
-	VectorImage_t7BD8CE948377FFE95FCA0C48014ACDFC13B8F8FC* ___vectorImage;
-	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___material;
-	int32_t ___scaleMode;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___playmodeTintColor;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___topLeftRadius;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___topRightRadius;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___bottomRightRadius;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___bottomLeftRadius;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___contentSize;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___textureSize;
-	int32_t ___leftSlice;
-	int32_t ___topSlice;
-	int32_t ___rightSlice;
-	int32_t ___bottomSlice;
-	float ___sliceScale;
-	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___spriteGeomRect;
-	ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0 ___colorPage;
-	int32_t ___meshFlags;
-};
-struct RectangleParams_t0B5A63548DC33EE252AF81E242B719118C235A4B_marshaled_pinvoke
-{
-	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___rect;
-	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___uv;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color;
-	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___subRect;
-	BackgroundPosition_tF0822B29FC27A67205A9893EBE03D03B799B8B56 ___backgroundPositionX;
-	BackgroundPosition_tF0822B29FC27A67205A9893EBE03D03B799B8B56 ___backgroundPositionY;
-	BackgroundRepeat_t446EC7315DED2C6822F1047B7587C3018BFB277F ___backgroundRepeat;
-	BackgroundSize_t809883E2D7BB1D8D85B4C3E1DBE189F187DB25E7 ___backgroundSize;
-	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___texture;
-	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___sprite;
-	VectorImage_t7BD8CE948377FFE95FCA0C48014ACDFC13B8F8FC* ___vectorImage;
-	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___material;
-	int32_t ___scaleMode;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___playmodeTintColor;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___topLeftRadius;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___topRightRadius;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___bottomRightRadius;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___bottomLeftRadius;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___contentSize;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___textureSize;
-	int32_t ___leftSlice;
-	int32_t ___topSlice;
-	int32_t ___rightSlice;
-	int32_t ___bottomSlice;
-	float ___sliceScale;
-	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___spriteGeomRect;
-	ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0_marshaled_pinvoke ___colorPage;
-	int32_t ___meshFlags;
-};
-struct RectangleParams_t0B5A63548DC33EE252AF81E242B719118C235A4B_marshaled_com
-{
-	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___rect;
-	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___uv;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color;
-	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___subRect;
-	BackgroundPosition_tF0822B29FC27A67205A9893EBE03D03B799B8B56 ___backgroundPositionX;
-	BackgroundPosition_tF0822B29FC27A67205A9893EBE03D03B799B8B56 ___backgroundPositionY;
-	BackgroundRepeat_t446EC7315DED2C6822F1047B7587C3018BFB277F ___backgroundRepeat;
-	BackgroundSize_t809883E2D7BB1D8D85B4C3E1DBE189F187DB25E7 ___backgroundSize;
-	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___texture;
-	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___sprite;
-	VectorImage_t7BD8CE948377FFE95FCA0C48014ACDFC13B8F8FC* ___vectorImage;
-	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___material;
-	int32_t ___scaleMode;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___playmodeTintColor;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___topLeftRadius;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___topRightRadius;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___bottomRightRadius;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___bottomLeftRadius;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___contentSize;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___textureSize;
-	int32_t ___leftSlice;
-	int32_t ___topSlice;
-	int32_t ___rightSlice;
-	int32_t ___bottomSlice;
-	float ___sliceScale;
-	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___spriteGeomRect;
-	ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0_marshaled_com ___colorPage;
-	int32_t ___meshFlags;
-};
-struct Action_1_tF0C1AFCCE9CE63382F43540DC0DA04A8939A8A53  : public MulticastDelegate_t
-{
-};
-struct Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C  : public MulticastDelegate_t
-{
-};
-struct Action_1_tE55F8AC1EEC45D0C976E56B2950D65EC814C06E6  : public MulticastDelegate_t
-{
-};
-struct Action_1_t996DFD52B4BDA6CBE8058C13167C4D2B8C612CAA  : public MulticastDelegate_t
-{
-};
-struct Action_1_t3DC3411926243F1DB9C330F8E105B904E38C1A0B  : public MulticastDelegate_t
-{
-};
-struct Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87  : public MulticastDelegate_t
-{
-};
-struct Action_1_tEFD4B3570567C07AE1CC4A2D290987F4347F2F01  : public MulticastDelegate_t
-{
-};
-struct Action_2_t829FF86EEA250A853DF3A95B2C4DAC034707E20F  : public MulticastDelegate_t
-{
-};
-struct Action_2_t4FD84D64C1341169AC2F73750A356411BCEAF88A  : public MulticastDelegate_t
-{
-};
-struct EventCallback_1_tCE5E8F1D2A7EE5EC636D68025C6D899BD17EF38B  : public MulticastDelegate_t
-{
-};
-struct EventCallback_1_tF213A6C7DEAE29A9970B73DB52E8778214E5CD9C  : public MulticastDelegate_t
-{
-};
-struct EventCallback_1_t537183F3C55578258C5DAF68E510087AD97961A7  : public MulticastDelegate_t
-{
-};
-struct EventCallback_1_tF39C691B05308835A836D33741E4656809B44C3C  : public MulticastDelegate_t
-{
-};
-struct EventCallback_1_tDFA2360CDCE536A2DE7FA625C0295865A67D40B4  : public MulticastDelegate_t
-{
+struct VectorImage_t7BD8CE948377FFE95FCA0C48014ACDFC13B8F8FC  : public ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A
+{
+	int32_t ___version;
+	Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* ___atlas;
+	VectorImageVertexU5BU5D_tA19C37074824265F1A5684A6F2C156559455C1C4* ___vertices;
+	UInt16U5BU5D_tEB7C42D811D999D2AA815BADC3FCCDD9C67B3F83* ___indices;
+	GradientSettingsU5BU5D_t5A316EDE81269563C087800A519341276F98AF9C* ___settings;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___size;
+};
+struct VisualTreeAsset_tFB5BF81F0780A412AE5A7C2C552B3EEA64EA2EEB  : public ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A
+{
+	bool ___m_ImportedWithErrors;
+	bool ___m_ImportedWithWarnings;
+	List_1_t3A511618E31C01BE3D1EA788ABB9AD6F354E8485* ___m_Usings;
+	StyleSheet_t6FAF43FCDB45BC6BED0522A222FD4C1A9BB10428* ___inlineSheet;
+	List_1_tA2DA9358299C5C3E2E66D546D9B0E9089C3D7DBE* ___m_VisualElementAssets;
+	List_1_t63B31A07921C5E19BCA9E85447E2260F37E3E777* ___m_TemplateAssets;
+	List_1_t63DCD4AC5D286527CD19DD2D0023AF7C03AAB2D1* ___m_UxmlObjectEntries;
+	List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* ___m_UxmlObjectIds;
+	List_1_t82C928BB4A4FE60D606FEBAFB9949F993554C39F* ___m_AssetEntries;
+	List_1_t70BBA01AC05569034FEB9847D92E5F046528FBAF* ___m_Slots;
+	int32_t ___m_ContentContainerId;
+	int32_t ___m_ContentHash;
 };
 struct FocusEventBase_1_t26C6D9D6518CF73A14D460E73B00F842D4C8FD3A  : public EventBase_1_t7187CB27405B98ED004503ABE606225C50E656A0
 {
@@ -2984,15 +3155,6 @@ struct FocusEventBase_1_t5C59DF705446E1FD98D905F21B5B80F74D2D16A8  : public Even
 	FocusChangeDirection_t95F4784CF68331792EB9077AEAB01E17822991EF* ___U3CdirectionU3Ek__BackingField;
 	FocusController_t5D2E45F2CCBE3B7082DE4088EE03C2E8F736011A* ___U3CfocusControllerU3Ek__BackingField;
 	bool ___U3CIsFocusDelegatedU3Ek__BackingField;
-};
-struct Func_1_t56CE454A3A80718333300E3D7B3D8D8417ADDC5A  : public MulticastDelegate_t
-{
-};
-struct Func_1_tC616C4A4228ADCF53E433864B24C90514D3A0B7B  : public MulticastDelegate_t
-{
-};
-struct Func_2_t33ED521BE3A7E943FA8D764514952EDF1AF1C0FA  : public MulticastDelegate_t
-{
 };
 struct KeyboardEventBase_1_t8A33E6EBB804F18BFE49BE0C38C5D0B8E233B6FA  : public EventBase_1_t730BB171C1C7F183359949BD5F4BA81AFE9A35CE
 {
@@ -3214,20 +3376,25 @@ struct PointerEventBase_1_t2DFB78320E5810F8163F6CF5D3C5537CF40B2496  : public Ev
 	bool ___U3CUnityEngine_UIElements_IPointerEventInternal_triggeredByOSU3Ek__BackingField;
 	bool ___U3CUnityEngine_UIElements_IPointerEventInternal_recomputeTopElementUnderPointerU3Ek__BackingField;
 };
-struct Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07  : public MulticastDelegate_t
+struct ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129  : public ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263
 {
 };
-struct ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
+struct BaseRuntimePanel_tEDFA512CC6692082EBBB87E5DC446A88D2E75DC4  : public Panel_t2B0DCF68A7A5EBC347FAE66F046EA98B53AF1AB9
 {
-	String_t* ____paramName;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___m_SelectableGameObject;
+	int32_t ___m_RuntimePanelCreationIndex;
+	float ___m_SortingPriority;
+	int32_t ___resolvedSortingIndex;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___destroyed;
+	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___m_StandardWorldSpaceShader;
+	bool ___m_DrawToCameras;
+	RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* ___targetTexture;
+	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___panelToWorld;
+	int32_t ___U3CtargetDisplayU3Ek__BackingField;
+	Func_2_t33ED521BE3A7E943FA8D764514952EDF1AF1C0FA* ___m_ScreenToPanelSpace;
 };
-struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
 {
-};
-struct BindableElement_t873EFF65032D21AB3B7BFBA21675D1693967435C  : public VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115
-{
-	RuntimeObject* ___U3CbindingU3Ek__BackingField;
-	String_t* ___U3CbindingPathU3Ek__BackingField;
 };
 struct GeometryChangedEvent_tB4A621001850F337A676F8CC27F172B8ADB22A9A  : public EventBase_1_tCDEFDAD598AAC8D3B106EB41834C9619E903374E
 {
@@ -3235,10 +3402,222 @@ struct GeometryChangedEvent_tB4A621001850F337A676F8CC27F172B8ADB22A9A  : public 
 	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___U3CnewRectU3Ek__BackingField;
 	int32_t ___U3ClayoutPassU3Ek__BackingField;
 };
-struct GetViewDataDictionary_tF745E6CC7E18A67630A2B294F0BBFB27C6E57638  : public MulticastDelegate_t
+struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
+{
+	CancellationTokenSource_tAAE1E0033BCFC233801F8CB4CED5C852B350CB7B* ___m_CancellationTokenSource;
+};
+struct PointerManipulator_t54685840D83869016F04FD137BCC1B07016B2E72  : public MouseManipulator_tE6C609D476BDF311E2934791E620CF833BB4097D
+{
+	int32_t ___m_CurrentPointerId;
+};
+struct RenderChain_tCCA9360D5721E675E5632E4B2F4AF7CDC453E363  : public RuntimeObject
+{
+	RenderChainCommand_t4F70E36AF4BC3645C8F9C822B7A3ACE9CB815727* ___m_FirstCommand;
+	DepthOrderedDirtyTracking_t7972148BB4524E0E788C8D94A005C3BAF8C189A4 ___m_DirtyTracker;
+	LinkedPool_1_t2089E962DBA7DCED47F5B21A93012A52E885E94F* ___m_CommandPool;
+	BasicNodePool_1_tEF610BEFE1094E5737DC6F71292C727C8FFD0828* ___m_TexturePool;
+	List_1_tAF3B3F03351330B5C2EA012DB4C7E417DC6551AB* ___m_RenderNodesData;
+	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___m_DefaultShader;
+	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___m_DefaultWorldSpaceShader;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___m_DefaultMat;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___m_DefaultWorldSpaceMat;
+	bool ___m_BlockDirtyRegistration;
+	int32_t ___m_StaticIndex;
+	int32_t ___m_ActiveRenderNodes;
+	int32_t ___m_CustomMaterialCommands;
+	ChainBuilderStats_t6E755490CE0B312AE16FEBC6734C7F2836A8067C ___m_Stats;
+	uint32_t ___m_StatsElementsAdded;
+	uint32_t ___m_StatsElementsRemoved;
+	TextureRegistry_t888D6D46880722862102416F500D6784DDA46C1B* ___m_TextureRegistry;
+	OpacityIdAccelerator_t28773C62F594A1F6A4319298D6CAA31E16458EA7* ___U3CopacityIdAcceleratorU3Ek__BackingField;
+	bool ___U3CdisposedU3Ek__BackingField;
+	BaseVisualElementPanel_tE3811F3D1474B72CB6CD5BCEECFF5B5CBEC1E303* ___U3CpanelU3Ek__BackingField;
+	UIRenderDevice_t59628CBA89B4617E832C2B270E1C1A3931D01302* ___U3CdeviceU3Ek__BackingField;
+	AtlasBase_t196C45243F41C19DC6258965057BBAA150D278BC* ___U3CatlasU3Ek__BackingField;
+	VectorImageManager_tBABA8290D62F9BDB5DCE3CC8FDA877915D1DBFED* ___U3CvectorImageManagerU3Ek__BackingField;
+	TempAllocator_1_t3D5BCA4AD052923F7BE25B783A180559F1670526* ___U3CvertsPoolU3Ek__BackingField;
+	TempAllocator_1_tD7EBD4B5F72ACA4230D146F39013345C46D597D7* ___U3CindicesPoolU3Ek__BackingField;
+	JobManager_tC139532E48436E2DCB0FB9EB8C75E1EA244C6530* ___U3CjobManagerU3Ek__BackingField;
+	UIRVEShaderInfoAllocator_t7A9BCF1924EA027462B8DBBAC7B15BCBCB5CC3BF ___shaderInfoAllocator;
+	UIRStylePainter_t406D6C9F30B975CCE0D55D800B5A97504F26FEC8* ___U3CpainterU3Ek__BackingField;
+	bool ___U3CdrawStatsU3Ek__BackingField;
+	bool ___U3CdrawInCamerasU3Ek__BackingField;
+};
+struct UxmlBoolAttributeDescription_t86EA1242C539B39911E63699A4AE0C47918701CE  : public TypedUxmlAttributeDescription_1_t7ECE12D1C0C385835D77803906F54B792532FD39
 {
 };
-struct HierarchyEvent_tB23E4347BC47656A014CA104A5B1DDC172A2A705  : public MulticastDelegate_t
+struct UxmlIntAttributeDescription_tFDF4F77C2CD7C4790E8E135B0F353699D19CB5B4  : public TypedUxmlAttributeDescription_1_tF8E164DB2A1FE613654370D348F4C3680DA42A03
+{
+};
+struct VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115  : public Focusable_t39F2BAF0AF6CA465BC2BEDAF9B5B2CF379B846D0
+{
+	int32_t ___U3CUnityEngine_UIElements_IStylePropertyAnimations_runningAnimationCountU3Ek__BackingField;
+	int32_t ___U3CUnityEngine_UIElements_IStylePropertyAnimations_completedAnimationCountU3Ek__BackingField;
+	String_t* ___m_Name;
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___m_ClassList;
+	List_1_t60F39D768DAD2345527AD3EE73FAB2667DF4F260* ___m_PropertyBag;
+	int32_t ___m_Flags;
+	String_t* ___m_ViewDataKey;
+	int32_t ___m_RenderHints;
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___lastLayout;
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___lastPseudoPadding;
+	RenderChainVEData_t582DE9DA38C6B608A9A38286FCF6FA70398B5847 ___renderChainData;
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___m_Layout;
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___m_BoundingBox;
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___m_WorldBoundingBox;
+	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___m_WorldTransformCache;
+	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___m_WorldTransformInverseCache;
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___m_WorldClip;
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___m_WorldClipMinusGroup;
+	bool ___m_WorldClipIsInfinite;
+	int32_t ___triggerPseudoMask;
+	int32_t ___dependencyPseudoMask;
+	int32_t ___m_PseudoStates;
+	int32_t ___U3CcontainedPointerIdsU3Ek__BackingField;
+	int32_t ___U3CpickingModeU3Ek__BackingField;
+	YogaNode_t9EE7C2B7C0BD1299C28837B1A66CF4660E724C8B* ___U3CyogaNodeU3Ek__BackingField;
+	ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C ___m_Style;
+	StyleVariableContext_tF74F2787CE1F6BEBBFBFF0771CF493AC9E403527* ___variableContext;
+	int32_t ___inheritedStylesHash;
+	uint32_t ___controlid;
+	int32_t ___imguiContainerDescendantCount;
+	bool ___U3CenabledSelfU3Ek__BackingField;
+	int32_t ___m_LanguageDirection;
+	int32_t ___m_LocalLanguageDirection;
+	Action_1_t3DC3411926243F1DB9C330F8E105B904E38C1A0B* ___U3CgenerateVisualContentU3Ek__BackingField;
+	int32_t ___m_SubRenderTargetMode;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___m_defaultMaterial;
+	List_1_t96E9133B70FB6765E6B138E810D33E18901715DA* ___m_RunningAnimations;
+	uint32_t ___m_NextParentCachedVersion;
+	uint32_t ___m_NextParentRequiredVersion;
+	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___m_CachedNextParentWithEventCallback;
+	int32_t ___m_EventCallbackCategories;
+	int32_t ___m_CachedEventCallbackParentCategories;
+	int32_t ___m_DefaultActionEventCategories;
+	int32_t ___m_DefaultActionAtTargetEventCategories;
+	Hierarchy_t4CF226F0EDE9C117C51C505730FC80641B1F1677 ___U3ChierarchyU3Ek__BackingField;
+	bool ___U3CisRootVisualContainerU3Ek__BackingField;
+	bool ___U3CcacheAsBitmapU3Ek__BackingField;
+	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___m_PhysicalParent;
+	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___m_LogicalParent;
+	List_1_t6115BBE78FE9310B180A2027321DF46F2A06AC95* ___m_Children;
+	BaseVisualElementPanel_tE3811F3D1474B72CB6CD5BCEECFF5B5CBEC1E303* ___U3CelementPanelU3Ek__BackingField;
+	VisualTreeAsset_tFB5BF81F0780A412AE5A7C2C552B3EEA64EA2EEB* ___m_VisualTreeAssetSource;
+	InlineStyleAccess_t5CA7877999C9442491A220AE50D605C84D09A165* ___inlineStyleAccess;
+	List_1_tEA16F82F7871418E28EB6F551D77A8AD9F2E337F* ___styleSheetList;
+	TypeData_t01D670B4E71B5571B38C7412B1E652A47D6AF66A* ___m_TypeData;
+};
+struct RectangleParams_t0B5A63548DC33EE252AF81E242B719118C235A4B 
+{
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___rect;
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___uv;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color;
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___subRect;
+	BackgroundPosition_tF0822B29FC27A67205A9893EBE03D03B799B8B56 ___backgroundPositionX;
+	BackgroundPosition_tF0822B29FC27A67205A9893EBE03D03B799B8B56 ___backgroundPositionY;
+	BackgroundRepeat_t446EC7315DED2C6822F1047B7587C3018BFB277F ___backgroundRepeat;
+	BackgroundSize_t809883E2D7BB1D8D85B4C3E1DBE189F187DB25E7 ___backgroundSize;
+	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___texture;
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___sprite;
+	VectorImage_t7BD8CE948377FFE95FCA0C48014ACDFC13B8F8FC* ___vectorImage;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___material;
+	int32_t ___scaleMode;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___playmodeTintColor;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___topLeftRadius;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___topRightRadius;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___bottomRightRadius;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___bottomLeftRadius;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___contentSize;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___textureSize;
+	int32_t ___leftSlice;
+	int32_t ___topSlice;
+	int32_t ___rightSlice;
+	int32_t ___bottomSlice;
+	float ___sliceScale;
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___spriteGeomRect;
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___rectInset;
+	ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0 ___colorPage;
+	int32_t ___meshFlags;
+};
+struct RectangleParams_t0B5A63548DC33EE252AF81E242B719118C235A4B_marshaled_pinvoke
+{
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___rect;
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___uv;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color;
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___subRect;
+	BackgroundPosition_tF0822B29FC27A67205A9893EBE03D03B799B8B56 ___backgroundPositionX;
+	BackgroundPosition_tF0822B29FC27A67205A9893EBE03D03B799B8B56 ___backgroundPositionY;
+	BackgroundRepeat_t446EC7315DED2C6822F1047B7587C3018BFB277F ___backgroundRepeat;
+	BackgroundSize_t809883E2D7BB1D8D85B4C3E1DBE189F187DB25E7 ___backgroundSize;
+	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___texture;
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___sprite;
+	VectorImage_t7BD8CE948377FFE95FCA0C48014ACDFC13B8F8FC* ___vectorImage;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___material;
+	int32_t ___scaleMode;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___playmodeTintColor;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___topLeftRadius;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___topRightRadius;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___bottomRightRadius;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___bottomLeftRadius;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___contentSize;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___textureSize;
+	int32_t ___leftSlice;
+	int32_t ___topSlice;
+	int32_t ___rightSlice;
+	int32_t ___bottomSlice;
+	float ___sliceScale;
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___spriteGeomRect;
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___rectInset;
+	ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0_marshaled_pinvoke ___colorPage;
+	int32_t ___meshFlags;
+};
+struct RectangleParams_t0B5A63548DC33EE252AF81E242B719118C235A4B_marshaled_com
+{
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___rect;
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___uv;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color;
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___subRect;
+	BackgroundPosition_tF0822B29FC27A67205A9893EBE03D03B799B8B56 ___backgroundPositionX;
+	BackgroundPosition_tF0822B29FC27A67205A9893EBE03D03B799B8B56 ___backgroundPositionY;
+	BackgroundRepeat_t446EC7315DED2C6822F1047B7587C3018BFB277F ___backgroundRepeat;
+	BackgroundSize_t809883E2D7BB1D8D85B4C3E1DBE189F187DB25E7 ___backgroundSize;
+	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___texture;
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___sprite;
+	VectorImage_t7BD8CE948377FFE95FCA0C48014ACDFC13B8F8FC* ___vectorImage;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___material;
+	int32_t ___scaleMode;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___playmodeTintColor;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___topLeftRadius;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___topRightRadius;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___bottomRightRadius;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___bottomLeftRadius;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___contentSize;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___textureSize;
+	int32_t ___leftSlice;
+	int32_t ___topSlice;
+	int32_t ___rightSlice;
+	int32_t ___bottomSlice;
+	float ___sliceScale;
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___spriteGeomRect;
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___rectInset;
+	ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0_marshaled_com ___colorPage;
+	int32_t ___meshFlags;
+};
+struct MouseCaptureEventBase_1_t5537F73E5A70BC010C316B6AAA9C566B72A90C68  : public PointerCaptureEventBase_1_t38FF965EA39837B57FA4081A1FE87180C56A8426
+{
+};
+struct MouseCaptureEventBase_1_t5FC05EBFDD52596A249D1186F4DBBF8AC0BB96AC  : public PointerCaptureEventBase_1_t19C92EDCA213A9395CF90DC2022EF67F080FBB55
+{
+};
+struct BindableElement_t873EFF65032D21AB3B7BFBA21675D1693967435C  : public VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115
+{
+	RuntimeObject* ___U3CbindingU3Ek__BackingField;
+	String_t* ___U3CbindingPathU3Ek__BackingField;
+};
+struct DetachFromPanelEvent_t5E26427B0E6AF96F0C522D1FCEDDC078D755E496  : public PanelChangedEventBase_1_t2214183CD8DA6044ECE671FF1DA69DCB8DDC8C39
+{
+};
+struct FocusEvent_tC285901ACF2EA5EB98D216AC0ADD95937DBBD40F  : public FocusEventBase_1_t26C6D9D6518CF73A14D460E73B00F842D4C8FD3A
 {
 };
 struct IMGUIContainer_t2BB1312DCDFA8AC98E9ADA9EA696F2328A598A26  : public VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115
@@ -3262,157 +3641,8 @@ struct IMGUIContainer_t2BB1312DCDFA8AC98E9ADA9EA696F2328A598A26  : public Visual
 	bool ___U3CfocusOnlyIfHasFocusableControlsU3Ek__BackingField;
 	GUIGlobals_tA6082A955224515E1D82F5B41D84A0CD35A9CF10 ___m_GUIGlobals;
 };
-struct InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
-{
-};
-struct LoadResourceFunction_tA999A2DDCB9CDCF68E4274A58336A39ABB7AF850  : public MulticastDelegate_t
-{
-};
-struct NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
-{
-};
-struct Panel_t2B0DCF68A7A5EBC347FAE66F046EA98B53AF1AB9  : public BaseVisualElementPanel_tE3811F3D1474B72CB6CD5BCEECFF5B5CBEC1E303
-{
-	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___m_RootContainer;
-	VisualTreeUpdater_tFDE7D9F9A146A26B2ED69565B7BD142B416AB9C9* ___m_VisualTreeUpdater;
-	RuntimeObject* ___m_StylePropertyAnimationSystem;
-	String_t* ___m_PanelName;
-	uint32_t ___m_Version;
-	uint32_t ___m_RepaintVersion;
-	uint32_t ___m_HierarchyVersion;
-	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___m_MarkerBeforeUpdate;
-	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___m_MarkerUpdate;
-	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___m_MarkerLayout;
-	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___m_MarkerBindings;
-	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___m_MarkerAnimations;
-	EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* ___U3CdispatcherU3Ek__BackingField;
-	TimerEventScheduler_tAF33EE8B1C54425235E4893B0C5088629FBE7862* ___m_Scheduler;
-	ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A* ___U3CownerObjectU3Ek__BackingField;
-	int32_t ___U3CcontextTypeU3Ek__BackingField;
-	SavePersistentViewData_tFE77B8450170D95B16B3017D62F81F2139D4F716* ___U3CsaveViewDataU3Ek__BackingField;
-	GetViewDataDictionary_tF745E6CC7E18A67630A2B294F0BBFB27C6E57638* ___U3CgetViewDataDictionaryU3Ek__BackingField;
-	FocusController_t5D2E45F2CCBE3B7082DE4088EE03C2E8F736011A* ___U3CfocusControllerU3Ek__BackingField;
-	EventInterests_tF375F3296A6689BC4B016F237123DB5457515EC8 ___U3CIMGUIEventInterestsU3Ek__BackingField;
-	bool ___m_JustReceivedFocus;
-	int32_t ___U3CIMGUIContainersCountU3Ek__BackingField;
-	IMGUIContainer_t2BB1312DCDFA8AC98E9ADA9EA696F2328A598A26* ___U3CrootIMGUIContainerU3Ek__BackingField;
-	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___m_StandardShader;
-	AtlasBase_t196C45243F41C19DC6258965057BBAA150D278BC* ___m_Atlas;
-	bool ___m_ValidatingLayout;
-};
-struct PanelSettings_t0621207D5DD3BB89DB587440E8F9E07234283DEC  : public ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A
-{
-	ThemeStyleSheet_t770F966C0D561FCCB90D490215FCE8B01B709553* ___themeUss;
-	RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* ___m_TargetTexture;
-	int32_t ___m_ScaleMode;
-	float ___m_ReferenceSpritePixelsPerUnit;
-	float ___m_Scale;
-	float ___m_ReferenceDpi;
-	float ___m_FallbackDpi;
-	Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A ___m_ReferenceResolution;
-	int32_t ___m_ScreenMatchMode;
-	float ___m_Match;
-	float ___m_SortingOrder;
-	int32_t ___m_TargetDisplay;
-	bool ___m_ClearDepthStencil;
-	bool ___m_ClearColor;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___m_ColorClearValue;
-	RuntimePanelAccess_t88FC30C79AE159279E2BB55A190D2E69259B7482* ___m_PanelAccess;
-	UIDocumentList_tA2A8305DE916298E4C586EC8235085560914E7C3* ___m_AttachedUIDocumentsList;
-	DynamicAtlasSettings_t183239B7B0968331CEA91684F0942D3189C50DC5* ___m_DynamicAtlasSettings;
-	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___m_AtlasBlitShader;
-	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___m_RuntimeShader;
-	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___m_RuntimeWorldShader;
-	PanelTextSettings_tB4960351E6865BC34421430949C4CA68E7425F25* ___textSettings;
-	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___m_TargetRect;
-	float ___m_ResolvedScale;
-	StyleSheet_t6FAF43FCDB45BC6BED0522A222FD4C1A9BB10428* ___m_OldThemeUss;
-	float ___U3CScreenDPIU3Ek__BackingField;
-	Func_2_t33ED521BE3A7E943FA8D764514952EDF1AF1C0FA* ___m_AssignedScreenToPanel;
-};
-struct RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27  : public Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700
-{
-};
-struct SavePersistentViewData_tFE77B8450170D95B16B3017D62F81F2139D4F716  : public MulticastDelegate_t
-{
-};
-struct Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4  : public Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700
-{
-};
-struct TimeMsFunction_t1893856976EB95CF5608ACC3642AD8B79994CA2B  : public MulticastDelegate_t
-{
-};
-struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
-{
-};
-struct VectorImage_t7BD8CE948377FFE95FCA0C48014ACDFC13B8F8FC  : public ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A
-{
-	int32_t ___version;
-	Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* ___atlas;
-	VectorImageVertexU5BU5D_tA19C37074824265F1A5684A6F2C156559455C1C4* ___vertices;
-	UInt16U5BU5D_tEB7C42D811D999D2AA815BADC3FCCDD9C67B3F83* ___indices;
-	GradientSettingsU5BU5D_t5A316EDE81269563C087800A519341276F98AF9C* ___settings;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___size;
-};
-struct VisualTreeAsset_tFB5BF81F0780A412AE5A7C2C552B3EEA64EA2EEB  : public ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A
-{
-	bool ___m_ImportedWithErrors;
-	bool ___m_ImportedWithWarnings;
-	List_1_t3A511618E31C01BE3D1EA788ABB9AD6F354E8485* ___m_Usings;
-	StyleSheet_t6FAF43FCDB45BC6BED0522A222FD4C1A9BB10428* ___inlineSheet;
-	List_1_tA2DA9358299C5C3E2E66D546D9B0E9089C3D7DBE* ___m_VisualElementAssets;
-	List_1_t63B31A07921C5E19BCA9E85447E2260F37E3E777* ___m_TemplateAssets;
-	List_1_t63DCD4AC5D286527CD19DD2D0023AF7C03AAB2D1* ___m_UxmlObjectEntries;
-	List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* ___m_UxmlObjectIds;
-	List_1_t82C928BB4A4FE60D606FEBAFB9949F993554C39F* ___m_AssetEntries;
-	List_1_t70BBA01AC05569034FEB9847D92E5F046528FBAF* ___m_Slots;
-	int32_t ___m_ContentContainerId;
-	int32_t ___m_ContentHash;
-};
-struct MouseCaptureEventBase_1_t5537F73E5A70BC010C316B6AAA9C566B72A90C68  : public PointerCaptureEventBase_1_t38FF965EA39837B57FA4081A1FE87180C56A8426
-{
-};
-struct MouseCaptureEventBase_1_t5FC05EBFDD52596A249D1186F4DBBF8AC0BB96AC  : public PointerCaptureEventBase_1_t19C92EDCA213A9395CF90DC2022EF67F080FBB55
-{
-};
-struct ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129  : public ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263
-{
-};
-struct BaseRuntimePanel_tEDFA512CC6692082EBBB87E5DC446A88D2E75DC4  : public Panel_t2B0DCF68A7A5EBC347FAE66F046EA98B53AF1AB9
-{
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___m_SelectableGameObject;
-	int32_t ___m_RuntimePanelCreationIndex;
-	float ___m_SortingPriority;
-	int32_t ___resolvedSortingIndex;
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___destroyed;
-	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___m_StandardWorldSpaceShader;
-	bool ___m_DrawToCameras;
-	RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* ___targetTexture;
-	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___panelToWorld;
-	int32_t ___U3CtargetDisplayU3Ek__BackingField;
-	Func_2_t33ED521BE3A7E943FA8D764514952EDF1AF1C0FA* ___m_ScreenToPanelSpace;
-};
-struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
-{
-};
-struct DetachFromPanelEvent_t5E26427B0E6AF96F0C522D1FCEDDC078D755E496  : public PanelChangedEventBase_1_t2214183CD8DA6044ECE671FF1DA69DCB8DDC8C39
-{
-};
-struct FocusEvent_tC285901ACF2EA5EB98D216AC0ADD95937DBBD40F  : public FocusEventBase_1_t26C6D9D6518CF73A14D460E73B00F842D4C8FD3A
-{
-};
-struct Foldout_t150CF00C27D0C105EC2831E0BA1C5D8A96EF5DC3  : public BindableElement_t873EFF65032D21AB3B7BFBA21675D1693967435C
-{
-	Toggle_t27BE43456B97DD7A793D272D3318F9FE682B844C* ___m_Toggle;
-	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___m_Container;
-	bool ___m_Value;
-};
 struct KeyDownEvent_t1971978254C8EE65CDDD992AF86B44E442CDD18C  : public KeyboardEventBase_1_t8A33E6EBB804F18BFE49BE0C38C5D0B8E233B6FA
 {
-};
-struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
-{
-	CancellationTokenSource_tAAE1E0033BCFC233801F8CB4CED5C852B350CB7B* ___m_CancellationTokenSource;
 };
 struct NavigationCancelEvent_tB8811EBDC85FD365D1034AEA30F07CBC3161E59E  : public NavigationEventBase_1_t7F8A7ED2852A570BAEE97B2620A0569C74E91022
 {
@@ -3448,6 +3678,31 @@ struct PointerStationaryEvent_t00EDD04F79029C94E4655239AA54AF9024AB151A  : publi
 {
 };
 struct PointerUpEvent_tCE779E8B94675B6A2758B82F6A84771CB26913D9  : public PointerEventBase_1_t2DFB78320E5810F8163F6CF5D3C5537CF40B2496
+{
+};
+struct UIDocument_t4186BEBCC01278F63B895274AA08AD9ADFBF4C77  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	int32_t ___m_UIDocumentCreationIndex;
+	PanelSettings_t0621207D5DD3BB89DB587440E8F9E07234283DEC* ___m_PanelSettings;
+	PanelSettings_t0621207D5DD3BB89DB587440E8F9E07234283DEC* ___m_PreviousPanelSettings;
+	UIDocument_t4186BEBCC01278F63B895274AA08AD9ADFBF4C77* ___m_ParentUI;
+	UIDocumentList_tA2A8305DE916298E4C586EC8235085560914E7C3* ___m_ChildrenContent;
+	List_1_t74EC90C5F42E1A99F29BC6A7FF27FD27FCF98344* ___m_ChildrenContentCopy;
+	VisualTreeAsset_tFB5BF81F0780A412AE5A7C2C552B3EEA64EA2EEB* ___sourceAsset;
+	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___m_RootVisualElement;
+	int32_t ___m_FirstChildInsertIndex;
+	float ___m_SortingOrder;
+};
+struct Foldout_t150CF00C27D0C105EC2831E0BA1C5D8A96EF5DC3  : public BindableElement_t873EFF65032D21AB3B7BFBA21675D1693967435C
+{
+	Toggle_t27BE43456B97DD7A793D272D3318F9FE682B844C* ___m_Toggle;
+	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___m_Container;
+	bool ___m_Value;
+};
+struct MouseCaptureEvent_tC9F3C2595ADCE4F88D2553F8F697F00BA797B014  : public MouseCaptureEventBase_1_t5537F73E5A70BC010C316B6AAA9C566B72A90C68
+{
+};
+struct MouseCaptureOutEvent_t55FDD6FD486DDB02F1878EEF2716F444E7A94AF5  : public MouseCaptureEventBase_1_t5FC05EBFDD52596A249D1186F4DBBF8AC0BB96AC
 {
 };
 struct TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2  : public BindableElement_t873EFF65032D21AB3B7BFBA21675D1693967435C
@@ -3493,25 +3748,6 @@ struct TextElement_tD56C5044CCC5552285DC8A9950CC60448C80FEE0  : public BindableE
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___m_SelectionColor;
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___m_CursorColor;
 	float ___m_CursorWidth;
-};
-struct MouseCaptureEvent_tC9F3C2595ADCE4F88D2553F8F697F00BA797B014  : public MouseCaptureEventBase_1_t5537F73E5A70BC010C316B6AAA9C566B72A90C68
-{
-};
-struct MouseCaptureOutEvent_t55FDD6FD486DDB02F1878EEF2716F444E7A94AF5  : public MouseCaptureEventBase_1_t5FC05EBFDD52596A249D1186F4DBBF8AC0BB96AC
-{
-};
-struct UIDocument_t4186BEBCC01278F63B895274AA08AD9ADFBF4C77  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
-{
-	int32_t ___m_UIDocumentCreationIndex;
-	PanelSettings_t0621207D5DD3BB89DB587440E8F9E07234283DEC* ___m_PanelSettings;
-	PanelSettings_t0621207D5DD3BB89DB587440E8F9E07234283DEC* ___m_PreviousPanelSettings;
-	UIDocument_t4186BEBCC01278F63B895274AA08AD9ADFBF4C77* ___m_ParentUI;
-	UIDocumentList_tA2A8305DE916298E4C586EC8235085560914E7C3* ___m_ChildrenContent;
-	List_1_t74EC90C5F42E1A99F29BC6A7FF27FD27FCF98344* ___m_ChildrenContentCopy;
-	VisualTreeAsset_tFB5BF81F0780A412AE5A7C2C552B3EEA64EA2EEB* ___sourceAsset;
-	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___m_RootVisualElement;
-	int32_t ___m_FirstChildInsertIndex;
-	float ___m_SortingOrder;
 };
 struct List_1_tD0E79579A452BC4310A6C691B9494AB5F7DDD423_StaticFields
 {
@@ -3642,10 +3878,6 @@ struct U3CU3Ec_tB28376DC955172064F599742F9CE8610FFE32B2A_StaticFields
 {
 	U3CU3Ec_tB28376DC955172064F599742F9CE8610FFE32B2A* ___U3CU3E9;
 };
-struct BMPAlloc_t29DA9D09157B8BAD2D5643711A53A5F11D216D30_StaticFields
-{
-	BMPAlloc_t29DA9D09157B8BAD2D5643711A53A5F11D216D30 ___Invalid;
-};
 struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
 {
 	String_t* ___TrueString;
@@ -3734,19 +3966,10 @@ struct Display_t06A3B0F5169CA3C02A4D5171F27499A23D3581D1_StaticFields
 	int32_t ___m_ActiveEditorGameViewTarget;
 	DisplaysUpdatedDelegate_t1BAACED9BE72131FD59213A3186F5D7AB9E1FD68* ___onDisplaysUpdated;
 };
-struct DynamicAtlasPage_t11FF826FFD13D59816B4F99A0C21CF8205A68F6E_StaticFields
-{
-	int32_t ___s_TextureCounter;
-};
 struct Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB_StaticFields
 {
 	Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* ___s_Current;
 	Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* ___s_MasterEvent;
-};
-struct EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C_StaticFields
-{
-	int64_t ___s_LastTypeId;
-	uint64_t ___s_NextEventId;
 };
 struct Exception_t_StaticFields
 {
@@ -3765,27 +3988,6 @@ struct TextureBlitter_t8340FC58AD5F14B6A8DD133968F4C8427C79FCB7_StaticFields
 {
 	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___k_TextureIds;
 	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___s_CommitSampler;
-};
-struct UIRVEShaderInfoAllocator_t7A9BCF1924EA027462B8DBBAC7B15BCBCB5CC3BF_StaticFields
-{
-	Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A ___identityTransformTexel;
-	Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A ___infiniteClipRectTexel;
-	Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A ___fullOpacityTexel;
-	Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A ___clearColorTexel;
-	Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A ___defaultTextCoreSettingsTexel;
-	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___identityTransformValue;
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___identityTransformRow0Value;
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___identityTransformRow1Value;
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___identityTransformRow2Value;
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___infiniteClipRectValue;
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___fullOpacityValue;
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___clearColorValue;
-	TextCoreSettings_t3D724CD0811298B5AB1EA2041CE799CC25CDD115 ___defaultTextCoreSettingsValue;
-	BMPAlloc_t29DA9D09157B8BAD2D5643711A53A5F11D216D30 ___identityTransform;
-	BMPAlloc_t29DA9D09157B8BAD2D5643711A53A5F11D216D30 ___infiniteClipRect;
-	BMPAlloc_t29DA9D09157B8BAD2D5643711A53A5F11D216D30 ___fullOpacity;
-	BMPAlloc_t29DA9D09157B8BAD2D5643711A53A5F11D216D30 ___clearColor;
-	BMPAlloc_t29DA9D09157B8BAD2D5643711A53A5F11D216D30 ___defaultTextCoreSettings;
 };
 struct UIRenderDevice_t59628CBA89B4617E832C2B270E1C1A3931D01302_StaticFields
 {
@@ -3819,11 +4021,18 @@ struct AreaNode_tB9A4250EFEA8C60BEDFFDA3E78F20EA6DE77DA7D_StaticFields
 {
 	ObjectPool_1_t2EA8EA990CF6240AA6CD7BD64D68DE9F9EEDD3E5* ___s_Pool;
 };
-struct EventBase_1_tCDEFDAD598AAC8D3B106EB41834C9619E903374E_StaticFields
+struct BMPAlloc_t29DA9D09157B8BAD2D5643711A53A5F11D216D30_StaticFields
 {
-	int64_t ___s_TypeId;
-	ObjectPool_1_tC6626AC387E62EDBD0EA56924280D44E6476EC67* ___s_Pool;
-	int32_t ___EventCategory;
+	BMPAlloc_t29DA9D09157B8BAD2D5643711A53A5F11D216D30 ___Invalid;
+};
+struct DynamicAtlasPage_t11FF826FFD13D59816B4F99A0C21CF8205A68F6E_StaticFields
+{
+	int32_t ___s_TextureCounter;
+};
+struct EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C_StaticFields
+{
+	int64_t ___s_LastTypeId;
+	uint64_t ___s_NextEventId;
 };
 struct GUILayoutGroup_tD08496E80F283C290B5B90D7BFB3C9C7CC33CD8D_StaticFields
 {
@@ -3835,17 +4044,6 @@ struct Painter2D_t537467DC4761991243516EDAC5DA2949FEC24837_StaticFields
 	float ___s_MaxArcRadius;
 	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___s_StrokeMarker;
 	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___s_FillMarker;
-};
-struct RenderChain_tCCA9360D5721E675E5632E4B2F4AF7CDC453E363_StaticFields
-{
-	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___s_MarkerProcess;
-	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___s_MarkerClipProcessing;
-	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___s_MarkerOpacityProcessing;
-	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___s_MarkerColorsProcessing;
-	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___s_MarkerTransformProcessing;
-	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___s_MarkerVisualsProcessing;
-	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___s_MarkerTextRegen;
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___OnPreRender;
 };
 struct Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700_StaticFields
 {
@@ -3860,6 +4058,67 @@ struct Type_t_StaticFields
 	MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553* ___FilterAttribute;
 	MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553* ___FilterName;
 	MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553* ___FilterNameIgnoreCase;
+};
+struct EventBase_1_tCDEFDAD598AAC8D3B106EB41834C9619E903374E_StaticFields
+{
+	int64_t ___s_TypeId;
+	ObjectPool_1_tC6626AC387E62EDBD0EA56924280D44E6476EC67* ___s_Pool;
+	int32_t ___EventCategory;
+};
+struct Panel_t2B0DCF68A7A5EBC347FAE66F046EA98B53AF1AB9_StaticFields
+{
+	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___s_MarkerPickAll;
+	LoadResourceFunction_tA999A2DDCB9CDCF68E4274A58336A39ABB7AF850* ___U3CloadResourceFuncU3Ek__BackingField;
+	TimeMsFunction_t1893856976EB95CF5608ACC3642AD8B79994CA2B* ___U3CTimeSinceStartupU3Ek__BackingField;
+	Action_1_tEFD4B3570567C07AE1CC4A2D290987F4347F2F01* ___beforeAnyRepaint;
+};
+struct UIRVEShaderInfoAllocator_t7A9BCF1924EA027462B8DBBAC7B15BCBCB5CC3BF_StaticFields
+{
+	Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A ___identityTransformTexel;
+	Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A ___infiniteClipRectTexel;
+	Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A ___fullOpacityTexel;
+	Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A ___clearColorTexel;
+	Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A ___defaultTextCoreSettingsTexel;
+	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___identityTransformValue;
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___identityTransformRow0Value;
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___identityTransformRow1Value;
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___identityTransformRow2Value;
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___infiniteClipRectValue;
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___fullOpacityValue;
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___clearColorValue;
+	TextCoreSettings_t3D724CD0811298B5AB1EA2041CE799CC25CDD115 ___defaultTextCoreSettingsValue;
+	BMPAlloc_t29DA9D09157B8BAD2D5643711A53A5F11D216D30 ___identityTransform;
+	BMPAlloc_t29DA9D09157B8BAD2D5643711A53A5F11D216D30 ___infiniteClipRect;
+	BMPAlloc_t29DA9D09157B8BAD2D5643711A53A5F11D216D30 ___fullOpacity;
+	BMPAlloc_t29DA9D09157B8BAD2D5643711A53A5F11D216D30 ___clearColor;
+	BMPAlloc_t29DA9D09157B8BAD2D5643711A53A5F11D216D30 ___defaultTextCoreSettings;
+};
+struct VisualTreeAsset_tFB5BF81F0780A412AE5A7C2C552B3EEA64EA2EEB_StaticFields
+{
+	String_t* ___LinkedVEAInTemplatePropertyName;
+	Dictionary_2_t41165BF747F041590086BE39A59BE164430A3CEF* ___s_TemporarySlotInsertionPoints;
+};
+struct BaseRuntimePanel_tEDFA512CC6692082EBBB87E5DC446A88D2E75DC4_StaticFields
+{
+	int32_t ___s_CurrentRuntimePanelCounter;
+	Func_2_t33ED521BE3A7E943FA8D764514952EDF1AF1C0FA* ___DefaultScreenToPanelSpace;
+};
+struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184_StaticFields
+{
+	CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD* ___onPreCull;
+	CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD* ___onPreRender;
+	CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD* ___onPostRender;
+};
+struct RenderChain_tCCA9360D5721E675E5632E4B2F4AF7CDC453E363_StaticFields
+{
+	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___s_MarkerProcess;
+	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___s_MarkerClipProcessing;
+	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___s_MarkerOpacityProcessing;
+	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___s_MarkerColorsProcessing;
+	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___s_MarkerTransformProcessing;
+	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___s_MarkerVisualsProcessing;
+	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___s_MarkerTextRegen;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___OnPreRender;
 };
 struct VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115_StaticFields
 {
@@ -3888,28 +4147,9 @@ struct IMGUIContainer_t2BB1312DCDFA8AC98E9ADA9EA696F2328A598A26_StaticFields
 	Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* ___s_MeasureEvent;
 	Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* ___s_CurrentEvent;
 };
-struct Panel_t2B0DCF68A7A5EBC347FAE66F046EA98B53AF1AB9_StaticFields
+struct UIDocument_t4186BEBCC01278F63B895274AA08AD9ADFBF4C77_StaticFields
 {
-	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___s_MarkerPickAll;
-	LoadResourceFunction_tA999A2DDCB9CDCF68E4274A58336A39ABB7AF850* ___U3CloadResourceFuncU3Ek__BackingField;
-	TimeMsFunction_t1893856976EB95CF5608ACC3642AD8B79994CA2B* ___U3CTimeSinceStartupU3Ek__BackingField;
-	Action_1_tEFD4B3570567C07AE1CC4A2D290987F4347F2F01* ___beforeAnyRepaint;
-};
-struct VisualTreeAsset_tFB5BF81F0780A412AE5A7C2C552B3EEA64EA2EEB_StaticFields
-{
-	String_t* ___LinkedVEAInTemplatePropertyName;
-	Dictionary_2_t41165BF747F041590086BE39A59BE164430A3CEF* ___s_TemporarySlotInsertionPoints;
-};
-struct BaseRuntimePanel_tEDFA512CC6692082EBBB87E5DC446A88D2E75DC4_StaticFields
-{
-	int32_t ___s_CurrentRuntimePanelCounter;
-	Func_2_t33ED521BE3A7E943FA8D764514952EDF1AF1C0FA* ___DefaultScreenToPanelSpace;
-};
-struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184_StaticFields
-{
-	CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD* ___onPreCull;
-	CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD* ___onPreRender;
-	CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD* ___onPostRender;
+	int32_t ___s_CurrentUIDocumentCounter;
 };
 struct Foldout_t150CF00C27D0C105EC2831E0BA1C5D8A96EF5DC3_StaticFields
 {
@@ -3927,10 +4167,6 @@ struct TextElement_tD56C5044CCC5552285DC8A9950CC60448C80FEE0_StaticFields
 {
 	String_t* ___ussClassName;
 	String_t* ___k_EllipsisText;
-};
-struct UIDocument_t4186BEBCC01278F63B895274AA08AD9ADFBF4C77_StaticFields
-{
-	int32_t ___s_CurrentUIDocumentCounter;
 };
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -5395,8 +5631,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Length_t90BB06D47DD6DB461ED21BD3E3241FAB6C824256 ComputedStyle_get_borderBottomLeftRadius_m0591621DC5BDEF35B0F24C7791A9244BCC72D87E (ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Length_t90BB06D47DD6DB461ED21BD3E3241FAB6C824256 ComputedStyle_get_borderTopRightRadius_m65B3C6F4578C9512769A4CDBC59E15C8C840A588 (ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Length_t90BB06D47DD6DB461ED21BD3E3241FAB6C824256 ComputedStyle_get_borderBottomRightRadius_m570211084F0CD1C730B7F7D3A6510394895CC980 (ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* __this, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Rect_set_x_mAB91AB71898A20762BC66FD0723C4C739C4C3406_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, float ___0_value, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Rect_set_y_mDE91F4B98A6E8623EFB1250FF6526D5DB5855629_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, float ___0_value, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 Vector4_get_zero_m3D61F5FA9483CD9C08977D9D8852FB448B4CE6D1_inline (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NativeBorderParams_t40F3633B60F896E1FC11E7EA13E7DE1B723BC00A BorderParams_ToNativeParams_m97C36B7FDF9DBA7B11156A45AD367FCB4CFE0E9E (BorderParams_t66CC80A4CCAC5C52D6384BE4E66A3230C7099B80* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Rect_get_xMin_mE89C40702926D016A633399E20DB9501E251630D_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Rect_get_yMin_mB19848FB25DE61EDF958F7A22CFDD86DE103062F_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, const RuntimeMethod* method) ;
@@ -5430,7 +5665,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogWarning_m33EF1B897E0C7C6FF53898
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D RectangleParams_ComputeGeomRect_mDA0B560FC27C2B75796AF2AA586E8EF66BB8CE45 (Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___0_sprite, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D RectangleParams_ComputeUVRect_m13805AD61578847383E6A5A12DD4FC1DC2F33F50 (Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___0_sprite, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 Sprite_get_border_m024C8361A808BF597EC6E1849AADDA9C756B459F (Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* __this, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 Vector4_get_zero_m3D61F5FA9483CD9C08977D9D8852FB448B4CE6D1_inline (const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Vector4_op_Inequality_mD6A1C6E862F3EFB1B222A2DDCB7A7237042DE142_inline (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___0_lhs, Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___1_rhs, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Rect_op_Inequality_mB5D7316EB50B1DDA9324F4BE6741DFF6A673137D_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___0_lhs, Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___1_rhs, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Sprite_get_packed_m6B6B98A3891B350711499532C07F8D393AAB868E (Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* __this, const RuntimeMethod* method) ;
@@ -9050,32 +9284,33 @@ IL_025e_2:
 CATCH_0261_1:
 			{
 				{
-					V_23 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
-					int32_t L_131 = V_3;
-					V_24 = (bool)((((int32_t)L_131) == ((int32_t)8))? 1 : 0);
-					bool L_132 = V_24;
-					if (!L_132)
+					Exception_t* L_131 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+					V_23 = L_131;
+					int32_t L_132 = V_3;
+					V_24 = (bool)((((int32_t)L_132) == ((int32_t)8))? 1 : 0);
+					bool L_133 = V_24;
+					if (!L_133)
 					{
 						goto IL_0290_1;
 					}
 				}
 				{
-					Exception_t* L_133 = V_23;
-					bool L_134;
-					L_134 = GUIUtility_IsExitGUIException_mB887DAF961E8C1124916777B812FBF2324F5265F(L_133, NULL);
-					V_4 = L_134;
-					bool L_135 = V_4;
-					V_25 = (bool)((((int32_t)L_135) == ((int32_t)0))? 1 : 0);
-					bool L_136 = V_25;
-					if (!L_136)
+					Exception_t* L_134 = V_23;
+					bool L_135;
+					L_135 = GUIUtility_IsExitGUIException_mB887DAF961E8C1124916777B812FBF2324F5265F(L_134, NULL);
+					V_4 = L_135;
+					bool L_136 = V_4;
+					V_25 = (bool)((((int32_t)L_136) == ((int32_t)0))? 1 : 0);
+					bool L_137 = V_25;
+					if (!L_137)
 					{
 						goto IL_028d_1;
 					}
 				}
 				{
-					Exception_t* L_137 = V_23;
+					Exception_t* L_138 = V_23;
 					il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var)));
-					Debug_LogException_mAB3F4DC7297ED8FBB49DAA718B70E59A6B0171B0(L_137, NULL);
+					Debug_LogException_mAB3F4DC7297ED8FBB49DAA718B70E59A6B0171B0(L_138, NULL);
 				}
 
 IL_028d_1:
@@ -9085,12 +9320,12 @@ IL_028d_1:
 
 IL_0290_1:
 				{
-					IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+					IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*));
 				}
 
 IL_0293_1:
 				{
-					IL2CPP_POP_ACTIVE_EXCEPTION();
+					IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 					goto IL_0296_1;
 				}
 			}
@@ -9108,37 +9343,37 @@ IL_0296_1:
 
 IL_04c5:
 	{
-		Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* L_138 = ___0_evt;
-		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_139 = ___4_layoutSize;
+		Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* L_139 = ___0_evt;
+		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_140 = ___4_layoutSize;
 		il2cpp_codegen_runtime_class_init_inline(UIElementsUtility_t03323144D50362C6BF96652D3355728749769293_il2cpp_TypeInfo_var);
-		UIElementsUtility_EndContainerGUI_m7E5929AE50C4DB7194E3B8613980F75F89CA6310(L_138, L_139, NULL);
+		UIElementsUtility_EndContainerGUI_m7E5929AE50C4DB7194E3B8613980F75F89CA6310(L_139, L_140, NULL);
 		IMGUIContainer_RestoreGlobals_m04BA5ACEE189911C1CFF951701BF0BDB191E1026(__this, NULL);
-		Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* L_140 = ___0_evt;
-		int32_t L_141;
-		L_141 = Event_get_type_m8A825D6DA432B967DAA3E22E5C8571620A75F8A8(L_140, NULL);
-		if ((!(((uint32_t)L_141) == ((uint32_t)8))))
+		Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* L_141 = ___0_evt;
+		int32_t L_142;
+		L_142 = Event_get_type_m8A825D6DA432B967DAA3E22E5C8571620A75F8A8(L_141, NULL);
+		if ((!(((uint32_t)L_142) == ((uint32_t)8))))
 		{
 			goto IL_0500;
 		}
 	}
 	{
-		float L_142 = V_1;
-		float L_143;
-		L_143 = IMGUIContainer_get_layoutMeasuredWidth_mAEC590B17A0768CC86B13C3E574C725752881C64(__this, NULL);
-		bool L_144;
-		L_144 = Mathf_Approximately_m1DADD012A8FC82E11FB282501AE2EBBF9A77150B_inline(L_142, L_143, NULL);
-		if (!L_144)
+		float L_143 = V_1;
+		float L_144;
+		L_144 = IMGUIContainer_get_layoutMeasuredWidth_mAEC590B17A0768CC86B13C3E574C725752881C64(__this, NULL);
+		bool L_145;
+		L_145 = Mathf_Approximately_m1DADD012A8FC82E11FB282501AE2EBBF9A77150B_inline(L_143, L_144, NULL);
+		if (!L_145)
 		{
 			goto IL_04fd;
 		}
 	}
 	{
-		float L_145 = V_2;
-		float L_146;
-		L_146 = IMGUIContainer_get_layoutMeasuredHeight_m720CFD0987486CB4D9417004EE3D6B5D0ADFB76D(__this, NULL);
-		bool L_147;
-		L_147 = Mathf_Approximately_m1DADD012A8FC82E11FB282501AE2EBBF9A77150B_inline(L_145, L_146, NULL);
-		G_B109_0 = ((((int32_t)L_147) == ((int32_t)0))? 1 : 0);
+		float L_146 = V_2;
+		float L_147;
+		L_147 = IMGUIContainer_get_layoutMeasuredHeight_m720CFD0987486CB4D9417004EE3D6B5D0ADFB76D(__this, NULL);
+		bool L_148;
+		L_148 = Mathf_Approximately_m1DADD012A8FC82E11FB282501AE2EBBF9A77150B_inline(L_146, L_147, NULL);
+		G_B109_0 = ((((int32_t)L_148) == ((int32_t)0))? 1 : 0);
 		goto IL_04fe;
 	}
 
@@ -9161,26 +9396,26 @@ IL_0500:
 IL_0501:
 	{
 		V_44 = (bool)G_B111_0;
-		bool L_148 = V_44;
-		if (!L_148)
+		bool L_149 = V_44;
+		if (!L_149)
 		{
 			goto IL_0543;
 		}
 	}
 	{
-		bool L_149 = ___3_isComputingLayout;
-		if (!L_149)
+		bool L_150 = ___3_isComputingLayout;
+		if (!L_150)
 		{
 			goto IL_0519;
 		}
 	}
 	{
-		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_150 = ___2_clippingRect;
-		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_151;
-		L_151 = Rect_get_zero_m5341D8B63DEF1F4C308A685EEC8CFEA12A396C8D(NULL);
-		bool L_152;
-		L_152 = Rect_op_Equality_mF2A038255CAF5F1E86079B9EE0FC96DE54307C1F_inline(L_150, L_151, NULL);
-		G_B115_0 = ((int32_t)(L_152));
+		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_151 = ___2_clippingRect;
+		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_152;
+		L_152 = Rect_get_zero_m5341D8B63DEF1F4C308A685EEC8CFEA12A396C8D(NULL);
+		bool L_153;
+		L_153 = Rect_op_Equality_mF2A038255CAF5F1E86079B9EE0FC96DE54307C1F_inline(L_151, L_152, NULL);
+		G_B115_0 = ((int32_t)(L_153));
 		goto IL_051a;
 	}
 
@@ -9192,19 +9427,19 @@ IL_0519:
 IL_051a:
 	{
 		V_45 = (bool)G_B115_0;
-		bool L_153 = V_45;
-		if (!L_153)
+		bool L_154 = V_45;
+		if (!L_154)
 		{
 			goto IL_053a;
 		}
 	}
 	{
-		RuntimeObject* L_154;
-		L_154 = VisualElement_get_schedule_m2BFE6967ED82371ACE1CD1FC32B8D8B93646ED76(__this, NULL);
-		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_155 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
-		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_155, __this, (intptr_t)((void*)IMGUIContainer_U3CDoOnGUIU3Eb__56_0_mC0F063A87D4918330ECE340E3D170D023520F2F9_RuntimeMethod_var), NULL);
-		RuntimeObject* L_156;
-		L_156 = InterfaceFuncInvoker1< RuntimeObject*, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* >::Invoke(1, IVisualElementScheduler_tA68650FA9218398E77265748741B091638336FD8_il2cpp_TypeInfo_var, L_154, L_155);
+		RuntimeObject* L_155;
+		L_155 = VisualElement_get_schedule_m2BFE6967ED82371ACE1CD1FC32B8D8B93646ED76(__this, NULL);
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_156 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_156, __this, (intptr_t)((void*)IMGUIContainer_U3CDoOnGUIU3Eb__56_0_mC0F063A87D4918330ECE340E3D170D023520F2F9_RuntimeMethod_var), NULL);
+		RuntimeObject* L_157;
+		L_157 = InterfaceFuncInvoker1< RuntimeObject*, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* >::Invoke(1, IVisualElementScheduler_tA68650FA9218398E77265748741B091638336FD8_il2cpp_TypeInfo_var, L_155, L_156);
 		goto IL_0542;
 	}
 
@@ -9219,28 +9454,28 @@ IL_0542:
 
 IL_0543:
 	{
-		bool L_157 = V_4;
-		V_46 = (bool)((((int32_t)L_157) == ((int32_t)0))? 1 : 0);
-		bool L_158 = V_46;
-		if (!L_158)
+		bool L_158 = V_4;
+		V_46 = (bool)((((int32_t)L_158) == ((int32_t)0))? 1 : 0);
+		bool L_159 = V_46;
+		if (!L_159)
 		{
 			goto IL_05a7;
 		}
 	}
 	{
-		Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* L_159 = ___0_evt;
-		int32_t L_160;
-		L_160 = Event_get_type_m8A825D6DA432B967DAA3E22E5C8571620A75F8A8(L_159, NULL);
-		if ((((int32_t)L_160) == ((int32_t)((int32_t)11))))
+		Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* L_160 = ___0_evt;
+		int32_t L_161;
+		L_161 = Event_get_type_m8A825D6DA432B967DAA3E22E5C8571620A75F8A8(L_160, NULL);
+		if ((((int32_t)L_161) == ((int32_t)((int32_t)11))))
 		{
 			goto IL_0568;
 		}
 	}
 	{
-		Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* L_161 = ___0_evt;
-		int32_t L_162;
-		L_162 = Event_get_type_m8A825D6DA432B967DAA3E22E5C8571620A75F8A8(L_161, NULL);
-		G_B123_0 = ((((int32_t)((((int32_t)L_162) == ((int32_t)((int32_t)12)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* L_162 = ___0_evt;
+		int32_t L_163;
+		L_163 = Event_get_type_m8A825D6DA432B967DAA3E22E5C8571620A75F8A8(L_162, NULL);
+		G_B123_0 = ((((int32_t)((((int32_t)L_163) == ((int32_t)((int32_t)12)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		goto IL_0569;
 	}
 
@@ -9252,21 +9487,21 @@ IL_0568:
 IL_0569:
 	{
 		V_47 = (bool)G_B123_0;
-		bool L_163 = V_47;
-		if (!L_163)
+		bool L_164 = V_47;
+		if (!L_164)
 		{
 			goto IL_05a6;
 		}
 	}
 	{
-		int32_t L_164;
-		L_164 = GUIClip_Internal_GetCount_m83C187F97642C73B9241C9A026CDA89A7A9EB8D1(NULL);
-		V_48 = L_164;
-		int32_t L_165 = V_48;
-		int32_t L_166 = V_0;
-		V_49 = (bool)((((int32_t)L_165) > ((int32_t)L_166))? 1 : 0);
-		bool L_167 = V_49;
-		if (!L_167)
+		int32_t L_165;
+		L_165 = GUIClip_Internal_GetCount_m83C187F97642C73B9241C9A026CDA89A7A9EB8D1(NULL);
+		V_48 = L_165;
+		int32_t L_166 = V_48;
+		int32_t L_167 = V_0;
+		V_49 = (bool)((((int32_t)L_166) > ((int32_t)L_167))? 1 : 0);
+		bool L_168 = V_49;
+		if (!L_168)
 		{
 			goto IL_058f;
 		}
@@ -9279,11 +9514,11 @@ IL_0569:
 
 IL_058f:
 	{
-		int32_t L_168 = V_48;
-		int32_t L_169 = V_0;
-		V_50 = (bool)((((int32_t)L_168) < ((int32_t)L_169))? 1 : 0);
-		bool L_170 = V_50;
-		if (!L_170)
+		int32_t L_169 = V_48;
+		int32_t L_170 = V_0;
+		V_50 = (bool)((((int32_t)L_169) < ((int32_t)L_170))? 1 : 0);
+		bool L_171 = V_50;
+		if (!L_171)
 		{
 			goto IL_05a5;
 		}
@@ -9313,23 +9548,23 @@ IL_05a9:
 
 IL_05af:
 	{
-		int32_t L_171;
-		L_171 = GUIClip_Internal_GetCount_m83C187F97642C73B9241C9A026CDA89A7A9EB8D1(NULL);
-		int32_t L_172 = V_0;
-		V_51 = (bool)((((int32_t)L_171) > ((int32_t)L_172))? 1 : 0);
-		bool L_173 = V_51;
-		if (L_173)
+		int32_t L_172;
+		L_172 = GUIClip_Internal_GetCount_m83C187F97642C73B9241C9A026CDA89A7A9EB8D1(NULL);
+		int32_t L_173 = V_0;
+		V_51 = (bool)((((int32_t)L_172) > ((int32_t)L_173))? 1 : 0);
+		bool L_174 = V_51;
+		if (L_174)
 		{
 			goto IL_05a9;
 		}
 	}
 	{
-		Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* L_174 = ___0_evt;
-		int32_t L_175;
-		L_175 = Event_get_type_m8A825D6DA432B967DAA3E22E5C8571620A75F8A8(L_174, NULL);
-		V_52 = (bool)((((int32_t)L_175) == ((int32_t)((int32_t)12)))? 1 : 0);
-		bool L_176 = V_52;
-		if (!L_176)
+		Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* L_175 = ___0_evt;
+		int32_t L_176;
+		L_176 = Event_get_type_m8A825D6DA432B967DAA3E22E5C8571620A75F8A8(L_175, NULL);
+		V_52 = (bool)((((int32_t)L_176) == ((int32_t)((int32_t)12)))? 1 : 0);
+		bool L_177 = V_52;
+		if (!L_177)
 		{
 			goto IL_05db;
 		}
@@ -11530,6 +11765,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ImmediateModeException__ctor_mB1863A2577
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardNavigationManipulator__ctor_m7098F151C16E426B7E4272AB0D5ECDB0B45BA7D1 (KeyboardNavigationManipulator_t7E9BA3568ADC1660C4E09B924ECD457E33B835B3* __this, Action_2_t4FD84D64C1341169AC2F73750A356411BCEAF88A* ___0_action, const RuntimeMethod* method) 
 {
 	{
@@ -12771,6 +13022,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Manipulator__ctor_m9FA37A0BF987D14B713B1
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MouseCaptureController_HasMouseCapture_mFFD49E6A07FF28D47B66DB9C36CFB011933B9CEA (RuntimeObject* ___0_handler, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13371,6 +13630,38 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIElementsRuntimeUtilityNative_VisualEle
 	_il2cpp_icall_func = (UIElementsRuntimeUtilityNative_VisualElementCreation_m6C9981F8899E4A692E46B3441C91DCC0642A236F_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.UIElements.UIElementsRuntimeUtilityNative::VisualElementCreation()");
 	_il2cpp_icall_func();
 }
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -23041,7 +23332,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeshGenerationContextUtils_GetVisualElem
 		return;
 	}
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeshGenerationContextUtils_AdjustBackgroundSizeForBorders_mA398AD4029744337DD91A5C40AC231229BD66695 (VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___0_visualElement, Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* ___1_rect, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeshGenerationContextUtils_AdjustBackgroundSizeForBorders_m5FCE16372FEA6EC53AD1C30A218F3E469F1E2FCF (VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___0_visualElement, RectangleParams_t0B5A63548DC33EE252AF81E242B719118C235A4B* ___1_rectParams, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -23050,10 +23341,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeshGenerationContextUtils_AdjustBackgro
 		s_Il2CppMethodInitialized = true;
 	}
 	RuntimeObject* V_0 = NULL;
-	bool V_1 = false;
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 V_1;
+	memset((&V_1), 0, sizeof(V_1));
 	bool V_2 = false;
 	bool V_3 = false;
 	bool V_4 = false;
+	bool V_5 = false;
 	int32_t G_B3_0 = 0;
 	int32_t G_B8_0 = 0;
 	int32_t G_B13_0 = 0;
@@ -23063,180 +23356,160 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeshGenerationContextUtils_AdjustBackgro
 		RuntimeObject* L_1;
 		L_1 = VisualElement_get_resolvedStyle_m3885B7534A94E0BCE024A9621465A0F273DA0AEB(L_0, NULL);
 		V_0 = L_1;
-		RuntimeObject* L_2 = V_0;
-		float L_3;
-		L_3 = InterfaceFuncInvoker0< float >::Invoke(6, IResolvedStyle_t6A3530BA6147B091C278593F21F86B09CD42BE89_il2cpp_TypeInfo_var, L_2);
-		if ((!(((float)L_3) >= ((float)(1.0f)))))
+		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_2;
+		L_2 = Vector4_get_zero_m3D61F5FA9483CD9C08977D9D8852FB448B4CE6D1_inline(NULL);
+		V_1 = L_2;
+		RuntimeObject* L_3 = V_0;
+		float L_4;
+		L_4 = InterfaceFuncInvoker0< float >::Invoke(6, IResolvedStyle_t6A3530BA6147B091C278593F21F86B09CD42BE89_il2cpp_TypeInfo_var, L_3);
+		if ((!(((float)L_4) >= ((float)(1.0f)))))
 		{
-			goto IL_002c;
+			goto IL_0032;
 		}
 	}
 	{
-		RuntimeObject* L_4 = V_0;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_5;
-		L_5 = InterfaceFuncInvoker0< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(5, IResolvedStyle_t6A3530BA6147B091C278593F21F86B09CD42BE89_il2cpp_TypeInfo_var, L_4);
-		float L_6 = L_5.___a;
-		G_B3_0 = ((((int32_t)((!(((float)L_6) >= ((float)(1.0f))))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		goto IL_002d;
+		RuntimeObject* L_5 = V_0;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_6;
+		L_6 = InterfaceFuncInvoker0< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(5, IResolvedStyle_t6A3530BA6147B091C278593F21F86B09CD42BE89_il2cpp_TypeInfo_var, L_5);
+		float L_7 = L_6.___a;
+		G_B3_0 = ((((int32_t)((!(((float)L_7) >= ((float)(1.0f))))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		goto IL_0033;
 	}
 
-IL_002c:
+IL_0032:
 	{
 		G_B3_0 = 0;
 	}
 
-IL_002d:
+IL_0033:
 	{
-		V_1 = (bool)G_B3_0;
-		bool L_7 = V_1;
-		if (!L_7)
+		V_2 = (bool)G_B3_0;
+		bool L_8 = V_2;
+		if (!L_8)
 		{
-			goto IL_0059;
+			goto IL_0045;
 		}
 	}
 	{
-		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* L_8 = ___1_rect;
-		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* L_9 = L_8;
+		(&V_1)->___x = (0.5f);
+	}
+
+IL_0045:
+	{
+		RuntimeObject* L_9 = V_0;
 		float L_10;
-		L_10 = Rect_get_x_mB267B718E0D067F2BAE31BA477647FBF964916EB_inline(L_9, NULL);
-		Rect_set_x_mAB91AB71898A20762BC66FD0723C4C739C4C3406_inline(L_9, ((float)il2cpp_codegen_add(L_10, (0.5f))), NULL);
-		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* L_11 = ___1_rect;
-		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* L_12 = L_11;
-		float L_13;
-		L_13 = Rect_get_width_m620D67551372073C9C32C4C4624C2A5713F7F9A9_inline(L_12, NULL);
-		Rect_set_width_m93B6217CF3EFF89F9B0C81F34D7345DE90B93E5A_inline(L_12, ((float)il2cpp_codegen_subtract(L_13, (0.5f))), NULL);
-	}
-
-IL_0059:
-	{
-		RuntimeObject* L_14 = V_0;
-		float L_15;
-		L_15 = InterfaceFuncInvoker0< float >::Invoke(12, IResolvedStyle_t6A3530BA6147B091C278593F21F86B09CD42BE89_il2cpp_TypeInfo_var, L_14);
-		if ((!(((float)L_15) >= ((float)(1.0f)))))
+		L_10 = InterfaceFuncInvoker0< float >::Invoke(12, IResolvedStyle_t6A3530BA6147B091C278593F21F86B09CD42BE89_il2cpp_TypeInfo_var, L_9);
+		if ((!(((float)L_10) >= ((float)(1.0f)))))
 		{
-			goto IL_007d;
+			goto IL_0069;
 		}
 	}
 	{
-		RuntimeObject* L_16 = V_0;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_17;
-		L_17 = InterfaceFuncInvoker0< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(9, IResolvedStyle_t6A3530BA6147B091C278593F21F86B09CD42BE89_il2cpp_TypeInfo_var, L_16);
-		float L_18 = L_17.___a;
-		G_B8_0 = ((((int32_t)((!(((float)L_18) >= ((float)(1.0f))))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		goto IL_007e;
+		RuntimeObject* L_11 = V_0;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_12;
+		L_12 = InterfaceFuncInvoker0< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(9, IResolvedStyle_t6A3530BA6147B091C278593F21F86B09CD42BE89_il2cpp_TypeInfo_var, L_11);
+		float L_13 = L_12.___a;
+		G_B8_0 = ((((int32_t)((!(((float)L_13) >= ((float)(1.0f))))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		goto IL_006a;
 	}
 
-IL_007d:
+IL_0069:
 	{
 		G_B8_0 = 0;
 	}
 
-IL_007e:
+IL_006a:
 	{
-		V_2 = (bool)G_B8_0;
-		bool L_19 = V_2;
-		if (!L_19)
+		V_3 = (bool)G_B8_0;
+		bool L_14 = V_3;
+		if (!L_14)
 		{
-			goto IL_00aa;
+			goto IL_007c;
 		}
 	}
 	{
-		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* L_20 = ___1_rect;
-		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* L_21 = L_20;
-		float L_22;
-		L_22 = Rect_get_y_mC733E8D49F3CE21B2A3D40A1B72D687F22C97F49_inline(L_21, NULL);
-		Rect_set_y_mDE91F4B98A6E8623EFB1250FF6526D5DB5855629_inline(L_21, ((float)il2cpp_codegen_add(L_22, (0.5f))), NULL);
-		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* L_23 = ___1_rect;
-		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* L_24 = L_23;
-		float L_25;
-		L_25 = Rect_get_height_mE1AA6C6C725CCD2D317BD2157396D3CF7D47C9D8_inline(L_24, NULL);
-		Rect_set_height_mD00038E6E06637137A5626CA8CD421924005BF03_inline(L_24, ((float)il2cpp_codegen_subtract(L_25, (0.5f))), NULL);
+		(&V_1)->___y = (0.5f);
 	}
 
-IL_00aa:
+IL_007c:
 	{
-		RuntimeObject* L_26 = V_0;
-		float L_27;
-		L_27 = InterfaceFuncInvoker0< float >::Invoke(8, IResolvedStyle_t6A3530BA6147B091C278593F21F86B09CD42BE89_il2cpp_TypeInfo_var, L_26);
-		if ((!(((float)L_27) >= ((float)(1.0f)))))
+		RuntimeObject* L_15 = V_0;
+		float L_16;
+		L_16 = InterfaceFuncInvoker0< float >::Invoke(8, IResolvedStyle_t6A3530BA6147B091C278593F21F86B09CD42BE89_il2cpp_TypeInfo_var, L_15);
+		if ((!(((float)L_16) >= ((float)(1.0f)))))
 		{
-			goto IL_00ce;
+			goto IL_00a0;
 		}
 	}
 	{
-		RuntimeObject* L_28 = V_0;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_29;
-		L_29 = InterfaceFuncInvoker0< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(7, IResolvedStyle_t6A3530BA6147B091C278593F21F86B09CD42BE89_il2cpp_TypeInfo_var, L_28);
-		float L_30 = L_29.___a;
-		G_B13_0 = ((((int32_t)((!(((float)L_30) >= ((float)(1.0f))))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		goto IL_00cf;
+		RuntimeObject* L_17 = V_0;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_18;
+		L_18 = InterfaceFuncInvoker0< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(7, IResolvedStyle_t6A3530BA6147B091C278593F21F86B09CD42BE89_il2cpp_TypeInfo_var, L_17);
+		float L_19 = L_18.___a;
+		G_B13_0 = ((((int32_t)((!(((float)L_19) >= ((float)(1.0f))))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		goto IL_00a1;
 	}
 
-IL_00ce:
+IL_00a0:
 	{
 		G_B13_0 = 0;
 	}
 
-IL_00cf:
+IL_00a1:
 	{
-		V_3 = (bool)G_B13_0;
-		bool L_31 = V_3;
-		if (!L_31)
+		V_4 = (bool)G_B13_0;
+		bool L_20 = V_4;
+		if (!L_20)
 		{
-			goto IL_00e8;
+			goto IL_00b5;
 		}
 	}
 	{
-		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* L_32 = ___1_rect;
-		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* L_33 = L_32;
-		float L_34;
-		L_34 = Rect_get_width_m620D67551372073C9C32C4C4624C2A5713F7F9A9_inline(L_33, NULL);
-		Rect_set_width_m93B6217CF3EFF89F9B0C81F34D7345DE90B93E5A_inline(L_33, ((float)il2cpp_codegen_subtract(L_34, (0.5f))), NULL);
+		(&V_1)->___z = (0.5f);
 	}
 
-IL_00e8:
+IL_00b5:
 	{
-		RuntimeObject* L_35 = V_0;
-		float L_36;
-		L_36 = InterfaceFuncInvoker0< float >::Invoke(4, IResolvedStyle_t6A3530BA6147B091C278593F21F86B09CD42BE89_il2cpp_TypeInfo_var, L_35);
-		if ((!(((float)L_36) >= ((float)(1.0f)))))
+		RuntimeObject* L_21 = V_0;
+		float L_22;
+		L_22 = InterfaceFuncInvoker0< float >::Invoke(4, IResolvedStyle_t6A3530BA6147B091C278593F21F86B09CD42BE89_il2cpp_TypeInfo_var, L_21);
+		if ((!(((float)L_22) >= ((float)(1.0f)))))
 		{
-			goto IL_010c;
+			goto IL_00d9;
 		}
 	}
 	{
-		RuntimeObject* L_37 = V_0;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_38;
-		L_38 = InterfaceFuncInvoker0< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(1, IResolvedStyle_t6A3530BA6147B091C278593F21F86B09CD42BE89_il2cpp_TypeInfo_var, L_37);
-		float L_39 = L_38.___a;
-		G_B18_0 = ((((int32_t)((!(((float)L_39) >= ((float)(1.0f))))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		goto IL_010d;
+		RuntimeObject* L_23 = V_0;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_24;
+		L_24 = InterfaceFuncInvoker0< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(1, IResolvedStyle_t6A3530BA6147B091C278593F21F86B09CD42BE89_il2cpp_TypeInfo_var, L_23);
+		float L_25 = L_24.___a;
+		G_B18_0 = ((((int32_t)((!(((float)L_25) >= ((float)(1.0f))))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		goto IL_00da;
 	}
 
-IL_010c:
+IL_00d9:
 	{
 		G_B18_0 = 0;
 	}
 
-IL_010d:
+IL_00da:
 	{
-		V_4 = (bool)G_B18_0;
-		bool L_40 = V_4;
-		if (!L_40)
+		V_5 = (bool)G_B18_0;
+		bool L_26 = V_5;
+		if (!L_26)
 		{
-			goto IL_0128;
+			goto IL_00ee;
 		}
 	}
 	{
-		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* L_41 = ___1_rect;
-		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* L_42 = L_41;
-		float L_43;
-		L_43 = Rect_get_height_mE1AA6C6C725CCD2D317BD2157396D3CF7D47C9D8_inline(L_42, NULL);
-		Rect_set_height_mD00038E6E06637137A5626CA8CD421924005BF03_inline(L_42, ((float)il2cpp_codegen_subtract(L_43, (0.5f))), NULL);
+		(&V_1)->___w = (0.5f);
 	}
 
-IL_0128:
+IL_00ee:
 	{
+		RectangleParams_t0B5A63548DC33EE252AF81E242B719118C235A4B* L_27 = ___1_rectParams;
+		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_28 = V_1;
+		L_27->___rectInset = L_28;
 		return;
 	}
 }
@@ -25341,19 +25614,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NativeRectParams_t18E2E456D50F027D08BF8B4BCBD
 		(&V_0)->___bottomSlice = L_15;
 		float L_16 = __this->___sliceScale;
 		(&V_0)->___sliceScale = L_16;
-		ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0* L_17 = (ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0*)(&__this->___colorPage);
-		NativeColorPage_tD578D4E96ABBDBB0E6A608F6CE97A0362ABD7D4B L_18;
-		L_18 = ColorPage_ToNativeColorPage_m898BC36273B9EC6F2B95F2BC4FCD7631C1D54C9C(L_17, NULL);
-		(&V_0)->___colorPage = L_18;
-		NativeRectParams_t18E2E456D50F027D08BF8B4BCBD83DF7FDB1C02F L_19 = V_0;
-		V_1 = L_19;
-		goto IL_0103;
+		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_17 = __this->___rectInset;
+		(&V_0)->___rectInset = L_17;
+		ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0* L_18 = (ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0*)(&__this->___colorPage);
+		NativeColorPage_tD578D4E96ABBDBB0E6A608F6CE97A0362ABD7D4B L_19;
+		L_19 = ColorPage_ToNativeColorPage_m898BC36273B9EC6F2B95F2BC4FCD7631C1D54C9C(L_18, NULL);
+		(&V_0)->___colorPage = L_19;
+		NativeRectParams_t18E2E456D50F027D08BF8B4BCBD83DF7FDB1C02F L_20 = V_0;
+		V_1 = L_20;
+		goto IL_0110;
 	}
 
-IL_0103:
+IL_0110:
 	{
-		NativeRectParams_t18E2E456D50F027D08BF8B4BCBD83DF7FDB1C02F L_20 = V_1;
-		return L_20;
+		NativeRectParams_t18E2E456D50F027D08BF8B4BCBD83DF7FDB1C02F L_21 = V_1;
+		return L_21;
 	}
 }
 IL2CPP_EXTERN_C  NativeRectParams_t18E2E456D50F027D08BF8B4BCBD83DF7FDB1C02F RectangleParams_ToNativeParams_m9673B6A4B08A4A0B6BE5C5ADEEF0685F40AD4B9D_AdjustorThunk (RuntimeObject* __this, Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___0_uvRegion, const RuntimeMethod* method)
@@ -25451,6 +25726,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeshGenerationContext__cctor_m155A2BE7F6
 		return;
 	}
 }
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -28546,20 +28829,26 @@ IL_000c:
 		return L_4;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Rect_set_x_mAB91AB71898A20762BC66FD0723C4C739C4C3406_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, float ___0_value, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 Vector4_get_zero_m3D61F5FA9483CD9C08977D9D8852FB448B4CE6D1_inline (const RuntimeMethod* method) 
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
-		float L_0 = ___0_value;
-		__this->___m_XMin = L_0;
-		return;
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
 	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Rect_set_y_mDE91F4B98A6E8623EFB1250FF6526D5DB5855629_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, float ___0_value, const RuntimeMethod* method) 
-{
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 V_0;
+	memset((&V_0), 0, sizeof(V_0));
 	{
-		float L_0 = ___0_value;
-		__this->___m_YMin = L_0;
-		return;
+		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_0 = ((Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_StaticFields*)il2cpp_codegen_static_fields_for(Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_il2cpp_TypeInfo_var))->___zeroVector;
+		V_0 = L_0;
+		goto IL_0009;
+	}
+
+IL_0009:
+	{
+		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_1 = V_0;
+		return L_1;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Rect_get_xMin_mE89C40702926D016A633399E20DB9501E251630D_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, const RuntimeMethod* method) 
@@ -28943,28 +29232,6 @@ IL_0017:
 	{
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_5 = V_0;
 		return L_5;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 Vector4_get_zero_m3D61F5FA9483CD9C08977D9D8852FB448B4CE6D1_inline (const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 V_0;
-	memset((&V_0), 0, sizeof(V_0));
-	{
-		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_0 = ((Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_StaticFields*)il2cpp_codegen_static_fields_for(Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_il2cpp_TypeInfo_var))->___zeroVector;
-		V_0 = L_0;
-		goto IL_0009;
-	}
-
-IL_0009:
-	{
-		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_1 = V_0;
-		return L_1;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Vector4_op_Inequality_mD6A1C6E862F3EFB1B222A2DDCB7A7237042DE142_inline (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___0_lhs, Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___1_rhs, const RuntimeMethod* method) 

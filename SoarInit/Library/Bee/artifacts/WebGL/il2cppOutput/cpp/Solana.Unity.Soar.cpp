@@ -68,6 +68,7 @@ struct ValueCollection_t5EE4CE1B43E2D92AEF10A57CFA7D8C5CDC905D97;
 struct EntryU5BU5D_t0976A4E9A0E86D57C437C6A87B705967417677A9;
 struct AccountMetaU5BU5D_t2EF33B747B434F719379E7E87EBB631A70F9C27A;
 struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
+struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB;
 struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C;
 struct IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832;
 struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
@@ -221,36 +222,6 @@ struct List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD  : public RuntimeObject
 	int32_t ____size;
 	int32_t ____version;
 	RuntimeObject* ____syncRoot;
-};
-struct ProgramError_1_t206418B8B11031DFAD600649862E8057D2EEBDD2  : public RuntimeObject
-{
-	uint32_t ___U3CErrorKindU3Ek__BackingField;
-	String_t* ___U3CMessageU3Ek__BackingField;
-	uint32_t ___U3CErrorCodeU3Ek__BackingField;
-};
-struct RequestResult_1_t8FF863D369FC7B36364D9AB901041DC97502B757  : public RuntimeObject
-{
-	bool ___U3CWasHttpRequestSuccessfulU3Ek__BackingField;
-	bool ___U3CWasRequestSuccessfullyHandledU3Ek__BackingField;
-	String_t* ___U3CReasonU3Ek__BackingField;
-	ResponseValue_1_tC8C170740C5870A6802659B4F5985D52987DA195* ___U3CResultU3Ek__BackingField;
-	int32_t ___U3CHttpStatusCodeU3Ek__BackingField;
-	int32_t ___U3CServerErrorCodeU3Ek__BackingField;
-	ErrorData_t49373BB7C78A299593CF1FF546FFB3DCC8A9E5B8* ___U3CErrorDataU3Ek__BackingField;
-	String_t* ___U3CRawRpcRequestU3Ek__BackingField;
-	String_t* ___U3CRawRpcResponseU3Ek__BackingField;
-};
-struct RequestResult_1_tF25E3B2C01F82A444D7625EB9C476DC8437EBA24  : public RuntimeObject
-{
-	bool ___U3CWasHttpRequestSuccessfulU3Ek__BackingField;
-	bool ___U3CWasRequestSuccessfullyHandledU3Ek__BackingField;
-	String_t* ___U3CReasonU3Ek__BackingField;
-	RuntimeObject* ___U3CResultU3Ek__BackingField;
-	int32_t ___U3CHttpStatusCodeU3Ek__BackingField;
-	int32_t ___U3CServerErrorCodeU3Ek__BackingField;
-	ErrorData_t49373BB7C78A299593CF1FF546FFB3DCC8A9E5B8* ___U3CErrorDataU3Ek__BackingField;
-	String_t* ___U3CRawRpcRequestU3Ek__BackingField;
-	String_t* ___U3CRawRpcResponseU3Ek__BackingField;
 };
 struct ResponseValue_1_tC8C170740C5870A6802659B4F5985D52987DA195  : public RuntimeObject
 {
@@ -431,6 +402,15 @@ struct Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3
 {
 	uint8_t ___m_value;
 };
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2  : public ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F
+{
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_pinvoke
+{
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_com
+{
+};
 struct Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C 
 {
 	int32_t ___m_value;
@@ -470,6 +450,14 @@ struct AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0
 struct ByReference_1_t9C85BCCAAF8C525B6C06B07E922D8D217BE8D6FC 
 {
 	intptr_t ____value;
+};
+struct BinaryEncoding_t33DFCC52EAD05BC7AEF163CA7373C340D02A9F50 
+{
+	int32_t ___value__;
+};
+struct Commitment_t6EB7EC814929527FEE8C61EFF3E7CC856C930B5A 
+{
+	int32_t ___value__;
 };
 struct Exception_t  : public RuntimeObject
 {
@@ -528,6 +516,10 @@ struct Exception_t_marshaled_com
 	Il2CppSafeArray* ___native_trace_ips;
 	int32_t ___caught_in_unmanaged;
 };
+struct HttpStatusCode_t530B6899270B44ED560C3872DB5F9698FB7D7374 
+{
+	int32_t ___value__;
+};
 struct RegisterLeaderBoardInput_tEF2715C45D3C5848422628B56BF3C221814058CD  : public RuntimeObject
 {
 	String_t* ___U3CDescriptionU3Ek__BackingField;
@@ -542,10 +534,48 @@ struct RegisterLeaderBoardInput_tEF2715C45D3C5848422628B56BF3C221814058CD  : pub
 struct SoarClient_tA2DE5564FE70D7339FBE13826153FED8CA67B189  : public TransactionalBaseClient_1_tC76FBB9F1F172B54440EC86A3202B55B6F5EBF2B
 {
 };
+struct SoarErrorKind_t6A2F3DF32BEC47ACC3F9060358450888F96D9421 
+{
+	uint32_t ___value__;
+};
+struct UInt32Enum_t7B4F5C6C14D2C4B2A5927C59620BE3868714DACF 
+{
+	uint32_t ___value__;
+};
+struct ProgramError_1_t206418B8B11031DFAD600649862E8057D2EEBDD2  : public RuntimeObject
+{
+	uint32_t ___U3CErrorKindU3Ek__BackingField;
+	String_t* ___U3CMessageU3Ek__BackingField;
+	uint32_t ___U3CErrorCodeU3Ek__BackingField;
+};
 struct ReadOnlySpan_1_tA850A6C0E88ABBA37646A078ACBC24D6D5FD9B4D 
 {
 	ByReference_1_t9C85BCCAAF8C525B6C06B07E922D8D217BE8D6FC ____pointer;
 	int32_t ____length;
+};
+struct RequestResult_1_t8FF863D369FC7B36364D9AB901041DC97502B757  : public RuntimeObject
+{
+	bool ___U3CWasHttpRequestSuccessfulU3Ek__BackingField;
+	bool ___U3CWasRequestSuccessfullyHandledU3Ek__BackingField;
+	String_t* ___U3CReasonU3Ek__BackingField;
+	ResponseValue_1_tC8C170740C5870A6802659B4F5985D52987DA195* ___U3CResultU3Ek__BackingField;
+	int32_t ___U3CHttpStatusCodeU3Ek__BackingField;
+	int32_t ___U3CServerErrorCodeU3Ek__BackingField;
+	ErrorData_t49373BB7C78A299593CF1FF546FFB3DCC8A9E5B8* ___U3CErrorDataU3Ek__BackingField;
+	String_t* ___U3CRawRpcRequestU3Ek__BackingField;
+	String_t* ___U3CRawRpcResponseU3Ek__BackingField;
+};
+struct RequestResult_1_tF25E3B2C01F82A444D7625EB9C476DC8437EBA24  : public RuntimeObject
+{
+	bool ___U3CWasHttpRequestSuccessfulU3Ek__BackingField;
+	bool ___U3CWasRequestSuccessfullyHandledU3Ek__BackingField;
+	String_t* ___U3CReasonU3Ek__BackingField;
+	RuntimeObject* ___U3CResultU3Ek__BackingField;
+	int32_t ___U3CHttpStatusCodeU3Ek__BackingField;
+	int32_t ___U3CServerErrorCodeU3Ek__BackingField;
+	ErrorData_t49373BB7C78A299593CF1FF546FFB3DCC8A9E5B8* ___U3CErrorDataU3Ek__BackingField;
+	String_t* ___U3CRawRpcRequestU3Ek__BackingField;
+	String_t* ___U3CRawRpcResponseU3Ek__BackingField;
 };
 struct U3CGetGameAsyncU3Ed__13_t26BD73DFB8C1A680CA7857EF040DEEC36D2579DC 
 {
@@ -1275,23 +1305,24 @@ IL_0093_1:
 
 CATCH_00c5:
 	{
-		V_6 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+		Exception_t* L_32 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+		V_6 = L_32;
 		__this->___U3CU3E1__state = ((int32_t)-2);
-		AsyncTaskMethodBuilder_1_tD60AD0D096FF03F0D34AEF698620F29BAD3BF792* L_32 = (AsyncTaskMethodBuilder_1_tD60AD0D096FF03F0D34AEF698620F29BAD3BF792*)(&__this->___U3CU3Et__builder);
-		Exception_t* L_33 = V_6;
+		AsyncTaskMethodBuilder_1_tD60AD0D096FF03F0D34AEF698620F29BAD3BF792* L_33 = (AsyncTaskMethodBuilder_1_tD60AD0D096FF03F0D34AEF698620F29BAD3BF792*)(&__this->___U3CU3Et__builder);
+		Exception_t* L_34 = V_6;
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AsyncTaskMethodBuilder_1_tD60AD0D096FF03F0D34AEF698620F29BAD3BF792_il2cpp_TypeInfo_var)));
-		AsyncTaskMethodBuilder_1_SetException_m79C5A9D91FF001C3FB5F65ADD1A5D9C0F9968742(L_32, L_33, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AsyncTaskMethodBuilder_1_SetException_m79C5A9D91FF001C3FB5F65ADD1A5D9C0F9968742_RuntimeMethod_var)));
-		IL2CPP_POP_ACTIVE_EXCEPTION();
+		AsyncTaskMethodBuilder_1_SetException_m79C5A9D91FF001C3FB5F65ADD1A5D9C0F9968742(L_33, L_34, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AsyncTaskMethodBuilder_1_SetException_m79C5A9D91FF001C3FB5F65ADD1A5D9C0F9968742_RuntimeMethod_var)));
+		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_00f2;
 	}
 
 IL_00de:
 	{
 		__this->___U3CU3E1__state = ((int32_t)-2);
-		AsyncTaskMethodBuilder_1_tD60AD0D096FF03F0D34AEF698620F29BAD3BF792* L_34 = (AsyncTaskMethodBuilder_1_tD60AD0D096FF03F0D34AEF698620F29BAD3BF792*)(&__this->___U3CU3Et__builder);
-		AccountResultWrapper_1_t8A876B0D6878686AADFD3643EE152D5D26CFC8BF* L_35 = V_2;
+		AsyncTaskMethodBuilder_1_tD60AD0D096FF03F0D34AEF698620F29BAD3BF792* L_35 = (AsyncTaskMethodBuilder_1_tD60AD0D096FF03F0D34AEF698620F29BAD3BF792*)(&__this->___U3CU3Et__builder);
+		AccountResultWrapper_1_t8A876B0D6878686AADFD3643EE152D5D26CFC8BF* L_36 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(AsyncTaskMethodBuilder_1_tD60AD0D096FF03F0D34AEF698620F29BAD3BF792_il2cpp_TypeInfo_var);
-		AsyncTaskMethodBuilder_1_SetResult_mF4EBEDFC09B1C346B0FE6ADC0D9F9334D0EA87FC(L_34, L_35, AsyncTaskMethodBuilder_1_SetResult_mF4EBEDFC09B1C346B0FE6ADC0D9F9334D0EA87FC_RuntimeMethod_var);
+		AsyncTaskMethodBuilder_1_SetResult_mF4EBEDFC09B1C346B0FE6ADC0D9F9334D0EA87FC(L_35, L_36, AsyncTaskMethodBuilder_1_SetResult_mF4EBEDFC09B1C346B0FE6ADC0D9F9334D0EA87FC_RuntimeMethod_var);
 	}
 
 IL_00f2:
@@ -2473,6 +2504,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RegisterLeaderBoardInput__ctor_mCDC0A436
 		return;
 	}
 }
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

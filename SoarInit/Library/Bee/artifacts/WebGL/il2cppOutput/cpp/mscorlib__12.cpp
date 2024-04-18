@@ -424,27 +424,6 @@ struct Parser_t6A7CE2538ABB8199316C04EA7019A63D2F863378  : public RuntimeObject
 struct RandomNumberGenerator_t4E862666A2F7D55324960670C7A1B4C2D40222F3  : public RuntimeObject
 {
 };
-struct RijndaelManagedTransform_t4A8EE6780840A49B73D54C22252FD85038B7DA19  : public RuntimeObject
-{
-	int32_t ___m_cipherMode;
-	int32_t ___m_paddingValue;
-	int32_t ___m_transformMode;
-	int32_t ___m_blockSizeBits;
-	int32_t ___m_blockSizeBytes;
-	int32_t ___m_inputBlockSize;
-	int32_t ___m_outputBlockSize;
-	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___m_encryptKeyExpansion;
-	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___m_decryptKeyExpansion;
-	int32_t ___m_Nr;
-	int32_t ___m_Nb;
-	int32_t ___m_Nk;
-	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___m_encryptindex;
-	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___m_decryptindex;
-	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___m_IV;
-	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___m_lastBlockBuffer;
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___m_depadBuffer;
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___m_shiftRegister;
-};
 struct SecurityElement_tA7337C2977BEC2323B0A3EE95C1C6422013F4E55  : public RuntimeObject
 {
 	String_t* ___text;
@@ -464,33 +443,6 @@ struct StringBuilder_t  : public RuntimeObject
 	int32_t ___m_ChunkLength;
 	int32_t ___m_ChunkOffset;
 	int32_t ___m_MaxCapacity;
-};
-struct SymmetricAlgorithm_t8C631E4E7B9073CCBD856F8D559A62EB5616BBE8  : public RuntimeObject
-{
-	int32_t ___BlockSizeValue;
-	int32_t ___FeedbackSizeValue;
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___IVValue;
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___KeyValue;
-	KeySizesU5BU5D_tDD87467B9CB683380B5DC92193576A3136DFAE03* ___LegalBlockSizesValue;
-	KeySizesU5BU5D_tDD87467B9CB683380B5DC92193576A3136DFAE03* ___LegalKeySizesValue;
-	int32_t ___KeySizeValue;
-	int32_t ___ModeValue;
-	int32_t ___PaddingValue;
-};
-struct SymmetricTransform_tDD1D096506ADC83C468EE253DE76D1EB315DAC43  : public RuntimeObject
-{
-	SymmetricAlgorithm_t8C631E4E7B9073CCBD856F8D559A62EB5616BBE8* ___algo;
-	bool ___encrypt;
-	int32_t ___BlockSizeByte;
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___temp;
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___temp2;
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___workBuff;
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___workout;
-	int32_t ___padmode;
-	int32_t ___FeedBackByte;
-	bool ___m_disposed;
-	bool ___lastBlock;
-	RandomNumberGenerator_t4E862666A2F7D55324960670C7A1B4C2D40222F3* ____rng;
 };
 struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F  : public RuntimeObject
 {
@@ -521,6 +473,15 @@ struct DSASignatureFormatter_t271181F7100153E5AA9291A3C677EC5041540F8A  : public
 {
 	String_t* ____oid;
 };
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2  : public ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F
+{
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_pinvoke
+{
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_com
+{
+};
 struct Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C 
 {
 	int32_t ___m_value;
@@ -539,19 +500,6 @@ struct KeyedHashAlgorithm_t782AD417BF829DAD1267A7AE4F9B553537CCF263  : public Ha
 };
 struct MD5_t808E6AE387D5FCC368DBB86576572C1564D17E5A  : public HashAlgorithm_t299ECE61BBF4582B1F75734D43A96DDEC9B2004D
 {
-};
-struct RC2_tFBB9A77126D49FBFBA021B103073FBA78F57B0B9  : public SymmetricAlgorithm_t8C631E4E7B9073CCBD856F8D559A62EB5616BBE8
-{
-	int32_t ___EffectiveKeySizeValue;
-};
-struct RC2Transform_t715B3309C1B219A09B641E87BFDB66EC016E59B7  : public SymmetricTransform_tDD1D096506ADC83C468EE253DE76D1EB315DAC43
-{
-	uint16_t ___R0;
-	uint16_t ___R1;
-	uint16_t ___R2;
-	uint16_t ___R3;
-	UInt16U5BU5D_tEB7C42D811D999D2AA815BADC3FCCDD9C67B3F83* ___K;
-	int32_t ___j;
 };
 struct RIPEMD160_t367AC1CC6F4CB51EDA39EB0AA696470F47ED98F0  : public HashAlgorithm_t299ECE61BBF4582B1F75734D43A96DDEC9B2004D
 {
@@ -592,9 +540,6 @@ struct RSAParameters_t14B738B69F9D1EB594D5F391BDF8E42BA16435FF_marshaled_com
 	Il2CppSafeArray* ___InverseQ;
 	Il2CppSafeArray* ___D;
 };
-struct Rijndael_t282661761E53E282457A31F5675ACF53D64EE807  : public SymmetricAlgorithm_t8C631E4E7B9073CCBD856F8D559A62EB5616BBE8
-{
-};
 struct SHA1_t0612ADACADC25FB4C22525A579B30354586F0CEE  : public HashAlgorithm_t299ECE61BBF4582B1F75734D43A96DDEC9B2004D
 {
 };
@@ -611,9 +556,6 @@ struct Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE  : public MarshalByRefOb
 {
 	ReadWriteTask_t0821BF49EE38596C7734E86E1A6A39D769BE2C05* ____activeReadWriteTask;
 	SemaphoreSlim_t0D5CB5685D9BFA5BF95CEC6E7395490F933E8DB2* ____asyncActiveSemaphore;
-};
-struct TripleDES_tB4B064D2618E4F90E3CE4353213140C64B3E2BA5  : public SymmetricAlgorithm_t8C631E4E7B9073CCBD856F8D559A62EB5616BBE8
-{
 };
 struct UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B 
 {
@@ -633,22 +575,17 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915
 		uint8_t Void_t4861ACF8F4594C3437BB48B6E56783494B843915__padding[1];
 	};
 };
-struct CryptoStream_t8258B5E90AA951C21358547EA7C7BEB444441F65  : public Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE
+struct CipherMode_t932070F221590D5F955DE31430C6EAA91B97F027 
 {
-	Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ____stream;
-	RuntimeObject* ____transform;
-	int32_t ____transformMode;
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ____inputBuffer;
-	int32_t ____inputBufferIndex;
-	int32_t ____inputBlockSize;
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ____outputBuffer;
-	int32_t ____outputBufferIndex;
-	int32_t ____outputBlockSize;
-	bool ____canRead;
-	bool ____canWrite;
-	bool ____finalBlockTransformed;
-	SemaphoreSlim_t0D5CB5685D9BFA5BF95CEC6E7395490F933E8DB2* ____lazyAsyncActiveSemaphore;
-	bool ____leaveOpen;
+	int32_t ___value__;
+};
+struct CryptoStreamMode_tAA7DB9F0207503C36099611FC91D688AF0FA26A6 
+{
+	int32_t ___value__;
+};
+struct CspProviderFlags_tE84737C4FE8BB969ADE9D11702DB91D3165D668F 
+{
+	int32_t ___value__;
 };
 struct Delegate_t  : public RuntimeObject
 {
@@ -781,9 +718,9 @@ struct MD5CryptoServiceProvider_tEBA22E49E733DDFE74A3F52711BB1EF82FBF653B  : pub
 	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ____ProcessingBuffer;
 	int32_t ____ProcessingBufferCount;
 };
-struct RC2CryptoServiceProvider_tCD53638728EFD5594242B33A17B4A85FC3977541  : public RC2_tFBB9A77126D49FBFBA021B103073FBA78F57B0B9
+struct PaddingMode_t938E0AB76C80739DB1BB44D7D6B9B94C03B72E1D 
 {
-	bool ___m_use40bitSalt;
+	int32_t ___value__;
 };
 struct RIPEMD160Managed_tA3C168825A89226BAB8585359AB324B49DC7B017  : public RIPEMD160_t367AC1CC6F4CB51EDA39EB0AA696470F47ED98F0
 {
@@ -821,8 +758,9 @@ struct RSAManaged_t897B29EF76C459408E11A42680C942716D809001  : public RSA_tDDE9B
 	BigInteger_t558902B37952162AF8408D05F8341E49AACAC1ED* ___e;
 	KeyGeneratedEventHandler_tB6F6C235FC6C71F4B5F6D6C87A5E4A38BC3549FC* ___KeyGenerated;
 };
-struct RijndaelManaged_t67DFB0E9542F21D9EED0227003A19D9F5ECF2E39  : public Rijndael_t282661761E53E282457A31F5675ACF53D64EE807
+struct RijndaelManagedTransformMode_t33650C741B47AA120D56BCD94B473406BBFB436D 
 {
+	int32_t ___value__;
 };
 struct RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 
 {
@@ -860,12 +798,33 @@ struct SHA512Managed_tB1AB3D2ABFCDE9EFB2A43D3FFC3008B4FE85A89B  : public SHA512_
 	UInt64U5BU5D_tAB1A62450AC0899188486EDB9FC066B8BEED9299* ____stateSHA512;
 	UInt64U5BU5D_tAB1A62450AC0899188486EDB9FC066B8BEED9299* ____W;
 };
+struct SeekOrigin_t7EB9AD0EDF26368A40F48FA2098F02160B1E8000 
+{
+	int32_t ___value__;
+};
 struct TailStream_t66811A2F798809BFF512D00D30DE89E3DB9A3B3C  : public Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE
 {
 	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ____Buffer;
 	int32_t ____BufferSize;
 	int32_t ____BufferIndex;
 	bool ____BufferFull;
+};
+struct CryptoStream_t8258B5E90AA951C21358547EA7C7BEB444441F65  : public Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE
+{
+	Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ____stream;
+	RuntimeObject* ____transform;
+	int32_t ____transformMode;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ____inputBuffer;
+	int32_t ____inputBufferIndex;
+	int32_t ____inputBlockSize;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ____outputBuffer;
+	int32_t ____outputBufferIndex;
+	int32_t ____outputBlockSize;
+	bool ____canRead;
+	bool ____canWrite;
+	bool ____finalBlockTransformed;
+	SemaphoreSlim_t0D5CB5685D9BFA5BF95CEC6E7395490F933E8DB2* ____lazyAsyncActiveSemaphore;
+	bool ____leaveOpen;
 };
 struct HMACMD5_tAAE4EFA488F4247C53A4CF33828546000A4BE662  : public HMAC_tD2DDF5CB02E7064020823E8EE01DA127E46E1684
 {
@@ -899,6 +858,54 @@ struct MulticastDelegate_t_marshaled_com : public Delegate_t_marshaled_com
 {
 	Delegate_t_marshaled_com** ___delegates;
 };
+struct RijndaelManagedTransform_t4A8EE6780840A49B73D54C22252FD85038B7DA19  : public RuntimeObject
+{
+	int32_t ___m_cipherMode;
+	int32_t ___m_paddingValue;
+	int32_t ___m_transformMode;
+	int32_t ___m_blockSizeBits;
+	int32_t ___m_blockSizeBytes;
+	int32_t ___m_inputBlockSize;
+	int32_t ___m_outputBlockSize;
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___m_encryptKeyExpansion;
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___m_decryptKeyExpansion;
+	int32_t ___m_Nr;
+	int32_t ___m_Nb;
+	int32_t ___m_Nk;
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___m_encryptindex;
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___m_decryptindex;
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___m_IV;
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___m_lastBlockBuffer;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___m_depadBuffer;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___m_shiftRegister;
+};
+struct SymmetricAlgorithm_t8C631E4E7B9073CCBD856F8D559A62EB5616BBE8  : public RuntimeObject
+{
+	int32_t ___BlockSizeValue;
+	int32_t ___FeedbackSizeValue;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___IVValue;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___KeyValue;
+	KeySizesU5BU5D_tDD87467B9CB683380B5DC92193576A3136DFAE03* ___LegalBlockSizesValue;
+	KeySizesU5BU5D_tDD87467B9CB683380B5DC92193576A3136DFAE03* ___LegalKeySizesValue;
+	int32_t ___KeySizeValue;
+	int32_t ___ModeValue;
+	int32_t ___PaddingValue;
+};
+struct SymmetricTransform_tDD1D096506ADC83C468EE253DE76D1EB315DAC43  : public RuntimeObject
+{
+	SymmetricAlgorithm_t8C631E4E7B9073CCBD856F8D559A62EB5616BBE8* ___algo;
+	bool ___encrypt;
+	int32_t ___BlockSizeByte;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___temp;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___temp2;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___workBuff;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___workout;
+	int32_t ___padmode;
+	int32_t ___FeedBackByte;
+	bool ___m_disposed;
+	bool ___lastBlock;
+	RandomNumberGenerator_t4E862666A2F7D55324960670C7A1B4C2D40222F3* ____rng;
+};
 struct SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295  : public Exception_t
 {
 };
@@ -918,6 +925,25 @@ struct NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8  : publ
 struct NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
 {
 };
+struct RC2_tFBB9A77126D49FBFBA021B103073FBA78F57B0B9  : public SymmetricAlgorithm_t8C631E4E7B9073CCBD856F8D559A62EB5616BBE8
+{
+	int32_t ___EffectiveKeySizeValue;
+};
+struct RC2Transform_t715B3309C1B219A09B641E87BFDB66EC016E59B7  : public SymmetricTransform_tDD1D096506ADC83C468EE253DE76D1EB315DAC43
+{
+	uint16_t ___R0;
+	uint16_t ___R1;
+	uint16_t ___R2;
+	uint16_t ___R3;
+	UInt16U5BU5D_tEB7C42D811D999D2AA815BADC3FCCDD9C67B3F83* ___K;
+	int32_t ___j;
+};
+struct Rijndael_t282661761E53E282457A31F5675ACF53D64EE807  : public SymmetricAlgorithm_t8C631E4E7B9073CCBD856F8D559A62EB5616BBE8
+{
+};
+struct TripleDES_tB4B064D2618E4F90E3CE4353213140C64B3E2BA5  : public SymmetricAlgorithm_t8C631E4E7B9073CCBD856F8D559A62EB5616BBE8
+{
+};
 struct KeyGeneratedEventHandler_tB6F6C235FC6C71F4B5F6D6C87A5E4A38BC3549FC  : public MulticastDelegate_t
 {
 };
@@ -935,6 +961,13 @@ struct ObjectDisposedException_tC5FB29E8E980E2010A2F6A5B9B791089419F89EB  : publ
 {
 	String_t* ____objectName;
 };
+struct RC2CryptoServiceProvider_tCD53638728EFD5594242B33A17B4A85FC3977541  : public RC2_tFBB9A77126D49FBFBA021B103073FBA78F57B0B9
+{
+	bool ___m_use40bitSalt;
+};
+struct RijndaelManaged_t67DFB0E9542F21D9EED0227003A19D9F5ECF2E39  : public Rijndael_t282661761E53E282457A31F5675ACF53D64EE807
+{
+};
 struct EmptyArray_1_t7187E746F328254739F076CFBCAABB28D4B4554C_StaticFields
 {
 	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___Value;
@@ -950,15 +983,6 @@ struct KeyPairPersistence_t78D61FCDE172753BFE756B555CBD85127832CDF6_StaticFields
 	bool ____machinePathExists;
 	String_t* ____machinePath;
 	RuntimeObject* ___lockobj;
-};
-struct RijndaelManagedTransform_t4A8EE6780840A49B73D54C22252FD85038B7DA19_StaticFields
-{
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___s_Sbox;
-	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___s_Rcon;
-	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___s_T;
-	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___s_TF;
-	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___s_iT;
-	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___s_iTF;
 };
 struct SecurityElement_tA7337C2977BEC2323B0A3EE95C1C6422013F4E55_StaticFields
 {
@@ -981,36 +1005,13 @@ struct IntPtr_t_StaticFields
 {
 	intptr_t ___Zero;
 };
-struct RC2_tFBB9A77126D49FBFBA021B103073FBA78F57B0B9_StaticFields
-{
-	KeySizesU5BU5D_tDD87467B9CB683380B5DC92193576A3136DFAE03* ___s_legalBlockSizes;
-	KeySizesU5BU5D_tDD87467B9CB683380B5DC92193576A3136DFAE03* ___s_legalKeySizes;
-};
-struct RC2Transform_t715B3309C1B219A09B641E87BFDB66EC016E59B7_StaticFields
-{
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___pitable;
-};
-struct Rijndael_t282661761E53E282457A31F5675ACF53D64EE807_StaticFields
-{
-	KeySizesU5BU5D_tDD87467B9CB683380B5DC92193576A3136DFAE03* ___s_legalBlockSizes;
-	KeySizesU5BU5D_tDD87467B9CB683380B5DC92193576A3136DFAE03* ___s_legalKeySizes;
-};
 struct Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE_StaticFields
 {
 	Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___Null;
 };
-struct TripleDES_tB4B064D2618E4F90E3CE4353213140C64B3E2BA5_StaticFields
-{
-	KeySizesU5BU5D_tDD87467B9CB683380B5DC92193576A3136DFAE03* ___s_legalBlockSizes;
-	KeySizesU5BU5D_tDD87467B9CB683380B5DC92193576A3136DFAE03* ___s_legalKeySizes;
-};
 struct MD5CryptoServiceProvider_tEBA22E49E733DDFE74A3F52711BB1EF82FBF653B_StaticFields
 {
 	UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* ___K;
-};
-struct RC2CryptoServiceProvider_tCD53638728EFD5594242B33A17B4A85FC3977541_StaticFields
-{
-	KeySizesU5BU5D_tDD87467B9CB683380B5DC92193576A3136DFAE03* ___s_legalKeySizes;
 };
 struct RNGCryptoServiceProvider_tAD9D75EFF3D2ED0929EEE27A53BE82AB83D78170_StaticFields
 {
@@ -1031,6 +1032,38 @@ struct SHA384Managed_t10907EEA0832F2385FAD9D46B00B3789D6C547AC_StaticFields
 struct SHA512Managed_tB1AB3D2ABFCDE9EFB2A43D3FFC3008B4FE85A89B_StaticFields
 {
 	UInt64U5BU5D_tAB1A62450AC0899188486EDB9FC066B8BEED9299* ____K;
+};
+struct RijndaelManagedTransform_t4A8EE6780840A49B73D54C22252FD85038B7DA19_StaticFields
+{
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___s_Sbox;
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___s_Rcon;
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___s_T;
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___s_TF;
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___s_iT;
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___s_iTF;
+};
+struct RC2_tFBB9A77126D49FBFBA021B103073FBA78F57B0B9_StaticFields
+{
+	KeySizesU5BU5D_tDD87467B9CB683380B5DC92193576A3136DFAE03* ___s_legalBlockSizes;
+	KeySizesU5BU5D_tDD87467B9CB683380B5DC92193576A3136DFAE03* ___s_legalKeySizes;
+};
+struct RC2Transform_t715B3309C1B219A09B641E87BFDB66EC016E59B7_StaticFields
+{
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___pitable;
+};
+struct Rijndael_t282661761E53E282457A31F5675ACF53D64EE807_StaticFields
+{
+	KeySizesU5BU5D_tDD87467B9CB683380B5DC92193576A3136DFAE03* ___s_legalBlockSizes;
+	KeySizesU5BU5D_tDD87467B9CB683380B5DC92193576A3136DFAE03* ___s_legalKeySizes;
+};
+struct TripleDES_tB4B064D2618E4F90E3CE4353213140C64B3E2BA5_StaticFields
+{
+	KeySizesU5BU5D_tDD87467B9CB683380B5DC92193576A3136DFAE03* ___s_legalBlockSizes;
+	KeySizesU5BU5D_tDD87467B9CB683380B5DC92193576A3136DFAE03* ___s_legalKeySizes;
+};
+struct RC2CryptoServiceProvider_tCD53638728EFD5594242B33A17B4A85FC3977541_StaticFields
+{
+	KeySizesU5BU5D_tDD87467B9CB683380B5DC92193576A3136DFAE03* ___s_legalKeySizes;
 };
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -3604,6 +3637,14 @@ IL_0024:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RijndaelManagedTransform__ctor_mD1F6B761C562BF69146E59A4C6F2638B76BAC543 (RijndaelManagedTransform_t4A8EE6780840A49B73D54C22252FD85038B7DA19* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_rgbKey, int32_t ___1_mode, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___2_rgbIV, int32_t ___3_blockSize, int32_t ___4_feedbackSize, int32_t ___5_PaddingValue, int32_t ___6_transformMode, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5257,7 +5298,7 @@ IL_02d8:
 		int32_t* L_153 = V_13;
 		int32_t L_154 = V_24;
 		int32_t* L_155 = ((int32_t*)il2cpp_codegen_add((intptr_t)L_153, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_154), 4))));
-		int32_t L_156 = *((int32_t*)L_155);
+		int32_t L_156 = (*(L_155));
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_157 = __this->___m_lastBlockBuffer;
 		int32_t L_158 = V_24;
 		int32_t L_159 = L_158;
@@ -5334,7 +5375,7 @@ IL_0334:
 		V_16 = ((int32_t)il2cpp_codegen_add(L_181, 1));
 		int32_t* L_182 = V_14;
 		int32_t L_183 = V_25;
-		int32_t L_184 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_182, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_183), 4)))));
+		int32_t L_184 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_182, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_183), 4))))));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_185 = ___0_inputBuffer;
 		int32_t L_186 = V_4;
 		int32_t L_187 = L_186;
@@ -5358,7 +5399,7 @@ IL_0334:
 		V_16 = ((int32_t)il2cpp_codegen_add(L_196, 1));
 		int32_t* L_197 = V_14;
 		int32_t L_198 = V_25;
-		int32_t L_199 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_197, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_198), 4)))));
+		int32_t L_199 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_197, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_198), 4))))));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_200 = ___0_inputBuffer;
 		int32_t L_201 = V_4;
 		int32_t L_202 = L_201;
@@ -5382,7 +5423,7 @@ IL_0334:
 		V_16 = ((int32_t)il2cpp_codegen_add(L_211, 1));
 		int32_t* L_212 = V_14;
 		int32_t L_213 = V_25;
-		int32_t L_214 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_212, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_213), 4)))));
+		int32_t L_214 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_212, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_213), 4))))));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_215 = ___0_inputBuffer;
 		int32_t L_216 = V_4;
 		int32_t L_217 = L_216;
@@ -5406,7 +5447,7 @@ IL_0334:
 		V_16 = ((int32_t)il2cpp_codegen_add(L_226, 1));
 		int32_t* L_227 = V_14;
 		int32_t L_228 = V_25;
-		int32_t L_229 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_227, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_228), 4)))));
+		int32_t L_229 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_227, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_228), 4))))));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_230 = ___0_inputBuffer;
 		int32_t L_231 = V_4;
 		int32_t L_232 = L_231;
@@ -5470,7 +5511,7 @@ IL_0454:
 		V_16 = ((int32_t)il2cpp_codegen_add(L_255, 1));
 		int32_t* L_256 = V_14;
 		int32_t L_257 = V_27;
-		int32_t L_258 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_256, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_257), 4)))));
+		int32_t L_258 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_256, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_257), 4))))));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_259 = V_26;
 		int32_t L_260 = V_4;
 		int32_t L_261 = L_260;
@@ -5493,7 +5534,7 @@ IL_0454:
 		V_16 = ((int32_t)il2cpp_codegen_add(L_269, 1));
 		int32_t* L_270 = V_14;
 		int32_t L_271 = V_27;
-		int32_t L_272 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_270, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_271), 4)))));
+		int32_t L_272 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_270, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_271), 4))))));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_273 = V_26;
 		int32_t L_274 = V_4;
 		int32_t L_275 = L_274;
@@ -5516,7 +5557,7 @@ IL_0454:
 		V_16 = ((int32_t)il2cpp_codegen_add(L_283, 1));
 		int32_t* L_284 = V_14;
 		int32_t L_285 = V_27;
-		int32_t L_286 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_284, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_285), 4)))));
+		int32_t L_286 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_284, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_285), 4))))));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_287 = V_26;
 		int32_t L_288 = V_4;
 		int32_t L_289 = L_288;
@@ -5539,7 +5580,7 @@ IL_0454:
 		V_16 = ((int32_t)il2cpp_codegen_add(L_297, 1));
 		int32_t* L_298 = V_14;
 		int32_t L_299 = V_27;
-		int32_t L_300 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_298, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_299), 4)))));
+		int32_t L_300 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_298, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_299), 4))))));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_301 = V_26;
 		int32_t L_302 = V_4;
 		int32_t L_303 = L_302;
@@ -5620,7 +5661,7 @@ IL_059f:
 		V_16 = ((int32_t)il2cpp_codegen_add(L_332, 1));
 		int32_t* L_333 = V_14;
 		int32_t L_334 = V_28;
-		int32_t L_335 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_333, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_334), 4)))));
+		int32_t L_335 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_333, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_334), 4))))));
 		(L_330)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(L_332), (uint8_t)((int32_t)(uint8_t)((int32_t)(L_335&((int32_t)255)))));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031** L_336 = ___3_outputBuffer;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_337 = *((ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031**)L_336);
@@ -5629,7 +5670,7 @@ IL_059f:
 		V_16 = ((int32_t)il2cpp_codegen_add(L_339, 1));
 		int32_t* L_340 = V_14;
 		int32_t L_341 = V_28;
-		int32_t L_342 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_340, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_341), 4)))));
+		int32_t L_342 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_340, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_341), 4))))));
 		(L_337)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(L_339), (uint8_t)((int32_t)(uint8_t)((int32_t)(((int32_t)(L_342>>8))&((int32_t)255)))));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031** L_343 = ___3_outputBuffer;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_344 = *((ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031**)L_343);
@@ -5638,7 +5679,7 @@ IL_059f:
 		V_16 = ((int32_t)il2cpp_codegen_add(L_346, 1));
 		int32_t* L_347 = V_14;
 		int32_t L_348 = V_28;
-		int32_t L_349 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_347, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_348), 4)))));
+		int32_t L_349 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_347, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_348), 4))))));
 		(L_344)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(L_346), (uint8_t)((int32_t)(uint8_t)((int32_t)(((int32_t)(L_349>>((int32_t)16)))&((int32_t)255)))));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031** L_350 = ___3_outputBuffer;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_351 = *((ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031**)L_350);
@@ -5647,7 +5688,7 @@ IL_059f:
 		V_16 = ((int32_t)il2cpp_codegen_add(L_353, 1));
 		int32_t* L_354 = V_14;
 		int32_t L_355 = V_28;
-		int32_t L_356 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_354, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_355), 4)))));
+		int32_t L_356 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_354, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_355), 4))))));
 		(L_351)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(L_353), (uint8_t)((int32_t)(uint8_t)((int32_t)(((int32_t)(L_356>>((int32_t)24)))&((int32_t)255)))));
 		int32_t L_357 = V_28;
 		V_28 = ((int32_t)il2cpp_codegen_add(L_357, 1));
@@ -6281,7 +6322,7 @@ IL_0286:
 		V_21 = ((int32_t)il2cpp_codegen_add(L_132, 1));
 		int32_t* L_133 = V_17;
 		int32_t L_134 = V_35;
-		int32_t L_135 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_133, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_134), 4)))));
+		int32_t L_135 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_133, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_134), 4))))));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_136 = ___0_inputBuffer;
 		int32_t L_137 = V_20;
 		int32_t L_138 = L_137;
@@ -6305,7 +6346,7 @@ IL_0286:
 		V_21 = ((int32_t)il2cpp_codegen_add(L_147, 1));
 		int32_t* L_148 = V_17;
 		int32_t L_149 = V_35;
-		int32_t L_150 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_148, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_149), 4)))));
+		int32_t L_150 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_148, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_149), 4))))));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_151 = ___0_inputBuffer;
 		int32_t L_152 = V_20;
 		int32_t L_153 = L_152;
@@ -6329,7 +6370,7 @@ IL_0286:
 		V_21 = ((int32_t)il2cpp_codegen_add(L_162, 1));
 		int32_t* L_163 = V_17;
 		int32_t L_164 = V_35;
-		int32_t L_165 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_163, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_164), 4)))));
+		int32_t L_165 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_163, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_164), 4))))));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_166 = ___0_inputBuffer;
 		int32_t L_167 = V_20;
 		int32_t L_168 = L_167;
@@ -6353,7 +6394,7 @@ IL_0286:
 		V_21 = ((int32_t)il2cpp_codegen_add(L_177, 1));
 		int32_t* L_178 = V_17;
 		int32_t L_179 = V_35;
-		int32_t L_180 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_178, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_179), 4)))));
+		int32_t L_180 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_178, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_179), 4))))));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_181 = ___0_inputBuffer;
 		int32_t L_182 = V_20;
 		int32_t L_183 = L_182;
@@ -6444,7 +6485,7 @@ IL_03ef:
 		int32_t* L_215 = V_17;
 		int32_t L_216 = V_36;
 		int32_t* L_217 = ((int32_t*)il2cpp_codegen_add((intptr_t)L_215, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_216), 4))));
-		int32_t L_218 = *((int32_t*)L_217);
+		int32_t L_218 = (*(L_217));
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_219 = __this->___m_lastBlockBuffer;
 		int32_t L_220 = V_36;
 		int32_t L_221 = L_220;
@@ -6514,7 +6555,7 @@ IL_0461:
 		V_21 = ((int32_t)il2cpp_codegen_add(L_255, 1));
 		int32_t* L_256 = V_17;
 		int32_t L_257 = V_41;
-		int32_t L_258 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_256, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_257), 4)))));
+		int32_t L_258 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_256, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_257), 4))))));
 		(L_253)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(L_255), (uint8_t)((int32_t)(uint8_t)((int32_t)(L_258&((int32_t)255)))));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031** L_259 = ___3_outputBuffer;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_260 = *((ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031**)L_259);
@@ -6523,7 +6564,7 @@ IL_0461:
 		V_21 = ((int32_t)il2cpp_codegen_add(L_262, 1));
 		int32_t* L_263 = V_17;
 		int32_t L_264 = V_41;
-		int32_t L_265 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_263, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_264), 4)))));
+		int32_t L_265 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_263, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_264), 4))))));
 		(L_260)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(L_262), (uint8_t)((int32_t)(uint8_t)((int32_t)(((int32_t)(L_265>>8))&((int32_t)255)))));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031** L_266 = ___3_outputBuffer;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_267 = *((ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031**)L_266);
@@ -6532,7 +6573,7 @@ IL_0461:
 		V_21 = ((int32_t)il2cpp_codegen_add(L_269, 1));
 		int32_t* L_270 = V_17;
 		int32_t L_271 = V_41;
-		int32_t L_272 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_270, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_271), 4)))));
+		int32_t L_272 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_270, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_271), 4))))));
 		(L_267)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(L_269), (uint8_t)((int32_t)(uint8_t)((int32_t)(((int32_t)(L_272>>((int32_t)16)))&((int32_t)255)))));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031** L_273 = ___3_outputBuffer;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_274 = *((ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031**)L_273);
@@ -6541,7 +6582,7 @@ IL_0461:
 		V_21 = ((int32_t)il2cpp_codegen_add(L_276, 1));
 		int32_t* L_277 = V_17;
 		int32_t L_278 = V_41;
-		int32_t L_279 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_277, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_278), 4)))));
+		int32_t L_279 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_277, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_278), 4))))));
 		(L_274)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(L_276), (uint8_t)((int32_t)(uint8_t)((int32_t)(((int32_t)(L_279>>((int32_t)24)))&((int32_t)255)))));
 		int32_t L_280 = V_41;
 		V_41 = ((int32_t)il2cpp_codegen_add(L_280, 1));
@@ -6961,10 +7002,10 @@ IL_0004:
 		int32_t* L_0 = ___4_work;
 		int32_t L_1 = V_2;
 		int32_t* L_2 = ((int32_t*)il2cpp_codegen_add((intptr_t)L_0, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_1), 4))));
-		int32_t L_3 = *((int32_t*)L_2);
+		int32_t L_3 = (*(L_2));
 		int32_t* L_4 = ___1_encryptKeyExpansion;
 		int32_t L_5 = V_2;
-		int32_t L_6 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_4, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_5), 4)))));
+		int32_t L_6 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_4, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_5), 4))))));
 		*((int32_t*)L_2) = (int32_t)((int32_t)(L_3^L_6));
 		int32_t L_7 = V_2;
 		V_2 = ((int32_t)il2cpp_codegen_add(L_7, 1));
@@ -7002,30 +7043,30 @@ IL_0041:
 		int32_t* L_15 = ___2_T;
 		int32_t* L_16 = ___4_work;
 		int32_t L_17 = V_4;
-		int32_t L_18 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_16, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_17), 4)))));
-		int32_t L_19 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_15, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)(L_18&((int32_t)255)))), 4)))));
+		int32_t L_18 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_16, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_17), 4))))));
+		int32_t L_19 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_15, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)(L_18&((int32_t)255)))), 4))))));
 		int32_t* L_20 = ___2_T;
 		int32_t* L_21 = ___4_work;
 		int32_t* L_22 = V_0;
-		int32_t L_23 = *((int32_t*)L_22);
-		int32_t L_24 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_21, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_23), 4)))));
-		int32_t L_25 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_20, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(((int32_t)256), ((int32_t)(((int32_t)(L_24>>8))&((int32_t)255)))))), 4)))));
+		int32_t L_23 = (*(L_22));
+		int32_t L_24 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_21, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_23), 4))))));
+		int32_t L_25 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_20, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(((int32_t)256), ((int32_t)(((int32_t)(L_24>>8))&((int32_t)255)))))), 4))))));
 		int32_t* L_26 = ___2_T;
 		int32_t* L_27 = ___4_work;
 		int32_t* L_28 = V_0;
 		int32_t L_29 = __this->___m_Nb;
-		int32_t L_30 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_28, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_29), 4)))));
-		int32_t L_31 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_27, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_30), 4)))));
-		int32_t L_32 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_26, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(((int32_t)512), ((int32_t)(((int32_t)(L_31>>((int32_t)16)))&((int32_t)255)))))), 4)))));
+		int32_t L_30 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_28, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_29), 4))))));
+		int32_t L_31 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_27, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_30), 4))))));
+		int32_t L_32 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_26, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(((int32_t)512), ((int32_t)(((int32_t)(L_31>>((int32_t)16)))&((int32_t)255)))))), 4))))));
 		int32_t* L_33 = ___2_T;
 		int32_t* L_34 = ___4_work;
 		int32_t* L_35 = V_0;
 		int32_t L_36 = __this->___m_Nb;
-		int32_t L_37 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_35, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_multiply(L_36, 2))), 4)))));
-		int32_t L_38 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_34, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_37), 4)))));
-		int32_t L_39 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_33, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(((int32_t)768), ((int32_t)(((int32_t)(L_38>>((int32_t)24)))&((int32_t)255)))))), 4)))));
+		int32_t L_37 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_35, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_multiply(L_36, 2))), 4))))));
+		int32_t L_38 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_34, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_37), 4))))));
+		int32_t L_39 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_33, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(((int32_t)768), ((int32_t)(((int32_t)(L_38>>((int32_t)24)))&((int32_t)255)))))), 4))))));
 		int32_t* L_40 = V_1;
-		int32_t L_41 = *((int32_t*)L_40);
+		int32_t L_41 = (*(L_40));
 		*((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_13, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_14), 4))))) = (int32_t)((int32_t)(((int32_t)(((int32_t)(((int32_t)(L_19^L_25))^L_32))^L_39))^L_41));
 		int32_t* L_42 = V_0;
 		V_0 = ((int32_t*)il2cpp_codegen_add((intptr_t)L_42, 4));
@@ -7055,7 +7096,7 @@ IL_00f4:
 		int32_t L_48 = V_5;
 		int32_t* L_49 = ___5_temp;
 		int32_t L_50 = V_5;
-		int32_t L_51 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_49, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_50), 4)))));
+		int32_t L_51 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_49, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_50), 4))))));
 		*((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_47, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_48), 4))))) = (int32_t)L_51;
 		int32_t L_52 = V_5;
 		V_5 = ((int32_t)il2cpp_codegen_add(L_52, 1));
@@ -7098,30 +7139,30 @@ IL_0130:
 		int32_t* L_61 = ___3_TF;
 		int32_t* L_62 = ___4_work;
 		int32_t L_63 = V_6;
-		int32_t L_64 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_62, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_63), 4)))));
-		int32_t L_65 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_61, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)(L_64&((int32_t)255)))), 4)))));
+		int32_t L_64 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_62, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_63), 4))))));
+		int32_t L_65 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_61, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)(L_64&((int32_t)255)))), 4))))));
 		int32_t* L_66 = ___3_TF;
 		int32_t* L_67 = ___4_work;
 		int32_t* L_68 = V_0;
-		int32_t L_69 = *((int32_t*)L_68);
-		int32_t L_70 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_67, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_69), 4)))));
-		int32_t L_71 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_66, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(((int32_t)256), ((int32_t)(((int32_t)(L_70>>8))&((int32_t)255)))))), 4)))));
+		int32_t L_69 = (*(L_68));
+		int32_t L_70 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_67, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_69), 4))))));
+		int32_t L_71 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_66, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(((int32_t)256), ((int32_t)(((int32_t)(L_70>>8))&((int32_t)255)))))), 4))))));
 		int32_t* L_72 = ___3_TF;
 		int32_t* L_73 = ___4_work;
 		int32_t* L_74 = V_0;
 		int32_t L_75 = __this->___m_Nb;
-		int32_t L_76 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_74, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_75), 4)))));
-		int32_t L_77 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_73, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_76), 4)))));
-		int32_t L_78 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_72, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(((int32_t)512), ((int32_t)(((int32_t)(L_77>>((int32_t)16)))&((int32_t)255)))))), 4)))));
+		int32_t L_76 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_74, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_75), 4))))));
+		int32_t L_77 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_73, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_76), 4))))));
+		int32_t L_78 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_72, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(((int32_t)512), ((int32_t)(((int32_t)(L_77>>((int32_t)16)))&((int32_t)255)))))), 4))))));
 		int32_t* L_79 = ___3_TF;
 		int32_t* L_80 = ___4_work;
 		int32_t* L_81 = V_0;
 		int32_t L_82 = __this->___m_Nb;
-		int32_t L_83 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_81, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_multiply(L_82, 2))), 4)))));
-		int32_t L_84 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_80, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_83), 4)))));
-		int32_t L_85 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_79, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(((int32_t)768), ((int32_t)(((int32_t)(L_84>>((int32_t)24)))&((int32_t)255)))))), 4)))));
+		int32_t L_83 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_81, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_multiply(L_82, 2))), 4))))));
+		int32_t L_84 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_80, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_83), 4))))));
+		int32_t L_85 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_79, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(((int32_t)768), ((int32_t)(((int32_t)(L_84>>((int32_t)24)))&((int32_t)255)))))), 4))))));
 		int32_t* L_86 = V_1;
-		int32_t L_87 = *((int32_t*)L_86);
+		int32_t L_87 = (*(L_86));
 		*((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_59, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_60), 4))))) = (int32_t)((int32_t)(((int32_t)(((int32_t)(((int32_t)(L_65^L_71))^L_78))^L_85))^L_87));
 		int32_t* L_88 = V_0;
 		V_0 = ((int32_t*)il2cpp_codegen_add((intptr_t)L_88, 4));
@@ -7167,10 +7208,10 @@ IL_0012:
 		int32_t* L_2 = ___4_work;
 		int32_t L_3 = V_3;
 		int32_t* L_4 = ((int32_t*)il2cpp_codegen_add((intptr_t)L_2, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_3), 4))));
-		int32_t L_5 = *((int32_t*)L_4);
+		int32_t L_5 = (*(L_4));
 		int32_t* L_6 = ___1_decryptKeyExpansion;
 		int32_t L_7 = V_0;
-		int32_t L_8 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_6, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_7), 4)))));
+		int32_t L_8 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_6, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_7), 4))))));
 		*((int32_t*)L_4) = (int32_t)((int32_t)(L_5^L_8));
 		int32_t L_9 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_9, 1));
@@ -7213,30 +7254,30 @@ IL_005a:
 		int32_t* L_20 = ___2_iT;
 		int32_t* L_21 = ___4_work;
 		int32_t L_22 = V_5;
-		int32_t L_23 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_21, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_22), 4)))));
-		int32_t L_24 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_20, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)(L_23&((int32_t)255)))), 4)))));
+		int32_t L_23 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_21, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_22), 4))))));
+		int32_t L_24 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_20, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)(L_23&((int32_t)255)))), 4))))));
 		int32_t* L_25 = ___2_iT;
 		int32_t* L_26 = ___4_work;
 		int32_t* L_27 = V_1;
-		int32_t L_28 = *((int32_t*)L_27);
-		int32_t L_29 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_26, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_28), 4)))));
-		int32_t L_30 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_25, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(((int32_t)256), ((int32_t)(((int32_t)(L_29>>8))&((int32_t)255)))))), 4)))));
+		int32_t L_28 = (*(L_27));
+		int32_t L_29 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_26, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_28), 4))))));
+		int32_t L_30 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_25, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(((int32_t)256), ((int32_t)(((int32_t)(L_29>>8))&((int32_t)255)))))), 4))))));
 		int32_t* L_31 = ___2_iT;
 		int32_t* L_32 = ___4_work;
 		int32_t* L_33 = V_1;
 		int32_t L_34 = __this->___m_Nb;
-		int32_t L_35 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_33, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_34), 4)))));
-		int32_t L_36 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_32, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_35), 4)))));
-		int32_t L_37 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_31, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(((int32_t)512), ((int32_t)(((int32_t)(L_36>>((int32_t)16)))&((int32_t)255)))))), 4)))));
+		int32_t L_35 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_33, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_34), 4))))));
+		int32_t L_36 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_32, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_35), 4))))));
+		int32_t L_37 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_31, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(((int32_t)512), ((int32_t)(((int32_t)(L_36>>((int32_t)16)))&((int32_t)255)))))), 4))))));
 		int32_t* L_38 = ___2_iT;
 		int32_t* L_39 = ___4_work;
 		int32_t* L_40 = V_1;
 		int32_t L_41 = __this->___m_Nb;
-		int32_t L_42 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_40, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_multiply(L_41, 2))), 4)))));
-		int32_t L_43 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_39, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_42), 4)))));
-		int32_t L_44 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_38, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(((int32_t)768), ((int32_t)(((int32_t)(L_43>>((int32_t)24)))&((int32_t)255)))))), 4)))));
+		int32_t L_42 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_40, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_multiply(L_41, 2))), 4))))));
+		int32_t L_43 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_39, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_42), 4))))));
+		int32_t L_44 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_38, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(((int32_t)768), ((int32_t)(((int32_t)(L_43>>((int32_t)24)))&((int32_t)255)))))), 4))))));
 		int32_t* L_45 = V_2;
-		int32_t L_46 = *((int32_t*)L_45);
+		int32_t L_46 = (*(L_45));
 		*((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_18, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_19), 4))))) = (int32_t)((int32_t)(((int32_t)(((int32_t)(((int32_t)(L_24^L_30))^L_37))^L_44))^L_46));
 		int32_t L_47 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_47, 1));
@@ -7268,7 +7309,7 @@ IL_0111:
 		int32_t L_54 = V_6;
 		int32_t* L_55 = ___5_temp;
 		int32_t L_56 = V_6;
-		int32_t L_57 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_55, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_56), 4)))));
+		int32_t L_57 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_55, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_56), 4))))));
 		*((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_53, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_54), 4))))) = (int32_t)L_57;
 		int32_t L_58 = V_6;
 		V_6 = ((int32_t)il2cpp_codegen_add(L_58, 1));
@@ -7315,30 +7356,30 @@ IL_015a:
 		int32_t* L_69 = ___3_iTF;
 		int32_t* L_70 = ___4_work;
 		int32_t L_71 = V_7;
-		int32_t L_72 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_70, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_71), 4)))));
-		int32_t L_73 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_69, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)(L_72&((int32_t)255)))), 4)))));
+		int32_t L_72 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_70, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_71), 4))))));
+		int32_t L_73 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_69, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)(L_72&((int32_t)255)))), 4))))));
 		int32_t* L_74 = ___3_iTF;
 		int32_t* L_75 = ___4_work;
 		int32_t* L_76 = V_1;
-		int32_t L_77 = *((int32_t*)L_76);
-		int32_t L_78 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_75, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_77), 4)))));
-		int32_t L_79 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_74, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(((int32_t)256), ((int32_t)(((int32_t)(L_78>>8))&((int32_t)255)))))), 4)))));
+		int32_t L_77 = (*(L_76));
+		int32_t L_78 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_75, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_77), 4))))));
+		int32_t L_79 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_74, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(((int32_t)256), ((int32_t)(((int32_t)(L_78>>8))&((int32_t)255)))))), 4))))));
 		int32_t* L_80 = ___3_iTF;
 		int32_t* L_81 = ___4_work;
 		int32_t* L_82 = V_1;
 		int32_t L_83 = __this->___m_Nb;
-		int32_t L_84 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_82, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_83), 4)))));
-		int32_t L_85 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_81, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_84), 4)))));
-		int32_t L_86 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_80, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(((int32_t)512), ((int32_t)(((int32_t)(L_85>>((int32_t)16)))&((int32_t)255)))))), 4)))));
+		int32_t L_84 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_82, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_83), 4))))));
+		int32_t L_85 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_81, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_84), 4))))));
+		int32_t L_86 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_80, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(((int32_t)512), ((int32_t)(((int32_t)(L_85>>((int32_t)16)))&((int32_t)255)))))), 4))))));
 		int32_t* L_87 = ___3_iTF;
 		int32_t* L_88 = ___4_work;
 		int32_t* L_89 = V_1;
 		int32_t L_90 = __this->___m_Nb;
-		int32_t L_91 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_89, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_multiply(L_90, 2))), 4)))));
-		int32_t L_92 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_88, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_91), 4)))));
-		int32_t L_93 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_87, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(((int32_t)768), ((int32_t)(((int32_t)(L_92>>((int32_t)24)))&((int32_t)255)))))), 4)))));
+		int32_t L_91 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_89, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_multiply(L_90, 2))), 4))))));
+		int32_t L_92 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_88, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_91), 4))))));
+		int32_t L_93 = (*(((int32_t*)il2cpp_codegen_add((intptr_t)L_87, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(((int32_t)768), ((int32_t)(((int32_t)(L_92>>((int32_t)24)))&((int32_t)255)))))), 4))))));
 		int32_t* L_94 = V_2;
-		int32_t L_95 = *((int32_t*)L_94);
+		int32_t L_95 = (*(L_94));
 		*((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_67, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_68), 4))))) = (int32_t)((int32_t)(((int32_t)(((int32_t)(((int32_t)(L_73^L_79))^L_86))^L_93))^L_95));
 		int32_t* L_96 = V_1;
 		V_1 = ((int32_t*)il2cpp_codegen_add((intptr_t)L_96, 4));
@@ -8327,19 +8368,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 	uint32_t V_9 = 0;
 	{
 		uint32_t* L_0 = ___1_state;
-		int32_t L_1 = *((uint32_t*)L_0);
+		int32_t L_1 = (*(L_0));
 		V_0 = L_1;
 		uint32_t* L_2 = ___1_state;
-		int32_t L_3 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_2, 4)));
+		int32_t L_3 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_2, 4))));
 		V_1 = L_3;
 		uint32_t* L_4 = ___1_state;
-		int32_t L_5 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_4, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)2), 4)))));
+		int32_t L_5 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_4, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)2), 4))))));
 		V_2 = L_5;
 		uint32_t* L_6 = ___1_state;
-		int32_t L_7 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_6, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)3), 4)))));
+		int32_t L_7 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_6, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)3), 4))))));
 		V_3 = L_7;
 		uint32_t* L_8 = ___1_state;
-		int32_t L_9 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_8, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)4), 4)))));
+		int32_t L_9 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_8, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)4), 4))))));
 		V_4 = L_9;
 		uint32_t L_10 = V_0;
 		V_5 = L_10;
@@ -8356,7 +8397,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		Utils_DWORDFromLittleEndian_m5D4F77444B1A8EF6FD408C7A8899010BF2957B1E(L_15, ((int32_t)16), L_16, NULL);
 		uint32_t L_17 = V_0;
 		uint32_t* L_18 = ___0_blockDWords;
-		int32_t L_19 = *((uint32_t*)L_18);
+		int32_t L_19 = (*(L_18));
 		uint32_t L_20 = V_1;
 		uint32_t L_21 = V_2;
 		uint32_t L_22 = V_3;
@@ -8372,7 +8413,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		V_2 = ((int32_t)(((int32_t)((int32_t)L_27<<((int32_t)10)))|((int32_t)((uint32_t)L_28>>((int32_t)22)))));
 		uint32_t L_29 = V_4;
 		uint32_t* L_30 = ___0_blockDWords;
-		int32_t L_31 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_30, 4)));
+		int32_t L_31 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_30, 4))));
 		uint32_t L_32 = V_0;
 		uint32_t L_33 = V_1;
 		uint32_t L_34 = V_2;
@@ -8388,7 +8429,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		V_1 = ((int32_t)(((int32_t)((int32_t)L_39<<((int32_t)10)))|((int32_t)((uint32_t)L_40>>((int32_t)22)))));
 		uint32_t L_41 = V_3;
 		uint32_t* L_42 = ___0_blockDWords;
-		int32_t L_43 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_42, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)2), 4)))));
+		int32_t L_43 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_42, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)2), 4))))));
 		uint32_t L_44 = V_4;
 		uint32_t L_45 = V_0;
 		uint32_t L_46 = V_1;
@@ -8404,7 +8445,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		V_0 = ((int32_t)(((int32_t)((int32_t)L_51<<((int32_t)10)))|((int32_t)((uint32_t)L_52>>((int32_t)22)))));
 		uint32_t L_53 = V_2;
 		uint32_t* L_54 = ___0_blockDWords;
-		int32_t L_55 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_54, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)3), 4)))));
+		int32_t L_55 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_54, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)3), 4))))));
 		uint32_t L_56 = V_3;
 		uint32_t L_57 = V_4;
 		uint32_t L_58 = V_0;
@@ -8420,7 +8461,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		V_4 = ((int32_t)(((int32_t)((int32_t)L_63<<((int32_t)10)))|((int32_t)((uint32_t)L_64>>((int32_t)22)))));
 		uint32_t L_65 = V_1;
 		uint32_t* L_66 = ___0_blockDWords;
-		int32_t L_67 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_66, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)4), 4)))));
+		int32_t L_67 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_66, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)4), 4))))));
 		uint32_t L_68 = V_2;
 		uint32_t L_69 = V_3;
 		uint32_t L_70 = V_4;
@@ -8436,7 +8477,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		V_3 = ((int32_t)(((int32_t)((int32_t)L_75<<((int32_t)10)))|((int32_t)((uint32_t)L_76>>((int32_t)22)))));
 		uint32_t L_77 = V_0;
 		uint32_t* L_78 = ___0_blockDWords;
-		int32_t L_79 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_78, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)5), 4)))));
+		int32_t L_79 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_78, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)5), 4))))));
 		uint32_t L_80 = V_1;
 		uint32_t L_81 = V_2;
 		uint32_t L_82 = V_3;
@@ -8452,7 +8493,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		V_2 = ((int32_t)(((int32_t)((int32_t)L_87<<((int32_t)10)))|((int32_t)((uint32_t)L_88>>((int32_t)22)))));
 		uint32_t L_89 = V_4;
 		uint32_t* L_90 = ___0_blockDWords;
-		int32_t L_91 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_90, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)6), 4)))));
+		int32_t L_91 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_90, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)6), 4))))));
 		uint32_t L_92 = V_0;
 		uint32_t L_93 = V_1;
 		uint32_t L_94 = V_2;
@@ -8468,7 +8509,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		V_1 = ((int32_t)(((int32_t)((int32_t)L_99<<((int32_t)10)))|((int32_t)((uint32_t)L_100>>((int32_t)22)))));
 		uint32_t L_101 = V_3;
 		uint32_t* L_102 = ___0_blockDWords;
-		int32_t L_103 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_102, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)7), 4)))));
+		int32_t L_103 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_102, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)7), 4))))));
 		uint32_t L_104 = V_4;
 		uint32_t L_105 = V_0;
 		uint32_t L_106 = V_1;
@@ -8484,7 +8525,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		V_0 = ((int32_t)(((int32_t)((int32_t)L_111<<((int32_t)10)))|((int32_t)((uint32_t)L_112>>((int32_t)22)))));
 		uint32_t L_113 = V_2;
 		uint32_t* L_114 = ___0_blockDWords;
-		int32_t L_115 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_114, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)8), 4)))));
+		int32_t L_115 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_114, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)8), 4))))));
 		uint32_t L_116 = V_3;
 		uint32_t L_117 = V_4;
 		uint32_t L_118 = V_0;
@@ -8500,7 +8541,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		V_4 = ((int32_t)(((int32_t)((int32_t)L_123<<((int32_t)10)))|((int32_t)((uint32_t)L_124>>((int32_t)22)))));
 		uint32_t L_125 = V_1;
 		uint32_t* L_126 = ___0_blockDWords;
-		int32_t L_127 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_126, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)9)), 4)))));
+		int32_t L_127 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_126, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)9)), 4))))));
 		uint32_t L_128 = V_2;
 		uint32_t L_129 = V_3;
 		uint32_t L_130 = V_4;
@@ -8516,7 +8557,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		V_3 = ((int32_t)(((int32_t)((int32_t)L_135<<((int32_t)10)))|((int32_t)((uint32_t)L_136>>((int32_t)22)))));
 		uint32_t L_137 = V_0;
 		uint32_t* L_138 = ___0_blockDWords;
-		int32_t L_139 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_138, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)10)), 4)))));
+		int32_t L_139 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_138, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)10)), 4))))));
 		uint32_t L_140 = V_1;
 		uint32_t L_141 = V_2;
 		uint32_t L_142 = V_3;
@@ -8532,7 +8573,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		V_2 = ((int32_t)(((int32_t)((int32_t)L_147<<((int32_t)10)))|((int32_t)((uint32_t)L_148>>((int32_t)22)))));
 		uint32_t L_149 = V_4;
 		uint32_t* L_150 = ___0_blockDWords;
-		int32_t L_151 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_150, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)11)), 4)))));
+		int32_t L_151 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_150, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)11)), 4))))));
 		uint32_t L_152 = V_0;
 		uint32_t L_153 = V_1;
 		uint32_t L_154 = V_2;
@@ -8548,7 +8589,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		V_1 = ((int32_t)(((int32_t)((int32_t)L_159<<((int32_t)10)))|((int32_t)((uint32_t)L_160>>((int32_t)22)))));
 		uint32_t L_161 = V_3;
 		uint32_t* L_162 = ___0_blockDWords;
-		int32_t L_163 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_162, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)12)), 4)))));
+		int32_t L_163 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_162, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)12)), 4))))));
 		uint32_t L_164 = V_4;
 		uint32_t L_165 = V_0;
 		uint32_t L_166 = V_1;
@@ -8564,7 +8605,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		V_0 = ((int32_t)(((int32_t)((int32_t)L_171<<((int32_t)10)))|((int32_t)((uint32_t)L_172>>((int32_t)22)))));
 		uint32_t L_173 = V_2;
 		uint32_t* L_174 = ___0_blockDWords;
-		int32_t L_175 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_174, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)13)), 4)))));
+		int32_t L_175 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_174, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)13)), 4))))));
 		uint32_t L_176 = V_3;
 		uint32_t L_177 = V_4;
 		uint32_t L_178 = V_0;
@@ -8580,7 +8621,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		V_4 = ((int32_t)(((int32_t)((int32_t)L_183<<((int32_t)10)))|((int32_t)((uint32_t)L_184>>((int32_t)22)))));
 		uint32_t L_185 = V_1;
 		uint32_t* L_186 = ___0_blockDWords;
-		int32_t L_187 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_186, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)14)), 4)))));
+		int32_t L_187 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_186, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)14)), 4))))));
 		uint32_t L_188 = V_2;
 		uint32_t L_189 = V_3;
 		uint32_t L_190 = V_4;
@@ -8596,7 +8637,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		V_3 = ((int32_t)(((int32_t)((int32_t)L_195<<((int32_t)10)))|((int32_t)((uint32_t)L_196>>((int32_t)22)))));
 		uint32_t L_197 = V_0;
 		uint32_t* L_198 = ___0_blockDWords;
-		int32_t L_199 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_198, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)15)), 4)))));
+		int32_t L_199 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_198, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)15)), 4))))));
 		uint32_t L_200 = V_1;
 		uint32_t L_201 = V_2;
 		uint32_t L_202 = V_3;
@@ -8617,7 +8658,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_213;
 		L_213 = RIPEMD160Managed_G_m29899502ABE7C9F66583D5BF7674D55BF5295307(L_210, L_211, L_212, NULL);
 		uint32_t* L_214 = ___0_blockDWords;
-		int32_t L_215 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_214, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)7), 4)))));
+		int32_t L_215 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_214, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)7), 4))))));
 		V_4 = ((int32_t)il2cpp_codegen_add((int32_t)L_209, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_213, L_215)), ((int32_t)1518500249)))));
 		uint32_t L_216 = V_4;
 		uint32_t L_217 = V_4;
@@ -8633,7 +8674,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_225;
 		L_225 = RIPEMD160Managed_G_m29899502ABE7C9F66583D5BF7674D55BF5295307(L_222, L_223, L_224, NULL);
 		uint32_t* L_226 = ___0_blockDWords;
-		int32_t L_227 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_226, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)4), 4)))));
+		int32_t L_227 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_226, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)4), 4))))));
 		V_3 = ((int32_t)il2cpp_codegen_add((int32_t)L_221, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_225, L_227)), ((int32_t)1518500249)))));
 		uint32_t L_228 = V_3;
 		uint32_t L_229 = V_3;
@@ -8649,7 +8690,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_237;
 		L_237 = RIPEMD160Managed_G_m29899502ABE7C9F66583D5BF7674D55BF5295307(L_234, L_235, L_236, NULL);
 		uint32_t* L_238 = ___0_blockDWords;
-		int32_t L_239 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_238, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)13)), 4)))));
+		int32_t L_239 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_238, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)13)), 4))))));
 		V_2 = ((int32_t)il2cpp_codegen_add((int32_t)L_233, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_237, L_239)), ((int32_t)1518500249)))));
 		uint32_t L_240 = V_2;
 		uint32_t L_241 = V_2;
@@ -8665,7 +8706,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_249;
 		L_249 = RIPEMD160Managed_G_m29899502ABE7C9F66583D5BF7674D55BF5295307(L_246, L_247, L_248, NULL);
 		uint32_t* L_250 = ___0_blockDWords;
-		int32_t L_251 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_250, 4)));
+		int32_t L_251 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_250, 4))));
 		V_1 = ((int32_t)il2cpp_codegen_add((int32_t)L_245, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_249, L_251)), ((int32_t)1518500249)))));
 		uint32_t L_252 = V_1;
 		uint32_t L_253 = V_1;
@@ -8681,7 +8722,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_261;
 		L_261 = RIPEMD160Managed_G_m29899502ABE7C9F66583D5BF7674D55BF5295307(L_258, L_259, L_260, NULL);
 		uint32_t* L_262 = ___0_blockDWords;
-		int32_t L_263 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_262, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)10)), 4)))));
+		int32_t L_263 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_262, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)10)), 4))))));
 		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_257, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_261, L_263)), ((int32_t)1518500249)))));
 		uint32_t L_264 = V_0;
 		uint32_t L_265 = V_0;
@@ -8697,7 +8738,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_273;
 		L_273 = RIPEMD160Managed_G_m29899502ABE7C9F66583D5BF7674D55BF5295307(L_270, L_271, L_272, NULL);
 		uint32_t* L_274 = ___0_blockDWords;
-		int32_t L_275 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_274, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)6), 4)))));
+		int32_t L_275 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_274, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)6), 4))))));
 		V_4 = ((int32_t)il2cpp_codegen_add((int32_t)L_269, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_273, L_275)), ((int32_t)1518500249)))));
 		uint32_t L_276 = V_4;
 		uint32_t L_277 = V_4;
@@ -8713,7 +8754,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_285;
 		L_285 = RIPEMD160Managed_G_m29899502ABE7C9F66583D5BF7674D55BF5295307(L_282, L_283, L_284, NULL);
 		uint32_t* L_286 = ___0_blockDWords;
-		int32_t L_287 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_286, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)15)), 4)))));
+		int32_t L_287 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_286, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)15)), 4))))));
 		V_3 = ((int32_t)il2cpp_codegen_add((int32_t)L_281, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_285, L_287)), ((int32_t)1518500249)))));
 		uint32_t L_288 = V_3;
 		uint32_t L_289 = V_3;
@@ -8729,7 +8770,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_297;
 		L_297 = RIPEMD160Managed_G_m29899502ABE7C9F66583D5BF7674D55BF5295307(L_294, L_295, L_296, NULL);
 		uint32_t* L_298 = ___0_blockDWords;
-		int32_t L_299 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_298, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)3), 4)))));
+		int32_t L_299 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_298, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)3), 4))))));
 		V_2 = ((int32_t)il2cpp_codegen_add((int32_t)L_293, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_297, L_299)), ((int32_t)1518500249)))));
 		uint32_t L_300 = V_2;
 		uint32_t L_301 = V_2;
@@ -8745,7 +8786,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_309;
 		L_309 = RIPEMD160Managed_G_m29899502ABE7C9F66583D5BF7674D55BF5295307(L_306, L_307, L_308, NULL);
 		uint32_t* L_310 = ___0_blockDWords;
-		int32_t L_311 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_310, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)12)), 4)))));
+		int32_t L_311 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_310, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)12)), 4))))));
 		V_1 = ((int32_t)il2cpp_codegen_add((int32_t)L_305, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_309, L_311)), ((int32_t)1518500249)))));
 		uint32_t L_312 = V_1;
 		uint32_t L_313 = V_1;
@@ -8761,7 +8802,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_321;
 		L_321 = RIPEMD160Managed_G_m29899502ABE7C9F66583D5BF7674D55BF5295307(L_318, L_319, L_320, NULL);
 		uint32_t* L_322 = ___0_blockDWords;
-		int32_t L_323 = *((uint32_t*)L_322);
+		int32_t L_323 = (*(L_322));
 		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_317, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_321, L_323)), ((int32_t)1518500249)))));
 		uint32_t L_324 = V_0;
 		uint32_t L_325 = V_0;
@@ -8777,7 +8818,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_333;
 		L_333 = RIPEMD160Managed_G_m29899502ABE7C9F66583D5BF7674D55BF5295307(L_330, L_331, L_332, NULL);
 		uint32_t* L_334 = ___0_blockDWords;
-		int32_t L_335 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_334, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)9)), 4)))));
+		int32_t L_335 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_334, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)9)), 4))))));
 		V_4 = ((int32_t)il2cpp_codegen_add((int32_t)L_329, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_333, L_335)), ((int32_t)1518500249)))));
 		uint32_t L_336 = V_4;
 		uint32_t L_337 = V_4;
@@ -8793,7 +8834,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_345;
 		L_345 = RIPEMD160Managed_G_m29899502ABE7C9F66583D5BF7674D55BF5295307(L_342, L_343, L_344, NULL);
 		uint32_t* L_346 = ___0_blockDWords;
-		int32_t L_347 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_346, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)5), 4)))));
+		int32_t L_347 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_346, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)5), 4))))));
 		V_3 = ((int32_t)il2cpp_codegen_add((int32_t)L_341, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_345, L_347)), ((int32_t)1518500249)))));
 		uint32_t L_348 = V_3;
 		uint32_t L_349 = V_3;
@@ -8809,7 +8850,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_357;
 		L_357 = RIPEMD160Managed_G_m29899502ABE7C9F66583D5BF7674D55BF5295307(L_354, L_355, L_356, NULL);
 		uint32_t* L_358 = ___0_blockDWords;
-		int32_t L_359 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_358, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)2), 4)))));
+		int32_t L_359 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_358, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)2), 4))))));
 		V_2 = ((int32_t)il2cpp_codegen_add((int32_t)L_353, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_357, L_359)), ((int32_t)1518500249)))));
 		uint32_t L_360 = V_2;
 		uint32_t L_361 = V_2;
@@ -8825,7 +8866,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_369;
 		L_369 = RIPEMD160Managed_G_m29899502ABE7C9F66583D5BF7674D55BF5295307(L_366, L_367, L_368, NULL);
 		uint32_t* L_370 = ___0_blockDWords;
-		int32_t L_371 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_370, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)14)), 4)))));
+		int32_t L_371 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_370, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)14)), 4))))));
 		V_1 = ((int32_t)il2cpp_codegen_add((int32_t)L_365, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_369, L_371)), ((int32_t)1518500249)))));
 		uint32_t L_372 = V_1;
 		uint32_t L_373 = V_1;
@@ -8841,7 +8882,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_381;
 		L_381 = RIPEMD160Managed_G_m29899502ABE7C9F66583D5BF7674D55BF5295307(L_378, L_379, L_380, NULL);
 		uint32_t* L_382 = ___0_blockDWords;
-		int32_t L_383 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_382, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)11)), 4)))));
+		int32_t L_383 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_382, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)11)), 4))))));
 		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_377, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_381, L_383)), ((int32_t)1518500249)))));
 		uint32_t L_384 = V_0;
 		uint32_t L_385 = V_0;
@@ -8857,7 +8898,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_393;
 		L_393 = RIPEMD160Managed_G_m29899502ABE7C9F66583D5BF7674D55BF5295307(L_390, L_391, L_392, NULL);
 		uint32_t* L_394 = ___0_blockDWords;
-		int32_t L_395 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_394, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)8), 4)))));
+		int32_t L_395 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_394, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)8), 4))))));
 		V_4 = ((int32_t)il2cpp_codegen_add((int32_t)L_389, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_393, L_395)), ((int32_t)1518500249)))));
 		uint32_t L_396 = V_4;
 		uint32_t L_397 = V_4;
@@ -8873,7 +8914,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_405;
 		L_405 = RIPEMD160Managed_H_m422F354E67D718FB2E43E5D74F3E2E449158E4CB(L_402, L_403, L_404, NULL);
 		uint32_t* L_406 = ___0_blockDWords;
-		int32_t L_407 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_406, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)3), 4)))));
+		int32_t L_407 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_406, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)3), 4))))));
 		V_3 = ((int32_t)il2cpp_codegen_add((int32_t)L_401, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_405, L_407)), ((int32_t)1859775393)))));
 		uint32_t L_408 = V_3;
 		uint32_t L_409 = V_3;
@@ -8889,7 +8930,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_417;
 		L_417 = RIPEMD160Managed_H_m422F354E67D718FB2E43E5D74F3E2E449158E4CB(L_414, L_415, L_416, NULL);
 		uint32_t* L_418 = ___0_blockDWords;
-		int32_t L_419 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_418, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)10)), 4)))));
+		int32_t L_419 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_418, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)10)), 4))))));
 		V_2 = ((int32_t)il2cpp_codegen_add((int32_t)L_413, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_417, L_419)), ((int32_t)1859775393)))));
 		uint32_t L_420 = V_2;
 		uint32_t L_421 = V_2;
@@ -8905,7 +8946,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_429;
 		L_429 = RIPEMD160Managed_H_m422F354E67D718FB2E43E5D74F3E2E449158E4CB(L_426, L_427, L_428, NULL);
 		uint32_t* L_430 = ___0_blockDWords;
-		int32_t L_431 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_430, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)14)), 4)))));
+		int32_t L_431 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_430, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)14)), 4))))));
 		V_1 = ((int32_t)il2cpp_codegen_add((int32_t)L_425, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_429, L_431)), ((int32_t)1859775393)))));
 		uint32_t L_432 = V_1;
 		uint32_t L_433 = V_1;
@@ -8921,7 +8962,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_441;
 		L_441 = RIPEMD160Managed_H_m422F354E67D718FB2E43E5D74F3E2E449158E4CB(L_438, L_439, L_440, NULL);
 		uint32_t* L_442 = ___0_blockDWords;
-		int32_t L_443 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_442, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)4), 4)))));
+		int32_t L_443 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_442, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)4), 4))))));
 		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_437, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_441, L_443)), ((int32_t)1859775393)))));
 		uint32_t L_444 = V_0;
 		uint32_t L_445 = V_0;
@@ -8937,7 +8978,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_453;
 		L_453 = RIPEMD160Managed_H_m422F354E67D718FB2E43E5D74F3E2E449158E4CB(L_450, L_451, L_452, NULL);
 		uint32_t* L_454 = ___0_blockDWords;
-		int32_t L_455 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_454, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)9)), 4)))));
+		int32_t L_455 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_454, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)9)), 4))))));
 		V_4 = ((int32_t)il2cpp_codegen_add((int32_t)L_449, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_453, L_455)), ((int32_t)1859775393)))));
 		uint32_t L_456 = V_4;
 		uint32_t L_457 = V_4;
@@ -8953,7 +8994,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_465;
 		L_465 = RIPEMD160Managed_H_m422F354E67D718FB2E43E5D74F3E2E449158E4CB(L_462, L_463, L_464, NULL);
 		uint32_t* L_466 = ___0_blockDWords;
-		int32_t L_467 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_466, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)15)), 4)))));
+		int32_t L_467 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_466, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)15)), 4))))));
 		V_3 = ((int32_t)il2cpp_codegen_add((int32_t)L_461, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_465, L_467)), ((int32_t)1859775393)))));
 		uint32_t L_468 = V_3;
 		uint32_t L_469 = V_3;
@@ -8969,7 +9010,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_477;
 		L_477 = RIPEMD160Managed_H_m422F354E67D718FB2E43E5D74F3E2E449158E4CB(L_474, L_475, L_476, NULL);
 		uint32_t* L_478 = ___0_blockDWords;
-		int32_t L_479 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_478, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)8), 4)))));
+		int32_t L_479 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_478, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)8), 4))))));
 		V_2 = ((int32_t)il2cpp_codegen_add((int32_t)L_473, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_477, L_479)), ((int32_t)1859775393)))));
 		uint32_t L_480 = V_2;
 		uint32_t L_481 = V_2;
@@ -8985,7 +9026,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_489;
 		L_489 = RIPEMD160Managed_H_m422F354E67D718FB2E43E5D74F3E2E449158E4CB(L_486, L_487, L_488, NULL);
 		uint32_t* L_490 = ___0_blockDWords;
-		int32_t L_491 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_490, 4)));
+		int32_t L_491 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_490, 4))));
 		V_1 = ((int32_t)il2cpp_codegen_add((int32_t)L_485, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_489, L_491)), ((int32_t)1859775393)))));
 		uint32_t L_492 = V_1;
 		uint32_t L_493 = V_1;
@@ -9001,7 +9042,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_501;
 		L_501 = RIPEMD160Managed_H_m422F354E67D718FB2E43E5D74F3E2E449158E4CB(L_498, L_499, L_500, NULL);
 		uint32_t* L_502 = ___0_blockDWords;
-		int32_t L_503 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_502, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)2), 4)))));
+		int32_t L_503 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_502, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)2), 4))))));
 		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_497, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_501, L_503)), ((int32_t)1859775393)))));
 		uint32_t L_504 = V_0;
 		uint32_t L_505 = V_0;
@@ -9017,7 +9058,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_513;
 		L_513 = RIPEMD160Managed_H_m422F354E67D718FB2E43E5D74F3E2E449158E4CB(L_510, L_511, L_512, NULL);
 		uint32_t* L_514 = ___0_blockDWords;
-		int32_t L_515 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_514, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)7), 4)))));
+		int32_t L_515 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_514, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)7), 4))))));
 		V_4 = ((int32_t)il2cpp_codegen_add((int32_t)L_509, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_513, L_515)), ((int32_t)1859775393)))));
 		uint32_t L_516 = V_4;
 		uint32_t L_517 = V_4;
@@ -9033,7 +9074,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_525;
 		L_525 = RIPEMD160Managed_H_m422F354E67D718FB2E43E5D74F3E2E449158E4CB(L_522, L_523, L_524, NULL);
 		uint32_t* L_526 = ___0_blockDWords;
-		int32_t L_527 = *((uint32_t*)L_526);
+		int32_t L_527 = (*(L_526));
 		V_3 = ((int32_t)il2cpp_codegen_add((int32_t)L_521, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_525, L_527)), ((int32_t)1859775393)))));
 		uint32_t L_528 = V_3;
 		uint32_t L_529 = V_3;
@@ -9049,7 +9090,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_537;
 		L_537 = RIPEMD160Managed_H_m422F354E67D718FB2E43E5D74F3E2E449158E4CB(L_534, L_535, L_536, NULL);
 		uint32_t* L_538 = ___0_blockDWords;
-		int32_t L_539 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_538, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)6), 4)))));
+		int32_t L_539 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_538, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)6), 4))))));
 		V_2 = ((int32_t)il2cpp_codegen_add((int32_t)L_533, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_537, L_539)), ((int32_t)1859775393)))));
 		uint32_t L_540 = V_2;
 		uint32_t L_541 = V_2;
@@ -9065,7 +9106,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_549;
 		L_549 = RIPEMD160Managed_H_m422F354E67D718FB2E43E5D74F3E2E449158E4CB(L_546, L_547, L_548, NULL);
 		uint32_t* L_550 = ___0_blockDWords;
-		int32_t L_551 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_550, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)13)), 4)))));
+		int32_t L_551 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_550, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)13)), 4))))));
 		V_1 = ((int32_t)il2cpp_codegen_add((int32_t)L_545, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_549, L_551)), ((int32_t)1859775393)))));
 		uint32_t L_552 = V_1;
 		uint32_t L_553 = V_1;
@@ -9081,7 +9122,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_561;
 		L_561 = RIPEMD160Managed_H_m422F354E67D718FB2E43E5D74F3E2E449158E4CB(L_558, L_559, L_560, NULL);
 		uint32_t* L_562 = ___0_blockDWords;
-		int32_t L_563 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_562, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)11)), 4)))));
+		int32_t L_563 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_562, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)11)), 4))))));
 		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_557, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_561, L_563)), ((int32_t)1859775393)))));
 		uint32_t L_564 = V_0;
 		uint32_t L_565 = V_0;
@@ -9097,7 +9138,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_573;
 		L_573 = RIPEMD160Managed_H_m422F354E67D718FB2E43E5D74F3E2E449158E4CB(L_570, L_571, L_572, NULL);
 		uint32_t* L_574 = ___0_blockDWords;
-		int32_t L_575 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_574, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)5), 4)))));
+		int32_t L_575 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_574, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)5), 4))))));
 		V_4 = ((int32_t)il2cpp_codegen_add((int32_t)L_569, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_573, L_575)), ((int32_t)1859775393)))));
 		uint32_t L_576 = V_4;
 		uint32_t L_577 = V_4;
@@ -9113,7 +9154,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_585;
 		L_585 = RIPEMD160Managed_H_m422F354E67D718FB2E43E5D74F3E2E449158E4CB(L_582, L_583, L_584, NULL);
 		uint32_t* L_586 = ___0_blockDWords;
-		int32_t L_587 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_586, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)12)), 4)))));
+		int32_t L_587 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_586, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)12)), 4))))));
 		V_3 = ((int32_t)il2cpp_codegen_add((int32_t)L_581, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_585, L_587)), ((int32_t)1859775393)))));
 		uint32_t L_588 = V_3;
 		uint32_t L_589 = V_3;
@@ -9129,7 +9170,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_597;
 		L_597 = RIPEMD160Managed_I_m7E3D4812FC9A003ADF92E275DC48ACD135D7B68E(L_594, L_595, L_596, NULL);
 		uint32_t* L_598 = ___0_blockDWords;
-		int32_t L_599 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_598, 4)));
+		int32_t L_599 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_598, 4))));
 		V_2 = ((int32_t)il2cpp_codegen_add((int32_t)L_593, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_597, L_599)), ((int32_t)-1894007588)))));
 		uint32_t L_600 = V_2;
 		uint32_t L_601 = V_2;
@@ -9145,7 +9186,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_609;
 		L_609 = RIPEMD160Managed_I_m7E3D4812FC9A003ADF92E275DC48ACD135D7B68E(L_606, L_607, L_608, NULL);
 		uint32_t* L_610 = ___0_blockDWords;
-		int32_t L_611 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_610, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)9)), 4)))));
+		int32_t L_611 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_610, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)9)), 4))))));
 		V_1 = ((int32_t)il2cpp_codegen_add((int32_t)L_605, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_609, L_611)), ((int32_t)-1894007588)))));
 		uint32_t L_612 = V_1;
 		uint32_t L_613 = V_1;
@@ -9161,7 +9202,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_621;
 		L_621 = RIPEMD160Managed_I_m7E3D4812FC9A003ADF92E275DC48ACD135D7B68E(L_618, L_619, L_620, NULL);
 		uint32_t* L_622 = ___0_blockDWords;
-		int32_t L_623 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_622, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)11)), 4)))));
+		int32_t L_623 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_622, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)11)), 4))))));
 		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_617, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_621, L_623)), ((int32_t)-1894007588)))));
 		uint32_t L_624 = V_0;
 		uint32_t L_625 = V_0;
@@ -9177,7 +9218,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_633;
 		L_633 = RIPEMD160Managed_I_m7E3D4812FC9A003ADF92E275DC48ACD135D7B68E(L_630, L_631, L_632, NULL);
 		uint32_t* L_634 = ___0_blockDWords;
-		int32_t L_635 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_634, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)10)), 4)))));
+		int32_t L_635 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_634, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)10)), 4))))));
 		V_4 = ((int32_t)il2cpp_codegen_add((int32_t)L_629, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_633, L_635)), ((int32_t)-1894007588)))));
 		uint32_t L_636 = V_4;
 		uint32_t L_637 = V_4;
@@ -9193,7 +9234,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_645;
 		L_645 = RIPEMD160Managed_I_m7E3D4812FC9A003ADF92E275DC48ACD135D7B68E(L_642, L_643, L_644, NULL);
 		uint32_t* L_646 = ___0_blockDWords;
-		int32_t L_647 = *((uint32_t*)L_646);
+		int32_t L_647 = (*(L_646));
 		V_3 = ((int32_t)il2cpp_codegen_add((int32_t)L_641, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_645, L_647)), ((int32_t)-1894007588)))));
 		uint32_t L_648 = V_3;
 		uint32_t L_649 = V_3;
@@ -9209,7 +9250,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_657;
 		L_657 = RIPEMD160Managed_I_m7E3D4812FC9A003ADF92E275DC48ACD135D7B68E(L_654, L_655, L_656, NULL);
 		uint32_t* L_658 = ___0_blockDWords;
-		int32_t L_659 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_658, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)8), 4)))));
+		int32_t L_659 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_658, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)8), 4))))));
 		V_2 = ((int32_t)il2cpp_codegen_add((int32_t)L_653, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_657, L_659)), ((int32_t)-1894007588)))));
 		uint32_t L_660 = V_2;
 		uint32_t L_661 = V_2;
@@ -9225,7 +9266,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_669;
 		L_669 = RIPEMD160Managed_I_m7E3D4812FC9A003ADF92E275DC48ACD135D7B68E(L_666, L_667, L_668, NULL);
 		uint32_t* L_670 = ___0_blockDWords;
-		int32_t L_671 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_670, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)12)), 4)))));
+		int32_t L_671 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_670, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)12)), 4))))));
 		V_1 = ((int32_t)il2cpp_codegen_add((int32_t)L_665, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_669, L_671)), ((int32_t)-1894007588)))));
 		uint32_t L_672 = V_1;
 		uint32_t L_673 = V_1;
@@ -9241,7 +9282,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_681;
 		L_681 = RIPEMD160Managed_I_m7E3D4812FC9A003ADF92E275DC48ACD135D7B68E(L_678, L_679, L_680, NULL);
 		uint32_t* L_682 = ___0_blockDWords;
-		int32_t L_683 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_682, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)4), 4)))));
+		int32_t L_683 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_682, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)4), 4))))));
 		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_677, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_681, L_683)), ((int32_t)-1894007588)))));
 		uint32_t L_684 = V_0;
 		uint32_t L_685 = V_0;
@@ -9257,7 +9298,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_693;
 		L_693 = RIPEMD160Managed_I_m7E3D4812FC9A003ADF92E275DC48ACD135D7B68E(L_690, L_691, L_692, NULL);
 		uint32_t* L_694 = ___0_blockDWords;
-		int32_t L_695 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_694, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)13)), 4)))));
+		int32_t L_695 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_694, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)13)), 4))))));
 		V_4 = ((int32_t)il2cpp_codegen_add((int32_t)L_689, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_693, L_695)), ((int32_t)-1894007588)))));
 		uint32_t L_696 = V_4;
 		uint32_t L_697 = V_4;
@@ -9273,7 +9314,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_705;
 		L_705 = RIPEMD160Managed_I_m7E3D4812FC9A003ADF92E275DC48ACD135D7B68E(L_702, L_703, L_704, NULL);
 		uint32_t* L_706 = ___0_blockDWords;
-		int32_t L_707 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_706, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)3), 4)))));
+		int32_t L_707 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_706, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)3), 4))))));
 		V_3 = ((int32_t)il2cpp_codegen_add((int32_t)L_701, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_705, L_707)), ((int32_t)-1894007588)))));
 		uint32_t L_708 = V_3;
 		uint32_t L_709 = V_3;
@@ -9289,7 +9330,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_717;
 		L_717 = RIPEMD160Managed_I_m7E3D4812FC9A003ADF92E275DC48ACD135D7B68E(L_714, L_715, L_716, NULL);
 		uint32_t* L_718 = ___0_blockDWords;
-		int32_t L_719 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_718, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)7), 4)))));
+		int32_t L_719 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_718, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)7), 4))))));
 		V_2 = ((int32_t)il2cpp_codegen_add((int32_t)L_713, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_717, L_719)), ((int32_t)-1894007588)))));
 		uint32_t L_720 = V_2;
 		uint32_t L_721 = V_2;
@@ -9305,7 +9346,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_729;
 		L_729 = RIPEMD160Managed_I_m7E3D4812FC9A003ADF92E275DC48ACD135D7B68E(L_726, L_727, L_728, NULL);
 		uint32_t* L_730 = ___0_blockDWords;
-		int32_t L_731 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_730, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)15)), 4)))));
+		int32_t L_731 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_730, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)15)), 4))))));
 		V_1 = ((int32_t)il2cpp_codegen_add((int32_t)L_725, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_729, L_731)), ((int32_t)-1894007588)))));
 		uint32_t L_732 = V_1;
 		uint32_t L_733 = V_1;
@@ -9321,7 +9362,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_741;
 		L_741 = RIPEMD160Managed_I_m7E3D4812FC9A003ADF92E275DC48ACD135D7B68E(L_738, L_739, L_740, NULL);
 		uint32_t* L_742 = ___0_blockDWords;
-		int32_t L_743 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_742, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)14)), 4)))));
+		int32_t L_743 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_742, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)14)), 4))))));
 		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_737, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_741, L_743)), ((int32_t)-1894007588)))));
 		uint32_t L_744 = V_0;
 		uint32_t L_745 = V_0;
@@ -9337,7 +9378,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_753;
 		L_753 = RIPEMD160Managed_I_m7E3D4812FC9A003ADF92E275DC48ACD135D7B68E(L_750, L_751, L_752, NULL);
 		uint32_t* L_754 = ___0_blockDWords;
-		int32_t L_755 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_754, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)5), 4)))));
+		int32_t L_755 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_754, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)5), 4))))));
 		V_4 = ((int32_t)il2cpp_codegen_add((int32_t)L_749, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_753, L_755)), ((int32_t)-1894007588)))));
 		uint32_t L_756 = V_4;
 		uint32_t L_757 = V_4;
@@ -9353,7 +9394,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_765;
 		L_765 = RIPEMD160Managed_I_m7E3D4812FC9A003ADF92E275DC48ACD135D7B68E(L_762, L_763, L_764, NULL);
 		uint32_t* L_766 = ___0_blockDWords;
-		int32_t L_767 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_766, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)6), 4)))));
+		int32_t L_767 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_766, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)6), 4))))));
 		V_3 = ((int32_t)il2cpp_codegen_add((int32_t)L_761, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_765, L_767)), ((int32_t)-1894007588)))));
 		uint32_t L_768 = V_3;
 		uint32_t L_769 = V_3;
@@ -9369,7 +9410,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_777;
 		L_777 = RIPEMD160Managed_I_m7E3D4812FC9A003ADF92E275DC48ACD135D7B68E(L_774, L_775, L_776, NULL);
 		uint32_t* L_778 = ___0_blockDWords;
-		int32_t L_779 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_778, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)2), 4)))));
+		int32_t L_779 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_778, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)2), 4))))));
 		V_2 = ((int32_t)il2cpp_codegen_add((int32_t)L_773, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_777, L_779)), ((int32_t)-1894007588)))));
 		uint32_t L_780 = V_2;
 		uint32_t L_781 = V_2;
@@ -9385,7 +9426,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_789;
 		L_789 = RIPEMD160Managed_J_m675965BE98C7BE99B4B229AAAEF52650671FD924(L_786, L_787, L_788, NULL);
 		uint32_t* L_790 = ___0_blockDWords;
-		int32_t L_791 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_790, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)4), 4)))));
+		int32_t L_791 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_790, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)4), 4))))));
 		V_1 = ((int32_t)il2cpp_codegen_add((int32_t)L_785, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_789, L_791)), ((int32_t)-1454113458)))));
 		uint32_t L_792 = V_1;
 		uint32_t L_793 = V_1;
@@ -9401,7 +9442,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_801;
 		L_801 = RIPEMD160Managed_J_m675965BE98C7BE99B4B229AAAEF52650671FD924(L_798, L_799, L_800, NULL);
 		uint32_t* L_802 = ___0_blockDWords;
-		int32_t L_803 = *((uint32_t*)L_802);
+		int32_t L_803 = (*(L_802));
 		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_797, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_801, L_803)), ((int32_t)-1454113458)))));
 		uint32_t L_804 = V_0;
 		uint32_t L_805 = V_0;
@@ -9417,7 +9458,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_813;
 		L_813 = RIPEMD160Managed_J_m675965BE98C7BE99B4B229AAAEF52650671FD924(L_810, L_811, L_812, NULL);
 		uint32_t* L_814 = ___0_blockDWords;
-		int32_t L_815 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_814, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)5), 4)))));
+		int32_t L_815 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_814, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)5), 4))))));
 		V_4 = ((int32_t)il2cpp_codegen_add((int32_t)L_809, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_813, L_815)), ((int32_t)-1454113458)))));
 		uint32_t L_816 = V_4;
 		uint32_t L_817 = V_4;
@@ -9433,7 +9474,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_825;
 		L_825 = RIPEMD160Managed_J_m675965BE98C7BE99B4B229AAAEF52650671FD924(L_822, L_823, L_824, NULL);
 		uint32_t* L_826 = ___0_blockDWords;
-		int32_t L_827 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_826, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)9)), 4)))));
+		int32_t L_827 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_826, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)9)), 4))))));
 		V_3 = ((int32_t)il2cpp_codegen_add((int32_t)L_821, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_825, L_827)), ((int32_t)-1454113458)))));
 		uint32_t L_828 = V_3;
 		uint32_t L_829 = V_3;
@@ -9449,7 +9490,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_837;
 		L_837 = RIPEMD160Managed_J_m675965BE98C7BE99B4B229AAAEF52650671FD924(L_834, L_835, L_836, NULL);
 		uint32_t* L_838 = ___0_blockDWords;
-		int32_t L_839 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_838, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)7), 4)))));
+		int32_t L_839 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_838, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)7), 4))))));
 		V_2 = ((int32_t)il2cpp_codegen_add((int32_t)L_833, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_837, L_839)), ((int32_t)-1454113458)))));
 		uint32_t L_840 = V_2;
 		uint32_t L_841 = V_2;
@@ -9465,7 +9506,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_849;
 		L_849 = RIPEMD160Managed_J_m675965BE98C7BE99B4B229AAAEF52650671FD924(L_846, L_847, L_848, NULL);
 		uint32_t* L_850 = ___0_blockDWords;
-		int32_t L_851 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_850, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)12)), 4)))));
+		int32_t L_851 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_850, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)12)), 4))))));
 		V_1 = ((int32_t)il2cpp_codegen_add((int32_t)L_845, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_849, L_851)), ((int32_t)-1454113458)))));
 		uint32_t L_852 = V_1;
 		uint32_t L_853 = V_1;
@@ -9481,7 +9522,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_861;
 		L_861 = RIPEMD160Managed_J_m675965BE98C7BE99B4B229AAAEF52650671FD924(L_858, L_859, L_860, NULL);
 		uint32_t* L_862 = ___0_blockDWords;
-		int32_t L_863 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_862, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)2), 4)))));
+		int32_t L_863 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_862, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)2), 4))))));
 		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_857, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_861, L_863)), ((int32_t)-1454113458)))));
 		uint32_t L_864 = V_0;
 		uint32_t L_865 = V_0;
@@ -9497,7 +9538,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_873;
 		L_873 = RIPEMD160Managed_J_m675965BE98C7BE99B4B229AAAEF52650671FD924(L_870, L_871, L_872, NULL);
 		uint32_t* L_874 = ___0_blockDWords;
-		int32_t L_875 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_874, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)10)), 4)))));
+		int32_t L_875 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_874, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)10)), 4))))));
 		V_4 = ((int32_t)il2cpp_codegen_add((int32_t)L_869, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_873, L_875)), ((int32_t)-1454113458)))));
 		uint32_t L_876 = V_4;
 		uint32_t L_877 = V_4;
@@ -9513,7 +9554,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_885;
 		L_885 = RIPEMD160Managed_J_m675965BE98C7BE99B4B229AAAEF52650671FD924(L_882, L_883, L_884, NULL);
 		uint32_t* L_886 = ___0_blockDWords;
-		int32_t L_887 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_886, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)14)), 4)))));
+		int32_t L_887 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_886, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)14)), 4))))));
 		V_3 = ((int32_t)il2cpp_codegen_add((int32_t)L_881, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_885, L_887)), ((int32_t)-1454113458)))));
 		uint32_t L_888 = V_3;
 		uint32_t L_889 = V_3;
@@ -9529,7 +9570,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_897;
 		L_897 = RIPEMD160Managed_J_m675965BE98C7BE99B4B229AAAEF52650671FD924(L_894, L_895, L_896, NULL);
 		uint32_t* L_898 = ___0_blockDWords;
-		int32_t L_899 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_898, 4)));
+		int32_t L_899 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_898, 4))));
 		V_2 = ((int32_t)il2cpp_codegen_add((int32_t)L_893, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_897, L_899)), ((int32_t)-1454113458)))));
 		uint32_t L_900 = V_2;
 		uint32_t L_901 = V_2;
@@ -9545,7 +9586,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_909;
 		L_909 = RIPEMD160Managed_J_m675965BE98C7BE99B4B229AAAEF52650671FD924(L_906, L_907, L_908, NULL);
 		uint32_t* L_910 = ___0_blockDWords;
-		int32_t L_911 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_910, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)3), 4)))));
+		int32_t L_911 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_910, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)3), 4))))));
 		V_1 = ((int32_t)il2cpp_codegen_add((int32_t)L_905, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_909, L_911)), ((int32_t)-1454113458)))));
 		uint32_t L_912 = V_1;
 		uint32_t L_913 = V_1;
@@ -9561,7 +9602,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_921;
 		L_921 = RIPEMD160Managed_J_m675965BE98C7BE99B4B229AAAEF52650671FD924(L_918, L_919, L_920, NULL);
 		uint32_t* L_922 = ___0_blockDWords;
-		int32_t L_923 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_922, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)8), 4)))));
+		int32_t L_923 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_922, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)8), 4))))));
 		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_917, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_921, L_923)), ((int32_t)-1454113458)))));
 		uint32_t L_924 = V_0;
 		uint32_t L_925 = V_0;
@@ -9577,7 +9618,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_933;
 		L_933 = RIPEMD160Managed_J_m675965BE98C7BE99B4B229AAAEF52650671FD924(L_930, L_931, L_932, NULL);
 		uint32_t* L_934 = ___0_blockDWords;
-		int32_t L_935 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_934, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)11)), 4)))));
+		int32_t L_935 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_934, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)11)), 4))))));
 		V_4 = ((int32_t)il2cpp_codegen_add((int32_t)L_929, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_933, L_935)), ((int32_t)-1454113458)))));
 		uint32_t L_936 = V_4;
 		uint32_t L_937 = V_4;
@@ -9593,7 +9634,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_945;
 		L_945 = RIPEMD160Managed_J_m675965BE98C7BE99B4B229AAAEF52650671FD924(L_942, L_943, L_944, NULL);
 		uint32_t* L_946 = ___0_blockDWords;
-		int32_t L_947 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_946, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)6), 4)))));
+		int32_t L_947 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_946, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)6), 4))))));
 		V_3 = ((int32_t)il2cpp_codegen_add((int32_t)L_941, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_945, L_947)), ((int32_t)-1454113458)))));
 		uint32_t L_948 = V_3;
 		uint32_t L_949 = V_3;
@@ -9609,7 +9650,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_957;
 		L_957 = RIPEMD160Managed_J_m675965BE98C7BE99B4B229AAAEF52650671FD924(L_954, L_955, L_956, NULL);
 		uint32_t* L_958 = ___0_blockDWords;
-		int32_t L_959 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_958, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)15)), 4)))));
+		int32_t L_959 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_958, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)15)), 4))))));
 		V_2 = ((int32_t)il2cpp_codegen_add((int32_t)L_953, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_957, L_959)), ((int32_t)-1454113458)))));
 		uint32_t L_960 = V_2;
 		uint32_t L_961 = V_2;
@@ -9625,7 +9666,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_969;
 		L_969 = RIPEMD160Managed_J_m675965BE98C7BE99B4B229AAAEF52650671FD924(L_966, L_967, L_968, NULL);
 		uint32_t* L_970 = ___0_blockDWords;
-		int32_t L_971 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_970, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)13)), 4)))));
+		int32_t L_971 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_970, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)13)), 4))))));
 		V_1 = ((int32_t)il2cpp_codegen_add((int32_t)L_965, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_969, L_971)), ((int32_t)-1454113458)))));
 		uint32_t L_972 = V_1;
 		uint32_t L_973 = V_1;
@@ -9641,7 +9682,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_981;
 		L_981 = RIPEMD160Managed_J_m675965BE98C7BE99B4B229AAAEF52650671FD924(L_978, L_979, L_980, NULL);
 		uint32_t* L_982 = ___0_blockDWords;
-		int32_t L_983 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_982, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)5), 4)))));
+		int32_t L_983 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_982, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)5), 4))))));
 		V_5 = ((int32_t)il2cpp_codegen_add((int32_t)L_977, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_981, L_983)), ((int32_t)1352829926)))));
 		uint32_t L_984 = V_5;
 		uint32_t L_985 = V_5;
@@ -9657,7 +9698,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_993;
 		L_993 = RIPEMD160Managed_J_m675965BE98C7BE99B4B229AAAEF52650671FD924(L_990, L_991, L_992, NULL);
 		uint32_t* L_994 = ___0_blockDWords;
-		int32_t L_995 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_994, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)14)), 4)))));
+		int32_t L_995 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_994, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)14)), 4))))));
 		V_9 = ((int32_t)il2cpp_codegen_add((int32_t)L_989, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_993, L_995)), ((int32_t)1352829926)))));
 		uint32_t L_996 = V_9;
 		uint32_t L_997 = V_9;
@@ -9673,7 +9714,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1005;
 		L_1005 = RIPEMD160Managed_J_m675965BE98C7BE99B4B229AAAEF52650671FD924(L_1002, L_1003, L_1004, NULL);
 		uint32_t* L_1006 = ___0_blockDWords;
-		int32_t L_1007 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1006, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)7), 4)))));
+		int32_t L_1007 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1006, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)7), 4))))));
 		V_8 = ((int32_t)il2cpp_codegen_add((int32_t)L_1001, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1005, L_1007)), ((int32_t)1352829926)))));
 		uint32_t L_1008 = V_8;
 		uint32_t L_1009 = V_8;
@@ -9689,7 +9730,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1017;
 		L_1017 = RIPEMD160Managed_J_m675965BE98C7BE99B4B229AAAEF52650671FD924(L_1014, L_1015, L_1016, NULL);
 		uint32_t* L_1018 = ___0_blockDWords;
-		int32_t L_1019 = *((uint32_t*)L_1018);
+		int32_t L_1019 = (*(L_1018));
 		V_7 = ((int32_t)il2cpp_codegen_add((int32_t)L_1013, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1017, L_1019)), ((int32_t)1352829926)))));
 		uint32_t L_1020 = V_7;
 		uint32_t L_1021 = V_7;
@@ -9705,7 +9746,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1029;
 		L_1029 = RIPEMD160Managed_J_m675965BE98C7BE99B4B229AAAEF52650671FD924(L_1026, L_1027, L_1028, NULL);
 		uint32_t* L_1030 = ___0_blockDWords;
-		int32_t L_1031 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1030, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)9)), 4)))));
+		int32_t L_1031 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1030, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)9)), 4))))));
 		V_6 = ((int32_t)il2cpp_codegen_add((int32_t)L_1025, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1029, L_1031)), ((int32_t)1352829926)))));
 		uint32_t L_1032 = V_6;
 		uint32_t L_1033 = V_6;
@@ -9721,7 +9762,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1041;
 		L_1041 = RIPEMD160Managed_J_m675965BE98C7BE99B4B229AAAEF52650671FD924(L_1038, L_1039, L_1040, NULL);
 		uint32_t* L_1042 = ___0_blockDWords;
-		int32_t L_1043 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1042, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)2), 4)))));
+		int32_t L_1043 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1042, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)2), 4))))));
 		V_5 = ((int32_t)il2cpp_codegen_add((int32_t)L_1037, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1041, L_1043)), ((int32_t)1352829926)))));
 		uint32_t L_1044 = V_5;
 		uint32_t L_1045 = V_5;
@@ -9737,7 +9778,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1053;
 		L_1053 = RIPEMD160Managed_J_m675965BE98C7BE99B4B229AAAEF52650671FD924(L_1050, L_1051, L_1052, NULL);
 		uint32_t* L_1054 = ___0_blockDWords;
-		int32_t L_1055 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1054, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)11)), 4)))));
+		int32_t L_1055 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1054, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)11)), 4))))));
 		V_9 = ((int32_t)il2cpp_codegen_add((int32_t)L_1049, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1053, L_1055)), ((int32_t)1352829926)))));
 		uint32_t L_1056 = V_9;
 		uint32_t L_1057 = V_9;
@@ -9753,7 +9794,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1065;
 		L_1065 = RIPEMD160Managed_J_m675965BE98C7BE99B4B229AAAEF52650671FD924(L_1062, L_1063, L_1064, NULL);
 		uint32_t* L_1066 = ___0_blockDWords;
-		int32_t L_1067 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1066, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)4), 4)))));
+		int32_t L_1067 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1066, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)4), 4))))));
 		V_8 = ((int32_t)il2cpp_codegen_add((int32_t)L_1061, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1065, L_1067)), ((int32_t)1352829926)))));
 		uint32_t L_1068 = V_8;
 		uint32_t L_1069 = V_8;
@@ -9769,7 +9810,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1077;
 		L_1077 = RIPEMD160Managed_J_m675965BE98C7BE99B4B229AAAEF52650671FD924(L_1074, L_1075, L_1076, NULL);
 		uint32_t* L_1078 = ___0_blockDWords;
-		int32_t L_1079 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1078, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)13)), 4)))));
+		int32_t L_1079 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1078, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)13)), 4))))));
 		V_7 = ((int32_t)il2cpp_codegen_add((int32_t)L_1073, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1077, L_1079)), ((int32_t)1352829926)))));
 		uint32_t L_1080 = V_7;
 		uint32_t L_1081 = V_7;
@@ -9785,7 +9826,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1089;
 		L_1089 = RIPEMD160Managed_J_m675965BE98C7BE99B4B229AAAEF52650671FD924(L_1086, L_1087, L_1088, NULL);
 		uint32_t* L_1090 = ___0_blockDWords;
-		int32_t L_1091 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1090, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)6), 4)))));
+		int32_t L_1091 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1090, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)6), 4))))));
 		V_6 = ((int32_t)il2cpp_codegen_add((int32_t)L_1085, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1089, L_1091)), ((int32_t)1352829926)))));
 		uint32_t L_1092 = V_6;
 		uint32_t L_1093 = V_6;
@@ -9801,7 +9842,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1101;
 		L_1101 = RIPEMD160Managed_J_m675965BE98C7BE99B4B229AAAEF52650671FD924(L_1098, L_1099, L_1100, NULL);
 		uint32_t* L_1102 = ___0_blockDWords;
-		int32_t L_1103 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1102, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)15)), 4)))));
+		int32_t L_1103 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1102, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)15)), 4))))));
 		V_5 = ((int32_t)il2cpp_codegen_add((int32_t)L_1097, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1101, L_1103)), ((int32_t)1352829926)))));
 		uint32_t L_1104 = V_5;
 		uint32_t L_1105 = V_5;
@@ -9817,7 +9858,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1113;
 		L_1113 = RIPEMD160Managed_J_m675965BE98C7BE99B4B229AAAEF52650671FD924(L_1110, L_1111, L_1112, NULL);
 		uint32_t* L_1114 = ___0_blockDWords;
-		int32_t L_1115 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1114, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)8), 4)))));
+		int32_t L_1115 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1114, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)8), 4))))));
 		V_9 = ((int32_t)il2cpp_codegen_add((int32_t)L_1109, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1113, L_1115)), ((int32_t)1352829926)))));
 		uint32_t L_1116 = V_9;
 		uint32_t L_1117 = V_9;
@@ -9833,7 +9874,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1125;
 		L_1125 = RIPEMD160Managed_J_m675965BE98C7BE99B4B229AAAEF52650671FD924(L_1122, L_1123, L_1124, NULL);
 		uint32_t* L_1126 = ___0_blockDWords;
-		int32_t L_1127 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1126, 4)));
+		int32_t L_1127 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1126, 4))));
 		V_8 = ((int32_t)il2cpp_codegen_add((int32_t)L_1121, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1125, L_1127)), ((int32_t)1352829926)))));
 		uint32_t L_1128 = V_8;
 		uint32_t L_1129 = V_8;
@@ -9849,7 +9890,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1137;
 		L_1137 = RIPEMD160Managed_J_m675965BE98C7BE99B4B229AAAEF52650671FD924(L_1134, L_1135, L_1136, NULL);
 		uint32_t* L_1138 = ___0_blockDWords;
-		int32_t L_1139 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1138, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)10)), 4)))));
+		int32_t L_1139 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1138, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)10)), 4))))));
 		V_7 = ((int32_t)il2cpp_codegen_add((int32_t)L_1133, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1137, L_1139)), ((int32_t)1352829926)))));
 		uint32_t L_1140 = V_7;
 		uint32_t L_1141 = V_7;
@@ -9865,7 +9906,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1149;
 		L_1149 = RIPEMD160Managed_J_m675965BE98C7BE99B4B229AAAEF52650671FD924(L_1146, L_1147, L_1148, NULL);
 		uint32_t* L_1150 = ___0_blockDWords;
-		int32_t L_1151 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1150, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)3), 4)))));
+		int32_t L_1151 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1150, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)3), 4))))));
 		V_6 = ((int32_t)il2cpp_codegen_add((int32_t)L_1145, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1149, L_1151)), ((int32_t)1352829926)))));
 		uint32_t L_1152 = V_6;
 		uint32_t L_1153 = V_6;
@@ -9881,7 +9922,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1161;
 		L_1161 = RIPEMD160Managed_J_m675965BE98C7BE99B4B229AAAEF52650671FD924(L_1158, L_1159, L_1160, NULL);
 		uint32_t* L_1162 = ___0_blockDWords;
-		int32_t L_1163 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1162, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)12)), 4)))));
+		int32_t L_1163 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1162, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)12)), 4))))));
 		V_5 = ((int32_t)il2cpp_codegen_add((int32_t)L_1157, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1161, L_1163)), ((int32_t)1352829926)))));
 		uint32_t L_1164 = V_5;
 		uint32_t L_1165 = V_5;
@@ -9897,7 +9938,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1173;
 		L_1173 = RIPEMD160Managed_I_m7E3D4812FC9A003ADF92E275DC48ACD135D7B68E(L_1170, L_1171, L_1172, NULL);
 		uint32_t* L_1174 = ___0_blockDWords;
-		int32_t L_1175 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1174, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)6), 4)))));
+		int32_t L_1175 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1174, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)6), 4))))));
 		V_9 = ((int32_t)il2cpp_codegen_add((int32_t)L_1169, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1173, L_1175)), ((int32_t)1548603684)))));
 		uint32_t L_1176 = V_9;
 		uint32_t L_1177 = V_9;
@@ -9913,7 +9954,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1185;
 		L_1185 = RIPEMD160Managed_I_m7E3D4812FC9A003ADF92E275DC48ACD135D7B68E(L_1182, L_1183, L_1184, NULL);
 		uint32_t* L_1186 = ___0_blockDWords;
-		int32_t L_1187 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1186, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)11)), 4)))));
+		int32_t L_1187 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1186, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)11)), 4))))));
 		V_8 = ((int32_t)il2cpp_codegen_add((int32_t)L_1181, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1185, L_1187)), ((int32_t)1548603684)))));
 		uint32_t L_1188 = V_8;
 		uint32_t L_1189 = V_8;
@@ -9929,7 +9970,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1197;
 		L_1197 = RIPEMD160Managed_I_m7E3D4812FC9A003ADF92E275DC48ACD135D7B68E(L_1194, L_1195, L_1196, NULL);
 		uint32_t* L_1198 = ___0_blockDWords;
-		int32_t L_1199 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1198, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)3), 4)))));
+		int32_t L_1199 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1198, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)3), 4))))));
 		V_7 = ((int32_t)il2cpp_codegen_add((int32_t)L_1193, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1197, L_1199)), ((int32_t)1548603684)))));
 		uint32_t L_1200 = V_7;
 		uint32_t L_1201 = V_7;
@@ -9945,7 +9986,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1209;
 		L_1209 = RIPEMD160Managed_I_m7E3D4812FC9A003ADF92E275DC48ACD135D7B68E(L_1206, L_1207, L_1208, NULL);
 		uint32_t* L_1210 = ___0_blockDWords;
-		int32_t L_1211 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1210, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)7), 4)))));
+		int32_t L_1211 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1210, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)7), 4))))));
 		V_6 = ((int32_t)il2cpp_codegen_add((int32_t)L_1205, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1209, L_1211)), ((int32_t)1548603684)))));
 		uint32_t L_1212 = V_6;
 		uint32_t L_1213 = V_6;
@@ -9961,7 +10002,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1221;
 		L_1221 = RIPEMD160Managed_I_m7E3D4812FC9A003ADF92E275DC48ACD135D7B68E(L_1218, L_1219, L_1220, NULL);
 		uint32_t* L_1222 = ___0_blockDWords;
-		int32_t L_1223 = *((uint32_t*)L_1222);
+		int32_t L_1223 = (*(L_1222));
 		V_5 = ((int32_t)il2cpp_codegen_add((int32_t)L_1217, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1221, L_1223)), ((int32_t)1548603684)))));
 		uint32_t L_1224 = V_5;
 		uint32_t L_1225 = V_5;
@@ -9977,7 +10018,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1233;
 		L_1233 = RIPEMD160Managed_I_m7E3D4812FC9A003ADF92E275DC48ACD135D7B68E(L_1230, L_1231, L_1232, NULL);
 		uint32_t* L_1234 = ___0_blockDWords;
-		int32_t L_1235 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1234, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)13)), 4)))));
+		int32_t L_1235 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1234, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)13)), 4))))));
 		V_9 = ((int32_t)il2cpp_codegen_add((int32_t)L_1229, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1233, L_1235)), ((int32_t)1548603684)))));
 		uint32_t L_1236 = V_9;
 		uint32_t L_1237 = V_9;
@@ -9993,7 +10034,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1245;
 		L_1245 = RIPEMD160Managed_I_m7E3D4812FC9A003ADF92E275DC48ACD135D7B68E(L_1242, L_1243, L_1244, NULL);
 		uint32_t* L_1246 = ___0_blockDWords;
-		int32_t L_1247 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1246, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)5), 4)))));
+		int32_t L_1247 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1246, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)5), 4))))));
 		V_8 = ((int32_t)il2cpp_codegen_add((int32_t)L_1241, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1245, L_1247)), ((int32_t)1548603684)))));
 		uint32_t L_1248 = V_8;
 		uint32_t L_1249 = V_8;
@@ -10009,7 +10050,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1257;
 		L_1257 = RIPEMD160Managed_I_m7E3D4812FC9A003ADF92E275DC48ACD135D7B68E(L_1254, L_1255, L_1256, NULL);
 		uint32_t* L_1258 = ___0_blockDWords;
-		int32_t L_1259 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1258, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)10)), 4)))));
+		int32_t L_1259 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1258, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)10)), 4))))));
 		V_7 = ((int32_t)il2cpp_codegen_add((int32_t)L_1253, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1257, L_1259)), ((int32_t)1548603684)))));
 		uint32_t L_1260 = V_7;
 		uint32_t L_1261 = V_7;
@@ -10025,7 +10066,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1269;
 		L_1269 = RIPEMD160Managed_I_m7E3D4812FC9A003ADF92E275DC48ACD135D7B68E(L_1266, L_1267, L_1268, NULL);
 		uint32_t* L_1270 = ___0_blockDWords;
-		int32_t L_1271 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1270, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)14)), 4)))));
+		int32_t L_1271 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1270, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)14)), 4))))));
 		V_6 = ((int32_t)il2cpp_codegen_add((int32_t)L_1265, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1269, L_1271)), ((int32_t)1548603684)))));
 		uint32_t L_1272 = V_6;
 		uint32_t L_1273 = V_6;
@@ -10041,7 +10082,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1281;
 		L_1281 = RIPEMD160Managed_I_m7E3D4812FC9A003ADF92E275DC48ACD135D7B68E(L_1278, L_1279, L_1280, NULL);
 		uint32_t* L_1282 = ___0_blockDWords;
-		int32_t L_1283 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1282, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)15)), 4)))));
+		int32_t L_1283 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1282, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)15)), 4))))));
 		V_5 = ((int32_t)il2cpp_codegen_add((int32_t)L_1277, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1281, L_1283)), ((int32_t)1548603684)))));
 		uint32_t L_1284 = V_5;
 		uint32_t L_1285 = V_5;
@@ -10057,7 +10098,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1293;
 		L_1293 = RIPEMD160Managed_I_m7E3D4812FC9A003ADF92E275DC48ACD135D7B68E(L_1290, L_1291, L_1292, NULL);
 		uint32_t* L_1294 = ___0_blockDWords;
-		int32_t L_1295 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1294, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)8), 4)))));
+		int32_t L_1295 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1294, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)8), 4))))));
 		V_9 = ((int32_t)il2cpp_codegen_add((int32_t)L_1289, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1293, L_1295)), ((int32_t)1548603684)))));
 		uint32_t L_1296 = V_9;
 		uint32_t L_1297 = V_9;
@@ -10073,7 +10114,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1305;
 		L_1305 = RIPEMD160Managed_I_m7E3D4812FC9A003ADF92E275DC48ACD135D7B68E(L_1302, L_1303, L_1304, NULL);
 		uint32_t* L_1306 = ___0_blockDWords;
-		int32_t L_1307 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1306, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)12)), 4)))));
+		int32_t L_1307 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1306, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)12)), 4))))));
 		V_8 = ((int32_t)il2cpp_codegen_add((int32_t)L_1301, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1305, L_1307)), ((int32_t)1548603684)))));
 		uint32_t L_1308 = V_8;
 		uint32_t L_1309 = V_8;
@@ -10089,7 +10130,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1317;
 		L_1317 = RIPEMD160Managed_I_m7E3D4812FC9A003ADF92E275DC48ACD135D7B68E(L_1314, L_1315, L_1316, NULL);
 		uint32_t* L_1318 = ___0_blockDWords;
-		int32_t L_1319 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1318, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)4), 4)))));
+		int32_t L_1319 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1318, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)4), 4))))));
 		V_7 = ((int32_t)il2cpp_codegen_add((int32_t)L_1313, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1317, L_1319)), ((int32_t)1548603684)))));
 		uint32_t L_1320 = V_7;
 		uint32_t L_1321 = V_7;
@@ -10105,7 +10146,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1329;
 		L_1329 = RIPEMD160Managed_I_m7E3D4812FC9A003ADF92E275DC48ACD135D7B68E(L_1326, L_1327, L_1328, NULL);
 		uint32_t* L_1330 = ___0_blockDWords;
-		int32_t L_1331 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1330, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)9)), 4)))));
+		int32_t L_1331 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1330, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)9)), 4))))));
 		V_6 = ((int32_t)il2cpp_codegen_add((int32_t)L_1325, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1329, L_1331)), ((int32_t)1548603684)))));
 		uint32_t L_1332 = V_6;
 		uint32_t L_1333 = V_6;
@@ -10121,7 +10162,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1341;
 		L_1341 = RIPEMD160Managed_I_m7E3D4812FC9A003ADF92E275DC48ACD135D7B68E(L_1338, L_1339, L_1340, NULL);
 		uint32_t* L_1342 = ___0_blockDWords;
-		int32_t L_1343 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1342, 4)));
+		int32_t L_1343 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1342, 4))));
 		V_5 = ((int32_t)il2cpp_codegen_add((int32_t)L_1337, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1341, L_1343)), ((int32_t)1548603684)))));
 		uint32_t L_1344 = V_5;
 		uint32_t L_1345 = V_5;
@@ -10137,7 +10178,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1353;
 		L_1353 = RIPEMD160Managed_I_m7E3D4812FC9A003ADF92E275DC48ACD135D7B68E(L_1350, L_1351, L_1352, NULL);
 		uint32_t* L_1354 = ___0_blockDWords;
-		int32_t L_1355 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1354, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)2), 4)))));
+		int32_t L_1355 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1354, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)2), 4))))));
 		V_9 = ((int32_t)il2cpp_codegen_add((int32_t)L_1349, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1353, L_1355)), ((int32_t)1548603684)))));
 		uint32_t L_1356 = V_9;
 		uint32_t L_1357 = V_9;
@@ -10153,7 +10194,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1365;
 		L_1365 = RIPEMD160Managed_H_m422F354E67D718FB2E43E5D74F3E2E449158E4CB(L_1362, L_1363, L_1364, NULL);
 		uint32_t* L_1366 = ___0_blockDWords;
-		int32_t L_1367 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1366, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)15)), 4)))));
+		int32_t L_1367 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1366, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)15)), 4))))));
 		V_8 = ((int32_t)il2cpp_codegen_add((int32_t)L_1361, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1365, L_1367)), ((int32_t)1836072691)))));
 		uint32_t L_1368 = V_8;
 		uint32_t L_1369 = V_8;
@@ -10169,7 +10210,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1377;
 		L_1377 = RIPEMD160Managed_H_m422F354E67D718FB2E43E5D74F3E2E449158E4CB(L_1374, L_1375, L_1376, NULL);
 		uint32_t* L_1378 = ___0_blockDWords;
-		int32_t L_1379 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1378, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)5), 4)))));
+		int32_t L_1379 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1378, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)5), 4))))));
 		V_7 = ((int32_t)il2cpp_codegen_add((int32_t)L_1373, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1377, L_1379)), ((int32_t)1836072691)))));
 		uint32_t L_1380 = V_7;
 		uint32_t L_1381 = V_7;
@@ -10185,7 +10226,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1389;
 		L_1389 = RIPEMD160Managed_H_m422F354E67D718FB2E43E5D74F3E2E449158E4CB(L_1386, L_1387, L_1388, NULL);
 		uint32_t* L_1390 = ___0_blockDWords;
-		int32_t L_1391 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1390, 4)));
+		int32_t L_1391 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1390, 4))));
 		V_6 = ((int32_t)il2cpp_codegen_add((int32_t)L_1385, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1389, L_1391)), ((int32_t)1836072691)))));
 		uint32_t L_1392 = V_6;
 		uint32_t L_1393 = V_6;
@@ -10201,7 +10242,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1401;
 		L_1401 = RIPEMD160Managed_H_m422F354E67D718FB2E43E5D74F3E2E449158E4CB(L_1398, L_1399, L_1400, NULL);
 		uint32_t* L_1402 = ___0_blockDWords;
-		int32_t L_1403 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1402, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)3), 4)))));
+		int32_t L_1403 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1402, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)3), 4))))));
 		V_5 = ((int32_t)il2cpp_codegen_add((int32_t)L_1397, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1401, L_1403)), ((int32_t)1836072691)))));
 		uint32_t L_1404 = V_5;
 		uint32_t L_1405 = V_5;
@@ -10217,7 +10258,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1413;
 		L_1413 = RIPEMD160Managed_H_m422F354E67D718FB2E43E5D74F3E2E449158E4CB(L_1410, L_1411, L_1412, NULL);
 		uint32_t* L_1414 = ___0_blockDWords;
-		int32_t L_1415 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1414, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)7), 4)))));
+		int32_t L_1415 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1414, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)7), 4))))));
 		V_9 = ((int32_t)il2cpp_codegen_add((int32_t)L_1409, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1413, L_1415)), ((int32_t)1836072691)))));
 		uint32_t L_1416 = V_9;
 		uint32_t L_1417 = V_9;
@@ -10233,7 +10274,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1425;
 		L_1425 = RIPEMD160Managed_H_m422F354E67D718FB2E43E5D74F3E2E449158E4CB(L_1422, L_1423, L_1424, NULL);
 		uint32_t* L_1426 = ___0_blockDWords;
-		int32_t L_1427 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1426, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)14)), 4)))));
+		int32_t L_1427 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1426, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)14)), 4))))));
 		V_8 = ((int32_t)il2cpp_codegen_add((int32_t)L_1421, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1425, L_1427)), ((int32_t)1836072691)))));
 		uint32_t L_1428 = V_8;
 		uint32_t L_1429 = V_8;
@@ -10249,7 +10290,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1437;
 		L_1437 = RIPEMD160Managed_H_m422F354E67D718FB2E43E5D74F3E2E449158E4CB(L_1434, L_1435, L_1436, NULL);
 		uint32_t* L_1438 = ___0_blockDWords;
-		int32_t L_1439 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1438, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)6), 4)))));
+		int32_t L_1439 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1438, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)6), 4))))));
 		V_7 = ((int32_t)il2cpp_codegen_add((int32_t)L_1433, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1437, L_1439)), ((int32_t)1836072691)))));
 		uint32_t L_1440 = V_7;
 		uint32_t L_1441 = V_7;
@@ -10265,7 +10306,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1449;
 		L_1449 = RIPEMD160Managed_H_m422F354E67D718FB2E43E5D74F3E2E449158E4CB(L_1446, L_1447, L_1448, NULL);
 		uint32_t* L_1450 = ___0_blockDWords;
-		int32_t L_1451 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1450, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)9)), 4)))));
+		int32_t L_1451 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1450, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)9)), 4))))));
 		V_6 = ((int32_t)il2cpp_codegen_add((int32_t)L_1445, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1449, L_1451)), ((int32_t)1836072691)))));
 		uint32_t L_1452 = V_6;
 		uint32_t L_1453 = V_6;
@@ -10281,7 +10322,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1461;
 		L_1461 = RIPEMD160Managed_H_m422F354E67D718FB2E43E5D74F3E2E449158E4CB(L_1458, L_1459, L_1460, NULL);
 		uint32_t* L_1462 = ___0_blockDWords;
-		int32_t L_1463 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1462, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)11)), 4)))));
+		int32_t L_1463 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1462, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)11)), 4))))));
 		V_5 = ((int32_t)il2cpp_codegen_add((int32_t)L_1457, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1461, L_1463)), ((int32_t)1836072691)))));
 		uint32_t L_1464 = V_5;
 		uint32_t L_1465 = V_5;
@@ -10297,7 +10338,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1473;
 		L_1473 = RIPEMD160Managed_H_m422F354E67D718FB2E43E5D74F3E2E449158E4CB(L_1470, L_1471, L_1472, NULL);
 		uint32_t* L_1474 = ___0_blockDWords;
-		int32_t L_1475 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1474, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)8), 4)))));
+		int32_t L_1475 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1474, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)8), 4))))));
 		V_9 = ((int32_t)il2cpp_codegen_add((int32_t)L_1469, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1473, L_1475)), ((int32_t)1836072691)))));
 		uint32_t L_1476 = V_9;
 		uint32_t L_1477 = V_9;
@@ -10313,7 +10354,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1485;
 		L_1485 = RIPEMD160Managed_H_m422F354E67D718FB2E43E5D74F3E2E449158E4CB(L_1482, L_1483, L_1484, NULL);
 		uint32_t* L_1486 = ___0_blockDWords;
-		int32_t L_1487 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1486, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)12)), 4)))));
+		int32_t L_1487 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1486, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)12)), 4))))));
 		V_8 = ((int32_t)il2cpp_codegen_add((int32_t)L_1481, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1485, L_1487)), ((int32_t)1836072691)))));
 		uint32_t L_1488 = V_8;
 		uint32_t L_1489 = V_8;
@@ -10329,7 +10370,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1497;
 		L_1497 = RIPEMD160Managed_H_m422F354E67D718FB2E43E5D74F3E2E449158E4CB(L_1494, L_1495, L_1496, NULL);
 		uint32_t* L_1498 = ___0_blockDWords;
-		int32_t L_1499 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1498, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)2), 4)))));
+		int32_t L_1499 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1498, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)2), 4))))));
 		V_7 = ((int32_t)il2cpp_codegen_add((int32_t)L_1493, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1497, L_1499)), ((int32_t)1836072691)))));
 		uint32_t L_1500 = V_7;
 		uint32_t L_1501 = V_7;
@@ -10345,7 +10386,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1509;
 		L_1509 = RIPEMD160Managed_H_m422F354E67D718FB2E43E5D74F3E2E449158E4CB(L_1506, L_1507, L_1508, NULL);
 		uint32_t* L_1510 = ___0_blockDWords;
-		int32_t L_1511 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1510, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)10)), 4)))));
+		int32_t L_1511 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1510, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)10)), 4))))));
 		V_6 = ((int32_t)il2cpp_codegen_add((int32_t)L_1505, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1509, L_1511)), ((int32_t)1836072691)))));
 		uint32_t L_1512 = V_6;
 		uint32_t L_1513 = V_6;
@@ -10361,7 +10402,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1521;
 		L_1521 = RIPEMD160Managed_H_m422F354E67D718FB2E43E5D74F3E2E449158E4CB(L_1518, L_1519, L_1520, NULL);
 		uint32_t* L_1522 = ___0_blockDWords;
-		int32_t L_1523 = *((uint32_t*)L_1522);
+		int32_t L_1523 = (*(L_1522));
 		V_5 = ((int32_t)il2cpp_codegen_add((int32_t)L_1517, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1521, L_1523)), ((int32_t)1836072691)))));
 		uint32_t L_1524 = V_5;
 		uint32_t L_1525 = V_5;
@@ -10377,7 +10418,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1533;
 		L_1533 = RIPEMD160Managed_H_m422F354E67D718FB2E43E5D74F3E2E449158E4CB(L_1530, L_1531, L_1532, NULL);
 		uint32_t* L_1534 = ___0_blockDWords;
-		int32_t L_1535 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1534, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)4), 4)))));
+		int32_t L_1535 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1534, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)4), 4))))));
 		V_9 = ((int32_t)il2cpp_codegen_add((int32_t)L_1529, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1533, L_1535)), ((int32_t)1836072691)))));
 		uint32_t L_1536 = V_9;
 		uint32_t L_1537 = V_9;
@@ -10393,7 +10434,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1545;
 		L_1545 = RIPEMD160Managed_H_m422F354E67D718FB2E43E5D74F3E2E449158E4CB(L_1542, L_1543, L_1544, NULL);
 		uint32_t* L_1546 = ___0_blockDWords;
-		int32_t L_1547 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1546, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)13)), 4)))));
+		int32_t L_1547 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1546, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)13)), 4))))));
 		V_8 = ((int32_t)il2cpp_codegen_add((int32_t)L_1541, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1545, L_1547)), ((int32_t)1836072691)))));
 		uint32_t L_1548 = V_8;
 		uint32_t L_1549 = V_8;
@@ -10409,7 +10450,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1557;
 		L_1557 = RIPEMD160Managed_G_m29899502ABE7C9F66583D5BF7674D55BF5295307(L_1554, L_1555, L_1556, NULL);
 		uint32_t* L_1558 = ___0_blockDWords;
-		int32_t L_1559 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1558, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)8), 4)))));
+		int32_t L_1559 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1558, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)8), 4))))));
 		V_7 = ((int32_t)il2cpp_codegen_add((int32_t)L_1553, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1557, L_1559)), ((int32_t)2053994217)))));
 		uint32_t L_1560 = V_7;
 		uint32_t L_1561 = V_7;
@@ -10425,7 +10466,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1569;
 		L_1569 = RIPEMD160Managed_G_m29899502ABE7C9F66583D5BF7674D55BF5295307(L_1566, L_1567, L_1568, NULL);
 		uint32_t* L_1570 = ___0_blockDWords;
-		int32_t L_1571 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1570, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)6), 4)))));
+		int32_t L_1571 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1570, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)6), 4))))));
 		V_6 = ((int32_t)il2cpp_codegen_add((int32_t)L_1565, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1569, L_1571)), ((int32_t)2053994217)))));
 		uint32_t L_1572 = V_6;
 		uint32_t L_1573 = V_6;
@@ -10441,7 +10482,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1581;
 		L_1581 = RIPEMD160Managed_G_m29899502ABE7C9F66583D5BF7674D55BF5295307(L_1578, L_1579, L_1580, NULL);
 		uint32_t* L_1582 = ___0_blockDWords;
-		int32_t L_1583 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1582, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)4), 4)))));
+		int32_t L_1583 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1582, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)4), 4))))));
 		V_5 = ((int32_t)il2cpp_codegen_add((int32_t)L_1577, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1581, L_1583)), ((int32_t)2053994217)))));
 		uint32_t L_1584 = V_5;
 		uint32_t L_1585 = V_5;
@@ -10457,7 +10498,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1593;
 		L_1593 = RIPEMD160Managed_G_m29899502ABE7C9F66583D5BF7674D55BF5295307(L_1590, L_1591, L_1592, NULL);
 		uint32_t* L_1594 = ___0_blockDWords;
-		int32_t L_1595 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1594, 4)));
+		int32_t L_1595 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1594, 4))));
 		V_9 = ((int32_t)il2cpp_codegen_add((int32_t)L_1589, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1593, L_1595)), ((int32_t)2053994217)))));
 		uint32_t L_1596 = V_9;
 		uint32_t L_1597 = V_9;
@@ -10473,7 +10514,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1605;
 		L_1605 = RIPEMD160Managed_G_m29899502ABE7C9F66583D5BF7674D55BF5295307(L_1602, L_1603, L_1604, NULL);
 		uint32_t* L_1606 = ___0_blockDWords;
-		int32_t L_1607 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1606, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)3), 4)))));
+		int32_t L_1607 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1606, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)3), 4))))));
 		V_8 = ((int32_t)il2cpp_codegen_add((int32_t)L_1601, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1605, L_1607)), ((int32_t)2053994217)))));
 		uint32_t L_1608 = V_8;
 		uint32_t L_1609 = V_8;
@@ -10489,7 +10530,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1617;
 		L_1617 = RIPEMD160Managed_G_m29899502ABE7C9F66583D5BF7674D55BF5295307(L_1614, L_1615, L_1616, NULL);
 		uint32_t* L_1618 = ___0_blockDWords;
-		int32_t L_1619 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1618, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)11)), 4)))));
+		int32_t L_1619 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1618, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)11)), 4))))));
 		V_7 = ((int32_t)il2cpp_codegen_add((int32_t)L_1613, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1617, L_1619)), ((int32_t)2053994217)))));
 		uint32_t L_1620 = V_7;
 		uint32_t L_1621 = V_7;
@@ -10505,7 +10546,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1629;
 		L_1629 = RIPEMD160Managed_G_m29899502ABE7C9F66583D5BF7674D55BF5295307(L_1626, L_1627, L_1628, NULL);
 		uint32_t* L_1630 = ___0_blockDWords;
-		int32_t L_1631 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1630, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)15)), 4)))));
+		int32_t L_1631 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1630, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)15)), 4))))));
 		V_6 = ((int32_t)il2cpp_codegen_add((int32_t)L_1625, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1629, L_1631)), ((int32_t)2053994217)))));
 		uint32_t L_1632 = V_6;
 		uint32_t L_1633 = V_6;
@@ -10521,7 +10562,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1641;
 		L_1641 = RIPEMD160Managed_G_m29899502ABE7C9F66583D5BF7674D55BF5295307(L_1638, L_1639, L_1640, NULL);
 		uint32_t* L_1642 = ___0_blockDWords;
-		int32_t L_1643 = *((uint32_t*)L_1642);
+		int32_t L_1643 = (*(L_1642));
 		V_5 = ((int32_t)il2cpp_codegen_add((int32_t)L_1637, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1641, L_1643)), ((int32_t)2053994217)))));
 		uint32_t L_1644 = V_5;
 		uint32_t L_1645 = V_5;
@@ -10537,7 +10578,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1653;
 		L_1653 = RIPEMD160Managed_G_m29899502ABE7C9F66583D5BF7674D55BF5295307(L_1650, L_1651, L_1652, NULL);
 		uint32_t* L_1654 = ___0_blockDWords;
-		int32_t L_1655 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1654, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)5), 4)))));
+		int32_t L_1655 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1654, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)5), 4))))));
 		V_9 = ((int32_t)il2cpp_codegen_add((int32_t)L_1649, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1653, L_1655)), ((int32_t)2053994217)))));
 		uint32_t L_1656 = V_9;
 		uint32_t L_1657 = V_9;
@@ -10553,7 +10594,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1665;
 		L_1665 = RIPEMD160Managed_G_m29899502ABE7C9F66583D5BF7674D55BF5295307(L_1662, L_1663, L_1664, NULL);
 		uint32_t* L_1666 = ___0_blockDWords;
-		int32_t L_1667 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1666, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)12)), 4)))));
+		int32_t L_1667 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1666, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)12)), 4))))));
 		V_8 = ((int32_t)il2cpp_codegen_add((int32_t)L_1661, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1665, L_1667)), ((int32_t)2053994217)))));
 		uint32_t L_1668 = V_8;
 		uint32_t L_1669 = V_8;
@@ -10569,7 +10610,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1677;
 		L_1677 = RIPEMD160Managed_G_m29899502ABE7C9F66583D5BF7674D55BF5295307(L_1674, L_1675, L_1676, NULL);
 		uint32_t* L_1678 = ___0_blockDWords;
-		int32_t L_1679 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1678, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)2), 4)))));
+		int32_t L_1679 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1678, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)2), 4))))));
 		V_7 = ((int32_t)il2cpp_codegen_add((int32_t)L_1673, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1677, L_1679)), ((int32_t)2053994217)))));
 		uint32_t L_1680 = V_7;
 		uint32_t L_1681 = V_7;
@@ -10585,7 +10626,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1689;
 		L_1689 = RIPEMD160Managed_G_m29899502ABE7C9F66583D5BF7674D55BF5295307(L_1686, L_1687, L_1688, NULL);
 		uint32_t* L_1690 = ___0_blockDWords;
-		int32_t L_1691 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1690, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)13)), 4)))));
+		int32_t L_1691 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1690, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)13)), 4))))));
 		V_6 = ((int32_t)il2cpp_codegen_add((int32_t)L_1685, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1689, L_1691)), ((int32_t)2053994217)))));
 		uint32_t L_1692 = V_6;
 		uint32_t L_1693 = V_6;
@@ -10601,7 +10642,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1701;
 		L_1701 = RIPEMD160Managed_G_m29899502ABE7C9F66583D5BF7674D55BF5295307(L_1698, L_1699, L_1700, NULL);
 		uint32_t* L_1702 = ___0_blockDWords;
-		int32_t L_1703 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1702, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)9)), 4)))));
+		int32_t L_1703 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1702, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)9)), 4))))));
 		V_5 = ((int32_t)il2cpp_codegen_add((int32_t)L_1697, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1701, L_1703)), ((int32_t)2053994217)))));
 		uint32_t L_1704 = V_5;
 		uint32_t L_1705 = V_5;
@@ -10617,7 +10658,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1713;
 		L_1713 = RIPEMD160Managed_G_m29899502ABE7C9F66583D5BF7674D55BF5295307(L_1710, L_1711, L_1712, NULL);
 		uint32_t* L_1714 = ___0_blockDWords;
-		int32_t L_1715 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1714, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)7), 4)))));
+		int32_t L_1715 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1714, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)7), 4))))));
 		V_9 = ((int32_t)il2cpp_codegen_add((int32_t)L_1709, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1713, L_1715)), ((int32_t)2053994217)))));
 		uint32_t L_1716 = V_9;
 		uint32_t L_1717 = V_9;
@@ -10633,7 +10674,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1725;
 		L_1725 = RIPEMD160Managed_G_m29899502ABE7C9F66583D5BF7674D55BF5295307(L_1722, L_1723, L_1724, NULL);
 		uint32_t* L_1726 = ___0_blockDWords;
-		int32_t L_1727 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1726, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)10)), 4)))));
+		int32_t L_1727 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1726, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)10)), 4))))));
 		V_8 = ((int32_t)il2cpp_codegen_add((int32_t)L_1721, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1725, L_1727)), ((int32_t)2053994217)))));
 		uint32_t L_1728 = V_8;
 		uint32_t L_1729 = V_8;
@@ -10649,7 +10690,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1737;
 		L_1737 = RIPEMD160Managed_G_m29899502ABE7C9F66583D5BF7674D55BF5295307(L_1734, L_1735, L_1736, NULL);
 		uint32_t* L_1738 = ___0_blockDWords;
-		int32_t L_1739 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1738, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)14)), 4)))));
+		int32_t L_1739 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1738, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)14)), 4))))));
 		V_7 = ((int32_t)il2cpp_codegen_add((int32_t)L_1733, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_1737, L_1739)), ((int32_t)2053994217)))));
 		uint32_t L_1740 = V_7;
 		uint32_t L_1741 = V_7;
@@ -10665,7 +10706,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1749;
 		L_1749 = RIPEMD160Managed_F_mDD20ED6C4BA658FD3EC3C178277E560A4BC99679(L_1746, L_1747, L_1748, NULL);
 		uint32_t* L_1750 = ___0_blockDWords;
-		int32_t L_1751 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1750, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)12)), 4)))));
+		int32_t L_1751 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1750, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)12)), 4))))));
 		V_6 = ((int32_t)il2cpp_codegen_add((int32_t)L_1745, ((int32_t)il2cpp_codegen_add((int32_t)L_1749, L_1751))));
 		uint32_t L_1752 = V_6;
 		uint32_t L_1753 = V_6;
@@ -10681,7 +10722,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1761;
 		L_1761 = RIPEMD160Managed_F_mDD20ED6C4BA658FD3EC3C178277E560A4BC99679(L_1758, L_1759, L_1760, NULL);
 		uint32_t* L_1762 = ___0_blockDWords;
-		int32_t L_1763 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1762, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)15)), 4)))));
+		int32_t L_1763 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1762, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)15)), 4))))));
 		V_5 = ((int32_t)il2cpp_codegen_add((int32_t)L_1757, ((int32_t)il2cpp_codegen_add((int32_t)L_1761, L_1763))));
 		uint32_t L_1764 = V_5;
 		uint32_t L_1765 = V_5;
@@ -10697,7 +10738,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1773;
 		L_1773 = RIPEMD160Managed_F_mDD20ED6C4BA658FD3EC3C178277E560A4BC99679(L_1770, L_1771, L_1772, NULL);
 		uint32_t* L_1774 = ___0_blockDWords;
-		int32_t L_1775 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1774, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)10)), 4)))));
+		int32_t L_1775 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1774, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)10)), 4))))));
 		V_9 = ((int32_t)il2cpp_codegen_add((int32_t)L_1769, ((int32_t)il2cpp_codegen_add((int32_t)L_1773, L_1775))));
 		uint32_t L_1776 = V_9;
 		uint32_t L_1777 = V_9;
@@ -10713,7 +10754,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1785;
 		L_1785 = RIPEMD160Managed_F_mDD20ED6C4BA658FD3EC3C178277E560A4BC99679(L_1782, L_1783, L_1784, NULL);
 		uint32_t* L_1786 = ___0_blockDWords;
-		int32_t L_1787 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1786, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)4), 4)))));
+		int32_t L_1787 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1786, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)4), 4))))));
 		V_8 = ((int32_t)il2cpp_codegen_add((int32_t)L_1781, ((int32_t)il2cpp_codegen_add((int32_t)L_1785, L_1787))));
 		uint32_t L_1788 = V_8;
 		uint32_t L_1789 = V_8;
@@ -10729,7 +10770,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1797;
 		L_1797 = RIPEMD160Managed_F_mDD20ED6C4BA658FD3EC3C178277E560A4BC99679(L_1794, L_1795, L_1796, NULL);
 		uint32_t* L_1798 = ___0_blockDWords;
-		int32_t L_1799 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1798, 4)));
+		int32_t L_1799 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1798, 4))));
 		V_7 = ((int32_t)il2cpp_codegen_add((int32_t)L_1793, ((int32_t)il2cpp_codegen_add((int32_t)L_1797, L_1799))));
 		uint32_t L_1800 = V_7;
 		uint32_t L_1801 = V_7;
@@ -10745,7 +10786,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1809;
 		L_1809 = RIPEMD160Managed_F_mDD20ED6C4BA658FD3EC3C178277E560A4BC99679(L_1806, L_1807, L_1808, NULL);
 		uint32_t* L_1810 = ___0_blockDWords;
-		int32_t L_1811 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1810, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)5), 4)))));
+		int32_t L_1811 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1810, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)5), 4))))));
 		V_6 = ((int32_t)il2cpp_codegen_add((int32_t)L_1805, ((int32_t)il2cpp_codegen_add((int32_t)L_1809, L_1811))));
 		uint32_t L_1812 = V_6;
 		uint32_t L_1813 = V_6;
@@ -10761,7 +10802,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1821;
 		L_1821 = RIPEMD160Managed_F_mDD20ED6C4BA658FD3EC3C178277E560A4BC99679(L_1818, L_1819, L_1820, NULL);
 		uint32_t* L_1822 = ___0_blockDWords;
-		int32_t L_1823 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1822, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)8), 4)))));
+		int32_t L_1823 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1822, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)8), 4))))));
 		V_5 = ((int32_t)il2cpp_codegen_add((int32_t)L_1817, ((int32_t)il2cpp_codegen_add((int32_t)L_1821, L_1823))));
 		uint32_t L_1824 = V_5;
 		uint32_t L_1825 = V_5;
@@ -10777,7 +10818,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1833;
 		L_1833 = RIPEMD160Managed_F_mDD20ED6C4BA658FD3EC3C178277E560A4BC99679(L_1830, L_1831, L_1832, NULL);
 		uint32_t* L_1834 = ___0_blockDWords;
-		int32_t L_1835 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1834, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)7), 4)))));
+		int32_t L_1835 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1834, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)7), 4))))));
 		V_9 = ((int32_t)il2cpp_codegen_add((int32_t)L_1829, ((int32_t)il2cpp_codegen_add((int32_t)L_1833, L_1835))));
 		uint32_t L_1836 = V_9;
 		uint32_t L_1837 = V_9;
@@ -10793,7 +10834,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1845;
 		L_1845 = RIPEMD160Managed_F_mDD20ED6C4BA658FD3EC3C178277E560A4BC99679(L_1842, L_1843, L_1844, NULL);
 		uint32_t* L_1846 = ___0_blockDWords;
-		int32_t L_1847 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1846, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)6), 4)))));
+		int32_t L_1847 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1846, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)6), 4))))));
 		V_8 = ((int32_t)il2cpp_codegen_add((int32_t)L_1841, ((int32_t)il2cpp_codegen_add((int32_t)L_1845, L_1847))));
 		uint32_t L_1848 = V_8;
 		uint32_t L_1849 = V_8;
@@ -10809,7 +10850,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1857;
 		L_1857 = RIPEMD160Managed_F_mDD20ED6C4BA658FD3EC3C178277E560A4BC99679(L_1854, L_1855, L_1856, NULL);
 		uint32_t* L_1858 = ___0_blockDWords;
-		int32_t L_1859 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1858, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)2), 4)))));
+		int32_t L_1859 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1858, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)2), 4))))));
 		V_7 = ((int32_t)il2cpp_codegen_add((int32_t)L_1853, ((int32_t)il2cpp_codegen_add((int32_t)L_1857, L_1859))));
 		uint32_t L_1860 = V_7;
 		uint32_t L_1861 = V_7;
@@ -10825,7 +10866,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1869;
 		L_1869 = RIPEMD160Managed_F_mDD20ED6C4BA658FD3EC3C178277E560A4BC99679(L_1866, L_1867, L_1868, NULL);
 		uint32_t* L_1870 = ___0_blockDWords;
-		int32_t L_1871 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1870, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)13)), 4)))));
+		int32_t L_1871 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1870, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)13)), 4))))));
 		V_6 = ((int32_t)il2cpp_codegen_add((int32_t)L_1865, ((int32_t)il2cpp_codegen_add((int32_t)L_1869, L_1871))));
 		uint32_t L_1872 = V_6;
 		uint32_t L_1873 = V_6;
@@ -10841,7 +10882,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1881;
 		L_1881 = RIPEMD160Managed_F_mDD20ED6C4BA658FD3EC3C178277E560A4BC99679(L_1878, L_1879, L_1880, NULL);
 		uint32_t* L_1882 = ___0_blockDWords;
-		int32_t L_1883 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1882, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)14)), 4)))));
+		int32_t L_1883 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1882, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)14)), 4))))));
 		V_5 = ((int32_t)il2cpp_codegen_add((int32_t)L_1877, ((int32_t)il2cpp_codegen_add((int32_t)L_1881, L_1883))));
 		uint32_t L_1884 = V_5;
 		uint32_t L_1885 = V_5;
@@ -10857,7 +10898,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1893;
 		L_1893 = RIPEMD160Managed_F_mDD20ED6C4BA658FD3EC3C178277E560A4BC99679(L_1890, L_1891, L_1892, NULL);
 		uint32_t* L_1894 = ___0_blockDWords;
-		int32_t L_1895 = *((uint32_t*)L_1894);
+		int32_t L_1895 = (*(L_1894));
 		V_9 = ((int32_t)il2cpp_codegen_add((int32_t)L_1889, ((int32_t)il2cpp_codegen_add((int32_t)L_1893, L_1895))));
 		uint32_t L_1896 = V_9;
 		uint32_t L_1897 = V_9;
@@ -10873,7 +10914,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1905;
 		L_1905 = RIPEMD160Managed_F_mDD20ED6C4BA658FD3EC3C178277E560A4BC99679(L_1902, L_1903, L_1904, NULL);
 		uint32_t* L_1906 = ___0_blockDWords;
-		int32_t L_1907 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1906, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)3), 4)))));
+		int32_t L_1907 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1906, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)3), 4))))));
 		V_8 = ((int32_t)il2cpp_codegen_add((int32_t)L_1901, ((int32_t)il2cpp_codegen_add((int32_t)L_1905, L_1907))));
 		uint32_t L_1908 = V_8;
 		uint32_t L_1909 = V_8;
@@ -10889,7 +10930,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1917;
 		L_1917 = RIPEMD160Managed_F_mDD20ED6C4BA658FD3EC3C178277E560A4BC99679(L_1914, L_1915, L_1916, NULL);
 		uint32_t* L_1918 = ___0_blockDWords;
-		int32_t L_1919 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1918, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)9)), 4)))));
+		int32_t L_1919 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1918, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)9)), 4))))));
 		V_7 = ((int32_t)il2cpp_codegen_add((int32_t)L_1913, ((int32_t)il2cpp_codegen_add((int32_t)L_1917, L_1919))));
 		uint32_t L_1920 = V_7;
 		uint32_t L_1921 = V_7;
@@ -10905,7 +10946,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1929;
 		L_1929 = RIPEMD160Managed_F_mDD20ED6C4BA658FD3EC3C178277E560A4BC99679(L_1926, L_1927, L_1928, NULL);
 		uint32_t* L_1930 = ___0_blockDWords;
-		int32_t L_1931 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1930, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)11)), 4)))));
+		int32_t L_1931 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1930, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)11)), 4))))));
 		V_6 = ((int32_t)il2cpp_codegen_add((int32_t)L_1925, ((int32_t)il2cpp_codegen_add((int32_t)L_1929, L_1931))));
 		uint32_t L_1932 = V_6;
 		uint32_t L_1933 = V_6;
@@ -10917,29 +10958,29 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RIPEMD160Managed_MDTransform_mFA6339C9D5
 		uint32_t L_1937 = V_8;
 		uint32_t L_1938 = V_2;
 		uint32_t* L_1939 = ___1_state;
-		int32_t L_1940 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1939, 4)));
+		int32_t L_1940 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1939, 4))));
 		V_8 = ((int32_t)il2cpp_codegen_add((int32_t)L_1937, ((int32_t)il2cpp_codegen_add((int32_t)L_1938, L_1940))));
 		uint32_t* L_1941 = ___1_state;
 		uint32_t* L_1942 = ___1_state;
-		int32_t L_1943 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1942, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)2), 4)))));
+		int32_t L_1943 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1942, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)2), 4))))));
 		uint32_t L_1944 = V_3;
 		uint32_t L_1945 = V_9;
 		*((int32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1941, 4))) = (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(L_1943, (int32_t)L_1944)), (int32_t)L_1945));
 		uint32_t* L_1946 = ___1_state;
 		uint32_t* L_1947 = ___1_state;
-		int32_t L_1948 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1947, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)3), 4)))));
+		int32_t L_1948 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1947, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)3), 4))))));
 		uint32_t L_1949 = V_4;
 		uint32_t L_1950 = V_5;
 		*((int32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1946, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)2), 4))))) = (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(L_1948, (int32_t)L_1949)), (int32_t)L_1950));
 		uint32_t* L_1951 = ___1_state;
 		uint32_t* L_1952 = ___1_state;
-		int32_t L_1953 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1952, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)4), 4)))));
+		int32_t L_1953 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_1952, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)4), 4))))));
 		uint32_t L_1954 = V_0;
 		uint32_t L_1955 = V_6;
 		*((int32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1951, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)3), 4))))) = (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(L_1953, (int32_t)L_1954)), (int32_t)L_1955));
 		uint32_t* L_1956 = ___1_state;
 		uint32_t* L_1957 = ___1_state;
-		int32_t L_1958 = *((uint32_t*)L_1957);
+		int32_t L_1958 = (*(L_1957));
 		uint32_t L_1959 = V_1;
 		uint32_t L_1960 = V_7;
 		*((int32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_1956, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)4), 4))))) = (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(L_1958, (int32_t)L_1959)), (int32_t)L_1960));
@@ -12630,19 +12671,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SHA1Managed_SHATransform_m9DAE27BCA41E2F
 	int32_t V_5 = 0;
 	{
 		uint32_t* L_0 = ___1_state;
-		int32_t L_1 = *((uint32_t*)L_0);
+		int32_t L_1 = (*(L_0));
 		V_0 = L_1;
 		uint32_t* L_2 = ___1_state;
-		int32_t L_3 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_2, 4)));
+		int32_t L_3 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_2, 4))));
 		V_1 = L_3;
 		uint32_t* L_4 = ___1_state;
-		int32_t L_5 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_4, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)2), 4)))));
+		int32_t L_5 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_4, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)2), 4))))));
 		V_2 = L_5;
 		uint32_t* L_6 = ___1_state;
-		int32_t L_7 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_6, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)3), 4)))));
+		int32_t L_7 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_6, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)3), 4))))));
 		V_3 = L_7;
 		uint32_t* L_8 = ___1_state;
-		int32_t L_9 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_8, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)4), 4)))));
+		int32_t L_9 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_8, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)4), 4))))));
 		V_4 = L_9;
 		uint32_t* L_10 = ___0_expandedBuffer;
 		uint8_t* L_11 = ___2_block;
@@ -12664,7 +12705,7 @@ IL_0038:
 		uint32_t L_19 = V_3;
 		uint32_t* L_20 = ___0_expandedBuffer;
 		int32_t L_21 = V_5;
-		int32_t L_22 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_20, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_21), 4)))));
+		int32_t L_22 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_20, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_21), 4))))));
 		V_4 = ((int32_t)il2cpp_codegen_add((int32_t)L_13, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)(((int32_t)((int32_t)L_14<<5))|((int32_t)((uint32_t)L_15>>((int32_t)27))))), ((int32_t)((int32_t)L_16^((int32_t)((int32_t)L_17&((int32_t)((int32_t)L_18^(int32_t)L_19)))))))), L_22)), ((int32_t)1518500249)))));
 		uint32_t L_23 = V_1;
 		uint32_t L_24 = V_1;
@@ -12678,7 +12719,7 @@ IL_0038:
 		uint32_t L_31 = V_2;
 		uint32_t* L_32 = ___0_expandedBuffer;
 		int32_t L_33 = V_5;
-		int32_t L_34 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_32, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(L_33, 1))), 4)))));
+		int32_t L_34 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_32, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(L_33, 1))), 4))))));
 		V_3 = ((int32_t)il2cpp_codegen_add((int32_t)L_25, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)(((int32_t)((int32_t)L_26<<5))|((int32_t)((uint32_t)L_27>>((int32_t)27))))), ((int32_t)((int32_t)L_28^((int32_t)((int32_t)L_29&((int32_t)((int32_t)L_30^(int32_t)L_31)))))))), L_34)), ((int32_t)1518500249)))));
 		uint32_t L_35 = V_0;
 		uint32_t L_36 = V_0;
@@ -12692,7 +12733,7 @@ IL_0038:
 		uint32_t L_43 = V_1;
 		uint32_t* L_44 = ___0_expandedBuffer;
 		int32_t L_45 = V_5;
-		int32_t L_46 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_44, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(L_45, 2))), 4)))));
+		int32_t L_46 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_44, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(L_45, 2))), 4))))));
 		V_2 = ((int32_t)il2cpp_codegen_add((int32_t)L_37, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)(((int32_t)((int32_t)L_38<<5))|((int32_t)((uint32_t)L_39>>((int32_t)27))))), ((int32_t)((int32_t)L_40^((int32_t)((int32_t)L_41&((int32_t)((int32_t)L_42^(int32_t)L_43)))))))), L_46)), ((int32_t)1518500249)))));
 		uint32_t L_47 = V_4;
 		uint32_t L_48 = V_4;
@@ -12706,7 +12747,7 @@ IL_0038:
 		uint32_t L_55 = V_0;
 		uint32_t* L_56 = ___0_expandedBuffer;
 		int32_t L_57 = V_5;
-		int32_t L_58 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_56, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(L_57, 3))), 4)))));
+		int32_t L_58 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_56, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(L_57, 3))), 4))))));
 		V_1 = ((int32_t)il2cpp_codegen_add((int32_t)L_49, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)(((int32_t)((int32_t)L_50<<5))|((int32_t)((uint32_t)L_51>>((int32_t)27))))), ((int32_t)((int32_t)L_52^((int32_t)((int32_t)L_53&((int32_t)((int32_t)L_54^(int32_t)L_55)))))))), L_58)), ((int32_t)1518500249)))));
 		uint32_t L_59 = V_3;
 		uint32_t L_60 = V_3;
@@ -12720,7 +12761,7 @@ IL_0038:
 		uint32_t L_67 = V_4;
 		uint32_t* L_68 = ___0_expandedBuffer;
 		int32_t L_69 = V_5;
-		int32_t L_70 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_68, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(L_69, 4))), 4)))));
+		int32_t L_70 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_68, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(L_69, 4))), 4))))));
 		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_61, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)(((int32_t)((int32_t)L_62<<5))|((int32_t)((uint32_t)L_63>>((int32_t)27))))), ((int32_t)((int32_t)L_64^((int32_t)((int32_t)L_65&((int32_t)((int32_t)L_66^(int32_t)L_67)))))))), L_70)), ((int32_t)1518500249)))));
 		uint32_t L_71 = V_2;
 		uint32_t L_72 = V_2;
@@ -12751,7 +12792,7 @@ IL_0136:
 		uint32_t L_80 = V_3;
 		uint32_t* L_81 = ___0_expandedBuffer;
 		int32_t L_82 = V_5;
-		int32_t L_83 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_81, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_82), 4)))));
+		int32_t L_83 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_81, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_82), 4))))));
 		V_4 = ((int32_t)il2cpp_codegen_add((int32_t)L_75, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)(((int32_t)((int32_t)L_76<<5))|((int32_t)((uint32_t)L_77>>((int32_t)27))))), ((int32_t)(((int32_t)((int32_t)L_78^(int32_t)L_79))^(int32_t)L_80)))), L_83)), ((int32_t)1859775393)))));
 		uint32_t L_84 = V_1;
 		uint32_t L_85 = V_1;
@@ -12764,7 +12805,7 @@ IL_0136:
 		uint32_t L_91 = V_2;
 		uint32_t* L_92 = ___0_expandedBuffer;
 		int32_t L_93 = V_5;
-		int32_t L_94 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_92, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(L_93, 1))), 4)))));
+		int32_t L_94 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_92, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(L_93, 1))), 4))))));
 		V_3 = ((int32_t)il2cpp_codegen_add((int32_t)L_86, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)(((int32_t)((int32_t)L_87<<5))|((int32_t)((uint32_t)L_88>>((int32_t)27))))), ((int32_t)(((int32_t)((int32_t)L_89^(int32_t)L_90))^(int32_t)L_91)))), L_94)), ((int32_t)1859775393)))));
 		uint32_t L_95 = V_0;
 		uint32_t L_96 = V_0;
@@ -12777,7 +12818,7 @@ IL_0136:
 		uint32_t L_102 = V_1;
 		uint32_t* L_103 = ___0_expandedBuffer;
 		int32_t L_104 = V_5;
-		int32_t L_105 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_103, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(L_104, 2))), 4)))));
+		int32_t L_105 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_103, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(L_104, 2))), 4))))));
 		V_2 = ((int32_t)il2cpp_codegen_add((int32_t)L_97, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)(((int32_t)((int32_t)L_98<<5))|((int32_t)((uint32_t)L_99>>((int32_t)27))))), ((int32_t)(((int32_t)((int32_t)L_100^(int32_t)L_101))^(int32_t)L_102)))), L_105)), ((int32_t)1859775393)))));
 		uint32_t L_106 = V_4;
 		uint32_t L_107 = V_4;
@@ -12790,7 +12831,7 @@ IL_0136:
 		uint32_t L_113 = V_0;
 		uint32_t* L_114 = ___0_expandedBuffer;
 		int32_t L_115 = V_5;
-		int32_t L_116 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_114, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(L_115, 3))), 4)))));
+		int32_t L_116 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_114, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(L_115, 3))), 4))))));
 		V_1 = ((int32_t)il2cpp_codegen_add((int32_t)L_108, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)(((int32_t)((int32_t)L_109<<5))|((int32_t)((uint32_t)L_110>>((int32_t)27))))), ((int32_t)(((int32_t)((int32_t)L_111^(int32_t)L_112))^(int32_t)L_113)))), L_116)), ((int32_t)1859775393)))));
 		uint32_t L_117 = V_3;
 		uint32_t L_118 = V_3;
@@ -12803,7 +12844,7 @@ IL_0136:
 		uint32_t L_124 = V_4;
 		uint32_t* L_125 = ___0_expandedBuffer;
 		int32_t L_126 = V_5;
-		int32_t L_127 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_125, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(L_126, 4))), 4)))));
+		int32_t L_127 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_125, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(L_126, 4))), 4))))));
 		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_119, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)(((int32_t)((int32_t)L_120<<5))|((int32_t)((uint32_t)L_121>>((int32_t)27))))), ((int32_t)(((int32_t)((int32_t)L_122^(int32_t)L_123))^(int32_t)L_124)))), L_127)), ((int32_t)1859775393)))));
 		uint32_t L_128 = V_2;
 		uint32_t L_129 = V_2;
@@ -12836,7 +12877,7 @@ IL_0229:
 		uint32_t L_139 = V_2;
 		uint32_t* L_140 = ___0_expandedBuffer;
 		int32_t L_141 = V_5;
-		int32_t L_142 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_140, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_141), 4)))));
+		int32_t L_142 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_140, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_141), 4))))));
 		V_4 = ((int32_t)il2cpp_codegen_add((int32_t)L_132, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)(((int32_t)((int32_t)L_133<<5))|((int32_t)((uint32_t)L_134>>((int32_t)27))))), ((int32_t)(((int32_t)((int32_t)L_135&(int32_t)L_136))|((int32_t)((int32_t)L_137&((int32_t)((int32_t)L_138|(int32_t)L_139)))))))), L_142)), ((int32_t)-1894007588)))));
 		uint32_t L_143 = V_1;
 		uint32_t L_144 = V_1;
@@ -12851,7 +12892,7 @@ IL_0229:
 		uint32_t L_152 = V_1;
 		uint32_t* L_153 = ___0_expandedBuffer;
 		int32_t L_154 = V_5;
-		int32_t L_155 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_153, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(L_154, 1))), 4)))));
+		int32_t L_155 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_153, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(L_154, 1))), 4))))));
 		V_3 = ((int32_t)il2cpp_codegen_add((int32_t)L_145, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)(((int32_t)((int32_t)L_146<<5))|((int32_t)((uint32_t)L_147>>((int32_t)27))))), ((int32_t)(((int32_t)((int32_t)L_148&(int32_t)L_149))|((int32_t)((int32_t)L_150&((int32_t)((int32_t)L_151|(int32_t)L_152)))))))), L_155)), ((int32_t)-1894007588)))));
 		uint32_t L_156 = V_0;
 		uint32_t L_157 = V_0;
@@ -12866,7 +12907,7 @@ IL_0229:
 		uint32_t L_165 = V_0;
 		uint32_t* L_166 = ___0_expandedBuffer;
 		int32_t L_167 = V_5;
-		int32_t L_168 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_166, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(L_167, 2))), 4)))));
+		int32_t L_168 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_166, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(L_167, 2))), 4))))));
 		V_2 = ((int32_t)il2cpp_codegen_add((int32_t)L_158, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)(((int32_t)((int32_t)L_159<<5))|((int32_t)((uint32_t)L_160>>((int32_t)27))))), ((int32_t)(((int32_t)((int32_t)L_161&(int32_t)L_162))|((int32_t)((int32_t)L_163&((int32_t)((int32_t)L_164|(int32_t)L_165)))))))), L_168)), ((int32_t)-1894007588)))));
 		uint32_t L_169 = V_4;
 		uint32_t L_170 = V_4;
@@ -12881,7 +12922,7 @@ IL_0229:
 		uint32_t L_178 = V_4;
 		uint32_t* L_179 = ___0_expandedBuffer;
 		int32_t L_180 = V_5;
-		int32_t L_181 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_179, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(L_180, 3))), 4)))));
+		int32_t L_181 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_179, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(L_180, 3))), 4))))));
 		V_1 = ((int32_t)il2cpp_codegen_add((int32_t)L_171, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)(((int32_t)((int32_t)L_172<<5))|((int32_t)((uint32_t)L_173>>((int32_t)27))))), ((int32_t)(((int32_t)((int32_t)L_174&(int32_t)L_175))|((int32_t)((int32_t)L_176&((int32_t)((int32_t)L_177|(int32_t)L_178)))))))), L_181)), ((int32_t)-1894007588)))));
 		uint32_t L_182 = V_3;
 		uint32_t L_183 = V_3;
@@ -12896,7 +12937,7 @@ IL_0229:
 		uint32_t L_191 = V_3;
 		uint32_t* L_192 = ___0_expandedBuffer;
 		int32_t L_193 = V_5;
-		int32_t L_194 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_192, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(L_193, 4))), 4)))));
+		int32_t L_194 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_192, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(L_193, 4))), 4))))));
 		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_184, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)(((int32_t)((int32_t)L_185<<5))|((int32_t)((uint32_t)L_186>>((int32_t)27))))), ((int32_t)(((int32_t)((int32_t)L_187&(int32_t)L_188))|((int32_t)((int32_t)L_189&((int32_t)((int32_t)L_190|(int32_t)L_191)))))))), L_194)), ((int32_t)-1894007588)))));
 		uint32_t L_195 = V_2;
 		uint32_t L_196 = V_2;
@@ -12927,7 +12968,7 @@ IL_0332:
 		uint32_t L_204 = V_3;
 		uint32_t* L_205 = ___0_expandedBuffer;
 		int32_t L_206 = V_5;
-		int32_t L_207 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_205, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_206), 4)))));
+		int32_t L_207 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_205, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_206), 4))))));
 		V_4 = ((int32_t)il2cpp_codegen_add((int32_t)L_199, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)(((int32_t)((int32_t)L_200<<5))|((int32_t)((uint32_t)L_201>>((int32_t)27))))), ((int32_t)(((int32_t)((int32_t)L_202^(int32_t)L_203))^(int32_t)L_204)))), L_207)), ((int32_t)-899497514)))));
 		uint32_t L_208 = V_1;
 		uint32_t L_209 = V_1;
@@ -12940,7 +12981,7 @@ IL_0332:
 		uint32_t L_215 = V_2;
 		uint32_t* L_216 = ___0_expandedBuffer;
 		int32_t L_217 = V_5;
-		int32_t L_218 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_216, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(L_217, 1))), 4)))));
+		int32_t L_218 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_216, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(L_217, 1))), 4))))));
 		V_3 = ((int32_t)il2cpp_codegen_add((int32_t)L_210, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)(((int32_t)((int32_t)L_211<<5))|((int32_t)((uint32_t)L_212>>((int32_t)27))))), ((int32_t)(((int32_t)((int32_t)L_213^(int32_t)L_214))^(int32_t)L_215)))), L_218)), ((int32_t)-899497514)))));
 		uint32_t L_219 = V_0;
 		uint32_t L_220 = V_0;
@@ -12953,7 +12994,7 @@ IL_0332:
 		uint32_t L_226 = V_1;
 		uint32_t* L_227 = ___0_expandedBuffer;
 		int32_t L_228 = V_5;
-		int32_t L_229 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_227, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(L_228, 2))), 4)))));
+		int32_t L_229 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_227, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(L_228, 2))), 4))))));
 		V_2 = ((int32_t)il2cpp_codegen_add((int32_t)L_221, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)(((int32_t)((int32_t)L_222<<5))|((int32_t)((uint32_t)L_223>>((int32_t)27))))), ((int32_t)(((int32_t)((int32_t)L_224^(int32_t)L_225))^(int32_t)L_226)))), L_229)), ((int32_t)-899497514)))));
 		uint32_t L_230 = V_4;
 		uint32_t L_231 = V_4;
@@ -12966,7 +13007,7 @@ IL_0332:
 		uint32_t L_237 = V_0;
 		uint32_t* L_238 = ___0_expandedBuffer;
 		int32_t L_239 = V_5;
-		int32_t L_240 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_238, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(L_239, 3))), 4)))));
+		int32_t L_240 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_238, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(L_239, 3))), 4))))));
 		V_1 = ((int32_t)il2cpp_codegen_add((int32_t)L_232, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)(((int32_t)((int32_t)L_233<<5))|((int32_t)((uint32_t)L_234>>((int32_t)27))))), ((int32_t)(((int32_t)((int32_t)L_235^(int32_t)L_236))^(int32_t)L_237)))), L_240)), ((int32_t)-899497514)))));
 		uint32_t L_241 = V_3;
 		uint32_t L_242 = V_3;
@@ -12979,7 +13020,7 @@ IL_0332:
 		uint32_t L_248 = V_4;
 		uint32_t* L_249 = ___0_expandedBuffer;
 		int32_t L_250 = V_5;
-		int32_t L_251 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_249, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(L_250, 4))), 4)))));
+		int32_t L_251 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_249, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_add(L_250, 4))), 4))))));
 		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_243, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)(((int32_t)((int32_t)L_244<<5))|((int32_t)((uint32_t)L_245>>((int32_t)27))))), ((int32_t)(((int32_t)((int32_t)L_246^(int32_t)L_247))^(int32_t)L_248)))), L_251)), ((int32_t)-899497514)))));
 		uint32_t L_252 = V_2;
 		uint32_t L_253 = V_2;
@@ -12999,27 +13040,27 @@ IL_0417:
 	{
 		uint32_t* L_256 = ___1_state;
 		uint32_t* L_257 = L_256;
-		int32_t L_258 = *((uint32_t*)L_257);
+		int32_t L_258 = (*(L_257));
 		uint32_t L_259 = V_0;
 		*((int32_t*)L_257) = (int32_t)((int32_t)il2cpp_codegen_add(L_258, (int32_t)L_259));
 		uint32_t* L_260 = ___1_state;
 		uint32_t* L_261 = ((uint32_t*)il2cpp_codegen_add((intptr_t)L_260, 4));
-		int32_t L_262 = *((uint32_t*)L_261);
+		int32_t L_262 = (*(L_261));
 		uint32_t L_263 = V_1;
 		*((int32_t*)L_261) = (int32_t)((int32_t)il2cpp_codegen_add(L_262, (int32_t)L_263));
 		uint32_t* L_264 = ___1_state;
 		uint32_t* L_265 = ((uint32_t*)il2cpp_codegen_add((intptr_t)L_264, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)2), 4))));
-		int32_t L_266 = *((uint32_t*)L_265);
+		int32_t L_266 = (*(L_265));
 		uint32_t L_267 = V_2;
 		*((int32_t*)L_265) = (int32_t)((int32_t)il2cpp_codegen_add(L_266, (int32_t)L_267));
 		uint32_t* L_268 = ___1_state;
 		uint32_t* L_269 = ((uint32_t*)il2cpp_codegen_add((intptr_t)L_268, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)3), 4))));
-		int32_t L_270 = *((uint32_t*)L_269);
+		int32_t L_270 = (*(L_269));
 		uint32_t L_271 = V_3;
 		*((int32_t*)L_269) = (int32_t)((int32_t)il2cpp_codegen_add(L_270, (int32_t)L_271));
 		uint32_t* L_272 = ___1_state;
 		uint32_t* L_273 = ((uint32_t*)il2cpp_codegen_add((intptr_t)L_272, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)4), 4))));
-		int32_t L_274 = *((uint32_t*)L_273);
+		int32_t L_274 = (*(L_273));
 		uint32_t L_275 = V_4;
 		*((int32_t*)L_273) = (int32_t)((int32_t)il2cpp_codegen_add(L_274, (int32_t)L_275));
 		return;
@@ -13038,16 +13079,16 @@ IL_0005:
 	{
 		uint32_t* L_0 = ___0_x;
 		int32_t L_1 = V_0;
-		int32_t L_2 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_0, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_subtract(L_1, 3))), 4)))));
+		int32_t L_2 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_0, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_subtract(L_1, 3))), 4))))));
 		uint32_t* L_3 = ___0_x;
 		int32_t L_4 = V_0;
-		int32_t L_5 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_3, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_subtract(L_4, 8))), 4)))));
+		int32_t L_5 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_3, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_subtract(L_4, 8))), 4))))));
 		uint32_t* L_6 = ___0_x;
 		int32_t L_7 = V_0;
-		int32_t L_8 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_6, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_subtract(L_7, ((int32_t)14)))), 4)))));
+		int32_t L_8 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_6, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_subtract(L_7, ((int32_t)14)))), 4))))));
 		uint32_t* L_9 = ___0_x;
 		int32_t L_10 = V_0;
-		int32_t L_11 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_9, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_subtract(L_10, ((int32_t)16)))), 4)))));
+		int32_t L_11 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_9, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_subtract(L_10, ((int32_t)16)))), 4))))));
 		V_1 = ((int32_t)(((int32_t)(((int32_t)(L_2^L_5))^L_8))^L_11));
 		uint32_t* L_12 = ___0_x;
 		int32_t L_13 = V_0;
@@ -13520,28 +13561,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SHA256Managed_SHATransform_m5A45221586B5
 	int32_t V_17 = 0;
 	{
 		uint32_t* L_0 = ___1_state;
-		int32_t L_1 = *((uint32_t*)L_0);
+		int32_t L_1 = (*(L_0));
 		V_0 = L_1;
 		uint32_t* L_2 = ___1_state;
-		int32_t L_3 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_2, 4)));
+		int32_t L_3 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_2, 4))));
 		V_1 = L_3;
 		uint32_t* L_4 = ___1_state;
-		int32_t L_5 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_4, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)2), 4)))));
+		int32_t L_5 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_4, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)2), 4))))));
 		V_2 = L_5;
 		uint32_t* L_6 = ___1_state;
-		int32_t L_7 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_6, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)3), 4)))));
+		int32_t L_7 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_6, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)3), 4))))));
 		V_3 = L_7;
 		uint32_t* L_8 = ___1_state;
-		int32_t L_9 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_8, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)4), 4)))));
+		int32_t L_9 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_8, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)4), 4))))));
 		V_4 = L_9;
 		uint32_t* L_10 = ___1_state;
-		int32_t L_11 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_10, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)5), 4)))));
+		int32_t L_11 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_10, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)5), 4))))));
 		V_5 = L_11;
 		uint32_t* L_12 = ___1_state;
-		int32_t L_13 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_12, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)6), 4)))));
+		int32_t L_13 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_12, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)6), 4))))));
 		V_7 = L_13;
 		uint32_t* L_14 = ___1_state;
-		int32_t L_15 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_14, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)7), 4)))));
+		int32_t L_15 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_14, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)7), 4))))));
 		V_6 = L_15;
 		uint32_t* L_16 = ___0_expandedBuffer;
 		uint8_t* L_17 = ___2_block;
@@ -13571,7 +13612,7 @@ IL_0053:
 		uint32_t L_29 = (L_26)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_28));
 		uint32_t* L_30 = ___0_expandedBuffer;
 		int32_t L_31 = V_17;
-		int32_t L_32 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_30, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_31), 4)))));
+		int32_t L_32 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_30, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_31), 4))))));
 		V_16 = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_19, (int32_t)L_21)), (int32_t)L_25)), (int32_t)L_29)), L_32));
 		uint32_t L_33 = V_3;
 		uint32_t L_34 = V_16;
@@ -13603,7 +13644,7 @@ IL_0053:
 		uint32_t L_53 = (L_50)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_52));
 		uint32_t* L_54 = ___0_expandedBuffer;
 		int32_t L_55 = V_17;
-		int32_t L_56 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_54, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_55), 4)))));
+		int32_t L_56 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_54, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_55), 4))))));
 		V_16 = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_43, (int32_t)L_45)), (int32_t)L_49)), (int32_t)L_53)), L_56));
 		uint32_t L_57 = V_2;
 		uint32_t L_58 = V_16;
@@ -13635,7 +13676,7 @@ IL_0053:
 		uint32_t L_77 = (L_74)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_76));
 		uint32_t* L_78 = ___0_expandedBuffer;
 		int32_t L_79 = V_17;
-		int32_t L_80 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_78, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_79), 4)))));
+		int32_t L_80 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_78, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_79), 4))))));
 		V_16 = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_67, (int32_t)L_69)), (int32_t)L_73)), (int32_t)L_77)), L_80));
 		uint32_t L_81 = V_1;
 		uint32_t L_82 = V_16;
@@ -13667,7 +13708,7 @@ IL_0053:
 		uint32_t L_101 = (L_98)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_100));
 		uint32_t* L_102 = ___0_expandedBuffer;
 		int32_t L_103 = V_17;
-		int32_t L_104 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_102, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_103), 4)))));
+		int32_t L_104 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_102, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_103), 4))))));
 		V_16 = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_91, (int32_t)L_93)), (int32_t)L_97)), (int32_t)L_101)), L_104));
 		uint32_t L_105 = V_0;
 		uint32_t L_106 = V_16;
@@ -13699,7 +13740,7 @@ IL_0053:
 		uint32_t L_125 = (L_122)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_124));
 		uint32_t* L_126 = ___0_expandedBuffer;
 		int32_t L_127 = V_17;
-		int32_t L_128 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_126, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_127), 4)))));
+		int32_t L_128 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_126, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_127), 4))))));
 		V_16 = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_115, (int32_t)L_117)), (int32_t)L_121)), (int32_t)L_125)), L_128));
 		uint32_t L_129 = V_8;
 		uint32_t L_130 = V_16;
@@ -13731,7 +13772,7 @@ IL_0053:
 		uint32_t L_149 = (L_146)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_148));
 		uint32_t* L_150 = ___0_expandedBuffer;
 		int32_t L_151 = V_17;
-		int32_t L_152 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_150, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_151), 4)))));
+		int32_t L_152 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_150, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_151), 4))))));
 		V_16 = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_139, (int32_t)L_141)), (int32_t)L_145)), (int32_t)L_149)), L_152));
 		uint32_t L_153 = V_9;
 		uint32_t L_154 = V_16;
@@ -13763,7 +13804,7 @@ IL_0053:
 		uint32_t L_173 = (L_170)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_172));
 		uint32_t* L_174 = ___0_expandedBuffer;
 		int32_t L_175 = V_17;
-		int32_t L_176 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_174, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_175), 4)))));
+		int32_t L_176 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_174, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_175), 4))))));
 		V_16 = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_163, (int32_t)L_165)), (int32_t)L_169)), (int32_t)L_173)), L_176));
 		uint32_t L_177 = V_10;
 		uint32_t L_178 = V_16;
@@ -13795,7 +13836,7 @@ IL_0053:
 		uint32_t L_197 = (L_194)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_196));
 		uint32_t* L_198 = ___0_expandedBuffer;
 		int32_t L_199 = V_17;
-		int32_t L_200 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_198, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_199), 4)))));
+		int32_t L_200 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_198, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_199), 4))))));
 		V_16 = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_187, (int32_t)L_189)), (int32_t)L_193)), (int32_t)L_197)), L_200));
 		uint32_t L_201 = V_11;
 		uint32_t L_202 = V_16;
@@ -13825,42 +13866,42 @@ IL_02b3:
 	{
 		uint32_t* L_212 = ___1_state;
 		uint32_t* L_213 = L_212;
-		int32_t L_214 = *((uint32_t*)L_213);
+		int32_t L_214 = (*(L_213));
 		uint32_t L_215 = V_0;
 		*((int32_t*)L_213) = (int32_t)((int32_t)il2cpp_codegen_add(L_214, (int32_t)L_215));
 		uint32_t* L_216 = ___1_state;
 		uint32_t* L_217 = ((uint32_t*)il2cpp_codegen_add((intptr_t)L_216, 4));
-		int32_t L_218 = *((uint32_t*)L_217);
+		int32_t L_218 = (*(L_217));
 		uint32_t L_219 = V_1;
 		*((int32_t*)L_217) = (int32_t)((int32_t)il2cpp_codegen_add(L_218, (int32_t)L_219));
 		uint32_t* L_220 = ___1_state;
 		uint32_t* L_221 = ((uint32_t*)il2cpp_codegen_add((intptr_t)L_220, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)2), 4))));
-		int32_t L_222 = *((uint32_t*)L_221);
+		int32_t L_222 = (*(L_221));
 		uint32_t L_223 = V_2;
 		*((int32_t*)L_221) = (int32_t)((int32_t)il2cpp_codegen_add(L_222, (int32_t)L_223));
 		uint32_t* L_224 = ___1_state;
 		uint32_t* L_225 = ((uint32_t*)il2cpp_codegen_add((intptr_t)L_224, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)3), 4))));
-		int32_t L_226 = *((uint32_t*)L_225);
+		int32_t L_226 = (*(L_225));
 		uint32_t L_227 = V_3;
 		*((int32_t*)L_225) = (int32_t)((int32_t)il2cpp_codegen_add(L_226, (int32_t)L_227));
 		uint32_t* L_228 = ___1_state;
 		uint32_t* L_229 = ((uint32_t*)il2cpp_codegen_add((intptr_t)L_228, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)4), 4))));
-		int32_t L_230 = *((uint32_t*)L_229);
+		int32_t L_230 = (*(L_229));
 		uint32_t L_231 = V_4;
 		*((int32_t*)L_229) = (int32_t)((int32_t)il2cpp_codegen_add(L_230, (int32_t)L_231));
 		uint32_t* L_232 = ___1_state;
 		uint32_t* L_233 = ((uint32_t*)il2cpp_codegen_add((intptr_t)L_232, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)5), 4))));
-		int32_t L_234 = *((uint32_t*)L_233);
+		int32_t L_234 = (*(L_233));
 		uint32_t L_235 = V_5;
 		*((int32_t*)L_233) = (int32_t)((int32_t)il2cpp_codegen_add(L_234, (int32_t)L_235));
 		uint32_t* L_236 = ___1_state;
 		uint32_t* L_237 = ((uint32_t*)il2cpp_codegen_add((intptr_t)L_236, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)6), 4))));
-		int32_t L_238 = *((uint32_t*)L_237);
+		int32_t L_238 = (*(L_237));
 		uint32_t L_239 = V_7;
 		*((int32_t*)L_237) = (int32_t)((int32_t)il2cpp_codegen_add(L_238, (int32_t)L_239));
 		uint32_t* L_240 = ___1_state;
 		uint32_t* L_241 = ((uint32_t*)il2cpp_codegen_add((intptr_t)L_240, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)7), 4))));
-		int32_t L_242 = *((uint32_t*)L_241);
+		int32_t L_242 = (*(L_241));
 		uint32_t L_243 = V_6;
 		*((int32_t*)L_241) = (int32_t)((int32_t)il2cpp_codegen_add(L_242, (int32_t)L_243));
 		return;
@@ -14002,21 +14043,21 @@ IL_0005:
 		int32_t L_1 = V_0;
 		uint32_t* L_2 = ___0_x;
 		int32_t L_3 = V_0;
-		int32_t L_4 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_2, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_subtract(L_3, 2))), 4)))));
+		int32_t L_4 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_2, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_subtract(L_3, 2))), 4))))));
 		il2cpp_codegen_runtime_class_init_inline(SHA256Managed_tEAE28B435F58357D5C98CDA1AD29B2130C1EAD5C_il2cpp_TypeInfo_var);
 		uint32_t L_5;
 		L_5 = SHA256Managed_sigma_1_mB4128D82D412D98B7F32476C29120DF75DF5F27A(L_4, NULL);
 		uint32_t* L_6 = ___0_x;
 		int32_t L_7 = V_0;
-		int32_t L_8 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_6, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_subtract(L_7, 7))), 4)))));
+		int32_t L_8 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_6, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_subtract(L_7, 7))), 4))))));
 		uint32_t* L_9 = ___0_x;
 		int32_t L_10 = V_0;
-		int32_t L_11 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_9, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_subtract(L_10, ((int32_t)15)))), 4)))));
+		int32_t L_11 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_9, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_subtract(L_10, ((int32_t)15)))), 4))))));
 		uint32_t L_12;
 		L_12 = SHA256Managed_sigma_0_mDC3E4ED93A72E3F08397D2A78F360B1BBE005F88(L_11, NULL);
 		uint32_t* L_13 = ___0_x;
 		int32_t L_14 = V_0;
-		int32_t L_15 = *((uint32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_13, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_subtract(L_14, ((int32_t)16)))), 4)))));
+		int32_t L_15 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_13, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_subtract(L_14, ((int32_t)16)))), 4))))));
 		*((int32_t*)((uint32_t*)il2cpp_codegen_add((intptr_t)L_0, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_1), 4))))) = (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add((int32_t)L_5, L_8)), (int32_t)L_12)), L_15));
 		int32_t L_16 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_16, 1));

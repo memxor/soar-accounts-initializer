@@ -60,6 +60,7 @@ struct IEnumerable_1_tEE97FB3EBFE8765D0E2FC164B95E82BA5D0EAE86;
 struct List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B;
 struct Task_1_t4C228DE57804012969575431CFF12D57C875552D;
 struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
+struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB;
 struct Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259;
 struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C;
 struct IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832;
@@ -296,65 +297,14 @@ struct Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B
 		};
 	};
 };
-struct GifGraphicControl_t4430684A1F1F66B047E4A8A0F7EFCE75BC6405D5 
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2  : public ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F
 {
-	bool ___userInput;
-	int32_t ___disposalMethod;
-	int32_t ___delayTime;
-	bool ___hasTransparency;
-	int32_t ___transparentColorIndex;
 };
-struct GifGraphicControl_t4430684A1F1F66B047E4A8A0F7EFCE75BC6405D5_marshaled_pinvoke
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_pinvoke
 {
-	int32_t ___userInput;
-	int32_t ___disposalMethod;
-	int32_t ___delayTime;
-	int32_t ___hasTransparency;
-	int32_t ___transparentColorIndex;
 };
-struct GifGraphicControl_t4430684A1F1F66B047E4A8A0F7EFCE75BC6405D5_marshaled_com
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_com
 {
-	int32_t ___userInput;
-	int32_t ___disposalMethod;
-	int32_t ___delayTime;
-	int32_t ___hasTransparency;
-	int32_t ___transparentColorIndex;
-};
-struct GifHeader_tC0EA5414F28868FD9D750FC6D6CC5EDA1A9918C6 
-{
-	int32_t ___version;
-	int32_t ___width;
-	int32_t ___height;
-	bool ___hasGlobalColorTable;
-	int32_t ___globalColorTableSize;
-	int32_t ___transparentColorIndex;
-	bool ___sortColors;
-	int32_t ___colorResolution;
-	int32_t ___pixelAspectRatio;
-};
-struct GifHeader_tC0EA5414F28868FD9D750FC6D6CC5EDA1A9918C6_marshaled_pinvoke
-{
-	int32_t ___version;
-	int32_t ___width;
-	int32_t ___height;
-	int32_t ___hasGlobalColorTable;
-	int32_t ___globalColorTableSize;
-	int32_t ___transparentColorIndex;
-	int32_t ___sortColors;
-	int32_t ___colorResolution;
-	int32_t ___pixelAspectRatio;
-};
-struct GifHeader_tC0EA5414F28868FD9D750FC6D6CC5EDA1A9918C6_marshaled_com
-{
-	int32_t ___version;
-	int32_t ___width;
-	int32_t ___height;
-	int32_t ___hasGlobalColorTable;
-	int32_t ___globalColorTableSize;
-	int32_t ___transparentColorIndex;
-	int32_t ___sortColors;
-	int32_t ___colorResolution;
-	int32_t ___pixelAspectRatio;
 };
 struct GifImageDescriptor_tF64A043EBF4F94910255C949754D71E7C297E798 
 {
@@ -500,27 +450,9 @@ struct Exception_t_marshaled_com
 	Il2CppSafeArray* ___native_trace_ips;
 	int32_t ___caught_in_unmanaged;
 };
-struct GifCanvas_tBD82BACBD238AA36AB3BD75AFC429342CB484DC3  : public RuntimeObject
+struct GifDisposalMethod_tB7BD71E9CF412E646E00E69FBC87E666F824A869 
 {
-	bool ___U3CFlipVerticallyU3Ek__BackingField;
-	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___U3CBackgroundColorU3Ek__BackingField;
-	Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* ___canvasColors;
-	Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* ___revertDisposalBuffer;
-	int32_t ___canvasWidth;
-	int32_t ___canvasHeight;
-	bool ___canvasIsEmpty;
-	Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* ___framePalette;
-	int32_t ___frameDisposalMethod;
-	int32_t ___frameCanvasPosition;
-	int32_t ___frameCanvasRowEndPosition;
-	int32_t ___frameTransparentColorIndex;
-	int32_t ___frameRowCurrent;
-	int32_t ___frameX;
-	int32_t ___frameY;
-	int32_t ___frameWidth;
-	int32_t ___frameHeight;
-	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___frameRowStart;
-	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___frameRowEnd;
+	int32_t ___value__;
 };
 struct GifPlainText_t1A5D4D566225FB62B1BB89932724E1DFE539BF8A 
 {
@@ -561,6 +493,120 @@ struct GifPlainText_t1A5D4D566225FB62B1BB89932724E1DFE539BF8A_marshaled_com
 	Il2CppChar* ___text;
 	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B* ___colors;
 };
+struct GifVersion_t7319E3B216530639E6D8AE657B680573E630A39B 
+{
+	int32_t ___value__;
+};
+struct MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2  : public Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE
+{
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ____buffer;
+	int32_t ____origin;
+	int32_t ____position;
+	int32_t ____length;
+	int32_t ____capacity;
+	bool ____expandable;
+	bool ____writable;
+	bool ____exposable;
+	bool ____isOpen;
+	Task_1_t4C228DE57804012969575431CFF12D57C875552D* ____lastReadTask;
+};
+struct SeekOrigin_t7EB9AD0EDF26368A40F48FA2098F02160B1E8000 
+{
+	int32_t ___value__;
+};
+struct Token_tF5F8AF62F32CB565CECB5B4ADB4A0E7DABC84DC7 
+{
+	int32_t ___value__;
+};
+struct GifCanvas_tBD82BACBD238AA36AB3BD75AFC429342CB484DC3  : public RuntimeObject
+{
+	bool ___U3CFlipVerticallyU3Ek__BackingField;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___U3CBackgroundColorU3Ek__BackingField;
+	Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* ___canvasColors;
+	Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* ___revertDisposalBuffer;
+	int32_t ___canvasWidth;
+	int32_t ___canvasHeight;
+	bool ___canvasIsEmpty;
+	Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* ___framePalette;
+	int32_t ___frameDisposalMethod;
+	int32_t ___frameCanvasPosition;
+	int32_t ___frameCanvasRowEndPosition;
+	int32_t ___frameTransparentColorIndex;
+	int32_t ___frameRowCurrent;
+	int32_t ___frameX;
+	int32_t ___frameY;
+	int32_t ___frameWidth;
+	int32_t ___frameHeight;
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___frameRowStart;
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___frameRowEnd;
+};
+struct GifGraphicControl_t4430684A1F1F66B047E4A8A0F7EFCE75BC6405D5 
+{
+	bool ___userInput;
+	int32_t ___disposalMethod;
+	int32_t ___delayTime;
+	bool ___hasTransparency;
+	int32_t ___transparentColorIndex;
+};
+struct GifGraphicControl_t4430684A1F1F66B047E4A8A0F7EFCE75BC6405D5_marshaled_pinvoke
+{
+	int32_t ___userInput;
+	int32_t ___disposalMethod;
+	int32_t ___delayTime;
+	int32_t ___hasTransparency;
+	int32_t ___transparentColorIndex;
+};
+struct GifGraphicControl_t4430684A1F1F66B047E4A8A0F7EFCE75BC6405D5_marshaled_com
+{
+	int32_t ___userInput;
+	int32_t ___disposalMethod;
+	int32_t ___delayTime;
+	int32_t ___hasTransparency;
+	int32_t ___transparentColorIndex;
+};
+struct GifHeader_tC0EA5414F28868FD9D750FC6D6CC5EDA1A9918C6 
+{
+	int32_t ___version;
+	int32_t ___width;
+	int32_t ___height;
+	bool ___hasGlobalColorTable;
+	int32_t ___globalColorTableSize;
+	int32_t ___transparentColorIndex;
+	bool ___sortColors;
+	int32_t ___colorResolution;
+	int32_t ___pixelAspectRatio;
+};
+struct GifHeader_tC0EA5414F28868FD9D750FC6D6CC5EDA1A9918C6_marshaled_pinvoke
+{
+	int32_t ___version;
+	int32_t ___width;
+	int32_t ___height;
+	int32_t ___hasGlobalColorTable;
+	int32_t ___globalColorTableSize;
+	int32_t ___transparentColorIndex;
+	int32_t ___sortColors;
+	int32_t ___colorResolution;
+	int32_t ___pixelAspectRatio;
+};
+struct GifHeader_tC0EA5414F28868FD9D750FC6D6CC5EDA1A9918C6_marshaled_com
+{
+	int32_t ___version;
+	int32_t ___width;
+	int32_t ___height;
+	int32_t ___hasGlobalColorTable;
+	int32_t ___globalColorTableSize;
+	int32_t ___transparentColorIndex;
+	int32_t ___sortColors;
+	int32_t ___colorResolution;
+	int32_t ___pixelAspectRatio;
+};
+struct SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295  : public Exception_t
+{
+};
+struct ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
+{
+	String_t* ____paramName;
+};
 struct GifStream_tC32297D835D6150BBD9319F36DFDF34EB1B55BDD  : public RuntimeObject
 {
 	bool ___U3CDrawPlainTextBackgroundU3Ek__BackingField;
@@ -580,26 +626,6 @@ struct GifStream_tC32297D835D6150BBD9319F36DFDF34EB1B55BDD  : public RuntimeObje
 	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___colorTableBuffer;
 	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___extensionApplicationBuffer;
 	bool ___nextPaletteIsGlobal;
-};
-struct MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2  : public Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE
-{
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ____buffer;
-	int32_t ____origin;
-	int32_t ____position;
-	int32_t ____length;
-	int32_t ____capacity;
-	bool ____expandable;
-	bool ____writable;
-	bool ____exposable;
-	bool ____isOpen;
-	Task_1_t4C228DE57804012969575431CFF12D57C875552D* ____lastReadTask;
-};
-struct SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295  : public Exception_t
-{
-};
-struct ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
-{
-	String_t* ____paramName;
 };
 struct IOException_t5D599190B003D41D45D4839A9B6B9AB53A755910  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
 {
@@ -3079,6 +3105,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GifStream_SkipBlock_mE331E17D537E2B4F051
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BitUtils_CheckString_m4576B20F61F98DB5C7287A7F28E2233F4BF5CB8D (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_array, String_t* ___1_s, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -3364,6 +3398,14 @@ IL_000b:
 		goto IL_0000;
 	}
 }
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -3961,6 +4003,14 @@ IL2CPP_EXTERN_C void GifPlainText_t1A5D4D566225FB62B1BB89932724E1DFE539BF8A_mars
 		marshaled.___colors = NULL;
 	}
 }
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

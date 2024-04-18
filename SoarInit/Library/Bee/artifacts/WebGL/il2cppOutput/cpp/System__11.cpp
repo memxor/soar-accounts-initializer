@@ -130,6 +130,7 @@ struct Predicate_1_t7F48518B008C1472339EEEBABA3DE203FE1F26ED;
 struct TaskFactory_1_t0BEF06D58E44525B9135AB0B22D016856EE69FF3;
 struct Task_1_t4C228DE57804012969575431CFF12D57C875552D;
 struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
+struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB;
 struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771;
 struct IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832;
 struct StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF;
@@ -140,6 +141,7 @@ struct ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129;
 struct ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F;
 struct ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A;
 struct AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C;
+struct AsyncResult_t125D959CA0F9FB74EF9F7DF4E04F15BB1B265760;
 struct Binder_t91BFCE95A7057FADF4D8A1A342AFE52872246235;
 struct BypassElementCollection_t15465BC07F8DC8BABA6953182904AF762D638DBE;
 struct Calendar_t0A117CC7532A54C17188C2EFEA1F79DB20DF3A3B;
@@ -168,6 +170,7 @@ struct GZipStream_t392ABAB2590E1C9CF625043CE14FD2BF7CA5FAE0;
 struct Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D;
 struct HttpWebRequestElement_t8D2FEEC531D1FBE1B6E3D1077350A1EBDCB77DC3;
 struct IAsyncResult_t7B9B5A0ECB35DCEC31B8A8122C37D687369253B5;
+struct IComparable_t4D82A120347A28A1042C1563720033B8DA6E5C21;
 struct IComparer_tE7497C3BE3F68A5A2DCEBF0DAD7D13D738FE7BAD;
 struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
 struct IEqualityComparer_tEF8F1EC76B9C8E76695BE848D41E6B147928D1C1;
@@ -660,6 +663,15 @@ struct ConfigurationSection_t0BC609F0151B160A4FAB8226679B62AF22539C3E  : public 
 struct ConnectionManagementElement_t44321336DB0AC70D7B85FAB146D7F66036D51353  : public ConfigurationElement_tAE3EE71C256825472831FFBB7F491275DFAF089E
 {
 };
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2  : public ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F
+{
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_pinvoke
+{
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_com
+{
+};
 struct HttpWebRequestElement_t8D2FEEC531D1FBE1B6E3D1077350A1EBDCB77DC3  : public ConfigurationElement_tAE3EE71C256825472831FFBB7F491275DFAF089E
 {
 };
@@ -866,6 +878,10 @@ struct ByReference_1_t9C85BCCAAF8C525B6C06B07E922D8D217BE8D6FC
 struct BypassElementCollection_t15465BC07F8DC8BABA6953182904AF762D638DBE  : public ConfigurationElementCollection_t56E8398661A85A59616301BADF13026FB1492606
 {
 };
+struct CompressionMode_t840C8957CF84ACFBF5C43E48AEAEB9DB5E64F3C5 
+{
+	int32_t ___value__;
+};
 struct ConnectionManagementElementCollection_tEEB0BEE8289364CCA1D76DDA3F862429612DE0F1  : public ConfigurationElementCollection_t56E8398661A85A59616301BADF13026FB1492606
 {
 };
@@ -874,14 +890,6 @@ struct ConnectionManagementSection_t8F4D45BE147F24F54F2124CC800B4594031F41C2  : 
 };
 struct DefaultProxySection_tC0247A534955DC9D887B03AA4EFB1C1E01AD1E34  : public ConfigurationSection_t0BC609F0151B160A4FAB8226679B62AF22539C3E
 {
-};
-struct DeflateStream_tF1758952E9DBAB2F9A15D42971F33A78AB4FC104  : public Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE
-{
-	Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___base_stream;
-	int32_t ___mode;
-	bool ___leaveOpen;
-	bool ___disposed;
-	DeflateStreamNative_t06B674E1D2EFD46989197EFB1E33E0B6564793CD* ___native;
 };
 struct Delegate_t  : public RuntimeObject
 {
@@ -1007,6 +1015,10 @@ struct SafeHandle_tC1A4DA80DA89B867CC011B707A07275230321BF7  : public CriticalFi
 	bool ____ownsHandle;
 	bool ____fullyInitialized;
 };
+struct SeekOrigin_t7EB9AD0EDF26368A40F48FA2098F02160B1E8000 
+{
+	int32_t ___value__;
+};
 struct SettingsSection_tC931BA69B22D5E0ED07698F02778482987319A12  : public ConfigurationSection_t0BC609F0151B160A4FAB8226679B62AF22539C3E
 {
 };
@@ -1118,6 +1130,14 @@ struct AsyncResult_t125D959CA0F9FB74EF9F7DF4E04F15BB1B265760_marshaled_com
 	RuntimeObject* ___message_ctrl;
 	RuntimeObject* ___reply_message;
 	Il2CppMethodPointer ___orig_cb;
+};
+struct DeflateStream_tF1758952E9DBAB2F9A15D42971F33A78AB4FC104  : public Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE
+{
+	Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___base_stream;
+	int32_t ___mode;
+	bool ___leaveOpen;
+	bool ___disposed;
+	DeflateStreamNative_t06B674E1D2EFD46989197EFB1E33E0B6564793CD* ___native;
 };
 struct DeflateStreamNative_t06B674E1D2EFD46989197EFB1E33E0B6564793CD  : public RuntimeObject
 {
@@ -1789,24 +1809,25 @@ IL_0041_1:
 
 CATCH_0043:
 	{
+		ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* L_14 = ((ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263*)IL2CPP_GET_ACTIVE_EXCEPTION(ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263*));;
 		V_1 = (bool)0;
-		IL2CPP_POP_ACTIVE_EXCEPTION();
+		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_0050;
 	}
 
 IL_0048:
 	{
-		RuntimeObject* L_14 = ___0_a;
-		RuntimeObject* L_15 = ___1_b;
-		bool L_16;
-		L_16 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(0, L_14, L_15);
-		return L_16;
+		RuntimeObject* L_15 = ___0_a;
+		RuntimeObject* L_16 = ___1_b;
+		bool L_17;
+		L_17 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(0, L_15, L_16);
+		return L_17;
 	}
 
 IL_0050:
 	{
-		bool L_17 = V_1;
-		return L_17;
+		bool L_18 = V_1;
+		return L_18;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CompatibleComparer_GetHashCode_mE88BB0E4CC1A615946A43A8DE75B6F1F57B1CDAF (CompatibleComparer_t8D7ECAA82055FA1BAC99BA4139D4A818120EBA7E* __this, RuntimeObject* ___0_obj, const RuntimeMethod* method) 
@@ -1940,6 +1961,14 @@ IL_001a:
 		return L_3;
 	}
 }
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -4252,41 +4281,42 @@ IL_0018:
 
 CATCH_003d:
 	{
-		V_2 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
-		Exception_t* L_9 = V_2;
-		__this->___last_error = L_9;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___last_error), (void*)L_9);
+		Exception_t* L_9 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+		V_2 = L_9;
+		Exception_t* L_10 = V_2;
+		__this->___last_error = L_10;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___last_error), (void*)L_10);
 		V_3 = ((int32_t)-12);
-		IL2CPP_POP_ACTIVE_EXCEPTION();
+		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_005e;
 	}
 
 IL_004a:
 	{
-		int32_t L_10 = V_1;
-		if ((((int32_t)L_10) <= ((int32_t)0)))
+		int32_t L_11 = V_1;
+		if ((((int32_t)L_11) <= ((int32_t)0)))
 		{
 			goto IL_005c;
 		}
 	}
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_11 = __this->___io_buffer;
-		intptr_t L_12 = ___0_buffer;
-		int32_t L_13 = V_1;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_12 = __this->___io_buffer;
+		intptr_t L_13 = ___0_buffer;
+		int32_t L_14 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(Marshal_tD976A56A90263C3CE2B780D4B1CADADE2E70B4A7_il2cpp_TypeInfo_var);
-		Marshal_Copy_m0FD7BFE70EE28FC67B67A6225AD58F95FEE7EB85(L_11, 0, L_12, L_13, NULL);
+		Marshal_Copy_m0FD7BFE70EE28FC67B67A6225AD58F95FEE7EB85(L_12, 0, L_13, L_14, NULL);
 	}
 
 IL_005c:
 	{
-		int32_t L_14 = V_1;
-		return L_14;
+		int32_t L_15 = V_1;
+		return L_15;
 	}
 
 IL_005e:
 	{
-		int32_t L_15 = V_3;
-		return L_15;
+		int32_t L_16 = V_3;
+		return L_16;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DeflateStreamNative_UnmanagedWrite_mB0AD438266A9DD2813715E8BC90BF07DC7A02F52 (intptr_t ___0_buffer, int32_t ___1_length, intptr_t ___2_data, const RuntimeMethod* method) 
@@ -4396,46 +4426,47 @@ IL_001c:
 
 CATCH_004e:
 	{
-		V_2 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
-		Exception_t* L_11 = V_2;
-		__this->___last_error = L_11;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___last_error), (void*)L_11);
+		Exception_t* L_11 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+		V_2 = L_11;
+		Exception_t* L_12 = V_2;
+		__this->___last_error = L_12;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___last_error), (void*)L_12);
 		V_3 = ((int32_t)-12);
-		IL2CPP_POP_ACTIVE_EXCEPTION();
+		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_007a;
 	}
 
 IL_005b:
 	{
-		void* L_12;
-		L_12 = IntPtr_ToPointer_m1A0612EED3A1C8B8850BE2943CFC42523064B4F6_inline((&___0_buffer), NULL);
-		int32_t L_13 = V_1;
-		IntPtr__ctor_m4F9A9B80F01996B610D5AE4797F20B98ECD0A3D9_inline((&___0_buffer), ((void*)il2cpp_codegen_add((intptr_t)L_12, L_13)), NULL);
-		int32_t L_14 = ___1_length;
-		int32_t L_15 = V_1;
-		___1_length = ((int32_t)il2cpp_codegen_subtract(L_14, L_15));
-		int32_t L_16 = V_0;
-		int32_t L_17 = V_1;
-		V_0 = ((int32_t)il2cpp_codegen_add(L_16, L_17));
+		void* L_13;
+		L_13 = IntPtr_ToPointer_m1A0612EED3A1C8B8850BE2943CFC42523064B4F6_inline((&___0_buffer), NULL);
+		int32_t L_14 = V_1;
+		IntPtr__ctor_m4F9A9B80F01996B610D5AE4797F20B98ECD0A3D9_inline((&___0_buffer), ((void*)il2cpp_codegen_add((intptr_t)L_13, L_14)), NULL);
+		int32_t L_15 = ___1_length;
+		int32_t L_16 = V_1;
+		___1_length = ((int32_t)il2cpp_codegen_subtract(L_15, L_16));
+		int32_t L_17 = V_0;
+		int32_t L_18 = V_1;
+		V_0 = ((int32_t)il2cpp_codegen_add(L_17, L_18));
 	}
 
 IL_0074:
 	{
-		int32_t L_18 = ___1_length;
-		if ((((int32_t)L_18) > ((int32_t)0)))
+		int32_t L_19 = ___1_length;
+		if ((((int32_t)L_19) > ((int32_t)0)))
 		{
 			goto IL_0004;
 		}
 	}
 	{
-		int32_t L_19 = V_0;
-		return L_19;
+		int32_t L_20 = V_0;
+		return L_20;
 	}
 
 IL_007a:
 	{
-		int32_t L_20 = V_3;
-		return L_20;
+		int32_t L_21 = V_3;
+		return L_21;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DeflateStreamNative_CheckResult_m9354BDD0FA5B71935FFD628698412B5380329C47 (DeflateStreamNative_t06B674E1D2EFD46989197EFB1E33E0B6564793CD* __this, int32_t ___0_result, String_t* ___1_where, const RuntimeMethod* method) 
@@ -4795,7 +4826,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SafeDeflateStreamHandle_ReleaseHandle_m8
 
 CATCH_000e:
 	{
-		IL2CPP_POP_ACTIVE_EXCEPTION();
+		RuntimeObject* L_2 = ((RuntimeObject*)IL2CPP_GET_ACTIVE_EXCEPTION(RuntimeObject*));;
+		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_0011;
 	}
 

@@ -454,6 +454,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_AnimationCurve_Internal_Equals();
 		Register_UnityEngine_AnimationCurve_Internal_Equals();
 
+		//System.Int32 UnityEngine.AnimationCurve::GetHashCode()
+		void Register_UnityEngine_AnimationCurve_GetHashCode();
+		Register_UnityEngine_AnimationCurve_GetHashCode();
+
 		//System.IntPtr UnityEngine.AnimationCurve::Internal_Create(UnityEngine.Keyframe[])
 		void Register_UnityEngine_AnimationCurve_Internal_Create();
 		Register_UnityEngine_AnimationCurve_Internal_Create();
@@ -757,6 +761,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.CanvasGroup::set_alpha(System.Single)
 		void Register_UnityEngine_CanvasGroup_set_alpha();
 		Register_UnityEngine_CanvasGroup_set_alpha();
+
+		//System.Void UnityEngine.CanvasGroup::set_ignoreParentGroups(System.Boolean)
+		void Register_UnityEngine_CanvasGroup_set_ignoreParentGroups();
+		Register_UnityEngine_CanvasGroup_set_ignoreParentGroups();
 
 	//End Registrations for type : UnityEngine.CanvasGroup
 

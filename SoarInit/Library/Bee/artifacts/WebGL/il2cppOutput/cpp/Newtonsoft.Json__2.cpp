@@ -327,8 +327,10 @@ struct IEnumerable_1_t9BFC4EA32B04B96A5BB13A056B7E299ADC431143;
 struct IEnumerable_1_tF95C9E01A913DD50575531C8305932628663D9E9;
 struct IEnumerable_1_t349E66EC5F09B881A8E52EE40A1AB9EC60E08E44;
 struct IEnumerable_1_tE1622272B87688D496D3DC7EE195E98BE95CFB95;
+struct IEnumerator_1_t327FF232159D9644239A65F54312F684DB7BE375;
 struct IEnumerator_1_tD656C142F6B02F69317F6EC87DBF223D40ABF390;
 struct IEnumerator_1_t43D2E4BA9246755F293DFA74F001FB1A70A648FD;
+struct IEnumerator_1_t73FD060C436E3C4264A734C8F8DCC01DFF6046B8;
 struct IEqualityComparer_1_t0F105371DF1A040164661C7A3C59B7CED17F92C4;
 struct IEqualityComparer_1_t2CA7720C7ADCCDECD3B02E45878B4478619D5347;
 struct IEqualityComparer_1_tAE94C8F24AD5B94D4EE85CA9FC59E3409D41CAF7;
@@ -434,8 +436,11 @@ struct IAsyncResult_t7B9B5A0ECB35DCEC31B8A8122C37D687369253B5;
 struct IAttributeProvider_t7A99979C2D7DD703E91285B65728D13FCD3D2E2E;
 struct IContractResolver_t7EC502F5FCA86DD95579A92A1E0116BE32D6340B;
 struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
+struct IDictionaryEnumerator_tE129D608FCDB7207E0F0ECE33473CC950A83AD16;
+struct IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5;
 struct IDynamicMetaObjectProvider_t4593D4AE2D3360E67AF686D7D889F51FF9BEDC9D;
 struct IEnumerable_t6331596D5DD37C462B1B8D49CF6B319B00AB7131;
+struct IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA;
 struct IEqualityComparer_tEF8F1EC76B9C8E76695BE848D41E6B147928D1C1;
 struct IFormatProvider_tC202922D43BFF3525109ABF3FB79625F5646AB52;
 struct IFormatterConverter_t726606DAC82C384B08C82471313C340968DDB609;
@@ -1179,63 +1184,6 @@ struct Assembly_t_marshaled_pinvoke
 struct Assembly_t_marshaled_com
 {
 };
-struct AssemblyName_t555F1570F523D87D970C6E7F27B1B44C83EADDD2  : public RuntimeObject
-{
-	String_t* ___name;
-	String_t* ___codebase;
-	int32_t ___major;
-	int32_t ___minor;
-	int32_t ___build;
-	int32_t ___revision;
-	CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* ___cultureinfo;
-	int32_t ___flags;
-	int32_t ___hashalg;
-	StrongNameKeyPair_t0657447B6CFAA8FE880A228AA578EC20BC6AF8F2* ___keypair;
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___publicKey;
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___keyToken;
-	int32_t ___versioncompat;
-	Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___version;
-	int32_t ___processor_architecture;
-	int32_t ___contentType;
-};
-struct AssemblyName_t555F1570F523D87D970C6E7F27B1B44C83EADDD2_marshaled_pinvoke
-{
-	char* ___name;
-	char* ___codebase;
-	int32_t ___major;
-	int32_t ___minor;
-	int32_t ___build;
-	int32_t ___revision;
-	CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_marshaled_pinvoke* ___cultureinfo;
-	int32_t ___flags;
-	int32_t ___hashalg;
-	StrongNameKeyPair_t0657447B6CFAA8FE880A228AA578EC20BC6AF8F2* ___keypair;
-	Il2CppSafeArray* ___publicKey;
-	Il2CppSafeArray* ___keyToken;
-	int32_t ___versioncompat;
-	Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___version;
-	int32_t ___processor_architecture;
-	int32_t ___contentType;
-};
-struct AssemblyName_t555F1570F523D87D970C6E7F27B1B44C83EADDD2_marshaled_com
-{
-	Il2CppChar* ___name;
-	Il2CppChar* ___codebase;
-	int32_t ___major;
-	int32_t ___minor;
-	int32_t ___build;
-	int32_t ___revision;
-	CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_marshaled_com* ___cultureinfo;
-	int32_t ___flags;
-	int32_t ___hashalg;
-	StrongNameKeyPair_t0657447B6CFAA8FE880A228AA578EC20BC6AF8F2* ___keypair;
-	Il2CppSafeArray* ___publicKey;
-	Il2CppSafeArray* ___keyToken;
-	int32_t ___versioncompat;
-	Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___version;
-	int32_t ___processor_architecture;
-	int32_t ___contentType;
-};
 struct Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA  : public RuntimeObject
 {
 };
@@ -1340,18 +1288,6 @@ struct CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_marshaled_com
 };
 struct DBNull_t33A9BF6787D27894A593CF4A5E58B8DDC63BBEFC  : public RuntimeObject
 {
-};
-struct DefaultContractResolver_t463A02A39C265D7EB415D4CEB2B2E32664A02CAD  : public RuntimeObject
-{
-	DefaultJsonNameTable_t81ABCBAD900C62AEA009A48779C3F3893DBC110D* ____nameTable;
-	ThreadSafeStore_2_tF22121D3E11895CE38FFEE9105F013F4ECC2DFC5* ____contractCache;
-	int32_t ___U3CDefaultMembersSearchFlagsU3Ek__BackingField;
-	bool ___U3CSerializeCompilerGeneratedMembersU3Ek__BackingField;
-	bool ___U3CIgnoreSerializableInterfaceU3Ek__BackingField;
-	bool ___U3CIgnoreSerializableAttributeU3Ek__BackingField;
-	bool ___U3CIgnoreIsSpecifiedMembersU3Ek__BackingField;
-	bool ___U3CIgnoreShouldSerializeMembersU3Ek__BackingField;
-	NamingStrategy_tB85DD4A9F6C33F668AF7273D3B5193ABC4617D50* ___U3CNamingStrategyU3Ek__BackingField;
 };
 struct DefaultReferenceResolver_t2F8577BD7BE87EF2232A84B848D164DD192EE2CA  : public RuntimeObject
 {
@@ -1584,16 +1520,6 @@ struct Enumerator_tAEBB10C3FE58840C1CA6D763B0B1F8C6A18263E9
 	int32_t ____version;
 	CreatorPropertyContext_t8505304608CDE1624D98E3036286FA7C3A34C23A* ____current;
 };
-struct KeyValuePair_2_t1652DE7EBEA714BA7EF052D38C0721D26DF8077C 
-{
-	JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* ___key;
-	int32_t ___value;
-};
-struct KeyValuePair_2_t35AA315F507A224F8B43D106DA0814C9811D8A7E 
-{
-	RuntimeObject* ___key;
-	int32_t ___value;
-};
 struct KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230 
 {
 	RuntimeObject* ___key;
@@ -1618,87 +1544,7 @@ struct Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01
 	bool ___hasValue;
 	bool ___value;
 };
-struct Nullable_1_t4776B8A4D0D52AA8BDCD45E6D7070659326453D2 
-{
-	bool ___hasValue;
-	int32_t ___value;
-};
-struct Nullable_1_tDC640D18A54CA8F0A3C74518CBC15D439C8FC228 
-{
-	bool ___hasValue;
-	int32_t ___value;
-};
-struct Nullable_1_tD88F7E37B65824D38D74608E576D1265E5A2D2B2 
-{
-	bool ___hasValue;
-	int32_t ___value;
-};
-struct Nullable_1_t4DEE77C12DDAF72BAE2A1FA8A8736FC478D721E8 
-{
-	bool ___hasValue;
-	int32_t ___value;
-};
-struct Nullable_1_tEAE8D5B59DCEB4F809A8A5F390EAAC18F266B822 
-{
-	bool ___hasValue;
-	int32_t ___value;
-};
-struct Nullable_1_tC13211A32645AE3863530378A08BC45089EE419B 
-{
-	bool ___hasValue;
-	int32_t ___value;
-};
-struct Nullable_1_tAEE2B9C53750E53F9B91B70967290720873E8D3E 
-{
-	bool ___hasValue;
-	int32_t ___value;
-};
 struct Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 
-{
-	bool ___hasValue;
-	int32_t ___value;
-};
-struct Nullable_1_t163D49A1147F217B7BD43BE8ACC8A5CC6B846D14 
-{
-	bool ___hasValue;
-	int32_t ___value;
-};
-struct Nullable_1_t776B72BEFF6E3E2D489C4C6D855C89139D6B4CA4 
-{
-	bool ___hasValue;
-	int32_t ___value;
-};
-struct Nullable_1_tA1B6210C1924173AEFE9AF8FBDD3BA856E74A790 
-{
-	bool ___hasValue;
-	int32_t ___value;
-};
-struct Nullable_1_t5ECEC9E2B3F1C050A3E9EC928487DD5C9AB0996D 
-{
-	bool ___hasValue;
-	int32_t ___value;
-};
-struct Nullable_1_t599F8D9D40143BFCB12D7085DFEA8AC7171F5E77 
-{
-	bool ___hasValue;
-	int32_t ___value;
-};
-struct Nullable_1_t0ED183EB9E50B714F9A282F07935579F070B562B 
-{
-	bool ___hasValue;
-	int32_t ___value;
-};
-struct Nullable_1_t61214A44C233A0B00A9F79E380485D79D5FAA7C6 
-{
-	bool ___hasValue;
-	int32_t ___value;
-};
-struct Nullable_1_tB85AB604017196E6A3D3B920121E8C3A255827F0 
-{
-	bool ___hasValue;
-	int32_t ___value;
-};
-struct Nullable_1_t15501A57F01724FE3A732F709F21F09A3DF73087 
 {
 	bool ___hasValue;
 	int32_t ___value;
@@ -1809,34 +1655,8 @@ struct JContainer_tFD3E2CD9B9D8D3CD73133B11A1F6BE77C5C8F95A  : public JToken_tFD
 	RuntimeObject* ____syncRoot;
 	bool ____busy;
 };
-struct JValue_t324DDA26E0833B94892066CE744361B6B0094375  : public JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3
-{
-	int32_t ____valueType;
-	RuntimeObject* ____value;
-};
 struct JsonConverterCollection_t6EEC84565C08B14107276B5023CE9E978DFCDF89  : public Collection_1_t7961B8923F0E801A9FD6B5E01E1FBB05580AEF9F
 {
-};
-struct JsonPosition_t7788656A280615072710710E8C15D23285850E8E 
-{
-	int32_t ___Type;
-	int32_t ___Position;
-	String_t* ___PropertyName;
-	bool ___HasIndex;
-};
-struct JsonPosition_t7788656A280615072710710E8C15D23285850E8E_marshaled_pinvoke
-{
-	int32_t ___Type;
-	int32_t ___Position;
-	char* ___PropertyName;
-	int32_t ___HasIndex;
-};
-struct JsonPosition_t7788656A280615072710710E8C15D23285850E8E_marshaled_com
-{
-	int32_t ___Type;
-	int32_t ___Position;
-	Il2CppChar* ___PropertyName;
-	int32_t ___HasIndex;
 };
 struct JsonSerializerInternalReader_tB13136F0DA95D198262A47B23B64F33590A956E5  : public JsonSerializerInternalBase_t48977BB25CBF2FA336A773E78DDB1377D20AFD11
 {
@@ -1882,21 +1702,6 @@ struct Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C
 {
 	float ___m_value;
 };
-struct StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 
-{
-	RuntimeObject* ___m_additionalContext;
-	int32_t ___m_state;
-};
-struct StreamingContext_t56760522A751890146EE45F82F866B55B7E33677_marshaled_pinvoke
-{
-	Il2CppIUnknown* ___m_additionalContext;
-	int32_t ___m_state;
-};
-struct StreamingContext_t56760522A751890146EE45F82F866B55B7E33677_marshaled_com
-{
-	Il2CppIUnknown* ___m_additionalContext;
-	int32_t ___m_state;
-};
 struct TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3  : public MarshalByRefObject_t8C2F4C5854177FD60439EB1FCCFC1B3CFAFE8DCE
 {
 	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___CoreNewLine;
@@ -1912,22 +1717,6 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915
 		};
 		uint8_t Void_t4861ACF8F4594C3437BB48B6E56783494B843915__padding[1];
 	};
-};
-struct Enumerator_tFD823AB7E4CA2DDB31FD2BEBABB90E43729E704D 
-{
-	Dictionary_2_t8497B36FD5388D58401BC16677AD068721974842* ____dictionary;
-	int32_t ____version;
-	int32_t ____index;
-	KeyValuePair_2_t1652DE7EBEA714BA7EF052D38C0721D26DF8077C ____current;
-	int32_t ____getEnumeratorRetType;
-};
-struct Enumerator_tB389395A2FD246B4D96A33CFE98D146137FA3ED6 
-{
-	Dictionary_2_t2A9A7F3ECFC3483F89253F3C4BB5BE98A37F6EF3* ____dictionary;
-	int32_t ____version;
-	int32_t ____index;
-	KeyValuePair_2_t35AA315F507A224F8B43D106DA0814C9811D8A7E ____current;
-	int32_t ____getEnumeratorRetType;
 };
 struct AppDomain_tFF7010567CBABAEEA7BB19835234D6485E16AD5F  : public MarshalByRefObject_t8C2F4C5854177FD60439EB1FCCFC1B3CFAFE8DCE
 {
@@ -1989,13 +1778,53 @@ struct AppDomain_tFF7010567CBABAEEA7BB19835234D6485E16AD5F_marshaled_com : publi
 	Il2CppIUnknown* ____applicationIdentity;
 	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___compatibility_switch;
 };
+struct AssemblyContentType_tE0A2224D247DD97616065CB0ECB16912B756D745 
+{
+	int32_t ___value__;
+};
+struct AssemblyHashAlgorithm_t6202395EA0C9A01D6342348A9535DF4CA47010D1 
+{
+	int32_t ___value__;
+};
+struct AssemblyNameFlags_t48EB44AFB7A3310746DD78ACC3DC5AE6D3D91122 
+{
+	int32_t ___value__;
+};
+struct AssemblyVersionCompatibility_t1E27EE4AB4137C64EE164A25A184E844AC722159 
+{
+	int32_t ___value__;
+};
+struct BindingFlags_t5DC2835E4AE9C1862B3AD172EF35B6A5F4F1812C 
+{
+	int32_t ___value__;
+};
+struct ConstructorHandling_tBAFC8D79770520A5FE179D99B00E863ECFD41FBC 
+{
+	int32_t ___value__;
+};
 struct ConstructorInfo_t1B5967EE7E5554272F79F8880183C70AD240EEEB  : public MethodBase_t
 {
+};
+struct DateFormatHandling_t572F7AE07F2480341B7A6A66E2B76630B513F797 
+{
+	int32_t ___value__;
+};
+struct DateParseHandling_t9C3D12600E1C83D014F016D8B1F88411FF41263C 
+{
+	int32_t ___value__;
 };
 struct DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4 
 {
 	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ____dateTime;
 	int16_t ____offsetMinutes;
+};
+struct DateTimeZoneHandling_tC6052391FA7B95E92AFFABA381532EEFA193FB9F 
+{
+	int32_t ___value__;
+};
+struct DefaultValueHandling_t996735A0C7CC889B941C53B522E62A988B47402A 
+{
+	int32_t ___value__;
 };
 struct Delegate_t  : public RuntimeObject
 {
@@ -2102,10 +1931,26 @@ struct Exception_t_marshaled_com
 	Il2CppSafeArray* ___native_trace_ips;
 	int32_t ___caught_in_unmanaged;
 };
+struct FloatFormatHandling_t6D69CDEC3FBD6B43B168CFE1033506CE3F50EE8C 
+{
+	int32_t ___value__;
+};
+struct FloatParseHandling_tB923F780A6087CF142D4D00486E840D870ECDA5D 
+{
+	int32_t ___value__;
+};
+struct Formatting_t38B3D1A17CE6825AA2C906374AD2434FD10ED7EC 
+{
+	int32_t ___value__;
+};
 struct GetMemberBinder_t8D02CC2255370A525D6657487C0A7EB1DDD225B3  : public DynamicMetaObjectBinder_tB890C4A527623C1A79882F0343D043461A6207FF
 {
 	String_t* ___U3CNameU3Ek__BackingField;
 	bool ___U3CIgnoreCaseU3Ek__BackingField;
+};
+struct Int32Enum_tCBAC8BA2BFF3A845FA599F303093BBBA374B6F0C 
+{
+	int32_t ___value__;
 };
 struct JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1  : public JContainer_tFD3E2CD9B9D8D3CD73133B11A1F6BE77C5C8F95A
 {
@@ -2118,20 +1963,298 @@ struct JProperty_t1B8E99236F2BD537EC4A7A63ACDB60D7C709C5F4  : public JContainer_
 	JPropertyList_t53D97F8AB016B10A00D616C620766D38449D8C98* ____content;
 	String_t* ____name;
 };
-struct JRaw_t2F9CE4F6B8BD2A02A0F2F1BF082F79D4CEAFCD1F  : public JValue_t324DDA26E0833B94892066CE744361B6B0094375
+struct JTokenType_tFFA06F8C6727649A6D9AB4ED5749832439E7141D 
+{
+	int32_t ___value__;
+};
+struct JsonContainerType_t4F8244AEE40CAB63CA2C1E281038F4E2B3E3887E 
+{
+	int32_t ___value__;
+};
+struct JsonContractType_t648DA7254ACAFCDB8C02BA87DF2E55C423ACF27E 
+{
+	int32_t ___value__;
+};
+struct JsonPropertyCollection_t93082116A28103BD144B10160CDC36F9809D48C6  : public KeyedCollection_2_t0E811DBCCCCC9FB99F23525F845D502F0FFF3B0E
+{
+	Type_t* ____type;
+	List_1_t74666FDF65CB5C8F34590E465BD151F8943D32CB* ____list;
+};
+struct JsonToken_t00B2B3F98FB3E9A8DE72409901BED1C7F1670BD5 
+{
+	int32_t ___value__;
+};
+struct MemberSerialization_t257FAC6CFDCFB591C71BFA910013E4CEFB7491DA 
+{
+	int32_t ___value__;
+};
+struct MemberTypes_t26BAB0893BEC9328F2F64E8BACDA967C445632E5 
+{
+	int32_t ___value__;
+};
+struct MetadataPropertyHandling_tA3EC6C7A5429A693E0370D712C7850854F60B6B2 
+{
+	int32_t ___value__;
+};
+struct MethodInfo_t  : public MethodBase_t
 {
 };
-struct JsonContainerAttribute_t84168DEA2B41EB84D4BF6C3AF04D6075F4CEB1C7  : public Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA
+struct MissingMemberHandling_tD1037A7561C66E2015BA288AF16A9F2DC9307FA5 
 {
-	Type_t* ___U3CItemConverterTypeU3Ek__BackingField;
-	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___U3CItemConverterParametersU3Ek__BackingField;
-	NamingStrategy_tB85DD4A9F6C33F668AF7273D3B5193ABC4617D50* ___U3CNamingStrategyInstanceU3Ek__BackingField;
-	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ____isReference;
-	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ____itemIsReference;
-	Nullable_1_t599F8D9D40143BFCB12D7085DFEA8AC7171F5E77 ____itemReferenceLoopHandling;
-	Nullable_1_tB85AB604017196E6A3D3B920121E8C3A255827F0 ____itemTypeNameHandling;
-	Type_t* ____namingStrategyType;
-	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ____namingStrategyParameters;
+	int32_t ___value__;
+};
+struct NullValueHandling_t4BDE6EFA837EAE85524EDF0FE21D0B9668F4FD6A 
+{
+	int32_t ___value__;
+};
+struct ObjectCreationHandling_tA895C8A4A1D7444BBEDD0E29D7490C625BF93131 
+{
+	int32_t ___value__;
+};
+struct OrdinalCaseSensitiveComparer_t581CA7CB51DCF00B6012A697A4B4B3067144521A  : public OrdinalComparer_tBB06915E213A5D4C8C617ED5478E8BF30C2B2170
+{
+};
+struct PreserveReferencesHandling_t435BCAA15E433D8D2F5DB0D05A41E7E564671737 
+{
+	int32_t ___value__;
+};
+struct PrimitiveTypeCode_t63C3D4F39DC3B6C82690A769515BAA5A0361A573 
+{
+	int32_t ___value__;
+};
+struct ProcessorArchitecture_t549C86643DDABC4E0C6DC968F0C74A707ADCAD9B 
+{
+	int32_t ___value__;
+};
+struct ReadType_t493768768508AD7DDF9096F57CF048F2616FDF2C 
+{
+	int32_t ___value__;
+};
+struct ReferenceLoopHandling_t7D243173DF188E0478CF37E7C940CDDCAC1E0D20 
+{
+	int32_t ___value__;
+};
+struct Required_tE2BADA700C1076BDCC25AAF912F3C76B8BD842A7 
+{
+	int32_t ___value__;
+};
+struct RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B 
+{
+	intptr_t ___value;
+};
+struct SetMemberBinder_t0D70ED9A9888FF8074796DF76600BDBA3104C55F  : public DynamicMetaObjectBinder_tB890C4A527623C1A79882F0343D043461A6207FF
+{
+	String_t* ___U3CNameU3Ek__BackingField;
+	bool ___U3CIgnoreCaseU3Ek__BackingField;
+};
+struct StreamingContextStates_t5EE358E619B251608A9327618C7BFE8638FC33C1 
+{
+	int32_t ___value__;
+};
+struct StringComparison_tE14A55CCFA001A5AC85D754179BF2888F45CC94D 
+{
+	int32_t ___value__;
+};
+struct StringEscapeHandling_t6C5E715C7EA7676CB7369DBE8EB487724B07F354 
+{
+	int32_t ___value__;
+};
+struct StringWriter_tF48052BE4F980E5C85403221E835768E4156267D  : public TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3
+{
+	StringBuilder_t* ____sb;
+	bool ____isOpen;
+};
+struct TraceLevel_tC6D20CA5EEFD86A80A74E11DCFAE7AAA5A5D966F 
+{
+	int32_t ___value__;
+};
+struct TypeNameAssemblyFormatHandling_t9FB27147BC97FE6AB2CC242DA377B594D900491E 
+{
+	int32_t ___value__;
+};
+struct TypeNameHandling_t4D77402771E5E38DE1AE390B60542985276D9D69 
+{
+	int32_t ___value__;
+};
+struct WriteState_tDC5DB5B03C0907C06F85AAEF32E0A1A0BF1FBC48 
+{
+	int32_t ___value__;
+};
+struct State_tFC19CCEAFF8F4E6C73914F3B8850C622CE3490A4 
+{
+	int32_t ___value__;
+};
+struct PropertyPresence_t8E022AC9A55F82CB85458946C555F5650DE51D05 
+{
+	int32_t ___value__;
+};
+struct State_tAE23C0C2937491FB5A76EBB46CC416A10DB1667D 
+{
+	int32_t ___value__;
+};
+struct KeyValuePair_2_t1652DE7EBEA714BA7EF052D38C0721D26DF8077C 
+{
+	JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* ___key;
+	int32_t ___value;
+};
+struct KeyValuePair_2_t35AA315F507A224F8B43D106DA0814C9811D8A7E 
+{
+	RuntimeObject* ___key;
+	int32_t ___value;
+};
+struct Nullable_1_t4776B8A4D0D52AA8BDCD45E6D7070659326453D2 
+{
+	bool ___hasValue;
+	int32_t ___value;
+};
+struct Nullable_1_tDC640D18A54CA8F0A3C74518CBC15D439C8FC228 
+{
+	bool ___hasValue;
+	int32_t ___value;
+};
+struct Nullable_1_tD88F7E37B65824D38D74608E576D1265E5A2D2B2 
+{
+	bool ___hasValue;
+	int32_t ___value;
+};
+struct Nullable_1_t4DEE77C12DDAF72BAE2A1FA8A8736FC478D721E8 
+{
+	bool ___hasValue;
+	int32_t ___value;
+};
+struct Nullable_1_tEAE8D5B59DCEB4F809A8A5F390EAAC18F266B822 
+{
+	bool ___hasValue;
+	int32_t ___value;
+};
+struct Nullable_1_tC13211A32645AE3863530378A08BC45089EE419B 
+{
+	bool ___hasValue;
+	int32_t ___value;
+};
+struct Nullable_1_tAEE2B9C53750E53F9B91B70967290720873E8D3E 
+{
+	bool ___hasValue;
+	int32_t ___value;
+};
+struct Nullable_1_t163D49A1147F217B7BD43BE8ACC8A5CC6B846D14 
+{
+	bool ___hasValue;
+	int32_t ___value;
+};
+struct Nullable_1_t776B72BEFF6E3E2D489C4C6D855C89139D6B4CA4 
+{
+	bool ___hasValue;
+	int32_t ___value;
+};
+struct Nullable_1_tA1B6210C1924173AEFE9AF8FBDD3BA856E74A790 
+{
+	bool ___hasValue;
+	int32_t ___value;
+};
+struct Nullable_1_t5ECEC9E2B3F1C050A3E9EC928487DD5C9AB0996D 
+{
+	bool ___hasValue;
+	int32_t ___value;
+};
+struct Nullable_1_t599F8D9D40143BFCB12D7085DFEA8AC7171F5E77 
+{
+	bool ___hasValue;
+	int32_t ___value;
+};
+struct Nullable_1_t0ED183EB9E50B714F9A282F07935579F070B562B 
+{
+	bool ___hasValue;
+	int32_t ___value;
+};
+struct Nullable_1_t61214A44C233A0B00A9F79E380485D79D5FAA7C6 
+{
+	bool ___hasValue;
+	int32_t ___value;
+};
+struct Nullable_1_tB85AB604017196E6A3D3B920121E8C3A255827F0 
+{
+	bool ___hasValue;
+	int32_t ___value;
+};
+struct Nullable_1_t15501A57F01724FE3A732F709F21F09A3DF73087 
+{
+	bool ___hasValue;
+	int32_t ___value;
+};
+struct AssemblyName_t555F1570F523D87D970C6E7F27B1B44C83EADDD2  : public RuntimeObject
+{
+	String_t* ___name;
+	String_t* ___codebase;
+	int32_t ___major;
+	int32_t ___minor;
+	int32_t ___build;
+	int32_t ___revision;
+	CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* ___cultureinfo;
+	int32_t ___flags;
+	int32_t ___hashalg;
+	StrongNameKeyPair_t0657447B6CFAA8FE880A228AA578EC20BC6AF8F2* ___keypair;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___publicKey;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___keyToken;
+	int32_t ___versioncompat;
+	Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___version;
+	int32_t ___processor_architecture;
+	int32_t ___contentType;
+};
+struct AssemblyName_t555F1570F523D87D970C6E7F27B1B44C83EADDD2_marshaled_pinvoke
+{
+	char* ___name;
+	char* ___codebase;
+	int32_t ___major;
+	int32_t ___minor;
+	int32_t ___build;
+	int32_t ___revision;
+	CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_marshaled_pinvoke* ___cultureinfo;
+	int32_t ___flags;
+	int32_t ___hashalg;
+	StrongNameKeyPair_t0657447B6CFAA8FE880A228AA578EC20BC6AF8F2* ___keypair;
+	Il2CppSafeArray* ___publicKey;
+	Il2CppSafeArray* ___keyToken;
+	int32_t ___versioncompat;
+	Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___version;
+	int32_t ___processor_architecture;
+	int32_t ___contentType;
+};
+struct AssemblyName_t555F1570F523D87D970C6E7F27B1B44C83EADDD2_marshaled_com
+{
+	Il2CppChar* ___name;
+	Il2CppChar* ___codebase;
+	int32_t ___major;
+	int32_t ___minor;
+	int32_t ___build;
+	int32_t ___revision;
+	CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_marshaled_com* ___cultureinfo;
+	int32_t ___flags;
+	int32_t ___hashalg;
+	StrongNameKeyPair_t0657447B6CFAA8FE880A228AA578EC20BC6AF8F2* ___keypair;
+	Il2CppSafeArray* ___publicKey;
+	Il2CppSafeArray* ___keyToken;
+	int32_t ___versioncompat;
+	Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___version;
+	int32_t ___processor_architecture;
+	int32_t ___contentType;
+};
+struct DefaultContractResolver_t463A02A39C265D7EB415D4CEB2B2E32664A02CAD  : public RuntimeObject
+{
+	DefaultJsonNameTable_t81ABCBAD900C62AEA009A48779C3F3893DBC110D* ____nameTable;
+	ThreadSafeStore_2_tF22121D3E11895CE38FFEE9105F013F4ECC2DFC5* ____contractCache;
+	int32_t ___U3CDefaultMembersSearchFlagsU3Ek__BackingField;
+	bool ___U3CSerializeCompilerGeneratedMembersU3Ek__BackingField;
+	bool ___U3CIgnoreSerializableInterfaceU3Ek__BackingField;
+	bool ___U3CIgnoreSerializableAttributeU3Ek__BackingField;
+	bool ___U3CIgnoreIsSpecifiedMembersU3Ek__BackingField;
+	bool ___U3CIgnoreShouldSerializeMembersU3Ek__BackingField;
+	NamingStrategy_tB85DD4A9F6C33F668AF7273D3B5193ABC4617D50* ___U3CNamingStrategyU3Ek__BackingField;
+};
+struct JValue_t324DDA26E0833B94892066CE744361B6B0094375  : public JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3
+{
+	int32_t ____valueType;
+	RuntimeObject* ____value;
 };
 struct JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA  : public RuntimeObject
 {
@@ -2157,180 +2280,29 @@ struct JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA  : public RuntimeO
 	Func_1_tD5C081AE11746B200C711DD48DBEB00E3A9276D4* ___U3CDefaultCreatorU3Ek__BackingField;
 	bool ___U3CDefaultCreatorNonPublicU3Ek__BackingField;
 };
-struct JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3  : public RuntimeObject
-{
-	Nullable_1_t0ED183EB9E50B714F9A282F07935579F070B562B ____required;
-	bool ____hasExplicitDefaultValue;
-	RuntimeObject* ____defaultValue;
-	bool ____hasGeneratedDefaultValue;
-	String_t* ____propertyName;
-	bool ____skipPropertyNameEscape;
-	Type_t* ____propertyType;
-	JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* ___U3CPropertyContractU3Ek__BackingField;
-	Type_t* ___U3CDeclaringTypeU3Ek__BackingField;
-	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___U3COrderU3Ek__BackingField;
-	String_t* ___U3CUnderlyingNameU3Ek__BackingField;
-	RuntimeObject* ___U3CValueProviderU3Ek__BackingField;
-	RuntimeObject* ___U3CAttributeProviderU3Ek__BackingField;
-	JsonConverter_tE765D011CD34CDF28759E6D58FDBF05AA5EA0F16* ___U3CConverterU3Ek__BackingField;
-	bool ___U3CIgnoredU3Ek__BackingField;
-	bool ___U3CReadableU3Ek__BackingField;
-	bool ___U3CWritableU3Ek__BackingField;
-	bool ___U3CHasMemberAttributeU3Ek__BackingField;
-	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___U3CIsReferenceU3Ek__BackingField;
-	Nullable_1_tA1B6210C1924173AEFE9AF8FBDD3BA856E74A790 ___U3CNullValueHandlingU3Ek__BackingField;
-	Nullable_1_t4DEE77C12DDAF72BAE2A1FA8A8736FC478D721E8 ___U3CDefaultValueHandlingU3Ek__BackingField;
-	Nullable_1_t599F8D9D40143BFCB12D7085DFEA8AC7171F5E77 ___U3CReferenceLoopHandlingU3Ek__BackingField;
-	Nullable_1_t5ECEC9E2B3F1C050A3E9EC928487DD5C9AB0996D ___U3CObjectCreationHandlingU3Ek__BackingField;
-	Nullable_1_tB85AB604017196E6A3D3B920121E8C3A255827F0 ___U3CTypeNameHandlingU3Ek__BackingField;
-	Predicate_1_t8342C85FF4E41CD1F7024AC0CDC3E5312A32CB12* ___U3CShouldSerializeU3Ek__BackingField;
-	Predicate_1_t8342C85FF4E41CD1F7024AC0CDC3E5312A32CB12* ___U3CShouldDeserializeU3Ek__BackingField;
-	Predicate_1_t8342C85FF4E41CD1F7024AC0CDC3E5312A32CB12* ___U3CGetIsSpecifiedU3Ek__BackingField;
-	Action_2_t156C43F079E7E68155FCDCD12DC77DD11AEF7E3C* ___U3CSetIsSpecifiedU3Ek__BackingField;
-	JsonConverter_tE765D011CD34CDF28759E6D58FDBF05AA5EA0F16* ___U3CItemConverterU3Ek__BackingField;
-	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___U3CItemIsReferenceU3Ek__BackingField;
-	Nullable_1_tB85AB604017196E6A3D3B920121E8C3A255827F0 ___U3CItemTypeNameHandlingU3Ek__BackingField;
-	Nullable_1_t599F8D9D40143BFCB12D7085DFEA8AC7171F5E77 ___U3CItemReferenceLoopHandlingU3Ek__BackingField;
-};
-struct JsonPropertyCollection_t93082116A28103BD144B10160CDC36F9809D48C6  : public KeyedCollection_2_t0E811DBCCCCC9FB99F23525F845D502F0FFF3B0E
-{
-	Type_t* ____type;
-	List_1_t74666FDF65CB5C8F34590E465BD151F8943D32CB* ____list;
-};
-struct JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765  : public RuntimeObject
-{
-	int32_t ____tokenType;
-	RuntimeObject* ____value;
-	Il2CppChar ____quoteChar;
-	int32_t ____currentState;
-	JsonPosition_t7788656A280615072710710E8C15D23285850E8E ____currentPosition;
-	CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* ____culture;
-	int32_t ____dateTimeZoneHandling;
-	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ____maxDepth;
-	bool ____hasExceededMaxDepth;
-	int32_t ____dateParseHandling;
-	int32_t ____floatParseHandling;
-	String_t* ____dateFormatString;
-	List_1_t53E7DEFF45EC8B1D5AE04D4FC6284E617F0D79CB* ____stack;
-	bool ___U3CCloseInputU3Ek__BackingField;
-	bool ___U3CSupportMultipleContentU3Ek__BackingField;
-};
-struct JsonSerializer_t3D625A6ADB5711D3C55A7CEC5F17D74260ACCB59  : public RuntimeObject
-{
-	int32_t ____typeNameHandling;
-	int32_t ____typeNameAssemblyFormatHandling;
-	int32_t ____preserveReferencesHandling;
-	int32_t ____referenceLoopHandling;
-	int32_t ____missingMemberHandling;
-	int32_t ____objectCreationHandling;
-	int32_t ____nullValueHandling;
-	int32_t ____defaultValueHandling;
-	int32_t ____constructorHandling;
-	int32_t ____metadataPropertyHandling;
-	JsonConverterCollection_t6EEC84565C08B14107276B5023CE9E978DFCDF89* ____converters;
-	RuntimeObject* ____contractResolver;
-	RuntimeObject* ____traceWriter;
-	RuntimeObject* ____equalityComparer;
-	RuntimeObject* ____serializationBinder;
-	StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 ____context;
-	RuntimeObject* ____referenceResolver;
-	Nullable_1_tAEE2B9C53750E53F9B91B70967290720873E8D3E ____formatting;
-	Nullable_1_t4776B8A4D0D52AA8BDCD45E6D7070659326453D2 ____dateFormatHandling;
-	Nullable_1_tD88F7E37B65824D38D74608E576D1265E5A2D2B2 ____dateTimeZoneHandling;
-	Nullable_1_tDC640D18A54CA8F0A3C74518CBC15D439C8FC228 ____dateParseHandling;
-	Nullable_1_tEAE8D5B59DCEB4F809A8A5F390EAAC18F266B822 ____floatFormatHandling;
-	Nullable_1_tC13211A32645AE3863530378A08BC45089EE419B ____floatParseHandling;
-	Nullable_1_t61214A44C233A0B00A9F79E380485D79D5FAA7C6 ____stringEscapeHandling;
-	CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* ____culture;
-	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ____maxDepth;
-	bool ____maxDepthSet;
-	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ____checkAdditionalContent;
-	String_t* ____dateFormatString;
-	bool ____dateFormatStringSet;
-	EventHandler_1_t69462DFC2F2C8D7576BEE9D1F5BB6C2E55B2C380* ___Error;
-};
-struct JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3  : public RuntimeObject
-{
-	List_1_t53E7DEFF45EC8B1D5AE04D4FC6284E617F0D79CB* ____stack;
-	JsonPosition_t7788656A280615072710710E8C15D23285850E8E ____currentPosition;
-	int32_t ____currentState;
-	int32_t ____formatting;
-	bool ___U3CCloseOutputU3Ek__BackingField;
-	bool ___U3CAutoCompleteOnCloseU3Ek__BackingField;
-	int32_t ____dateFormatHandling;
-	int32_t ____dateTimeZoneHandling;
-	int32_t ____stringEscapeHandling;
-	int32_t ____floatFormatHandling;
-	String_t* ____dateFormatString;
-	CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* ____culture;
-};
-struct MethodInfo_t  : public MethodBase_t
-{
-};
-struct OrdinalCaseSensitiveComparer_t581CA7CB51DCF00B6012A697A4B4B3067144521A  : public OrdinalComparer_tBB06915E213A5D4C8C617ED5478E8BF30C2B2170
-{
-};
-struct RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B 
-{
-	intptr_t ___value;
-};
-struct SetMemberBinder_t0D70ED9A9888FF8074796DF76600BDBA3104C55F  : public DynamicMetaObjectBinder_tB890C4A527623C1A79882F0343D043461A6207FF
-{
-	String_t* ___U3CNameU3Ek__BackingField;
-	bool ___U3CIgnoreCaseU3Ek__BackingField;
-};
-struct StringWriter_tF48052BE4F980E5C85403221E835768E4156267D  : public TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3
-{
-	StringBuilder_t* ____sb;
-	bool ____isOpen;
-};
-struct CreatorPropertyContext_t8505304608CDE1624D98E3036286FA7C3A34C23A  : public RuntimeObject
-{
-	String_t* ___Name;
-	JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* ___Property;
-	JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* ___ConstructorProperty;
-	Nullable_1_t15501A57F01724FE3A732F709F21F09A3DF73087 ___Presence;
-	RuntimeObject* ___Value;
-	bool ___Used;
-};
-struct JTokenReader_tADB4D55F3892C8704567BEA2E142B815387AA8CD  : public JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765
-{
-	JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* ____root;
-	String_t* ____initialPath;
-	JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* ____parent;
-	JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* ____current;
-};
-struct JTokenWriter_t42960EDB1C9B939AF4D476149F6C12E3BA79405C  : public JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3
-{
-	JContainer_tFD3E2CD9B9D8D3CD73133B11A1F6BE77C5C8F95A* ____token;
-	JContainer_tFD3E2CD9B9D8D3CD73133B11A1F6BE77C5C8F95A* ____parent;
-	JValue_t324DDA26E0833B94892066CE744361B6B0094375* ____value;
-	JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* ____current;
-};
-struct JsonContainerContract_t047427003C1B86FBD0BD306946E8A38F442B0F0B  : public JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA
-{
-	JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* ____itemContract;
-	JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* ____finalItemContract;
-	JsonConverter_tE765D011CD34CDF28759E6D58FDBF05AA5EA0F16* ___U3CItemConverterU3Ek__BackingField;
-	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___U3CItemIsReferenceU3Ek__BackingField;
-	Nullable_1_t599F8D9D40143BFCB12D7085DFEA8AC7171F5E77 ___U3CItemReferenceLoopHandlingU3Ek__BackingField;
-	Nullable_1_tB85AB604017196E6A3D3B920121E8C3A255827F0 ___U3CItemTypeNameHandlingU3Ek__BackingField;
-};
 struct JsonException_tFFE4BB54605E1573CD957C3A40BEC5571CC386BD  : public Exception_t
 {
 };
-struct JsonLinqContract_tC18AAA44BFBAFF49E6AEAF55A246EF98E767C7C8  : public JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA
+struct JsonPosition_t7788656A280615072710710E8C15D23285850E8E 
 {
+	int32_t ___Type;
+	int32_t ___Position;
+	String_t* ___PropertyName;
+	bool ___HasIndex;
 };
-struct JsonPrimitiveContract_tB6193D2574BA2547AF433EC7DBA5F1B0D5BBC27E  : public JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA
+struct JsonPosition_t7788656A280615072710710E8C15D23285850E8E_marshaled_pinvoke
 {
-	int32_t ___U3CTypeCodeU3Ek__BackingField;
+	int32_t ___Type;
+	int32_t ___Position;
+	char* ___PropertyName;
+	int32_t ___HasIndex;
 };
-struct JsonSerializerProxy_t4AFA5984432EE56D56AC4507C35171B730C05B4A  : public JsonSerializer_t3D625A6ADB5711D3C55A7CEC5F17D74260ACCB59
+struct JsonPosition_t7788656A280615072710710E8C15D23285850E8E_marshaled_com
 {
-	JsonSerializerInternalReader_tB13136F0DA95D198262A47B23B64F33590A956E5* ____serializerReader;
-	JsonSerializerInternalWriter_t9625AB9A7212A131A3B48F8BC3D1F6835DC51866* ____serializerWriter;
-	JsonSerializer_t3D625A6ADB5711D3C55A7CEC5F17D74260ACCB59* ____serializer;
+	int32_t ___Type;
+	int32_t ___Position;
+	Il2CppChar* ___PropertyName;
+	int32_t ___HasIndex;
 };
 struct MulticastDelegate_t  : public Delegate_t
 {
@@ -2352,6 +2324,21 @@ struct NoThrowSetBinderMember_t2A08A7A6DC7581F640C7AECC9A15D4AC8F9197E2  : publi
 {
 	SetMemberBinder_t0D70ED9A9888FF8074796DF76600BDBA3104C55F* ____innerBinder;
 };
+struct StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 
+{
+	RuntimeObject* ___m_additionalContext;
+	int32_t ___m_state;
+};
+struct StreamingContext_t56760522A751890146EE45F82F866B55B7E33677_marshaled_pinvoke
+{
+	Il2CppIUnknown* ___m_additionalContext;
+	int32_t ___m_state;
+};
+struct StreamingContext_t56760522A751890146EE45F82F866B55B7E33677_marshaled_com
+{
+	Il2CppIUnknown* ___m_additionalContext;
+	int32_t ___m_state;
+};
 struct SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295  : public Exception_t
 {
 };
@@ -2361,6 +2348,22 @@ struct Type_t  : public MemberInfo_t
 };
 struct Action_2_t156C43F079E7E68155FCDCD12DC77DD11AEF7E3C  : public MulticastDelegate_t
 {
+};
+struct Enumerator_tFD823AB7E4CA2DDB31FD2BEBABB90E43729E704D 
+{
+	Dictionary_2_t8497B36FD5388D58401BC16677AD068721974842* ____dictionary;
+	int32_t ____version;
+	int32_t ____index;
+	KeyValuePair_2_t1652DE7EBEA714BA7EF052D38C0721D26DF8077C ____current;
+	int32_t ____getEnumeratorRetType;
+};
+struct Enumerator_tB389395A2FD246B4D96A33CFE98D146137FA3ED6 
+{
+	Dictionary_2_t2A9A7F3ECFC3483F89253F3C4BB5BE98A37F6EF3* ____dictionary;
+	int32_t ____version;
+	int32_t ____index;
+	KeyValuePair_2_t35AA315F507A224F8B43D106DA0814C9811D8A7E ____current;
+	int32_t ____getEnumeratorRetType;
 };
 struct Func_1_tD5C081AE11746B200C711DD48DBEB00E3A9276D4  : public MulticastDelegate_t
 {
@@ -2426,6 +2429,181 @@ struct ExtensionDataSetter_t3A4A83629176BBF3CAD5799C81F02FB2DB7A89E3  : public M
 struct InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
 {
 };
+struct JRaw_t2F9CE4F6B8BD2A02A0F2F1BF082F79D4CEAFCD1F  : public JValue_t324DDA26E0833B94892066CE744361B6B0094375
+{
+};
+struct JsonContainerAttribute_t84168DEA2B41EB84D4BF6C3AF04D6075F4CEB1C7  : public Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA
+{
+	Type_t* ___U3CItemConverterTypeU3Ek__BackingField;
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___U3CItemConverterParametersU3Ek__BackingField;
+	NamingStrategy_tB85DD4A9F6C33F668AF7273D3B5193ABC4617D50* ___U3CNamingStrategyInstanceU3Ek__BackingField;
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ____isReference;
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ____itemIsReference;
+	Nullable_1_t599F8D9D40143BFCB12D7085DFEA8AC7171F5E77 ____itemReferenceLoopHandling;
+	Nullable_1_tB85AB604017196E6A3D3B920121E8C3A255827F0 ____itemTypeNameHandling;
+	Type_t* ____namingStrategyType;
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ____namingStrategyParameters;
+};
+struct JsonContainerContract_t047427003C1B86FBD0BD306946E8A38F442B0F0B  : public JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA
+{
+	JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* ____itemContract;
+	JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* ____finalItemContract;
+	JsonConverter_tE765D011CD34CDF28759E6D58FDBF05AA5EA0F16* ___U3CItemConverterU3Ek__BackingField;
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___U3CItemIsReferenceU3Ek__BackingField;
+	Nullable_1_t599F8D9D40143BFCB12D7085DFEA8AC7171F5E77 ___U3CItemReferenceLoopHandlingU3Ek__BackingField;
+	Nullable_1_tB85AB604017196E6A3D3B920121E8C3A255827F0 ___U3CItemTypeNameHandlingU3Ek__BackingField;
+};
+struct JsonLinqContract_tC18AAA44BFBAFF49E6AEAF55A246EF98E767C7C8  : public JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA
+{
+};
+struct JsonPrimitiveContract_tB6193D2574BA2547AF433EC7DBA5F1B0D5BBC27E  : public JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA
+{
+	int32_t ___U3CTypeCodeU3Ek__BackingField;
+};
+struct JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3  : public RuntimeObject
+{
+	Nullable_1_t0ED183EB9E50B714F9A282F07935579F070B562B ____required;
+	bool ____hasExplicitDefaultValue;
+	RuntimeObject* ____defaultValue;
+	bool ____hasGeneratedDefaultValue;
+	String_t* ____propertyName;
+	bool ____skipPropertyNameEscape;
+	Type_t* ____propertyType;
+	JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* ___U3CPropertyContractU3Ek__BackingField;
+	Type_t* ___U3CDeclaringTypeU3Ek__BackingField;
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___U3COrderU3Ek__BackingField;
+	String_t* ___U3CUnderlyingNameU3Ek__BackingField;
+	RuntimeObject* ___U3CValueProviderU3Ek__BackingField;
+	RuntimeObject* ___U3CAttributeProviderU3Ek__BackingField;
+	JsonConverter_tE765D011CD34CDF28759E6D58FDBF05AA5EA0F16* ___U3CConverterU3Ek__BackingField;
+	bool ___U3CIgnoredU3Ek__BackingField;
+	bool ___U3CReadableU3Ek__BackingField;
+	bool ___U3CWritableU3Ek__BackingField;
+	bool ___U3CHasMemberAttributeU3Ek__BackingField;
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___U3CIsReferenceU3Ek__BackingField;
+	Nullable_1_tA1B6210C1924173AEFE9AF8FBDD3BA856E74A790 ___U3CNullValueHandlingU3Ek__BackingField;
+	Nullable_1_t4DEE77C12DDAF72BAE2A1FA8A8736FC478D721E8 ___U3CDefaultValueHandlingU3Ek__BackingField;
+	Nullable_1_t599F8D9D40143BFCB12D7085DFEA8AC7171F5E77 ___U3CReferenceLoopHandlingU3Ek__BackingField;
+	Nullable_1_t5ECEC9E2B3F1C050A3E9EC928487DD5C9AB0996D ___U3CObjectCreationHandlingU3Ek__BackingField;
+	Nullable_1_tB85AB604017196E6A3D3B920121E8C3A255827F0 ___U3CTypeNameHandlingU3Ek__BackingField;
+	Predicate_1_t8342C85FF4E41CD1F7024AC0CDC3E5312A32CB12* ___U3CShouldSerializeU3Ek__BackingField;
+	Predicate_1_t8342C85FF4E41CD1F7024AC0CDC3E5312A32CB12* ___U3CShouldDeserializeU3Ek__BackingField;
+	Predicate_1_t8342C85FF4E41CD1F7024AC0CDC3E5312A32CB12* ___U3CGetIsSpecifiedU3Ek__BackingField;
+	Action_2_t156C43F079E7E68155FCDCD12DC77DD11AEF7E3C* ___U3CSetIsSpecifiedU3Ek__BackingField;
+	JsonConverter_tE765D011CD34CDF28759E6D58FDBF05AA5EA0F16* ___U3CItemConverterU3Ek__BackingField;
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___U3CItemIsReferenceU3Ek__BackingField;
+	Nullable_1_tB85AB604017196E6A3D3B920121E8C3A255827F0 ___U3CItemTypeNameHandlingU3Ek__BackingField;
+	Nullable_1_t599F8D9D40143BFCB12D7085DFEA8AC7171F5E77 ___U3CItemReferenceLoopHandlingU3Ek__BackingField;
+};
+struct JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765  : public RuntimeObject
+{
+	int32_t ____tokenType;
+	RuntimeObject* ____value;
+	Il2CppChar ____quoteChar;
+	int32_t ____currentState;
+	JsonPosition_t7788656A280615072710710E8C15D23285850E8E ____currentPosition;
+	CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* ____culture;
+	int32_t ____dateTimeZoneHandling;
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ____maxDepth;
+	bool ____hasExceededMaxDepth;
+	int32_t ____dateParseHandling;
+	int32_t ____floatParseHandling;
+	String_t* ____dateFormatString;
+	List_1_t53E7DEFF45EC8B1D5AE04D4FC6284E617F0D79CB* ____stack;
+	bool ___U3CCloseInputU3Ek__BackingField;
+	bool ___U3CSupportMultipleContentU3Ek__BackingField;
+};
+struct JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC  : public JsonException_tFFE4BB54605E1573CD957C3A40BEC5571CC386BD
+{
+	int32_t ___U3CLineNumberU3Ek__BackingField;
+	int32_t ___U3CLinePositionU3Ek__BackingField;
+	String_t* ___U3CPathU3Ek__BackingField;
+};
+struct JsonSerializer_t3D625A6ADB5711D3C55A7CEC5F17D74260ACCB59  : public RuntimeObject
+{
+	int32_t ____typeNameHandling;
+	int32_t ____typeNameAssemblyFormatHandling;
+	int32_t ____preserveReferencesHandling;
+	int32_t ____referenceLoopHandling;
+	int32_t ____missingMemberHandling;
+	int32_t ____objectCreationHandling;
+	int32_t ____nullValueHandling;
+	int32_t ____defaultValueHandling;
+	int32_t ____constructorHandling;
+	int32_t ____metadataPropertyHandling;
+	JsonConverterCollection_t6EEC84565C08B14107276B5023CE9E978DFCDF89* ____converters;
+	RuntimeObject* ____contractResolver;
+	RuntimeObject* ____traceWriter;
+	RuntimeObject* ____equalityComparer;
+	RuntimeObject* ____serializationBinder;
+	StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 ____context;
+	RuntimeObject* ____referenceResolver;
+	Nullable_1_tAEE2B9C53750E53F9B91B70967290720873E8D3E ____formatting;
+	Nullable_1_t4776B8A4D0D52AA8BDCD45E6D7070659326453D2 ____dateFormatHandling;
+	Nullable_1_tD88F7E37B65824D38D74608E576D1265E5A2D2B2 ____dateTimeZoneHandling;
+	Nullable_1_tDC640D18A54CA8F0A3C74518CBC15D439C8FC228 ____dateParseHandling;
+	Nullable_1_tEAE8D5B59DCEB4F809A8A5F390EAAC18F266B822 ____floatFormatHandling;
+	Nullable_1_tC13211A32645AE3863530378A08BC45089EE419B ____floatParseHandling;
+	Nullable_1_t61214A44C233A0B00A9F79E380485D79D5FAA7C6 ____stringEscapeHandling;
+	CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* ____culture;
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ____maxDepth;
+	bool ____maxDepthSet;
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ____checkAdditionalContent;
+	String_t* ____dateFormatString;
+	bool ____dateFormatStringSet;
+	EventHandler_1_t69462DFC2F2C8D7576BEE9D1F5BB6C2E55B2C380* ___Error;
+};
+struct JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3  : public RuntimeObject
+{
+	List_1_t53E7DEFF45EC8B1D5AE04D4FC6284E617F0D79CB* ____stack;
+	JsonPosition_t7788656A280615072710710E8C15D23285850E8E ____currentPosition;
+	int32_t ____currentState;
+	int32_t ____formatting;
+	bool ___U3CCloseOutputU3Ek__BackingField;
+	bool ___U3CAutoCompleteOnCloseU3Ek__BackingField;
+	int32_t ____dateFormatHandling;
+	int32_t ____dateTimeZoneHandling;
+	int32_t ____stringEscapeHandling;
+	int32_t ____floatFormatHandling;
+	String_t* ____dateFormatString;
+	CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* ____culture;
+};
+struct SerializationCallback_tB35DD9E4F1BA9E38C8F8158442E282EF8D996E13  : public MulticastDelegate_t
+{
+};
+struct SerializationErrorCallback_tA1E984B56F3AA395E20C8DBB2A43D2B20F5B8962  : public MulticastDelegate_t
+{
+};
+struct CreatorPropertyContext_t8505304608CDE1624D98E3036286FA7C3A34C23A  : public RuntimeObject
+{
+	String_t* ___Name;
+	JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* ___Property;
+	JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* ___ConstructorProperty;
+	Nullable_1_t15501A57F01724FE3A732F709F21F09A3DF73087 ___Presence;
+	RuntimeObject* ___Value;
+	bool ___Used;
+};
+struct ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129  : public ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263
+{
+};
+struct ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F  : public ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263
+{
+	RuntimeObject* ____actualValue;
+};
+struct JTokenReader_tADB4D55F3892C8704567BEA2E142B815387AA8CD  : public JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765
+{
+	JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* ____root;
+	String_t* ____initialPath;
+	JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* ____parent;
+	JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* ____current;
+};
+struct JTokenWriter_t42960EDB1C9B939AF4D476149F6C12E3BA79405C  : public JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3
+{
+	JContainer_tFD3E2CD9B9D8D3CD73133B11A1F6BE77C5C8F95A* ____token;
+	JContainer_tFD3E2CD9B9D8D3CD73133B11A1F6BE77C5C8F95A* ____parent;
+	JValue_t324DDA26E0833B94892066CE744361B6B0094375* ____value;
+	JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* ____current;
+};
 struct JsonArrayContract_tC43D0F0F57E8E29E041F9679010D7824E2C3AF90  : public JsonContainerContract_t047427003C1B86FBD0BD306946E8A38F442B0F0B
 {
 	Type_t* ___U3CCollectionItemTypeU3Ek__BackingField;
@@ -2486,27 +2664,14 @@ struct JsonObjectContract_tFB5A615E22891D84348260AE06D7B31D9A4F62D3  : public Js
 	JsonPropertyCollection_t93082116A28103BD144B10160CDC36F9809D48C6* ____creatorParameters;
 	Type_t* ____extensionDataValueType;
 };
-struct JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC  : public JsonException_tFFE4BB54605E1573CD957C3A40BEC5571CC386BD
+struct JsonSerializerProxy_t4AFA5984432EE56D56AC4507C35171B730C05B4A  : public JsonSerializer_t3D625A6ADB5711D3C55A7CEC5F17D74260ACCB59
 {
-	int32_t ___U3CLineNumberU3Ek__BackingField;
-	int32_t ___U3CLinePositionU3Ek__BackingField;
-	String_t* ___U3CPathU3Ek__BackingField;
+	JsonSerializerInternalReader_tB13136F0DA95D198262A47B23B64F33590A956E5* ____serializerReader;
+	JsonSerializerInternalWriter_t9625AB9A7212A131A3B48F8BC3D1F6835DC51866* ____serializerWriter;
+	JsonSerializer_t3D625A6ADB5711D3C55A7CEC5F17D74260ACCB59* ____serializer;
 };
 struct JsonStringContract_tE5349A44AFD07A3EB6D05DC6F623AEFBA1A37268  : public JsonPrimitiveContract_tB6193D2574BA2547AF433EC7DBA5F1B0D5BBC27E
 {
-};
-struct SerializationCallback_tB35DD9E4F1BA9E38C8F8158442E282EF8D996E13  : public MulticastDelegate_t
-{
-};
-struct SerializationErrorCallback_tA1E984B56F3AA395E20C8DBB2A43D2B20F5B8962  : public MulticastDelegate_t
-{
-};
-struct ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129  : public ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263
-{
-};
-struct ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F  : public ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263
-{
-	RuntimeObject* ____actualValue;
 };
 struct EmptyArrayContainer_1_t45B0A7C4ACB68CC945B605D96658E27CE1A6B5AC_StaticFields
 {
@@ -2575,12 +2740,6 @@ struct CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_StaticFields
 struct DBNull_t33A9BF6787D27894A593CF4A5E58B8DDC63BBEFC_StaticFields
 {
 	DBNull_t33A9BF6787D27894A593CF4A5E58B8DDC63BBEFC* ___Value;
-};
-struct DefaultContractResolver_t463A02A39C265D7EB415D4CEB2B2E32664A02CAD_StaticFields
-{
-	RuntimeObject* ____instance;
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___BlacklistedTypeNames;
-	JsonConverterU5BU5D_tF69203E66D4FCB82A6F64A24EF7785E26E9E957E* ___BuiltInConverters;
 };
 struct EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_StaticFields
 {
@@ -2690,10 +2849,6 @@ struct IntPtr_t_StaticFields
 {
 	intptr_t ___Zero;
 };
-struct JsonPosition_t7788656A280615072710710E8C15D23285850E8E_StaticFields
-{
-	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___SpecialCharacters;
-};
 struct NoThrowExpressionVisitor_t5A6F7708B58559D52455733FF483488A0B43356A_StaticFields
 {
 	RuntimeObject* ___ErrorResult;
@@ -2728,18 +2883,19 @@ struct Exception_t_StaticFields
 {
 	RuntimeObject* ___s_EDILock;
 };
-struct JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3_StaticFields
-{
-	StateU5BU5DU5BU5D_tA12046738DA5F6289ABA74ED1C079ED07EE202ED* ___StateArray;
-	StateU5BU5DU5BU5D_tA12046738DA5F6289ABA74ED1C079ED07EE202ED* ___StateArrayTemplate;
-};
 struct StringWriter_tF48052BE4F980E5C85403221E835768E4156267D_StaticFields
 {
 	UnicodeEncoding_t2C90D9E1E55C16081FACA57B229053C1EF05DAF0* ___m_encoding;
 };
-struct JsonPrimitiveContract_tB6193D2574BA2547AF433EC7DBA5F1B0D5BBC27E_StaticFields
+struct DefaultContractResolver_t463A02A39C265D7EB415D4CEB2B2E32664A02CAD_StaticFields
 {
-	Dictionary_2_tFA5E03354423C94DC3899BB6C353B5CBFE767263* ___ReadTypeMap;
+	RuntimeObject* ____instance;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___BlacklistedTypeNames;
+	JsonConverterU5BU5D_tF69203E66D4FCB82A6F64A24EF7785E26E9E957E* ___BuiltInConverters;
+};
+struct JsonPosition_t7788656A280615072710710E8C15D23285850E8E_StaticFields
+{
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___SpecialCharacters;
 };
 struct Type_t_StaticFields
 {
@@ -2750,6 +2906,15 @@ struct Type_t_StaticFields
 	MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553* ___FilterAttribute;
 	MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553* ___FilterName;
 	MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553* ___FilterNameIgnoreCase;
+};
+struct JsonPrimitiveContract_tB6193D2574BA2547AF433EC7DBA5F1B0D5BBC27E_StaticFields
+{
+	Dictionary_2_tFA5E03354423C94DC3899BB6C353B5CBFE767263* ___ReadTypeMap;
+};
+struct JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3_StaticFields
+{
+	StateU5BU5DU5BU5D_tA12046738DA5F6289ABA74ED1C079ED07EE202ED* ___StateArray;
+	StateU5BU5DU5BU5D_tA12046738DA5F6289ABA74ED1C079ED07EE202ED* ___StateArrayTemplate;
 };
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -5119,61 +5284,63 @@ IL_0091:
 
 CATCH_00b8:
 	{
-		V_7 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+		Exception_t* L_44 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+		V_7 = L_44;
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_il2cpp_TypeInfo_var)));
-		CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_44;
-		L_44 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
-		String_t* L_45 = V_1;
-		Assembly_t* L_46 = V_2;
-		String_t* L_47;
-		L_47 = VirtualFuncInvoker0< String_t* >::Invoke(9, L_46);
+		CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_45;
+		L_45 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
+		String_t* L_46 = V_1;
+		Assembly_t* L_47 = V_2;
 		String_t* L_48;
-		L_48 = StringUtils_FormatWith_mE8641D4F1BDCF64E9876EE3B78F84D7AC377D3E9(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralA3DE867B22875213D8C91D2CAA3C292A6B85B2E2)), L_44, L_45, L_47, NULL);
-		Exception_t* L_49 = V_7;
-		JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC* L_50 = (JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC_il2cpp_TypeInfo_var)));
-		JsonSerializationException__ctor_m8B8ED999C982B8A742576A1D96FEDFDAF3D68727(L_50, L_48, L_49, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_50, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&DefaultSerializationBinder_GetTypeFromTypeNameKey_mDAC1AA3DFFAF782B00F7E6560D42744181CE2C52_RuntimeMethod_var)));
+		L_48 = VirtualFuncInvoker0< String_t* >::Invoke(9, L_47);
+		String_t* L_49;
+		L_49 = StringUtils_FormatWith_mE8641D4F1BDCF64E9876EE3B78F84D7AC377D3E9(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralA3DE867B22875213D8C91D2CAA3C292A6B85B2E2)), L_45, L_46, L_48, NULL);
+		Exception_t* L_50 = V_7;
+		JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC* L_51 = (JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC_il2cpp_TypeInfo_var)));
+		JsonSerializationException__ctor_m8B8ED999C982B8A742576A1D96FEDFDAF3D68727(L_51, L_49, L_50, NULL);
+		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_51, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&DefaultSerializationBinder_GetTypeFromTypeNameKey_mDAC1AA3DFFAF782B00F7E6560D42744181CE2C52_RuntimeMethod_var)));
 	}
 
 IL_00d8:
 	{
-		Type_t* L_51 = V_3;
+		Type_t* L_52 = V_3;
 		il2cpp_codegen_runtime_class_init_inline(Type_t_il2cpp_TypeInfo_var);
-		bool L_52;
-		L_52 = Type_op_Equality_m99930A0E44E420A685FABA60E60BA1CC5FA0EBDC(L_51, (Type_t*)NULL, NULL);
-		if (!L_52)
+		bool L_53;
+		L_53 = Type_op_Equality_m99930A0E44E420A685FABA60E60BA1CC5FA0EBDC(L_52, (Type_t*)NULL, NULL);
+		if (!L_53)
 		{
 			goto IL_00fd;
 		}
 	}
 	{
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_il2cpp_TypeInfo_var)));
-		CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_53;
-		L_53 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
-		String_t* L_54 = V_1;
-		Assembly_t* L_55 = V_2;
-		String_t* L_56;
-		L_56 = VirtualFuncInvoker0< String_t* >::Invoke(9, L_55);
+		CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_54;
+		L_54 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
+		String_t* L_55 = V_1;
+		Assembly_t* L_56 = V_2;
 		String_t* L_57;
-		L_57 = StringUtils_FormatWith_mE8641D4F1BDCF64E9876EE3B78F84D7AC377D3E9(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralA3DE867B22875213D8C91D2CAA3C292A6B85B2E2)), L_53, L_54, L_56, NULL);
-		JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC* L_58 = (JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC_il2cpp_TypeInfo_var)));
-		JsonSerializationException__ctor_m0DDDC290916A23CCCE7A780AF876F9CE5FE58E4A(L_58, L_57, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_58, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&DefaultSerializationBinder_GetTypeFromTypeNameKey_mDAC1AA3DFFAF782B00F7E6560D42744181CE2C52_RuntimeMethod_var)));
+		L_57 = VirtualFuncInvoker0< String_t* >::Invoke(9, L_56);
+		String_t* L_58;
+		L_58 = StringUtils_FormatWith_mE8641D4F1BDCF64E9876EE3B78F84D7AC377D3E9(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralA3DE867B22875213D8C91D2CAA3C292A6B85B2E2)), L_54, L_55, L_57, NULL);
+		JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC* L_59 = (JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC_il2cpp_TypeInfo_var)));
+		JsonSerializationException__ctor_m0DDDC290916A23CCCE7A780AF876F9CE5FE58E4A(L_59, L_58, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_59, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&DefaultSerializationBinder_GetTypeFromTypeNameKey_mDAC1AA3DFFAF782B00F7E6560D42744181CE2C52_RuntimeMethod_var)));
 	}
 
 IL_00fd:
 	{
-		Type_t* L_59 = V_3;
-		return L_59;
+		Type_t* L_60 = V_3;
+		return L_60;
 	}
 
 IL_00ff:
 	{
-		String_t* L_60 = V_1;
+		String_t* L_61 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(Type_t_il2cpp_TypeInfo_var);
-		Type_t* L_61;
-		L_61 = il2cpp_codegen_get_type(L_60, Type_GetType_m71A077E0B5DA3BD1DC0AB9AE387056CFCF56F93F_RuntimeMethod_var, DefaultSerializationBinder_GetTypeFromTypeNameKey_mDAC1AA3DFFAF782B00F7E6560D42744181CE2C52_RuntimeMethod_var);
-		return L_61;
+		Type_t* L_62;
+		L_62 = il2cpp_codegen_get_type(L_61, Type_GetType_m71A077E0B5DA3BD1DC0AB9AE387056CFCF56F93F_RuntimeMethod_var, DefaultSerializationBinder_GetTypeFromTypeNameKey_mDAC1AA3DFFAF782B00F7E6560D42744181CE2C52_RuntimeMethod_var);
+		return L_62;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* DefaultSerializationBinder_GetGenericTypeFromTypeName_mA060EC3C9A55687070E845331A149C419EE65A01 (DefaultSerializationBinder_t6767000E873D10EBF36E0C036CC1926542B5112D* __this, String_t* ___0_typeName, Assembly_t* ___1_assembly, const RuntimeMethod* method) 
@@ -6791,6 +6958,14 @@ IL_005a:
 		return;
 	}
 }
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -12043,39 +12218,40 @@ IL_00a9_1:
 CATCH_00ad:
 	{
 		{
-			V_4 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
-			JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* L_40 = V_0;
-			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_41 = ___0_reader;
+			Exception_t* L_40 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+			V_4 = L_40;
+			JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* L_41 = V_0;
 			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_42 = ___0_reader;
-			String_t* L_43;
-			L_43 = VirtualFuncInvoker0< String_t* >::Invoke(9, L_42);
-			Exception_t* L_44 = V_4;
-			bool L_45;
-			L_45 = JsonSerializerInternalBase_IsErrorHandled_m03744F32BCD5F528B09B5324219085C2CCF59C91(__this, NULL, L_40, NULL, ((RuntimeObject*)IsInst((RuntimeObject*)L_41, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&IJsonLineInfo_t0D0AE8B876EA3C837134934E5A1A3DF9FB72A32C_il2cpp_TypeInfo_var)))), L_43, L_44, NULL);
-			if (!L_45)
+			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_43 = ___0_reader;
+			String_t* L_44;
+			L_44 = VirtualFuncInvoker0< String_t* >::Invoke(9, L_43);
+			Exception_t* L_45 = V_4;
+			bool L_46;
+			L_46 = JsonSerializerInternalBase_IsErrorHandled_m03744F32BCD5F528B09B5324219085C2CCF59C91(__this, NULL, L_41, NULL, ((RuntimeObject*)IsInst((RuntimeObject*)L_42, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&IJsonLineInfo_t0D0AE8B876EA3C837134934E5A1A3DF9FB72A32C_il2cpp_TypeInfo_var)))), L_44, L_45, NULL);
+			if (!L_46)
 			{
 				goto IL_00d5;
 			}
 		}
 		{
-			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_46 = ___0_reader;
-			JsonSerializerInternalReader_HandleError_m40720759FE1F8D2FE07B25EE5A8102F06A7F9F98(__this, L_46, (bool)0, 0, NULL);
+			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_47 = ___0_reader;
+			JsonSerializerInternalReader_HandleError_m40720759FE1F8D2FE07B25EE5A8102F06A7F9F98(__this, L_47, (bool)0, 0, NULL);
 			V_3 = NULL;
-			IL2CPP_POP_ACTIVE_EXCEPTION();
+			IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 			goto IL_00dd;
 		}
 
 IL_00d5:
 		{
 			JsonSerializerInternalBase_ClearErrorContext_m4F40B91D6AEFF4C046FD8AF7801B148A2F1DF23E(__this, NULL);
-			IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+			IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*));
 		}
 	}
 
 IL_00dd:
 	{
-		RuntimeObject* L_47 = V_3;
-		return L_47;
+		RuntimeObject* L_48 = V_3;
+		return L_48;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JsonSerializerProxy_t4AFA5984432EE56D56AC4507C35171B730C05B4A* JsonSerializerInternalReader_GetInternalSerializer_m6EBF9AD9A2495FE4BA717E7F6BCEEF8F41C30448 (JsonSerializerInternalReader_tB13136F0DA95D198262A47B23B64F33590A956E5* __this, const RuntimeMethod* method) 
@@ -14708,148 +14884,150 @@ IL_0086:
 
 CATCH_00b6:
 	{
-		V_6 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
-		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_29 = ___0_reader;
+		Exception_t* L_29 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+		V_6 = L_29;
+		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_30 = ___0_reader;
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_il2cpp_TypeInfo_var)));
-		CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_30;
-		L_30 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
-		String_t* L_31 = ___6_qualifiedTypeName;
-		String_t* L_32;
-		L_32 = StringUtils_FormatWith_m97587965D365EA1584A7D31B57D618E7768073E5(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral44825BA1FE24FA125A1477D51A5B3D81E49CE809)), L_30, L_31, NULL);
-		Exception_t* L_33 = V_6;
-		JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC* L_34;
-		L_34 = JsonSerializationException_Create_mB3994D6FE53F3F8140BF01F6F123A356C4217472(L_29, L_32, L_33, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_34, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonSerializerInternalReader_ResolveTypeName_mF3775D685B08A3F909F4417CB01F98053D53DD20_RuntimeMethod_var)));
+		CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_31;
+		L_31 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
+		String_t* L_32 = ___6_qualifiedTypeName;
+		String_t* L_33;
+		L_33 = StringUtils_FormatWith_m97587965D365EA1584A7D31B57D618E7768073E5(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral44825BA1FE24FA125A1477D51A5B3D81E49CE809)), L_31, L_32, NULL);
+		Exception_t* L_34 = V_6;
+		JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC* L_35;
+		L_35 = JsonSerializationException_Create_mB3994D6FE53F3F8140BF01F6F123A356C4217472(L_30, L_33, L_34, NULL);
+		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_35, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonSerializerInternalReader_ResolveTypeName_mF3775D685B08A3F909F4417CB01F98053D53DD20_RuntimeMethod_var)));
 	}
 
 IL_00d2:
 	{
-		Type_t* L_35 = V_5;
+		Type_t* L_36 = V_5;
 		il2cpp_codegen_runtime_class_init_inline(Type_t_il2cpp_TypeInfo_var);
-		bool L_36;
-		L_36 = Type_op_Equality_m99930A0E44E420A685FABA60E60BA1CC5FA0EBDC(L_35, (Type_t*)NULL, NULL);
-		if (!L_36)
+		bool L_37;
+		L_37 = Type_op_Equality_m99930A0E44E420A685FABA60E60BA1CC5FA0EBDC(L_36, (Type_t*)NULL, NULL);
+		if (!L_37)
 		{
 			goto IL_00f4;
 		}
 	}
 	{
-		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_37 = ___0_reader;
+		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_38 = ___0_reader;
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_il2cpp_TypeInfo_var)));
-		CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_38;
-		L_38 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
-		String_t* L_39 = ___6_qualifiedTypeName;
-		String_t* L_40;
-		L_40 = StringUtils_FormatWith_m97587965D365EA1584A7D31B57D618E7768073E5(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralEE9EC4DC6A89D61E3B8BB758D61C093B7C1A9AE6)), L_38, L_39, NULL);
-		JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC* L_41;
-		L_41 = JsonSerializationException_Create_m2CA947673DA3524AFC908CFE45478403E0B8E239(L_37, L_40, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_41, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonSerializerInternalReader_ResolveTypeName_mF3775D685B08A3F909F4417CB01F98053D53DD20_RuntimeMethod_var)));
+		CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_39;
+		L_39 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
+		String_t* L_40 = ___6_qualifiedTypeName;
+		String_t* L_41;
+		L_41 = StringUtils_FormatWith_m97587965D365EA1584A7D31B57D618E7768073E5(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralEE9EC4DC6A89D61E3B8BB758D61C093B7C1A9AE6)), L_39, L_40, NULL);
+		JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC* L_42;
+		L_42 = JsonSerializationException_Create_m2CA947673DA3524AFC908CFE45478403E0B8E239(L_38, L_41, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_42, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonSerializerInternalReader_ResolveTypeName_mF3775D685B08A3F909F4417CB01F98053D53DD20_RuntimeMethod_var)));
 	}
 
 IL_00f4:
 	{
-		RuntimeObject* L_42 = ((JsonSerializerInternalBase_t48977BB25CBF2FA336A773E78DDB1377D20AFD11*)__this)->___TraceWriter;
-		if (!L_42)
-		{
-			goto IL_013b;
-		}
-	}
-	{
 		RuntimeObject* L_43 = ((JsonSerializerInternalBase_t48977BB25CBF2FA336A773E78DDB1377D20AFD11*)__this)->___TraceWriter;
-		int32_t L_44;
-		L_44 = InterfaceFuncInvoker0< int32_t >::Invoke(0, ITraceWriter_t44C99CB7D5AB59A077F569914E56DAD66B5A41EF_il2cpp_TypeInfo_var, L_43);
-		if ((((int32_t)L_44) < ((int32_t)4)))
+		if (!L_43)
 		{
 			goto IL_013b;
 		}
 	}
 	{
-		RuntimeObject* L_45 = ((JsonSerializerInternalBase_t48977BB25CBF2FA336A773E78DDB1377D20AFD11*)__this)->___TraceWriter;
-		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_46 = ___0_reader;
+		RuntimeObject* L_44 = ((JsonSerializerInternalBase_t48977BB25CBF2FA336A773E78DDB1377D20AFD11*)__this)->___TraceWriter;
+		int32_t L_45;
+		L_45 = InterfaceFuncInvoker0< int32_t >::Invoke(0, ITraceWriter_t44C99CB7D5AB59A077F569914E56DAD66B5A41EF_il2cpp_TypeInfo_var, L_44);
+		if ((((int32_t)L_45) < ((int32_t)4)))
+		{
+			goto IL_013b;
+		}
+	}
+	{
+		RuntimeObject* L_46 = ((JsonSerializerInternalBase_t48977BB25CBF2FA336A773E78DDB1377D20AFD11*)__this)->___TraceWriter;
 		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_47 = ___0_reader;
-		String_t* L_48;
-		L_48 = VirtualFuncInvoker0< String_t* >::Invoke(9, L_47);
+		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_48 = ___0_reader;
+		String_t* L_49;
+		L_49 = VirtualFuncInvoker0< String_t* >::Invoke(9, L_48);
 		il2cpp_codegen_runtime_class_init_inline(CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_il2cpp_TypeInfo_var);
-		CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_49;
-		L_49 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
-		String_t* L_50 = ___6_qualifiedTypeName;
-		Type_t* L_51 = V_5;
-		String_t* L_52;
-		L_52 = StringUtils_FormatWith_mE8641D4F1BDCF64E9876EE3B78F84D7AC377D3E9(_stringLiteral4200CEC6A675006F1CDF8C63ADD1E8B60954E858, L_49, L_50, L_51, NULL);
-		il2cpp_codegen_runtime_class_init_inline(JsonPosition_t7788656A280615072710710E8C15D23285850E8E_il2cpp_TypeInfo_var);
+		CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_50;
+		L_50 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
+		String_t* L_51 = ___6_qualifiedTypeName;
+		Type_t* L_52 = V_5;
 		String_t* L_53;
-		L_53 = JsonPosition_FormatMessage_mBA84EAA212D7094726694CE707E2A3DADBDE8D6B(((RuntimeObject*)IsInst((RuntimeObject*)L_46, IJsonLineInfo_t0D0AE8B876EA3C837134934E5A1A3DF9FB72A32C_il2cpp_TypeInfo_var)), L_48, L_52, NULL);
-		InterfaceActionInvoker3< int32_t, String_t*, Exception_t* >::Invoke(1, ITraceWriter_t44C99CB7D5AB59A077F569914E56DAD66B5A41EF_il2cpp_TypeInfo_var, L_45, 4, L_53, (Exception_t*)NULL);
+		L_53 = StringUtils_FormatWith_mE8641D4F1BDCF64E9876EE3B78F84D7AC377D3E9(_stringLiteral4200CEC6A675006F1CDF8C63ADD1E8B60954E858, L_50, L_51, L_52, NULL);
+		il2cpp_codegen_runtime_class_init_inline(JsonPosition_t7788656A280615072710710E8C15D23285850E8E_il2cpp_TypeInfo_var);
+		String_t* L_54;
+		L_54 = JsonPosition_FormatMessage_mBA84EAA212D7094726694CE707E2A3DADBDE8D6B(((RuntimeObject*)IsInst((RuntimeObject*)L_47, IJsonLineInfo_t0D0AE8B876EA3C837134934E5A1A3DF9FB72A32C_il2cpp_TypeInfo_var)), L_49, L_53, NULL);
+		InterfaceActionInvoker3< int32_t, String_t*, Exception_t* >::Invoke(1, ITraceWriter_t44C99CB7D5AB59A077F569914E56DAD66B5A41EF_il2cpp_TypeInfo_var, L_46, 4, L_54, (Exception_t*)NULL);
 	}
 
 IL_013b:
 	{
-		Type_t** L_54 = ___1_objectType;
-		Type_t* L_55 = *((Type_t**)L_54);
+		Type_t** L_55 = ___1_objectType;
+		Type_t* L_56 = *((Type_t**)L_55);
 		il2cpp_codegen_runtime_class_init_inline(Type_t_il2cpp_TypeInfo_var);
-		bool L_56;
-		L_56 = Type_op_Inequality_m83209C7BB3C05DFBEA3B6199B0BEFE8037301172(L_55, (Type_t*)NULL, NULL);
-		if (!L_56)
+		bool L_57;
+		L_57 = Type_op_Inequality_m83209C7BB3C05DFBEA3B6199B0BEFE8037301172(L_56, (Type_t*)NULL, NULL);
+		if (!L_57)
 		{
 			goto IL_0187;
 		}
 	}
 	{
-		Type_t** L_57 = ___1_objectType;
-		Type_t* L_58 = *((Type_t**)L_57);
-		RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B L_59 = { reinterpret_cast<intptr_t> (IDynamicMetaObjectProvider_t4593D4AE2D3360E67AF686D7D889F51FF9BEDC9D_0_0_0_var) };
+		Type_t** L_58 = ___1_objectType;
+		Type_t* L_59 = *((Type_t**)L_58);
+		RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B L_60 = { reinterpret_cast<intptr_t> (IDynamicMetaObjectProvider_t4593D4AE2D3360E67AF686D7D889F51FF9BEDC9D_0_0_0_var) };
 		il2cpp_codegen_runtime_class_init_inline(Type_t_il2cpp_TypeInfo_var);
-		Type_t* L_60;
-		L_60 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_59, NULL);
-		bool L_61;
-		L_61 = Type_op_Inequality_m83209C7BB3C05DFBEA3B6199B0BEFE8037301172(L_58, L_60, NULL);
-		if (!L_61)
+		Type_t* L_61;
+		L_61 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_60, NULL);
+		bool L_62;
+		L_62 = Type_op_Inequality_m83209C7BB3C05DFBEA3B6199B0BEFE8037301172(L_59, L_61, NULL);
+		if (!L_62)
 		{
 			goto IL_0187;
 		}
 	}
 	{
-		Type_t** L_62 = ___1_objectType;
-		Type_t* L_63 = *((Type_t**)L_62);
-		Type_t* L_64 = V_5;
-		bool L_65;
-		L_65 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(22, L_63, L_64);
-		if (L_65)
+		Type_t** L_63 = ___1_objectType;
+		Type_t* L_64 = *((Type_t**)L_63);
+		Type_t* L_65 = V_5;
+		bool L_66;
+		L_66 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(22, L_64, L_65);
+		if (L_66)
 		{
 			goto IL_0187;
 		}
 	}
 	{
-		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_66 = ___0_reader;
+		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_67 = ___0_reader;
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_il2cpp_TypeInfo_var)));
-		CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_67;
-		L_67 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
-		Type_t* L_68 = V_5;
-		String_t* L_69;
-		L_69 = VirtualFuncInvoker0< String_t* >::Invoke(25, L_68);
-		Type_t** L_70 = ___1_objectType;
-		Type_t* L_71 = *((Type_t**)L_70);
-		String_t* L_72;
-		L_72 = VirtualFuncInvoker0< String_t* >::Invoke(25, L_71);
+		CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_68;
+		L_68 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
+		Type_t* L_69 = V_5;
+		String_t* L_70;
+		L_70 = VirtualFuncInvoker0< String_t* >::Invoke(25, L_69);
+		Type_t** L_71 = ___1_objectType;
+		Type_t* L_72 = *((Type_t**)L_71);
 		String_t* L_73;
-		L_73 = StringUtils_FormatWith_mE8641D4F1BDCF64E9876EE3B78F84D7AC377D3E9(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral5443E3CFB150296B686B12DEC5A9A906246EC008)), L_67, L_69, L_72, NULL);
-		JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC* L_74;
-		L_74 = JsonSerializationException_Create_m2CA947673DA3524AFC908CFE45478403E0B8E239(L_66, L_73, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_74, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonSerializerInternalReader_ResolveTypeName_mF3775D685B08A3F909F4417CB01F98053D53DD20_RuntimeMethod_var)));
+		L_73 = VirtualFuncInvoker0< String_t* >::Invoke(25, L_72);
+		String_t* L_74;
+		L_74 = StringUtils_FormatWith_mE8641D4F1BDCF64E9876EE3B78F84D7AC377D3E9(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral5443E3CFB150296B686B12DEC5A9A906246EC008)), L_68, L_70, L_73, NULL);
+		JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC* L_75;
+		L_75 = JsonSerializationException_Create_m2CA947673DA3524AFC908CFE45478403E0B8E239(L_67, L_74, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_75, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonSerializerInternalReader_ResolveTypeName_mF3775D685B08A3F909F4417CB01F98053D53DD20_RuntimeMethod_var)));
 	}
 
 IL_0187:
 	{
-		Type_t** L_75 = ___1_objectType;
-		Type_t* L_76 = V_5;
-		*((RuntimeObject**)L_75) = (RuntimeObject*)L_76;
-		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject**)L_75, (void*)(RuntimeObject*)L_76);
-		JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA** L_77 = ___2_contract;
-		Type_t* L_78 = V_5;
-		JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* L_79;
-		L_79 = JsonSerializerInternalReader_GetContract_mEF9703FC4BA4C689050FE52E27142FD96E995C2A(__this, L_78, NULL);
-		*((RuntimeObject**)L_77) = (RuntimeObject*)L_79;
-		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject**)L_77, (void*)(RuntimeObject*)L_79);
+		Type_t** L_76 = ___1_objectType;
+		Type_t* L_77 = V_5;
+		*((RuntimeObject**)L_76) = (RuntimeObject*)L_77;
+		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject**)L_76, (void*)(RuntimeObject*)L_77);
+		JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA** L_78 = ___2_contract;
+		Type_t* L_79 = V_5;
+		JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* L_80;
+		L_80 = JsonSerializerInternalReader_GetContract_mEF9703FC4BA4C689050FE52E27142FD96E995C2A(__this, L_79, NULL);
+		*((RuntimeObject**)L_78) = (RuntimeObject*)L_80;
+		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject**)L_78, (void*)(RuntimeObject*)L_80);
 	}
 
 IL_0195:
@@ -15666,33 +15844,35 @@ IL_0114_1:
 
 CATCH_0125:
 	{
-		V_6 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
-		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_67 = ___0_reader;
+		Exception_t* L_67 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+		V_6 = L_67;
+		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_68 = ___0_reader;
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_il2cpp_TypeInfo_var)));
-		CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_68;
-		L_68 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
-		RuntimeObject* L_69 = ___1_value;
-		String_t* L_70;
-		L_70 = MiscellaneousUtils_ToString_m3B4DEC483B1007EADA733D660FA3FB7CCD463892(L_69, NULL);
-		Type_t* L_71 = ___4_targetType;
-		String_t* L_72;
-		L_72 = StringUtils_FormatWith_mE8641D4F1BDCF64E9876EE3B78F84D7AC377D3E9(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral34AC5C40D830EF0A8EF122F54B008863A6142239)), L_68, L_70, L_71, NULL);
-		Exception_t* L_73 = V_6;
-		JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC* L_74;
-		L_74 = JsonSerializationException_Create_mB3994D6FE53F3F8140BF01F6F123A356C4217472(L_67, L_72, L_73, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_74, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonSerializerInternalReader_EnsureType_mF3E312096D7E5E6076D46CC91BC21C96FA149F04_RuntimeMethod_var)));
+		CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_69;
+		L_69 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
+		RuntimeObject* L_70 = ___1_value;
+		String_t* L_71;
+		L_71 = MiscellaneousUtils_ToString_m3B4DEC483B1007EADA733D660FA3FB7CCD463892(L_70, NULL);
+		Type_t* L_72 = ___4_targetType;
+		String_t* L_73;
+		L_73 = StringUtils_FormatWith_mE8641D4F1BDCF64E9876EE3B78F84D7AC377D3E9(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral34AC5C40D830EF0A8EF122F54B008863A6142239)), L_69, L_71, L_72, NULL);
+		Exception_t* L_74 = V_6;
+		JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC* L_75;
+		L_75 = JsonSerializationException_Create_mB3994D6FE53F3F8140BF01F6F123A356C4217472(L_68, L_73, L_74, NULL);
+		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_75, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonSerializerInternalReader_EnsureType_mF3E312096D7E5E6076D46CC91BC21C96FA149F04_RuntimeMethod_var)));
 	}
 
 IL_0147:
 	{
-		RuntimeObject* L_75 = ___1_value;
-		return L_75;
+		RuntimeObject* L_76 = ___1_value;
+		return L_76;
 	}
 
 IL_0149:
 	{
-		RuntimeObject* L_76 = V_3;
-		return L_76;
+		RuntimeObject* L_77 = V_3;
+		return L_77;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool JsonSerializerInternalReader_SetPropertyValue_m54850CF16B76AC4D47E822671C33B562D399BFEB (JsonSerializerInternalReader_tB13136F0DA95D198262A47B23B64F33590A956E5* __this, JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* ___0_property, JsonConverter_tE765D011CD34CDF28759E6D58FDBF05AA5EA0F16* ___1_propertyConverter, JsonContainerContract_t047427003C1B86FBD0BD306946E8A38F442B0F0B* ___2_containerContract, JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* ___3_containerProperty, JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* ___4_reader, RuntimeObject* ___5_target, const RuntimeMethod* method) 
@@ -16494,18 +16674,20 @@ IL_004a_1:
 
 CATCH_005f:
 	{
-		V_0 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
-		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_17 = ___0_reader;
+		Exception_t* L_17 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+		V_0 = L_17;
+		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_18 = ___0_reader;
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_il2cpp_TypeInfo_var)));
-		CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_18;
-		L_18 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
-		String_t* L_19 = ___1_id;
-		String_t* L_20;
-		L_20 = StringUtils_FormatWith_m97587965D365EA1584A7D31B57D618E7768073E5(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral79E8141926B919A282CF23E5A415248A65AFAF0B)), L_18, L_19, NULL);
-		Exception_t* L_21 = V_0;
-		JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC* L_22;
-		L_22 = JsonSerializationException_Create_mB3994D6FE53F3F8140BF01F6F123A356C4217472(L_17, L_20, L_21, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_22, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonSerializerInternalReader_AddReference_m2B7E2B34B236F2DAB1FEC17B605024C81833C65D_RuntimeMethod_var)));
+		CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_19;
+		L_19 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
+		String_t* L_20 = ___1_id;
+		String_t* L_21;
+		L_21 = StringUtils_FormatWith_m97587965D365EA1584A7D31B57D618E7768073E5(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral79E8141926B919A282CF23E5A415248A65AFAF0B)), L_19, L_20, NULL);
+		Exception_t* L_22 = V_0;
+		JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC* L_23;
+		L_23 = JsonSerializationException_Create_mB3994D6FE53F3F8140BF01F6F123A356C4217472(L_18, L_21, L_22, NULL);
+		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_23, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonSerializerInternalReader_AddReference_m2B7E2B34B236F2DAB1FEC17B605024C81833C65D_RuntimeMethod_var)));
 	}
 
 IL_0078:
@@ -17652,97 +17834,99 @@ IL_01eb_2:
 
 CATCH_01ed_1:
 		{
-			V_12 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
-			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_113 = ___1_reader;
+			Exception_t* L_113 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+			V_12 = L_113;
+			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_114 = ___1_reader;
 			il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_il2cpp_TypeInfo_var)));
-			CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_114;
-			L_114 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
-			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_115 = ___1_reader;
-			RuntimeObject* L_116;
-			L_116 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(6, L_115);
-			JsonDictionaryContract_t49C7DBCBDE647BADAD67E786D9EB328F52FF97F1* L_117 = ___2_contract;
-			Type_t* L_118;
-			L_118 = JsonDictionaryContract_get_DictionaryKeyType_mE92EF750094C636DF354F2ED771B8918A897BBDF_inline(L_117, NULL);
-			String_t* L_119;
-			L_119 = StringUtils_FormatWith_mE8641D4F1BDCF64E9876EE3B78F84D7AC377D3E9(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralBBF246D9E5C2F38F2F5F541F0033922424A7E29F)), L_114, L_116, L_118, NULL);
-			Exception_t* L_120 = V_12;
-			JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC* L_121;
-			L_121 = JsonSerializationException_Create_mB3994D6FE53F3F8140BF01F6F123A356C4217472(L_113, L_119, L_120, NULL);
-			IL2CPP_RAISE_MANAGED_EXCEPTION(L_121, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonSerializerInternalReader_PopulateDictionary_mD04B93690D3EB9C4892EE5236B958684A15F70ED_RuntimeMethod_var)));
+			CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_115;
+			L_115 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
+			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_116 = ___1_reader;
+			RuntimeObject* L_117;
+			L_117 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(6, L_116);
+			JsonDictionaryContract_t49C7DBCBDE647BADAD67E786D9EB328F52FF97F1* L_118 = ___2_contract;
+			Type_t* L_119;
+			L_119 = JsonDictionaryContract_get_DictionaryKeyType_mE92EF750094C636DF354F2ED771B8918A897BBDF_inline(L_118, NULL);
+			String_t* L_120;
+			L_120 = StringUtils_FormatWith_mE8641D4F1BDCF64E9876EE3B78F84D7AC377D3E9(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralBBF246D9E5C2F38F2F5F541F0033922424A7E29F)), L_115, L_117, L_119, NULL);
+			Exception_t* L_121 = V_12;
+			JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC* L_122;
+			L_122 = JsonSerializationException_Create_mB3994D6FE53F3F8140BF01F6F123A356C4217472(L_114, L_120, L_121, NULL);
+			IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
+			IL2CPP_RAISE_MANAGED_EXCEPTION(L_122, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonSerializerInternalReader_PopulateDictionary_mD04B93690D3EB9C4892EE5236B958684A15F70ED_RuntimeMethod_var)));
 		}
 
 IL_0213_1:
 		{
-			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_122 = ___1_reader;
-			JsonDictionaryContract_t49C7DBCBDE647BADAD67E786D9EB328F52FF97F1* L_123 = ___2_contract;
-			JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* L_124;
-			L_124 = JsonContainerContract_get_ItemContract_mA413352FBBCD18D7D315839065DB02B665FD2D0D_inline(L_123, NULL);
-			JsonConverter_tE765D011CD34CDF28759E6D58FDBF05AA5EA0F16* L_125 = V_3;
-			bool L_126;
-			L_126 = JsonReader_ReadForType_m6F484EDB33D339FBCDC478E106012393E89958CE(L_122, L_124, (bool)((!(((RuntimeObject*)(JsonConverter_tE765D011CD34CDF28759E6D58FDBF05AA5EA0F16*)L_125) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0), NULL);
-			if (L_126)
+			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_123 = ___1_reader;
+			JsonDictionaryContract_t49C7DBCBDE647BADAD67E786D9EB328F52FF97F1* L_124 = ___2_contract;
+			JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* L_125;
+			L_125 = JsonContainerContract_get_ItemContract_mA413352FBBCD18D7D315839065DB02B665FD2D0D_inline(L_124, NULL);
+			JsonConverter_tE765D011CD34CDF28759E6D58FDBF05AA5EA0F16* L_126 = V_3;
+			bool L_127;
+			L_127 = JsonReader_ReadForType_m6F484EDB33D339FBCDC478E106012393E89958CE(L_123, L_125, (bool)((!(((RuntimeObject*)(JsonConverter_tE765D011CD34CDF28759E6D58FDBF05AA5EA0F16*)L_126) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0), NULL);
+			if (L_127)
 			{
 				goto IL_0231_1;
 			}
 		}
 		{
-			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_127 = ___1_reader;
-			JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC* L_128;
-			L_128 = JsonSerializationException_Create_m2CA947673DA3524AFC908CFE45478403E0B8E239(L_127, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralA0BCC53BF7797154DACFC269A8F1FC7A7D6F1443)), NULL);
-			IL2CPP_RAISE_MANAGED_EXCEPTION(L_128, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonSerializerInternalReader_PopulateDictionary_mD04B93690D3EB9C4892EE5236B958684A15F70ED_RuntimeMethod_var)));
+			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_128 = ___1_reader;
+			JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC* L_129;
+			L_129 = JsonSerializationException_Create_m2CA947673DA3524AFC908CFE45478403E0B8E239(L_128, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralA0BCC53BF7797154DACFC269A8F1FC7A7D6F1443)), NULL);
+			IL2CPP_RAISE_MANAGED_EXCEPTION(L_129, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonSerializerInternalReader_PopulateDictionary_mD04B93690D3EB9C4892EE5236B958684A15F70ED_RuntimeMethod_var)));
 		}
 
 IL_0231_1:
 		{
-			JsonConverter_tE765D011CD34CDF28759E6D58FDBF05AA5EA0F16* L_129 = V_3;
-			if (!L_129)
-			{
-				goto IL_024f_1;
-			}
-		}
-		{
 			JsonConverter_tE765D011CD34CDF28759E6D58FDBF05AA5EA0F16* L_130 = V_3;
-			bool L_131;
-			L_131 = VirtualFuncInvoker0< bool >::Invoke(7, L_130);
-			if (!L_131)
+			if (!L_130)
 			{
 				goto IL_024f_1;
 			}
 		}
 		{
-			JsonConverter_tE765D011CD34CDF28759E6D58FDBF05AA5EA0F16* L_132 = V_3;
-			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_133 = ___1_reader;
-			JsonDictionaryContract_t49C7DBCBDE647BADAD67E786D9EB328F52FF97F1* L_134 = ___2_contract;
-			Type_t* L_135;
-			L_135 = JsonDictionaryContract_get_DictionaryValueType_m278FF42A97ABD7B6F6F952C7D17182FD2A08704B_inline(L_134, NULL);
-			RuntimeObject* L_136;
-			L_136 = JsonSerializerInternalReader_DeserializeConvertable_mC9BACED43FB0B34DC6E93F74289F0CEA2B426FB5(__this, L_132, L_133, L_135, NULL, NULL);
-			V_9 = L_136;
+			JsonConverter_tE765D011CD34CDF28759E6D58FDBF05AA5EA0F16* L_131 = V_3;
+			bool L_132;
+			L_132 = VirtualFuncInvoker0< bool >::Invoke(7, L_131);
+			if (!L_132)
+			{
+				goto IL_024f_1;
+			}
+		}
+		{
+			JsonConverter_tE765D011CD34CDF28759E6D58FDBF05AA5EA0F16* L_133 = V_3;
+			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_134 = ___1_reader;
+			JsonDictionaryContract_t49C7DBCBDE647BADAD67E786D9EB328F52FF97F1* L_135 = ___2_contract;
+			Type_t* L_136;
+			L_136 = JsonDictionaryContract_get_DictionaryValueType_m278FF42A97ABD7B6F6F952C7D17182FD2A08704B_inline(L_135, NULL);
+			RuntimeObject* L_137;
+			L_137 = JsonSerializerInternalReader_DeserializeConvertable_mC9BACED43FB0B34DC6E93F74289F0CEA2B426FB5(__this, L_133, L_134, L_136, NULL, NULL);
+			V_9 = L_137;
 			goto IL_0269_1;
 		}
 
 IL_024f_1:
 		{
-			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_137 = ___1_reader;
-			JsonDictionaryContract_t49C7DBCBDE647BADAD67E786D9EB328F52FF97F1* L_138 = ___2_contract;
-			Type_t* L_139;
-			L_139 = JsonDictionaryContract_get_DictionaryValueType_m278FF42A97ABD7B6F6F952C7D17182FD2A08704B_inline(L_138, NULL);
-			JsonDictionaryContract_t49C7DBCBDE647BADAD67E786D9EB328F52FF97F1* L_140 = ___2_contract;
-			JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* L_141;
-			L_141 = JsonContainerContract_get_ItemContract_mA413352FBBCD18D7D315839065DB02B665FD2D0D_inline(L_140, NULL);
-			JsonDictionaryContract_t49C7DBCBDE647BADAD67E786D9EB328F52FF97F1* L_142 = ___2_contract;
-			JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* L_143 = ___3_containerProperty;
-			RuntimeObject* L_144;
-			L_144 = JsonSerializerInternalReader_CreateValueInternal_m2951B28851F7EF17051BC3178678ECE5664BFAAD(__this, L_137, L_139, L_141, (JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3*)NULL, L_142, L_143, NULL, NULL);
-			V_9 = L_144;
+			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_138 = ___1_reader;
+			JsonDictionaryContract_t49C7DBCBDE647BADAD67E786D9EB328F52FF97F1* L_139 = ___2_contract;
+			Type_t* L_140;
+			L_140 = JsonDictionaryContract_get_DictionaryValueType_m278FF42A97ABD7B6F6F952C7D17182FD2A08704B_inline(L_139, NULL);
+			JsonDictionaryContract_t49C7DBCBDE647BADAD67E786D9EB328F52FF97F1* L_141 = ___2_contract;
+			JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* L_142;
+			L_142 = JsonContainerContract_get_ItemContract_mA413352FBBCD18D7D315839065DB02B665FD2D0D_inline(L_141, NULL);
+			JsonDictionaryContract_t49C7DBCBDE647BADAD67E786D9EB328F52FF97F1* L_143 = ___2_contract;
+			JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* L_144 = ___3_containerProperty;
+			RuntimeObject* L_145;
+			L_145 = JsonSerializerInternalReader_CreateValueInternal_m2951B28851F7EF17051BC3178678ECE5664BFAAD(__this, L_138, L_140, L_142, (JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3*)NULL, L_143, L_144, NULL, NULL);
+			V_9 = L_145;
 		}
 
 IL_0269_1:
 		{
-			RuntimeObject* L_145 = ___0_dictionary;
-			RuntimeObject* L_146 = V_7;
-			RuntimeObject* L_147 = V_9;
-			InterfaceActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(1, IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220_il2cpp_TypeInfo_var, L_145, L_146, L_147);
+			RuntimeObject* L_146 = ___0_dictionary;
+			RuntimeObject* L_147 = V_7;
+			RuntimeObject* L_148 = V_9;
+			InterfaceActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(1, IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220_il2cpp_TypeInfo_var, L_146, L_147, L_148);
 			goto IL_02cb;
 		}
 	}
@@ -17759,37 +17943,38 @@ IL_0269_1:
 CATCH_0275:
 	{
 		{
-			V_13 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
-			RuntimeObject* L_148 = V_0;
-			JsonDictionaryContract_t49C7DBCBDE647BADAD67E786D9EB328F52FF97F1* L_149 = ___2_contract;
-			RuntimeObject* L_150 = V_7;
-			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_151 = ___1_reader;
-			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_152 = ___1_reader;
-			String_t* L_153;
-			L_153 = VirtualFuncInvoker0< String_t* >::Invoke(9, L_152);
-			Exception_t* L_154 = V_13;
-			bool L_155;
-			L_155 = JsonSerializerInternalBase_IsErrorHandled_m03744F32BCD5F528B09B5324219085C2CCF59C91(__this, L_148, L_149, L_150, ((RuntimeObject*)IsInst((RuntimeObject*)L_151, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&IJsonLineInfo_t0D0AE8B876EA3C837134934E5A1A3DF9FB72A32C_il2cpp_TypeInfo_var)))), L_153, L_154, NULL);
-			if (!L_155)
+			Exception_t* L_149 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+			V_13 = L_149;
+			RuntimeObject* L_150 = V_0;
+			JsonDictionaryContract_t49C7DBCBDE647BADAD67E786D9EB328F52FF97F1* L_151 = ___2_contract;
+			RuntimeObject* L_152 = V_7;
+			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_153 = ___1_reader;
+			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_154 = ___1_reader;
+			String_t* L_155;
+			L_155 = VirtualFuncInvoker0< String_t* >::Invoke(9, L_154);
+			Exception_t* L_156 = V_13;
+			bool L_157;
+			L_157 = JsonSerializerInternalBase_IsErrorHandled_m03744F32BCD5F528B09B5324219085C2CCF59C91(__this, L_150, L_151, L_152, ((RuntimeObject*)IsInst((RuntimeObject*)L_153, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&IJsonLineInfo_t0D0AE8B876EA3C837134934E5A1A3DF9FB72A32C_il2cpp_TypeInfo_var)))), L_155, L_156, NULL);
+			if (!L_157)
 			{
 				goto IL_029c;
 			}
 		}
 		{
-			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_156 = ___1_reader;
-			int32_t L_157 = V_2;
-			JsonSerializerInternalReader_HandleError_m40720759FE1F8D2FE07B25EE5A8102F06A7F9F98(__this, L_156, (bool)1, L_157, NULL);
+			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_158 = ___1_reader;
+			int32_t L_159 = V_2;
+			JsonSerializerInternalReader_HandleError_m40720759FE1F8D2FE07B25EE5A8102F06A7F9F98(__this, L_158, (bool)1, L_159, NULL);
 			goto IL_029e;
 		}
 
 IL_029c:
 		{
-			IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+			IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*));
 		}
 
 IL_029e:
 		{
-			IL2CPP_POP_ACTIVE_EXCEPTION();
+			IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 			goto IL_02cb;
 		}
 	}
@@ -17802,34 +17987,34 @@ IL_02a0:
 
 IL_02a5:
 	{
-		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_158 = ___1_reader;
-		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_159 = ___1_reader;
-		int32_t L_160;
-		L_160 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_159);
-		V_14 = L_160;
-		Il2CppFakeBox<int32_t> L_161(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonToken_t00B2B3F98FB3E9A8DE72409901BED1C7F1670BD5_il2cpp_TypeInfo_var)), (&V_14));
-		String_t* L_162;
-		L_162 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_161), NULL);
-		String_t* L_163;
-		L_163 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral59AAE90D26AB95D797186FB8118A57880C2A1138)), L_162, NULL);
-		JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC* L_164;
-		L_164 = JsonSerializationException_Create_m2CA947673DA3524AFC908CFE45478403E0B8E239(L_158, L_163, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_164, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonSerializerInternalReader_PopulateDictionary_mD04B93690D3EB9C4892EE5236B958684A15F70ED_RuntimeMethod_var)));
+		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_160 = ___1_reader;
+		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_161 = ___1_reader;
+		int32_t L_162;
+		L_162 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_161);
+		V_14 = L_162;
+		Il2CppFakeBox<int32_t> L_163(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonToken_t00B2B3F98FB3E9A8DE72409901BED1C7F1670BD5_il2cpp_TypeInfo_var)), (&V_14));
+		String_t* L_164;
+		L_164 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_163), NULL);
+		String_t* L_165;
+		L_165 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral59AAE90D26AB95D797186FB8118A57880C2A1138)), L_164, NULL);
+		JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC* L_166;
+		L_166 = JsonSerializationException_Create_m2CA947673DA3524AFC908CFE45478403E0B8E239(L_160, L_165, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_166, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonSerializerInternalReader_PopulateDictionary_mD04B93690D3EB9C4892EE5236B958684A15F70ED_RuntimeMethod_var)));
 	}
 
 IL_02cb:
 	{
-		bool L_165 = V_6;
-		if (L_165)
+		bool L_167 = V_6;
+		if (L_167)
 		{
 			goto IL_02da;
 		}
 	}
 	{
-		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_166 = ___1_reader;
-		bool L_167;
-		L_167 = VirtualFuncInvoker0< bool >::Invoke(10, L_166);
-		if (L_167)
+		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_168 = ___1_reader;
+		bool L_169;
+		L_169 = VirtualFuncInvoker0< bool >::Invoke(10, L_168);
+		if (L_169)
 		{
 			goto IL_00a1;
 		}
@@ -17837,27 +18022,27 @@ IL_02cb:
 
 IL_02da:
 	{
-		bool L_168 = V_6;
-		if (L_168)
+		bool L_170 = V_6;
+		if (L_170)
 		{
 			goto IL_02ec;
 		}
 	}
 	{
-		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_169 = ___1_reader;
-		JsonDictionaryContract_t49C7DBCBDE647BADAD67E786D9EB328F52FF97F1* L_170 = ___2_contract;
-		RuntimeObject* L_171 = V_0;
-		JsonSerializerInternalReader_ThrowUnexpectedEndException_m2081CD321452B270E11B702FDA9D76B8C2B2A9E1(__this, L_169, L_170, L_171, _stringLiteralA0BCC53BF7797154DACFC269A8F1FC7A7D6F1443, NULL);
+		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_171 = ___1_reader;
+		JsonDictionaryContract_t49C7DBCBDE647BADAD67E786D9EB328F52FF97F1* L_172 = ___2_contract;
+		RuntimeObject* L_173 = V_0;
+		JsonSerializerInternalReader_ThrowUnexpectedEndException_m2081CD321452B270E11B702FDA9D76B8C2B2A9E1(__this, L_171, L_172, L_173, _stringLiteralA0BCC53BF7797154DACFC269A8F1FC7A7D6F1443, NULL);
 	}
 
 IL_02ec:
 	{
-		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_172 = ___1_reader;
-		JsonDictionaryContract_t49C7DBCBDE647BADAD67E786D9EB328F52FF97F1* L_173 = ___2_contract;
-		RuntimeObject* L_174 = V_0;
-		JsonSerializerInternalReader_OnDeserialized_m6130B5B232E4A3D0217AE876B4E06C2375832FDE(__this, L_172, L_173, L_174, NULL);
-		RuntimeObject* L_175 = V_0;
-		return L_175;
+		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_174 = ___1_reader;
+		JsonDictionaryContract_t49C7DBCBDE647BADAD67E786D9EB328F52FF97F1* L_175 = ___2_contract;
+		RuntimeObject* L_176 = V_0;
+		JsonSerializerInternalReader_OnDeserialized_m6130B5B232E4A3D0217AE876B4E06C2375832FDE(__this, L_174, L_175, L_176, NULL);
+		RuntimeObject* L_177 = V_0;
+		return L_177;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* JsonSerializerInternalReader_PopulateMultidimensionalArray_mDE8E4305F3A5E9A2D4DC7C00F1C3E6D187F78132 (JsonSerializerInternalReader_tB13136F0DA95D198262A47B23B64F33590A956E5* __this, RuntimeObject* ___0_list, JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* ___1_reader, JsonArrayContract_tC43D0F0F57E8E29E041F9679010D7824E2C3AF90* ___2_contract, JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* ___3_containerProperty, String_t* ___4_id, const RuntimeMethod* method) 
@@ -18080,116 +18265,118 @@ IL_00ed_1:
 CATCH_00f2:
 	{
 		{
-			V_10 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
-			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_56 = ___1_reader;
-			int32_t L_57 = V_7;
-			JsonPosition_t7788656A280615072710710E8C15D23285850E8E L_58;
-			L_58 = JsonReader_GetPosition_mE60B167F7C9B4F39E14DEA98613049443F3C1968(L_56, L_57, NULL);
-			V_11 = L_58;
-			RuntimeObject* L_59 = ___0_list;
-			JsonArrayContract_tC43D0F0F57E8E29E041F9679010D7824E2C3AF90* L_60 = ___2_contract;
-			JsonPosition_t7788656A280615072710710E8C15D23285850E8E L_61 = V_11;
-			int32_t L_62 = L_61.___Position;
-			int32_t L_63 = L_62;
-			RuntimeObject* L_64 = Box(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var)), &L_63);
-			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_65 = ___1_reader;
+			Exception_t* L_56 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+			V_10 = L_56;
+			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_57 = ___1_reader;
+			int32_t L_58 = V_7;
+			JsonPosition_t7788656A280615072710710E8C15D23285850E8E L_59;
+			L_59 = JsonReader_GetPosition_mE60B167F7C9B4F39E14DEA98613049443F3C1968(L_57, L_58, NULL);
+			V_11 = L_59;
+			RuntimeObject* L_60 = ___0_list;
+			JsonArrayContract_tC43D0F0F57E8E29E041F9679010D7824E2C3AF90* L_61 = ___2_contract;
+			JsonPosition_t7788656A280615072710710E8C15D23285850E8E L_62 = V_11;
+			int32_t L_63 = L_62.___Position;
+			int32_t L_64 = L_63;
+			RuntimeObject* L_65 = Box(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var)), &L_64);
 			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_66 = ___1_reader;
-			String_t* L_67;
-			L_67 = VirtualFuncInvoker0< String_t* >::Invoke(9, L_66);
-			Exception_t* L_68 = V_10;
-			bool L_69;
-			L_69 = JsonSerializerInternalBase_IsErrorHandled_m03744F32BCD5F528B09B5324219085C2CCF59C91(__this, L_59, L_60, L_64, ((RuntimeObject*)IsInst((RuntimeObject*)L_65, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&IJsonLineInfo_t0D0AE8B876EA3C837134934E5A1A3DF9FB72A32C_il2cpp_TypeInfo_var)))), L_67, L_68, NULL);
-			if (!L_69)
+			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_67 = ___1_reader;
+			String_t* L_68;
+			L_68 = VirtualFuncInvoker0< String_t* >::Invoke(9, L_67);
+			Exception_t* L_69 = V_10;
+			bool L_70;
+			L_70 = JsonSerializerInternalBase_IsErrorHandled_m03744F32BCD5F528B09B5324219085C2CCF59C91(__this, L_60, L_61, L_65, ((RuntimeObject*)IsInst((RuntimeObject*)L_66, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&IJsonLineInfo_t0D0AE8B876EA3C837134934E5A1A3DF9FB72A32C_il2cpp_TypeInfo_var)))), L_68, L_69, NULL);
+			if (!L_70)
 			{
 				goto IL_0176;
 			}
 		}
 		{
-			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_70 = ___1_reader;
-			int32_t L_71 = V_7;
-			JsonSerializerInternalReader_HandleError_m40720759FE1F8D2FE07B25EE5A8102F06A7F9F98(__this, L_70, (bool)1, ((int32_t)il2cpp_codegen_add(L_71, 1)), NULL);
-			bool L_72;
-			L_72 = Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_inline((&V_3), ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_RuntimeMethod_var)));
-			if (!L_72)
+			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_71 = ___1_reader;
+			int32_t L_72 = V_7;
+			JsonSerializerInternalReader_HandleError_m40720759FE1F8D2FE07B25EE5A8102F06A7F9F98(__this, L_71, (bool)1, ((int32_t)il2cpp_codegen_add(L_72, 1)), NULL);
+			bool L_73;
+			L_73 = Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_inline((&V_3), ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_RuntimeMethod_var)));
+			if (!L_73)
 			{
 				goto IL_0166;
 			}
 		}
 		{
-			Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_73 = V_3;
-			V_12 = L_73;
-			JsonPosition_t7788656A280615072710710E8C15D23285850E8E L_74 = V_11;
-			int32_t L_75 = L_74.___Position;
-			V_13 = L_75;
-			int32_t L_76;
-			L_76 = Nullable_1_GetValueOrDefault_m8D130DB7F2A1E694736B449176F9C26DB456597B_inline((&V_12), ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Nullable_1_GetValueOrDefault_m8D130DB7F2A1E694736B449176F9C26DB456597B_RuntimeMethod_var)));
-			int32_t L_77 = V_13;
-			bool L_78;
-			L_78 = Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_inline((&V_12), ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_RuntimeMethod_var)));
-			if (!((int32_t)(((((int32_t)L_76) == ((int32_t)L_77))? 1 : 0)&(int32_t)L_78)))
+			Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_74 = V_3;
+			V_12 = L_74;
+			JsonPosition_t7788656A280615072710710E8C15D23285850E8E L_75 = V_11;
+			int32_t L_76 = L_75.___Position;
+			V_13 = L_76;
+			int32_t L_77;
+			L_77 = Nullable_1_GetValueOrDefault_m8D130DB7F2A1E694736B449176F9C26DB456597B_inline((&V_12), ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Nullable_1_GetValueOrDefault_m8D130DB7F2A1E694736B449176F9C26DB456597B_RuntimeMethod_var)));
+			int32_t L_78 = V_13;
+			bool L_79;
+			L_79 = Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_inline((&V_12), ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_RuntimeMethod_var)));
+			if (!((int32_t)(((((int32_t)L_77) == ((int32_t)L_78))? 1 : 0)&(int32_t)L_79)))
 			{
 				goto IL_0166;
 			}
 		}
 		{
-			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_79 = ___1_reader;
-			Exception_t* L_80 = V_10;
-			JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC* L_81;
-			L_81 = JsonSerializationException_Create_mB3994D6FE53F3F8140BF01F6F123A356C4217472(L_79, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralEB0F4A24C5FE376D8216F48DFEAD9D5F27475997)), L_80, NULL);
-			IL2CPP_RAISE_MANAGED_EXCEPTION(L_81, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonSerializerInternalReader_PopulateMultidimensionalArray_mDE8E4305F3A5E9A2D4DC7C00F1C3E6D187F78132_RuntimeMethod_var)));
+			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_80 = ___1_reader;
+			Exception_t* L_81 = V_10;
+			JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC* L_82;
+			L_82 = JsonSerializationException_Create_mB3994D6FE53F3F8140BF01F6F123A356C4217472(L_80, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralEB0F4A24C5FE376D8216F48DFEAD9D5F27475997)), L_81, NULL);
+			IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
+			IL2CPP_RAISE_MANAGED_EXCEPTION(L_82, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonSerializerInternalReader_PopulateMultidimensionalArray_mDE8E4305F3A5E9A2D4DC7C00F1C3E6D187F78132_RuntimeMethod_var)));
 		}
 
 IL_0166:
 		{
-			JsonPosition_t7788656A280615072710710E8C15D23285850E8E L_82 = V_11;
-			int32_t L_83 = L_82.___Position;
-			Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703((&V_3), L_83, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var)));
+			JsonPosition_t7788656A280615072710710E8C15D23285850E8E L_83 = V_11;
+			int32_t L_84 = L_83.___Position;
+			Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703((&V_3), L_84, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var)));
 			goto IL_0178;
 		}
 
 IL_0176:
 		{
-			IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+			IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*));
 		}
 
 IL_0178:
 		{
-			IL2CPP_POP_ACTIVE_EXCEPTION();
+			IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 			goto IL_020a;
 		}
 	}
 
 IL_017d:
 	{
-		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_84 = ___1_reader;
-		bool L_85;
-		L_85 = VirtualFuncInvoker0< bool >::Invoke(10, L_84);
-		if (!L_85)
+		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_85 = ___1_reader;
+		bool L_86;
+		L_86 = VirtualFuncInvoker0< bool >::Invoke(10, L_85);
+		if (!L_86)
 		{
 			goto IL_0211;
 		}
 	}
 	{
-		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_86 = ___1_reader;
-		int32_t L_87;
-		L_87 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_86);
-		V_9 = L_87;
-		int32_t L_88 = V_9;
-		if ((((int32_t)L_88) == ((int32_t)2)))
+		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_87 = ___1_reader;
+		int32_t L_88;
+		L_88 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_87);
+		V_9 = L_88;
+		int32_t L_89 = V_9;
+		if ((((int32_t)L_89) == ((int32_t)2)))
 		{
 			goto IL_01a2;
 		}
 	}
 	{
-		int32_t L_89 = V_9;
-		if ((((int32_t)L_89) == ((int32_t)5)))
+		int32_t L_90 = V_9;
+		if ((((int32_t)L_90) == ((int32_t)5)))
 		{
 			goto IL_020a;
 		}
 	}
 	{
-		int32_t L_90 = V_9;
-		if ((((int32_t)L_90) == ((int32_t)((int32_t)14))))
+		int32_t L_91 = V_9;
+		if ((((int32_t)L_91) == ((int32_t)((int32_t)14))))
 		{
 			goto IL_01c2;
 		}
@@ -18200,39 +18387,39 @@ IL_017d:
 
 IL_01a2:
 	{
-		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_91 = (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*)il2cpp_codegen_object_new(List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_il2cpp_TypeInfo_var);
-		List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690(L_91, List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_RuntimeMethod_var);
-		V_14 = L_91;
-		RuntimeObject* L_92 = V_5;
-		RuntimeObject* L_93 = V_14;
-		int32_t L_94;
-		L_94 = InterfaceFuncInvoker1< int32_t, RuntimeObject* >::Invoke(2, IList_t1C522956D79B7DC92B5B01053DF1AC058C8B598D_il2cpp_TypeInfo_var, L_92, L_93);
-		Stack_1_t55D070B239BC51E3A542E4D074FCFB2701A2B4C1* L_95 = V_4;
-		RuntimeObject* L_96 = V_14;
-		Stack_1_Push_mABB53F24B3BA3251B057E139E495AD6043D1C042(L_95, L_96, Stack_1_Push_mABB53F24B3BA3251B057E139E495AD6043D1C042_RuntimeMethod_var);
+		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_92 = (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*)il2cpp_codegen_object_new(List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_il2cpp_TypeInfo_var);
+		List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690(L_92, List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_RuntimeMethod_var);
+		V_14 = L_92;
+		RuntimeObject* L_93 = V_5;
+		RuntimeObject* L_94 = V_14;
+		int32_t L_95;
+		L_95 = InterfaceFuncInvoker1< int32_t, RuntimeObject* >::Invoke(2, IList_t1C522956D79B7DC92B5B01053DF1AC058C8B598D_il2cpp_TypeInfo_var, L_93, L_94);
+		Stack_1_t55D070B239BC51E3A542E4D074FCFB2701A2B4C1* L_96 = V_4;
 		RuntimeObject* L_97 = V_14;
-		V_5 = L_97;
+		Stack_1_Push_mABB53F24B3BA3251B057E139E495AD6043D1C042(L_96, L_97, Stack_1_Push_mABB53F24B3BA3251B057E139E495AD6043D1C042_RuntimeMethod_var);
+		RuntimeObject* L_98 = V_14;
+		V_5 = L_98;
 		goto IL_020a;
 	}
 
 IL_01c2:
 	{
-		Stack_1_t55D070B239BC51E3A542E4D074FCFB2701A2B4C1* L_98 = V_4;
-		RuntimeObject* L_99;
-		L_99 = Stack_1_Pop_mAAD991F9985001683B85D0CD24351BA82B8C4C69(L_98, Stack_1_Pop_mAAD991F9985001683B85D0CD24351BA82B8C4C69_RuntimeMethod_var);
-		Stack_1_t55D070B239BC51E3A542E4D074FCFB2701A2B4C1* L_100 = V_4;
-		int32_t L_101;
-		L_101 = Stack_1_get_Count_mA93990BCA03A1F82A1E08C8A314B48B4BBCFB010_inline(L_100, Stack_1_get_Count_mA93990BCA03A1F82A1E08C8A314B48B4BBCFB010_RuntimeMethod_var);
-		if ((((int32_t)L_101) <= ((int32_t)0)))
+		Stack_1_t55D070B239BC51E3A542E4D074FCFB2701A2B4C1* L_99 = V_4;
+		RuntimeObject* L_100;
+		L_100 = Stack_1_Pop_mAAD991F9985001683B85D0CD24351BA82B8C4C69(L_99, Stack_1_Pop_mAAD991F9985001683B85D0CD24351BA82B8C4C69_RuntimeMethod_var);
+		Stack_1_t55D070B239BC51E3A542E4D074FCFB2701A2B4C1* L_101 = V_4;
+		int32_t L_102;
+		L_102 = Stack_1_get_Count_mA93990BCA03A1F82A1E08C8A314B48B4BBCFB010_inline(L_101, Stack_1_get_Count_mA93990BCA03A1F82A1E08C8A314B48B4BBCFB010_RuntimeMethod_var);
+		if ((((int32_t)L_102) <= ((int32_t)0)))
 		{
 			goto IL_01df;
 		}
 	}
 	{
-		Stack_1_t55D070B239BC51E3A542E4D074FCFB2701A2B4C1* L_102 = V_4;
-		RuntimeObject* L_103;
-		L_103 = Stack_1_Peek_m4408A74E58791870C7EB930BB2C47A456153C105(L_102, Stack_1_Peek_m4408A74E58791870C7EB930BB2C47A456153C105_RuntimeMethod_var);
-		V_5 = L_103;
+		Stack_1_t55D070B239BC51E3A542E4D074FCFB2701A2B4C1* L_103 = V_4;
+		RuntimeObject* L_104;
+		L_104 = Stack_1_Peek_m4408A74E58791870C7EB930BB2C47A456153C105(L_103, Stack_1_Peek_m4408A74E58791870C7EB930BB2C47A456153C105_RuntimeMethod_var);
+		V_5 = L_104;
 		goto IL_020a;
 	}
 
@@ -18244,25 +18431,25 @@ IL_01df:
 
 IL_01e4:
 	{
-		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_104 = ___1_reader;
 		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_105 = ___1_reader;
-		int32_t L_106;
-		L_106 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_105);
-		V_15 = L_106;
-		Il2CppFakeBox<int32_t> L_107(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonToken_t00B2B3F98FB3E9A8DE72409901BED1C7F1670BD5_il2cpp_TypeInfo_var)), (&V_15));
-		String_t* L_108;
-		L_108 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_107), NULL);
+		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_106 = ___1_reader;
+		int32_t L_107;
+		L_107 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_106);
+		V_15 = L_107;
+		Il2CppFakeBox<int32_t> L_108(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonToken_t00B2B3F98FB3E9A8DE72409901BED1C7F1670BD5_il2cpp_TypeInfo_var)), (&V_15));
 		String_t* L_109;
-		L_109 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral28D1ACF86DE60159D623D170E2603670999293A5)), L_108, NULL);
-		JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC* L_110;
-		L_110 = JsonSerializationException_Create_m2CA947673DA3524AFC908CFE45478403E0B8E239(L_104, L_109, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_110, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonSerializerInternalReader_PopulateMultidimensionalArray_mDE8E4305F3A5E9A2D4DC7C00F1C3E6D187F78132_RuntimeMethod_var)));
+		L_109 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_108), NULL);
+		String_t* L_110;
+		L_110 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral28D1ACF86DE60159D623D170E2603670999293A5)), L_109, NULL);
+		JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC* L_111;
+		L_111 = JsonSerializationException_Create_m2CA947673DA3524AFC908CFE45478403E0B8E239(L_105, L_110, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_111, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonSerializerInternalReader_PopulateMultidimensionalArray_mDE8E4305F3A5E9A2D4DC7C00F1C3E6D187F78132_RuntimeMethod_var)));
 	}
 
 IL_020a:
 	{
-		bool L_111 = V_6;
-		if (!L_111)
+		bool L_112 = V_6;
+		if (!L_112)
 		{
 			goto IL_0059;
 		}
@@ -18270,27 +18457,27 @@ IL_020a:
 
 IL_0211:
 	{
-		bool L_112 = V_6;
-		if (L_112)
+		bool L_113 = V_6;
+		if (L_113)
 		{
 			goto IL_0223;
 		}
 	}
 	{
-		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_113 = ___1_reader;
-		JsonArrayContract_tC43D0F0F57E8E29E041F9679010D7824E2C3AF90* L_114 = ___2_contract;
-		RuntimeObject* L_115 = ___0_list;
-		JsonSerializerInternalReader_ThrowUnexpectedEndException_m2081CD321452B270E11B702FDA9D76B8C2B2A9E1(__this, L_113, L_114, L_115, _stringLiteral4B109B989AF932AF20A3B83814B2C123ED5EE391, NULL);
+		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_114 = ___1_reader;
+		JsonArrayContract_tC43D0F0F57E8E29E041F9679010D7824E2C3AF90* L_115 = ___2_contract;
+		RuntimeObject* L_116 = ___0_list;
+		JsonSerializerInternalReader_ThrowUnexpectedEndException_m2081CD321452B270E11B702FDA9D76B8C2B2A9E1(__this, L_114, L_115, L_116, _stringLiteral4B109B989AF932AF20A3B83814B2C123ED5EE391, NULL);
 	}
 
 IL_0223:
 	{
-		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_116 = ___1_reader;
-		JsonArrayContract_tC43D0F0F57E8E29E041F9679010D7824E2C3AF90* L_117 = ___2_contract;
-		RuntimeObject* L_118 = ___0_list;
-		JsonSerializerInternalReader_OnDeserialized_m6130B5B232E4A3D0217AE876B4E06C2375832FDE(__this, L_116, L_117, L_118, NULL);
+		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_117 = ___1_reader;
+		JsonArrayContract_tC43D0F0F57E8E29E041F9679010D7824E2C3AF90* L_118 = ___2_contract;
 		RuntimeObject* L_119 = ___0_list;
-		return L_119;
+		JsonSerializerInternalReader_OnDeserialized_m6130B5B232E4A3D0217AE876B4E06C2375832FDE(__this, L_117, L_118, L_119, NULL);
+		RuntimeObject* L_120 = ___0_list;
+		return L_120;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JsonSerializerInternalReader_ThrowUnexpectedEndException_m2081CD321452B270E11B702FDA9D76B8C2B2A9E1 (JsonSerializerInternalReader_tB13136F0DA95D198262A47B23B64F33590A956E5* __this, JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* ___0_reader, JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* ___1_contract, RuntimeObject* ___2_currentObject, String_t* ___3_message, const RuntimeMethod* method) 
@@ -18318,35 +18505,36 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JsonSerializerInternalReader_ThrowUnexpe
 CATCH_0009:
 	{
 		{
-			V_0 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
-			RuntimeObject* L_3 = ___2_currentObject;
-			JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* L_4 = ___1_contract;
-			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_5 = ___0_reader;
+			Exception_t* L_3 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+			V_0 = L_3;
+			RuntimeObject* L_4 = ___2_currentObject;
+			JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* L_5 = ___1_contract;
 			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_6 = ___0_reader;
-			String_t* L_7;
-			L_7 = VirtualFuncInvoker0< String_t* >::Invoke(9, L_6);
-			Exception_t* L_8 = V_0;
-			bool L_9;
-			L_9 = JsonSerializerInternalBase_IsErrorHandled_m03744F32BCD5F528B09B5324219085C2CCF59C91(__this, L_3, L_4, NULL, ((RuntimeObject*)IsInst((RuntimeObject*)L_5, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&IJsonLineInfo_t0D0AE8B876EA3C837134934E5A1A3DF9FB72A32C_il2cpp_TypeInfo_var)))), L_7, L_8, NULL);
-			if (!L_9)
+			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_7 = ___0_reader;
+			String_t* L_8;
+			L_8 = VirtualFuncInvoker0< String_t* >::Invoke(9, L_7);
+			Exception_t* L_9 = V_0;
+			bool L_10;
+			L_10 = JsonSerializerInternalBase_IsErrorHandled_m03744F32BCD5F528B09B5324219085C2CCF59C91(__this, L_4, L_5, NULL, ((RuntimeObject*)IsInst((RuntimeObject*)L_6, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&IJsonLineInfo_t0D0AE8B876EA3C837134934E5A1A3DF9FB72A32C_il2cpp_TypeInfo_var)))), L_8, L_9, NULL);
+			if (!L_10)
 			{
 				goto IL_002d;
 			}
 		}
 		{
-			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_10 = ___0_reader;
-			JsonSerializerInternalReader_HandleError_m40720759FE1F8D2FE07B25EE5A8102F06A7F9F98(__this, L_10, (bool)0, 0, NULL);
+			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_11 = ___0_reader;
+			JsonSerializerInternalReader_HandleError_m40720759FE1F8D2FE07B25EE5A8102F06A7F9F98(__this, L_11, (bool)0, 0, NULL);
 			goto IL_002f;
 		}
 
 IL_002d:
 		{
-			IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+			IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*));
 		}
 
 IL_002f:
 		{
-			IL2CPP_POP_ACTIVE_EXCEPTION();
+			IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 			goto IL_0031;
 		}
 	}
@@ -18599,89 +18787,91 @@ IL_00eb_1:
 CATCH_00f0:
 	{
 		{
-			V_8 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
-			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_57 = ___1_reader;
-			int32_t L_58 = V_2;
-			JsonPosition_t7788656A280615072710710E8C15D23285850E8E L_59;
-			L_59 = JsonReader_GetPosition_mE60B167F7C9B4F39E14DEA98613049443F3C1968(L_57, L_58, NULL);
-			V_9 = L_59;
-			RuntimeObject* L_60 = V_0;
-			JsonArrayContract_tC43D0F0F57E8E29E041F9679010D7824E2C3AF90* L_61 = ___2_contract;
-			JsonPosition_t7788656A280615072710710E8C15D23285850E8E L_62 = V_9;
-			int32_t L_63 = L_62.___Position;
-			int32_t L_64 = L_63;
-			RuntimeObject* L_65 = Box(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var)), &L_64);
-			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_66 = ___1_reader;
+			Exception_t* L_57 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+			V_8 = L_57;
+			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_58 = ___1_reader;
+			int32_t L_59 = V_2;
+			JsonPosition_t7788656A280615072710710E8C15D23285850E8E L_60;
+			L_60 = JsonReader_GetPosition_mE60B167F7C9B4F39E14DEA98613049443F3C1968(L_58, L_59, NULL);
+			V_9 = L_60;
+			RuntimeObject* L_61 = V_0;
+			JsonArrayContract_tC43D0F0F57E8E29E041F9679010D7824E2C3AF90* L_62 = ___2_contract;
+			JsonPosition_t7788656A280615072710710E8C15D23285850E8E L_63 = V_9;
+			int32_t L_64 = L_63.___Position;
+			int32_t L_65 = L_64;
+			RuntimeObject* L_66 = Box(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var)), &L_65);
 			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_67 = ___1_reader;
-			String_t* L_68;
-			L_68 = VirtualFuncInvoker0< String_t* >::Invoke(9, L_67);
-			Exception_t* L_69 = V_8;
-			bool L_70;
-			L_70 = JsonSerializerInternalBase_IsErrorHandled_m03744F32BCD5F528B09B5324219085C2CCF59C91(__this, L_60, L_61, L_65, ((RuntimeObject*)IsInst((RuntimeObject*)L_66, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&IJsonLineInfo_t0D0AE8B876EA3C837134934E5A1A3DF9FB72A32C_il2cpp_TypeInfo_var)))), L_68, L_69, NULL);
-			if (!L_70)
+			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_68 = ___1_reader;
+			String_t* L_69;
+			L_69 = VirtualFuncInvoker0< String_t* >::Invoke(9, L_68);
+			Exception_t* L_70 = V_8;
+			bool L_71;
+			L_71 = JsonSerializerInternalBase_IsErrorHandled_m03744F32BCD5F528B09B5324219085C2CCF59C91(__this, L_61, L_62, L_66, ((RuntimeObject*)IsInst((RuntimeObject*)L_67, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&IJsonLineInfo_t0D0AE8B876EA3C837134934E5A1A3DF9FB72A32C_il2cpp_TypeInfo_var)))), L_69, L_70, NULL);
+			if (!L_71)
 			{
 				goto IL_0173;
 			}
 		}
 		{
-			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_71 = ___1_reader;
-			int32_t L_72 = V_2;
-			JsonSerializerInternalReader_HandleError_m40720759FE1F8D2FE07B25EE5A8102F06A7F9F98(__this, L_71, (bool)1, ((int32_t)il2cpp_codegen_add(L_72, 1)), NULL);
-			bool L_73;
-			L_73 = Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_inline((&V_4), ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_RuntimeMethod_var)));
-			if (!L_73)
+			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_72 = ___1_reader;
+			int32_t L_73 = V_2;
+			JsonSerializerInternalReader_HandleError_m40720759FE1F8D2FE07B25EE5A8102F06A7F9F98(__this, L_72, (bool)1, ((int32_t)il2cpp_codegen_add(L_73, 1)), NULL);
+			bool L_74;
+			L_74 = Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_inline((&V_4), ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_RuntimeMethod_var)));
+			if (!L_74)
 			{
 				goto IL_0163;
 			}
 		}
 		{
-			Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_74 = V_4;
-			V_10 = L_74;
-			JsonPosition_t7788656A280615072710710E8C15D23285850E8E L_75 = V_9;
-			int32_t L_76 = L_75.___Position;
-			V_11 = L_76;
-			int32_t L_77;
-			L_77 = Nullable_1_GetValueOrDefault_m8D130DB7F2A1E694736B449176F9C26DB456597B_inline((&V_10), ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Nullable_1_GetValueOrDefault_m8D130DB7F2A1E694736B449176F9C26DB456597B_RuntimeMethod_var)));
-			int32_t L_78 = V_11;
-			bool L_79;
-			L_79 = Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_inline((&V_10), ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_RuntimeMethod_var)));
-			if (!((int32_t)(((((int32_t)L_77) == ((int32_t)L_78))? 1 : 0)&(int32_t)L_79)))
+			Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_75 = V_4;
+			V_10 = L_75;
+			JsonPosition_t7788656A280615072710710E8C15D23285850E8E L_76 = V_9;
+			int32_t L_77 = L_76.___Position;
+			V_11 = L_77;
+			int32_t L_78;
+			L_78 = Nullable_1_GetValueOrDefault_m8D130DB7F2A1E694736B449176F9C26DB456597B_inline((&V_10), ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Nullable_1_GetValueOrDefault_m8D130DB7F2A1E694736B449176F9C26DB456597B_RuntimeMethod_var)));
+			int32_t L_79 = V_11;
+			bool L_80;
+			L_80 = Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_inline((&V_10), ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_RuntimeMethod_var)));
+			if (!((int32_t)(((((int32_t)L_78) == ((int32_t)L_79))? 1 : 0)&(int32_t)L_80)))
 			{
 				goto IL_0163;
 			}
 		}
 		{
-			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_80 = ___1_reader;
-			Exception_t* L_81 = V_8;
-			JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC* L_82;
-			L_82 = JsonSerializationException_Create_mB3994D6FE53F3F8140BF01F6F123A356C4217472(L_80, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralEB0F4A24C5FE376D8216F48DFEAD9D5F27475997)), L_81, NULL);
-			IL2CPP_RAISE_MANAGED_EXCEPTION(L_82, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonSerializerInternalReader_PopulateList_m6B54CFA5F4A7A0C8773CD47B810F7CC1E245366D_RuntimeMethod_var)));
+			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_81 = ___1_reader;
+			Exception_t* L_82 = V_8;
+			JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC* L_83;
+			L_83 = JsonSerializationException_Create_mB3994D6FE53F3F8140BF01F6F123A356C4217472(L_81, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralEB0F4A24C5FE376D8216F48DFEAD9D5F27475997)), L_82, NULL);
+			IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
+			IL2CPP_RAISE_MANAGED_EXCEPTION(L_83, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonSerializerInternalReader_PopulateList_m6B54CFA5F4A7A0C8773CD47B810F7CC1E245366D_RuntimeMethod_var)));
 		}
 
 IL_0163:
 		{
-			JsonPosition_t7788656A280615072710710E8C15D23285850E8E L_83 = V_9;
-			int32_t L_84 = L_83.___Position;
-			Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703((&V_4), L_84, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var)));
+			JsonPosition_t7788656A280615072710710E8C15D23285850E8E L_84 = V_9;
+			int32_t L_85 = L_84.___Position;
+			Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703((&V_4), L_85, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var)));
 			goto IL_0175;
 		}
 
 IL_0173:
 		{
-			IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+			IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*));
 		}
 
 IL_0175:
 		{
-			IL2CPP_POP_ACTIVE_EXCEPTION();
+			IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 			goto IL_0177;
 		}
 	}
 
 IL_0177:
 	{
-		bool L_85 = V_5;
-		if (!L_85)
+		bool L_86 = V_5;
+		if (!L_86)
 		{
 			goto IL_0078;
 		}
@@ -18689,27 +18879,27 @@ IL_0177:
 
 IL_017e:
 	{
-		bool L_86 = V_5;
-		if (L_86)
+		bool L_87 = V_5;
+		if (L_87)
 		{
 			goto IL_0190;
 		}
 	}
 	{
-		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_87 = ___1_reader;
-		JsonArrayContract_tC43D0F0F57E8E29E041F9679010D7824E2C3AF90* L_88 = ___2_contract;
-		RuntimeObject* L_89 = V_0;
-		JsonSerializerInternalReader_ThrowUnexpectedEndException_m2081CD321452B270E11B702FDA9D76B8C2B2A9E1(__this, L_87, L_88, L_89, _stringLiteral4B109B989AF932AF20A3B83814B2C123ED5EE391, NULL);
+		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_88 = ___1_reader;
+		JsonArrayContract_tC43D0F0F57E8E29E041F9679010D7824E2C3AF90* L_89 = ___2_contract;
+		RuntimeObject* L_90 = V_0;
+		JsonSerializerInternalReader_ThrowUnexpectedEndException_m2081CD321452B270E11B702FDA9D76B8C2B2A9E1(__this, L_88, L_89, L_90, _stringLiteral4B109B989AF932AF20A3B83814B2C123ED5EE391, NULL);
 	}
 
 IL_0190:
 	{
-		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_90 = ___1_reader;
-		JsonArrayContract_tC43D0F0F57E8E29E041F9679010D7824E2C3AF90* L_91 = ___2_contract;
-		RuntimeObject* L_92 = V_0;
-		JsonSerializerInternalReader_OnDeserialized_m6130B5B232E4A3D0217AE876B4E06C2375832FDE(__this, L_90, L_91, L_92, NULL);
+		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_91 = ___1_reader;
+		JsonArrayContract_tC43D0F0F57E8E29E041F9679010D7824E2C3AF90* L_92 = ___2_contract;
 		RuntimeObject* L_93 = V_0;
-		return L_93;
+		JsonSerializerInternalReader_OnDeserialized_m6130B5B232E4A3D0217AE876B4E06C2375832FDE(__this, L_91, L_92, L_93, NULL);
+		RuntimeObject* L_94 = V_0;
+		return L_94;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* JsonSerializerInternalReader_CreateISerializable_mA896FB8CD4ABE1FDBD914114C5A0F23058D95D68 (JsonSerializerInternalReader_tB13136F0DA95D198262A47B23B64F33590A956E5* __this, JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* ___0_reader, JsonISerializableContract_tF211386C51292464AAB5B3F0B452C58B91CFE247* ___1_contract, JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* ___2_member, String_t* ___3_id, const RuntimeMethod* method) 
@@ -19493,37 +19683,38 @@ IL_01b9_1:
 CATCH_01bb:
 	{
 		{
-			V_11 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
-			RuntimeObject* L_102 = V_0;
-			JsonDynamicContract_tBC6579B25A72AA016EAB86A685912C5684C99344* L_103 = ___1_contract;
-			String_t* L_104 = V_3;
-			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_105 = ___0_reader;
+			Exception_t* L_102 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+			V_11 = L_102;
+			RuntimeObject* L_103 = V_0;
+			JsonDynamicContract_tBC6579B25A72AA016EAB86A685912C5684C99344* L_104 = ___1_contract;
+			String_t* L_105 = V_3;
 			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_106 = ___0_reader;
-			String_t* L_107;
-			L_107 = VirtualFuncInvoker0< String_t* >::Invoke(9, L_106);
-			Exception_t* L_108 = V_11;
-			bool L_109;
-			L_109 = JsonSerializerInternalBase_IsErrorHandled_m03744F32BCD5F528B09B5324219085C2CCF59C91(__this, L_102, L_103, L_104, ((RuntimeObject*)IsInst((RuntimeObject*)L_105, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&IJsonLineInfo_t0D0AE8B876EA3C837134934E5A1A3DF9FB72A32C_il2cpp_TypeInfo_var)))), L_107, L_108, NULL);
-			if (!L_109)
+			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_107 = ___0_reader;
+			String_t* L_108;
+			L_108 = VirtualFuncInvoker0< String_t* >::Invoke(9, L_107);
+			Exception_t* L_109 = V_11;
+			bool L_110;
+			L_110 = JsonSerializerInternalBase_IsErrorHandled_m03744F32BCD5F528B09B5324219085C2CCF59C91(__this, L_103, L_104, L_105, ((RuntimeObject*)IsInst((RuntimeObject*)L_106, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&IJsonLineInfo_t0D0AE8B876EA3C837134934E5A1A3DF9FB72A32C_il2cpp_TypeInfo_var)))), L_108, L_109, NULL);
+			if (!L_110)
 			{
 				goto IL_01e1;
 			}
 		}
 		{
-			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_110 = ___0_reader;
-			int32_t L_111 = V_1;
-			JsonSerializerInternalReader_HandleError_m40720759FE1F8D2FE07B25EE5A8102F06A7F9F98(__this, L_110, (bool)1, L_111, NULL);
+			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_111 = ___0_reader;
+			int32_t L_112 = V_1;
+			JsonSerializerInternalReader_HandleError_m40720759FE1F8D2FE07B25EE5A8102F06A7F9F98(__this, L_111, (bool)1, L_112, NULL);
 			goto IL_01e3;
 		}
 
 IL_01e1:
 		{
-			IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+			IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*));
 		}
 
 IL_01e3:
 		{
-			IL2CPP_POP_ACTIVE_EXCEPTION();
+			IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 			goto IL_020f;
 		}
 	}
@@ -19536,34 +19727,34 @@ IL_01e5:
 
 IL_01e9:
 	{
-		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_112 = ___0_reader;
 		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_113 = ___0_reader;
-		int32_t L_114;
-		L_114 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_113);
-		V_12 = L_114;
-		Il2CppFakeBox<int32_t> L_115(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonToken_t00B2B3F98FB3E9A8DE72409901BED1C7F1670BD5_il2cpp_TypeInfo_var)), (&V_12));
-		String_t* L_116;
-		L_116 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_115), NULL);
+		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_114 = ___0_reader;
+		int32_t L_115;
+		L_115 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_114);
+		V_12 = L_115;
+		Il2CppFakeBox<int32_t> L_116(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonToken_t00B2B3F98FB3E9A8DE72409901BED1C7F1670BD5_il2cpp_TypeInfo_var)), (&V_12));
 		String_t* L_117;
-		L_117 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral59AAE90D26AB95D797186FB8118A57880C2A1138)), L_116, NULL);
-		JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC* L_118;
-		L_118 = JsonSerializationException_Create_m2CA947673DA3524AFC908CFE45478403E0B8E239(L_112, L_117, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_118, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonSerializerInternalReader_CreateDynamic_m989B23D33F8DA9093832CFCB23233A22ED4374AA_RuntimeMethod_var)));
+		L_117 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_116), NULL);
+		String_t* L_118;
+		L_118 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral59AAE90D26AB95D797186FB8118A57880C2A1138)), L_117, NULL);
+		JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC* L_119;
+		L_119 = JsonSerializationException_Create_m2CA947673DA3524AFC908CFE45478403E0B8E239(L_113, L_118, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_119, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonSerializerInternalReader_CreateDynamic_m989B23D33F8DA9093832CFCB23233A22ED4374AA_RuntimeMethod_var)));
 	}
 
 IL_020f:
 	{
-		bool L_119 = V_2;
-		if (L_119)
+		bool L_120 = V_2;
+		if (L_120)
 		{
 			goto IL_021d;
 		}
 	}
 	{
-		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_120 = ___0_reader;
-		bool L_121;
-		L_121 = VirtualFuncInvoker0< bool >::Invoke(10, L_120);
-		if (L_121)
+		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_121 = ___0_reader;
+		bool L_122;
+		L_122 = VirtualFuncInvoker0< bool >::Invoke(10, L_121);
+		if (L_122)
 		{
 			goto IL_0091;
 		}
@@ -19571,27 +19762,27 @@ IL_020f:
 
 IL_021d:
 	{
-		bool L_122 = V_2;
-		if (L_122)
+		bool L_123 = V_2;
+		if (L_123)
 		{
 			goto IL_022e;
 		}
 	}
 	{
-		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_123 = ___0_reader;
-		JsonDynamicContract_tBC6579B25A72AA016EAB86A685912C5684C99344* L_124 = ___1_contract;
-		RuntimeObject* L_125 = V_0;
-		JsonSerializerInternalReader_ThrowUnexpectedEndException_m2081CD321452B270E11B702FDA9D76B8C2B2A9E1(__this, L_123, L_124, L_125, _stringLiteralA0BCC53BF7797154DACFC269A8F1FC7A7D6F1443, NULL);
+		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_124 = ___0_reader;
+		JsonDynamicContract_tBC6579B25A72AA016EAB86A685912C5684C99344* L_125 = ___1_contract;
+		RuntimeObject* L_126 = V_0;
+		JsonSerializerInternalReader_ThrowUnexpectedEndException_m2081CD321452B270E11B702FDA9D76B8C2B2A9E1(__this, L_124, L_125, L_126, _stringLiteralA0BCC53BF7797154DACFC269A8F1FC7A7D6F1443, NULL);
 	}
 
 IL_022e:
 	{
-		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_126 = ___0_reader;
-		JsonDynamicContract_tBC6579B25A72AA016EAB86A685912C5684C99344* L_127 = ___1_contract;
-		RuntimeObject* L_128 = V_0;
-		JsonSerializerInternalReader_OnDeserialized_m6130B5B232E4A3D0217AE876B4E06C2375832FDE(__this, L_126, L_127, L_128, NULL);
+		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_127 = ___0_reader;
+		JsonDynamicContract_tBC6579B25A72AA016EAB86A685912C5684C99344* L_128 = ___1_contract;
 		RuntimeObject* L_129 = V_0;
-		return L_129;
+		JsonSerializerInternalReader_OnDeserialized_m6130B5B232E4A3D0217AE876B4E06C2375832FDE(__this, L_127, L_128, L_129, NULL);
+		RuntimeObject* L_130 = V_0;
+		return L_130;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* JsonSerializerInternalReader_CreateObjectUsingCreatorWithParameters_m1C26F454DDB083972F36EBE27C1C3C6361FF21A3 (JsonSerializerInternalReader_tB13136F0DA95D198262A47B23B64F33590A956E5* __this, JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* ___0_reader, JsonObjectContract_tFB5A615E22891D84348260AE06D7B31D9A4F62D3* ___1_contract, JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* ___2_containerProperty, ObjectConstructor_1_t6DD3EABA8E230C0DDF3C7DB24966AA8BF2290901* ___3_creator, String_t* ___4_id, const RuntimeMethod* method) 
@@ -22242,37 +22433,38 @@ IL_0257_1:
 CATCH_0259:
 	{
 		{
-			V_8 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
-			RuntimeObject* L_131 = ___0_newObject;
-			JsonObjectContract_tFB5A615E22891D84348260AE06D7B31D9A4F62D3* L_132 = ___2_contract;
-			String_t* L_133 = V_4;
-			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_134 = ___1_reader;
+			Exception_t* L_131 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+			V_8 = L_131;
+			RuntimeObject* L_132 = ___0_newObject;
+			JsonObjectContract_tFB5A615E22891D84348260AE06D7B31D9A4F62D3* L_133 = ___2_contract;
+			String_t* L_134 = V_4;
 			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_135 = ___1_reader;
-			String_t* L_136;
-			L_136 = VirtualFuncInvoker0< String_t* >::Invoke(9, L_135);
-			Exception_t* L_137 = V_8;
-			bool L_138;
-			L_138 = JsonSerializerInternalBase_IsErrorHandled_m03744F32BCD5F528B09B5324219085C2CCF59C91(__this, L_131, L_132, L_133, ((RuntimeObject*)IsInst((RuntimeObject*)L_134, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&IJsonLineInfo_t0D0AE8B876EA3C837134934E5A1A3DF9FB72A32C_il2cpp_TypeInfo_var)))), L_136, L_137, NULL);
-			if (!L_138)
+			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_136 = ___1_reader;
+			String_t* L_137;
+			L_137 = VirtualFuncInvoker0< String_t* >::Invoke(9, L_136);
+			Exception_t* L_138 = V_8;
+			bool L_139;
+			L_139 = JsonSerializerInternalBase_IsErrorHandled_m03744F32BCD5F528B09B5324219085C2CCF59C91(__this, L_132, L_133, L_134, ((RuntimeObject*)IsInst((RuntimeObject*)L_135, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&IJsonLineInfo_t0D0AE8B876EA3C837134934E5A1A3DF9FB72A32C_il2cpp_TypeInfo_var)))), L_137, L_138, NULL);
+			if (!L_139)
 			{
 				goto IL_0280;
 			}
 		}
 		{
-			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_139 = ___1_reader;
-			int32_t L_140 = V_1;
-			JsonSerializerInternalReader_HandleError_m40720759FE1F8D2FE07B25EE5A8102F06A7F9F98(__this, L_139, (bool)1, L_140, NULL);
+			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_140 = ___1_reader;
+			int32_t L_141 = V_1;
+			JsonSerializerInternalReader_HandleError_m40720759FE1F8D2FE07B25EE5A8102F06A7F9F98(__this, L_140, (bool)1, L_141, NULL);
 			goto IL_0282;
 		}
 
 IL_0280:
 		{
-			IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+			IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*));
 		}
 
 IL_0282:
 		{
-			IL2CPP_POP_ACTIVE_EXCEPTION();
+			IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 			goto IL_02ae;
 		}
 	}
@@ -22285,34 +22477,34 @@ IL_0284:
 
 IL_0288:
 	{
-		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_141 = ___1_reader;
 		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_142 = ___1_reader;
-		int32_t L_143;
-		L_143 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_142);
-		V_9 = L_143;
-		Il2CppFakeBox<int32_t> L_144(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonToken_t00B2B3F98FB3E9A8DE72409901BED1C7F1670BD5_il2cpp_TypeInfo_var)), (&V_9));
-		String_t* L_145;
-		L_145 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_144), NULL);
+		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_143 = ___1_reader;
+		int32_t L_144;
+		L_144 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_143);
+		V_9 = L_144;
+		Il2CppFakeBox<int32_t> L_145(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonToken_t00B2B3F98FB3E9A8DE72409901BED1C7F1670BD5_il2cpp_TypeInfo_var)), (&V_9));
 		String_t* L_146;
-		L_146 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral59AAE90D26AB95D797186FB8118A57880C2A1138)), L_145, NULL);
-		JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC* L_147;
-		L_147 = JsonSerializationException_Create_m2CA947673DA3524AFC908CFE45478403E0B8E239(L_141, L_146, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_147, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonSerializerInternalReader_PopulateObject_mBA642D60FF031FBCCF0ABCA645E09C8785C27C64_RuntimeMethod_var)));
+		L_146 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_145), NULL);
+		String_t* L_147;
+		L_147 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral59AAE90D26AB95D797186FB8118A57880C2A1138)), L_146, NULL);
+		JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC* L_148;
+		L_148 = JsonSerializationException_Create_m2CA947673DA3524AFC908CFE45478403E0B8E239(L_142, L_147, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_148, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonSerializerInternalReader_PopulateObject_mBA642D60FF031FBCCF0ABCA645E09C8785C27C64_RuntimeMethod_var)));
 	}
 
 IL_02ae:
 	{
-		bool L_148 = V_2;
-		if (L_148)
+		bool L_149 = V_2;
+		if (L_149)
 		{
 			goto IL_02bc;
 		}
 	}
 	{
-		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_149 = ___1_reader;
-		bool L_150;
-		L_150 = VirtualFuncInvoker0< bool >::Invoke(10, L_149);
-		if (L_150)
+		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_150 = ___1_reader;
+		bool L_151;
+		L_151 = VirtualFuncInvoker0< bool >::Invoke(10, L_150);
+		if (L_151)
 		{
 			goto IL_0089;
 		}
@@ -22320,32 +22512,32 @@ IL_02ae:
 
 IL_02bc:
 	{
-		bool L_151 = V_2;
-		if (L_151)
+		bool L_152 = V_2;
+		if (L_152)
 		{
 			goto IL_02cd;
 		}
 	}
 	{
-		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_152 = ___1_reader;
-		JsonObjectContract_tFB5A615E22891D84348260AE06D7B31D9A4F62D3* L_153 = ___2_contract;
-		RuntimeObject* L_154 = ___0_newObject;
-		JsonSerializerInternalReader_ThrowUnexpectedEndException_m2081CD321452B270E11B702FDA9D76B8C2B2A9E1(__this, L_152, L_153, L_154, _stringLiteralA0BCC53BF7797154DACFC269A8F1FC7A7D6F1443, NULL);
+		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_153 = ___1_reader;
+		JsonObjectContract_tFB5A615E22891D84348260AE06D7B31D9A4F62D3* L_154 = ___2_contract;
+		RuntimeObject* L_155 = ___0_newObject;
+		JsonSerializerInternalReader_ThrowUnexpectedEndException_m2081CD321452B270E11B702FDA9D76B8C2B2A9E1(__this, L_153, L_154, L_155, _stringLiteralA0BCC53BF7797154DACFC269A8F1FC7A7D6F1443, NULL);
 	}
 
 IL_02cd:
 	{
-		Dictionary_2_t8497B36FD5388D58401BC16677AD068721974842* L_155 = V_0;
-		if (!L_155)
+		Dictionary_2_t8497B36FD5388D58401BC16677AD068721974842* L_156 = V_0;
+		if (!L_156)
 		{
 			goto IL_031d;
 		}
 	}
 	{
-		Dictionary_2_t8497B36FD5388D58401BC16677AD068721974842* L_156 = V_0;
-		Enumerator_tFD823AB7E4CA2DDB31FD2BEBABB90E43729E704D L_157;
-		L_157 = Dictionary_2_GetEnumerator_m71E8E5DC7F929A0DB316A11A789F9A7457682BBB(L_156, Dictionary_2_GetEnumerator_m71E8E5DC7F929A0DB316A11A789F9A7457682BBB_RuntimeMethod_var);
-		V_10 = L_157;
+		Dictionary_2_t8497B36FD5388D58401BC16677AD068721974842* L_157 = V_0;
+		Enumerator_tFD823AB7E4CA2DDB31FD2BEBABB90E43729E704D L_158;
+		L_158 = Dictionary_2_GetEnumerator_m71E8E5DC7F929A0DB316A11A789F9A7457682BBB(L_157, Dictionary_2_GetEnumerator_m71E8E5DC7F929A0DB316A11A789F9A7457682BBB_RuntimeMethod_var);
+		V_10 = L_158;
 	}
 	{
 		auto __finallyBlock = il2cpp::utils::Finally([&]
@@ -22365,29 +22557,29 @@ FINALLY_030f:
 
 IL_02da_1:
 			{
-				KeyValuePair_2_t1652DE7EBEA714BA7EF052D38C0721D26DF8077C L_158;
-				L_158 = Enumerator_get_Current_m3CDFB8FD10696930E254513C0957AB4A1D662928_inline((&V_10), Enumerator_get_Current_m3CDFB8FD10696930E254513C0957AB4A1D662928_RuntimeMethod_var);
-				V_11 = L_158;
-				JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* L_159;
-				L_159 = KeyValuePair_2_get_Key_m2AA92CDF249717EEB938F07E5A1367444727375B_inline((&V_11), KeyValuePair_2_get_Key_m2AA92CDF249717EEB938F07E5A1367444727375B_RuntimeMethod_var);
-				V_12 = L_159;
-				int32_t L_160;
-				L_160 = KeyValuePair_2_get_Value_m150CCF54284DEC42B014372527A6C5085DB8029A_inline((&V_11), KeyValuePair_2_get_Value_m150CCF54284DEC42B014372527A6C5085DB8029A_RuntimeMethod_var);
-				V_13 = L_160;
-				RuntimeObject* L_161 = ___0_newObject;
-				JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_162 = ___1_reader;
-				JsonObjectContract_tFB5A615E22891D84348260AE06D7B31D9A4F62D3* L_163 = ___2_contract;
-				int32_t L_164 = V_1;
-				JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* L_165 = V_12;
-				int32_t L_166 = V_13;
-				JsonSerializerInternalReader_EndProcessProperty_m218BC0692C72079B04C18BC5C8F27812555AA2B4(__this, L_161, L_162, L_163, L_164, L_165, L_166, (bool)1, NULL);
+				KeyValuePair_2_t1652DE7EBEA714BA7EF052D38C0721D26DF8077C L_159;
+				L_159 = Enumerator_get_Current_m3CDFB8FD10696930E254513C0957AB4A1D662928_inline((&V_10), Enumerator_get_Current_m3CDFB8FD10696930E254513C0957AB4A1D662928_RuntimeMethod_var);
+				V_11 = L_159;
+				JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* L_160;
+				L_160 = KeyValuePair_2_get_Key_m2AA92CDF249717EEB938F07E5A1367444727375B_inline((&V_11), KeyValuePair_2_get_Key_m2AA92CDF249717EEB938F07E5A1367444727375B_RuntimeMethod_var);
+				V_12 = L_160;
+				int32_t L_161;
+				L_161 = KeyValuePair_2_get_Value_m150CCF54284DEC42B014372527A6C5085DB8029A_inline((&V_11), KeyValuePair_2_get_Value_m150CCF54284DEC42B014372527A6C5085DB8029A_RuntimeMethod_var);
+				V_13 = L_161;
+				RuntimeObject* L_162 = ___0_newObject;
+				JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_163 = ___1_reader;
+				JsonObjectContract_tFB5A615E22891D84348260AE06D7B31D9A4F62D3* L_164 = ___2_contract;
+				int32_t L_165 = V_1;
+				JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* L_166 = V_12;
+				int32_t L_167 = V_13;
+				JsonSerializerInternalReader_EndProcessProperty_m218BC0692C72079B04C18BC5C8F27812555AA2B4(__this, L_162, L_163, L_164, L_165, L_166, L_167, (bool)1, NULL);
 			}
 
 IL_0304_1:
 			{
-				bool L_167;
-				L_167 = Enumerator_MoveNext_mADCC04DA785DF8EAE89D45E93D5560448F8BB0E1((&V_10), Enumerator_MoveNext_mADCC04DA785DF8EAE89D45E93D5560448F8BB0E1_RuntimeMethod_var);
-				if (L_167)
+				bool L_168;
+				L_168 = Enumerator_MoveNext_mADCC04DA785DF8EAE89D45E93D5560448F8BB0E1((&V_10), Enumerator_MoveNext_mADCC04DA785DF8EAE89D45E93D5560448F8BB0E1_RuntimeMethod_var);
+				if (L_168)
 				{
 					goto IL_02da_1;
 				}
@@ -22404,12 +22596,12 @@ IL_0304_1:
 
 IL_031d:
 	{
-		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_168 = ___1_reader;
-		JsonObjectContract_tFB5A615E22891D84348260AE06D7B31D9A4F62D3* L_169 = ___2_contract;
-		RuntimeObject* L_170 = ___0_newObject;
-		JsonSerializerInternalReader_OnDeserialized_m6130B5B232E4A3D0217AE876B4E06C2375832FDE(__this, L_168, L_169, L_170, NULL);
+		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_169 = ___1_reader;
+		JsonObjectContract_tFB5A615E22891D84348260AE06D7B31D9A4F62D3* L_170 = ___2_contract;
 		RuntimeObject* L_171 = ___0_newObject;
-		return L_171;
+		JsonSerializerInternalReader_OnDeserialized_m6130B5B232E4A3D0217AE876B4E06C2375832FDE(__this, L_169, L_170, L_171, NULL);
+		RuntimeObject* L_172 = ___0_newObject;
+		return L_172;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool JsonSerializerInternalReader_ShouldDeserialize_mF0814A1834B9E1382526C6DB60A26249BC0B1643 (JsonSerializerInternalReader_tB13136F0DA95D198262A47B23B64F33590A956E5* __this, JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* ___0_reader, JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* ___1_property, RuntimeObject* ___2_target, const RuntimeMethod* method) 
@@ -22605,26 +22797,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JsonSerializerInternalReader_SetExtensio
 
 CATCH_0024:
 	{
-		V_1 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
-		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_11 = ___2_reader;
+		Exception_t* L_11 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+		V_1 = L_11;
+		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_12 = ___2_reader;
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_il2cpp_TypeInfo_var)));
-		CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_12;
-		L_12 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
-		JsonObjectContract_tFB5A615E22891D84348260AE06D7B31D9A4F62D3* L_13 = ___0_contract;
-		Type_t* L_14;
-		L_14 = JsonContract_get_UnderlyingType_mD9A37A6619D3F541F77C3E09ED8242511AFCBEB7_inline(L_13, NULL);
-		String_t* L_15;
-		L_15 = StringUtils_FormatWith_m97587965D365EA1584A7D31B57D618E7768073E5(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral53652561DEA177633565FE197F2CBF3DCD08AFD2)), L_12, L_14, NULL);
-		Exception_t* L_16 = V_1;
-		JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC* L_17;
-		L_17 = JsonSerializationException_Create_mB3994D6FE53F3F8140BF01F6F123A356C4217472(L_11, L_15, L_16, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_17, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonSerializerInternalReader_SetExtensionData_m41465A000736E2C32FDCCB0CE22307C3BCEFF665_RuntimeMethod_var)));
+		CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_13;
+		L_13 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
+		JsonObjectContract_tFB5A615E22891D84348260AE06D7B31D9A4F62D3* L_14 = ___0_contract;
+		Type_t* L_15;
+		L_15 = JsonContract_get_UnderlyingType_mD9A37A6619D3F541F77C3E09ED8242511AFCBEB7_inline(L_14, NULL);
+		String_t* L_16;
+		L_16 = StringUtils_FormatWith_m97587965D365EA1584A7D31B57D618E7768073E5(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral53652561DEA177633565FE197F2CBF3DCD08AFD2)), L_13, L_15, NULL);
+		Exception_t* L_17 = V_1;
+		JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC* L_18;
+		L_18 = JsonSerializationException_Create_mB3994D6FE53F3F8140BF01F6F123A356C4217472(L_12, L_16, L_17, NULL);
+		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_18, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonSerializerInternalReader_SetExtensionData_m41465A000736E2C32FDCCB0CE22307C3BCEFF665_RuntimeMethod_var)));
 	}
 
 IL_0042:
 	{
-		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_18 = ___2_reader;
-		JsonReader_Skip_m4D39178134B44B889EFE1C5D2181BB69CD0A4134(L_18, NULL);
+		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_19 = ___2_reader;
+		JsonReader_Skip_m4D39178134B44B889EFE1C5D2181BB69CD0A4134(L_19, NULL);
 	}
 
 IL_0048:
@@ -22962,39 +23156,40 @@ IL_0146_1:
 CATCH_0148:
 	{
 		{
-			V_4 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
-			RuntimeObject* L_64 = ___0_newObject;
-			JsonObjectContract_tFB5A615E22891D84348260AE06D7B31D9A4F62D3* L_65 = ___2_contract;
-			JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* L_66 = ___4_property;
-			String_t* L_67;
-			L_67 = JsonProperty_get_PropertyName_m66C0A76B6380773DCA04B91C40032EE6CC0F7FFE_inline(L_66, NULL);
-			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_68 = ___1_reader;
+			Exception_t* L_64 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+			V_4 = L_64;
+			RuntimeObject* L_65 = ___0_newObject;
+			JsonObjectContract_tFB5A615E22891D84348260AE06D7B31D9A4F62D3* L_66 = ___2_contract;
+			JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* L_67 = ___4_property;
+			String_t* L_68;
+			L_68 = JsonProperty_get_PropertyName_m66C0A76B6380773DCA04B91C40032EE6CC0F7FFE_inline(L_67, NULL);
 			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_69 = ___1_reader;
-			String_t* L_70;
-			L_70 = VirtualFuncInvoker0< String_t* >::Invoke(9, L_69);
-			Exception_t* L_71 = V_4;
-			bool L_72;
-			L_72 = JsonSerializerInternalBase_IsErrorHandled_m03744F32BCD5F528B09B5324219085C2CCF59C91(__this, L_64, L_65, L_67, ((RuntimeObject*)IsInst((RuntimeObject*)L_68, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&IJsonLineInfo_t0D0AE8B876EA3C837134934E5A1A3DF9FB72A32C_il2cpp_TypeInfo_var)))), L_70, L_71, NULL);
-			if (!L_72)
+			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_70 = ___1_reader;
+			String_t* L_71;
+			L_71 = VirtualFuncInvoker0< String_t* >::Invoke(9, L_70);
+			Exception_t* L_72 = V_4;
+			bool L_73;
+			L_73 = JsonSerializerInternalBase_IsErrorHandled_m03744F32BCD5F528B09B5324219085C2CCF59C91(__this, L_65, L_66, L_68, ((RuntimeObject*)IsInst((RuntimeObject*)L_69, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&IJsonLineInfo_t0D0AE8B876EA3C837134934E5A1A3DF9FB72A32C_il2cpp_TypeInfo_var)))), L_71, L_72, NULL);
+			if (!L_73)
 			{
 				goto IL_0175;
 			}
 		}
 		{
-			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_73 = ___1_reader;
-			int32_t L_74 = ___3_initialDepth;
-			JsonSerializerInternalReader_HandleError_m40720759FE1F8D2FE07B25EE5A8102F06A7F9F98(__this, L_73, (bool)1, L_74, NULL);
+			JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_74 = ___1_reader;
+			int32_t L_75 = ___3_initialDepth;
+			JsonSerializerInternalReader_HandleError_m40720759FE1F8D2FE07B25EE5A8102F06A7F9F98(__this, L_74, (bool)1, L_75, NULL);
 			goto IL_0177;
 		}
 
 IL_0175:
 		{
-			IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+			IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*));
 		}
 
 IL_0177:
 		{
-			IL2CPP_POP_ACTIVE_EXCEPTION();
+			IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 			goto IL_0179;
 		}
 	}
@@ -23154,6 +23349,14 @@ IL_0022:
 		return;
 	}
 }
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -23381,34 +23584,35 @@ IL_0053_2:
 CATCH_0055_1:
 			{
 				{
-					V_1 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
-					JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* L_15 = V_0;
-					JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_16 = ___0_jsonWriter;
-					String_t* L_17;
-					L_17 = JsonWriter_get_Path_m1FA362FAF775A1805E15106C216419A462DF6E01(L_16, NULL);
-					Exception_t* L_18 = V_1;
-					bool L_19;
-					L_19 = JsonSerializerInternalBase_IsErrorHandled_m03744F32BCD5F528B09B5324219085C2CCF59C91(__this, NULL, L_15, NULL, (RuntimeObject*)NULL, L_17, L_18, NULL);
-					if (!L_19)
+					Exception_t* L_15 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+					V_1 = L_15;
+					JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* L_16 = V_0;
+					JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_17 = ___0_jsonWriter;
+					String_t* L_18;
+					L_18 = JsonWriter_get_Path_m1FA362FAF775A1805E15106C216419A462DF6E01(L_17, NULL);
+					Exception_t* L_19 = V_1;
+					bool L_20;
+					L_20 = JsonSerializerInternalBase_IsErrorHandled_m03744F32BCD5F528B09B5324219085C2CCF59C91(__this, NULL, L_16, NULL, (RuntimeObject*)NULL, L_18, L_19, NULL);
+					if (!L_20)
 					{
 						goto IL_0073_1;
 					}
 				}
 				{
-					JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_20 = ___0_jsonWriter;
-					JsonSerializerInternalWriter_HandleError_m5F64C5A4BD5021B0B893BC28B5FEE82EA78BF138(__this, L_20, 0, NULL);
+					JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_21 = ___0_jsonWriter;
+					JsonSerializerInternalWriter_HandleError_m5F64C5A4BD5021B0B893BC28B5FEE82EA78BF138(__this, L_21, 0, NULL);
 					goto IL_007b_1;
 				}
 
 IL_0073_1:
 				{
 					JsonSerializerInternalBase_ClearErrorContext_m4F40B91D6AEFF4C046FD8AF7801B148A2F1DF23E(__this, NULL);
-					IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+					IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*));
 				}
 
 IL_007b_1:
 				{
-					IL2CPP_POP_ACTIVE_EXCEPTION();
+					IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 					goto IL_0085;
 				}
 			}
@@ -24649,28 +24853,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* JsonSerializerInternalWriter_GetRef
 
 CATCH_0015:
 	{
-		V_1 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
-		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_4 = ___0_writer;
-		String_t* L_5;
-		L_5 = JsonWriter_get_ContainerPath_mEEB68127DE05B60631203B908206E58C653E459C(L_4, NULL);
+		Exception_t* L_4 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+		V_1 = L_4;
+		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_5 = ___0_writer;
+		String_t* L_6;
+		L_6 = JsonWriter_get_ContainerPath_mEEB68127DE05B60631203B908206E58C653E459C(L_5, NULL);
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_il2cpp_TypeInfo_var)));
-		CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_6;
-		L_6 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
-		RuntimeObject* L_7 = ___1_value;
-		Type_t* L_8;
-		L_8 = Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3(L_7, NULL);
-		String_t* L_9;
-		L_9 = StringUtils_FormatWith_m97587965D365EA1584A7D31B57D618E7768073E5(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralDD99A8A9E8D616B777D41E97FB1CC14AAEFFADBD)), L_6, L_8, NULL);
-		Exception_t* L_10 = V_1;
-		JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC* L_11;
-		L_11 = JsonSerializationException_Create_mBF3182906099773D44F9737E873A48462482E6F7((RuntimeObject*)NULL, L_5, L_9, L_10, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_11, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonSerializerInternalWriter_GetReference_mE58B35D148E7362435786EA0DBB17F145A335224_RuntimeMethod_var)));
+		CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_7;
+		L_7 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
+		RuntimeObject* L_8 = ___1_value;
+		Type_t* L_9;
+		L_9 = Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3(L_8, NULL);
+		String_t* L_10;
+		L_10 = StringUtils_FormatWith_m97587965D365EA1584A7D31B57D618E7768073E5(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralDD99A8A9E8D616B777D41E97FB1CC14AAEFFADBD)), L_7, L_9, NULL);
+		Exception_t* L_11 = V_1;
+		JsonSerializationException_t00F36890DFAC04F2FDE779151340B9C5563612EC* L_12;
+		L_12 = JsonSerializationException_Create_mBF3182906099773D44F9737E873A48462482E6F7((RuntimeObject*)NULL, L_6, L_10, L_11, NULL);
+		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_12, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&JsonSerializerInternalWriter_GetReference_mE58B35D148E7362435786EA0DBB17F145A335224_RuntimeMethod_var)));
 	}
 
 IL_0039:
 	{
-		String_t* L_12 = V_0;
-		return L_12;
+		String_t* L_13 = V_0;
+		return L_13;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool JsonSerializerInternalWriter_TryConvertToString_m2EFE6A8F0D4B190F1179C4B7CEB9CB5186B5B528 (RuntimeObject* ___0_value, Type_t* ___1_type, String_t** ___2_s, const RuntimeMethod* method) 
@@ -24986,72 +25192,73 @@ IL_0050_1:
 CATCH_0068:
 	{
 		{
-			V_6 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
-			RuntimeObject* L_31 = ___1_value;
-			JsonObjectContract_tFB5A615E22891D84348260AE06D7B31D9A4F62D3* L_32 = ___2_contract;
-			JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* L_33 = V_3;
-			String_t* L_34;
-			L_34 = JsonProperty_get_PropertyName_m66C0A76B6380773DCA04B91C40032EE6CC0F7FFE_inline(L_33, NULL);
-			JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_35 = ___0_writer;
-			String_t* L_36;
-			L_36 = JsonWriter_get_ContainerPath_mEEB68127DE05B60631203B908206E58C653E459C(L_35, NULL);
-			Exception_t* L_37 = V_6;
-			bool L_38;
-			L_38 = JsonSerializerInternalBase_IsErrorHandled_m03744F32BCD5F528B09B5324219085C2CCF59C91(__this, L_31, L_32, L_34, (RuntimeObject*)NULL, L_36, L_37, NULL);
-			if (!L_38)
+			Exception_t* L_31 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+			V_6 = L_31;
+			RuntimeObject* L_32 = ___1_value;
+			JsonObjectContract_tFB5A615E22891D84348260AE06D7B31D9A4F62D3* L_33 = ___2_contract;
+			JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* L_34 = V_3;
+			String_t* L_35;
+			L_35 = JsonProperty_get_PropertyName_m66C0A76B6380773DCA04B91C40032EE6CC0F7FFE_inline(L_34, NULL);
+			JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_36 = ___0_writer;
+			String_t* L_37;
+			L_37 = JsonWriter_get_ContainerPath_mEEB68127DE05B60631203B908206E58C653E459C(L_36, NULL);
+			Exception_t* L_38 = V_6;
+			bool L_39;
+			L_39 = JsonSerializerInternalBase_IsErrorHandled_m03744F32BCD5F528B09B5324219085C2CCF59C91(__this, L_32, L_33, L_35, (RuntimeObject*)NULL, L_37, L_38, NULL);
+			if (!L_39)
 			{
 				goto IL_008d;
 			}
 		}
 		{
-			JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_39 = ___0_writer;
-			int32_t L_40 = V_0;
-			JsonSerializerInternalWriter_HandleError_m5F64C5A4BD5021B0B893BC28B5FEE82EA78BF138(__this, L_39, L_40, NULL);
+			JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_40 = ___0_writer;
+			int32_t L_41 = V_0;
+			JsonSerializerInternalWriter_HandleError_m5F64C5A4BD5021B0B893BC28B5FEE82EA78BF138(__this, L_40, L_41, NULL);
 			goto IL_008f;
 		}
 
 IL_008d:
 		{
-			IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+			IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*));
 		}
 
 IL_008f:
 		{
-			IL2CPP_POP_ACTIVE_EXCEPTION();
+			IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 			goto IL_0091;
 		}
 	}
 
 IL_0091:
 	{
-		int32_t L_41 = V_2;
-		V_2 = ((int32_t)il2cpp_codegen_add(L_41, 1));
+		int32_t L_42 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_42, 1));
 	}
 
 IL_0095:
 	{
-		int32_t L_42 = V_2;
-		JsonObjectContract_tFB5A615E22891D84348260AE06D7B31D9A4F62D3* L_43 = ___2_contract;
-		JsonPropertyCollection_t93082116A28103BD144B10160CDC36F9809D48C6* L_44;
-		L_44 = JsonObjectContract_get_Properties_m7074363E992F9DC8149D08D884F0C055108D5AE6_inline(L_43, NULL);
-		int32_t L_45;
-		L_45 = Collection_1_get_Count_m4FC381C3B0671131ED872E0710579343D7182938(L_44, Collection_1_get_Count_m4FC381C3B0671131ED872E0710579343D7182938_RuntimeMethod_var);
-		if ((((int32_t)L_42) < ((int32_t)L_45)))
+		int32_t L_43 = V_2;
+		JsonObjectContract_tFB5A615E22891D84348260AE06D7B31D9A4F62D3* L_44 = ___2_contract;
+		JsonPropertyCollection_t93082116A28103BD144B10160CDC36F9809D48C6* L_45;
+		L_45 = JsonObjectContract_get_Properties_m7074363E992F9DC8149D08D884F0C055108D5AE6_inline(L_44, NULL);
+		int32_t L_46;
+		L_46 = Collection_1_get_Count_m4FC381C3B0671131ED872E0710579343D7182938(L_45, Collection_1_get_Count_m4FC381C3B0671131ED872E0710579343D7182938_RuntimeMethod_var);
+		if ((((int32_t)L_43) < ((int32_t)L_46)))
 		{
 			goto IL_002f;
 		}
 	}
 	{
-		JsonObjectContract_tFB5A615E22891D84348260AE06D7B31D9A4F62D3* L_46 = ___2_contract;
-		ExtensionDataGetter_t4A0796B01BE24A30E936873517B54EA710CC6767* L_47;
-		L_47 = JsonObjectContract_get_ExtensionDataGetter_m29DBB95A4E1AC3DF265A4E968133C2F2E935971C_inline(L_46, NULL);
-		ExtensionDataGetter_t4A0796B01BE24A30E936873517B54EA710CC6767* L_48 = L_47;
-		if (L_48)
+		JsonObjectContract_tFB5A615E22891D84348260AE06D7B31D9A4F62D3* L_47 = ___2_contract;
+		ExtensionDataGetter_t4A0796B01BE24A30E936873517B54EA710CC6767* L_48;
+		L_48 = JsonObjectContract_get_ExtensionDataGetter_m29DBB95A4E1AC3DF265A4E968133C2F2E935971C_inline(L_47, NULL);
+		ExtensionDataGetter_t4A0796B01BE24A30E936873517B54EA710CC6767* L_49 = L_48;
+		if (L_49)
 		{
-			G_B13_0 = L_48;
+			G_B13_0 = L_49;
 			goto IL_00b0;
 		}
-		G_B12_0 = L_48;
+		G_B12_0 = L_49;
 	}
 	{
 		G_B14_0 = ((RuntimeObject*)(NULL));
@@ -25060,26 +25267,26 @@ IL_0095:
 
 IL_00b0:
 	{
-		RuntimeObject* L_49 = ___1_value;
-		RuntimeObject* L_50;
-		L_50 = ExtensionDataGetter_Invoke_m896D50D58EBA6C316B674EDA4AA3068284CF1576_inline(G_B13_0, L_49, NULL);
-		G_B14_0 = L_50;
+		RuntimeObject* L_50 = ___1_value;
+		RuntimeObject* L_51;
+		L_51 = ExtensionDataGetter_Invoke_m896D50D58EBA6C316B674EDA4AA3068284CF1576_inline(G_B13_0, L_50, NULL);
+		G_B14_0 = L_51;
 	}
 
 IL_00b6:
 	{
 		V_1 = G_B14_0;
-		RuntimeObject* L_51 = V_1;
-		if (!L_51)
+		RuntimeObject* L_52 = V_1;
+		if (!L_52)
 		{
 			goto IL_0199;
 		}
 	}
 	{
-		RuntimeObject* L_52 = V_1;
-		RuntimeObject* L_53;
-		L_53 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0, IEnumerable_1_t60509816D8966320E2A9660FC756B6C440ADFC50_il2cpp_TypeInfo_var, L_52);
-		V_7 = L_53;
+		RuntimeObject* L_53 = V_1;
+		RuntimeObject* L_54;
+		L_54 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0, IEnumerable_1_t60509816D8966320E2A9660FC756B6C440ADFC50_il2cpp_TypeInfo_var, L_53);
+		V_7 = L_54;
 	}
 	{
 		auto __finallyBlock = il2cpp::utils::Finally([&]
@@ -25088,15 +25295,15 @@ IL_00b6:
 FINALLY_018d:
 			{
 				{
-					RuntimeObject* L_54 = V_7;
-					if (!L_54)
+					RuntimeObject* L_55 = V_7;
+					if (!L_55)
 					{
 						goto IL_0198;
 					}
 				}
 				{
-					RuntimeObject* L_55 = V_7;
-					InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_55);
+					RuntimeObject* L_56 = V_7;
+					InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_56);
 				}
 
 IL_0198:
@@ -25113,112 +25320,112 @@ IL_0198:
 
 IL_00ca_1:
 			{
-				RuntimeObject* L_56 = V_7;
-				KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230 L_57;
-				L_57 = InterfaceFuncInvoker0< KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230 >::Invoke(0, IEnumerator_1_t327FF232159D9644239A65F54312F684DB7BE375_il2cpp_TypeInfo_var, L_56);
-				V_8 = L_57;
-				RuntimeObject* L_58;
-				L_58 = KeyValuePair_2_get_Key_mBD8EA7557C27E6956F2AF29DA3F7499B2F51A282_inline((&V_8), KeyValuePair_2_get_Key_mBD8EA7557C27E6956F2AF29DA3F7499B2F51A282_RuntimeMethod_var);
-				JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* L_59;
-				L_59 = JsonSerializerInternalWriter_GetContract_m1896773C329E6B83F341FC3785CABBA264F1CDFD(__this, L_58, NULL);
-				V_9 = L_59;
-				RuntimeObject* L_60;
-				L_60 = KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_inline((&V_8), KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_RuntimeMethod_var);
-				JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* L_61;
-				L_61 = JsonSerializerInternalWriter_GetContractSafe_mD9ACF3FC60B6B54EF02783392B3AE86D8351B865(__this, L_60, NULL);
-				V_10 = L_61;
-				JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_62 = ___0_writer;
-				RuntimeObject* L_63;
-				L_63 = KeyValuePair_2_get_Key_mBD8EA7557C27E6956F2AF29DA3F7499B2F51A282_inline((&V_8), KeyValuePair_2_get_Key_mBD8EA7557C27E6956F2AF29DA3F7499B2F51A282_RuntimeMethod_var);
-				JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* L_64 = V_9;
-				String_t* L_65;
-				L_65 = JsonSerializerInternalWriter_GetPropertyName_mBF182832677C67FD454732017E2D8CEB4380CE9D(__this, L_62, L_63, L_64, (&V_12), NULL);
-				V_11 = L_65;
-				JsonObjectContract_tFB5A615E22891D84348260AE06D7B31D9A4F62D3* L_66 = ___2_contract;
-				Func_2_t85D1F7C2022B349817C22FC72C474CD33FFABE93* L_67;
-				L_67 = JsonObjectContract_get_ExtensionDataNameResolver_mB674A053C14DFE1645DF4682CAA15D12EF5A9734_inline(L_66, NULL);
-				if (L_67)
+				RuntimeObject* L_57 = V_7;
+				KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230 L_58;
+				L_58 = InterfaceFuncInvoker0< KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230 >::Invoke(0, IEnumerator_1_t327FF232159D9644239A65F54312F684DB7BE375_il2cpp_TypeInfo_var, L_57);
+				V_8 = L_58;
+				RuntimeObject* L_59;
+				L_59 = KeyValuePair_2_get_Key_mBD8EA7557C27E6956F2AF29DA3F7499B2F51A282_inline((&V_8), KeyValuePair_2_get_Key_mBD8EA7557C27E6956F2AF29DA3F7499B2F51A282_RuntimeMethod_var);
+				JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* L_60;
+				L_60 = JsonSerializerInternalWriter_GetContract_m1896773C329E6B83F341FC3785CABBA264F1CDFD(__this, L_59, NULL);
+				V_9 = L_60;
+				RuntimeObject* L_61;
+				L_61 = KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_inline((&V_8), KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_RuntimeMethod_var);
+				JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* L_62;
+				L_62 = JsonSerializerInternalWriter_GetContractSafe_mD9ACF3FC60B6B54EF02783392B3AE86D8351B865(__this, L_61, NULL);
+				V_10 = L_62;
+				JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_63 = ___0_writer;
+				RuntimeObject* L_64;
+				L_64 = KeyValuePair_2_get_Key_mBD8EA7557C27E6956F2AF29DA3F7499B2F51A282_inline((&V_8), KeyValuePair_2_get_Key_mBD8EA7557C27E6956F2AF29DA3F7499B2F51A282_RuntimeMethod_var);
+				JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* L_65 = V_9;
+				String_t* L_66;
+				L_66 = JsonSerializerInternalWriter_GetPropertyName_mBF182832677C67FD454732017E2D8CEB4380CE9D(__this, L_63, L_64, L_65, (&V_12), NULL);
+				V_11 = L_66;
+				JsonObjectContract_tFB5A615E22891D84348260AE06D7B31D9A4F62D3* L_67 = ___2_contract;
+				Func_2_t85D1F7C2022B349817C22FC72C474CD33FFABE93* L_68;
+				L_68 = JsonObjectContract_get_ExtensionDataNameResolver_mB674A053C14DFE1645DF4682CAA15D12EF5A9734_inline(L_67, NULL);
+				if (L_68)
 				{
 					goto IL_0111_1;
 				}
 			}
 			{
-				String_t* L_68 = V_11;
-				G_B20_0 = L_68;
+				String_t* L_69 = V_11;
+				G_B20_0 = L_69;
 				goto IL_011e_1;
 			}
 
 IL_0111_1:
 			{
-				JsonObjectContract_tFB5A615E22891D84348260AE06D7B31D9A4F62D3* L_69 = ___2_contract;
-				Func_2_t85D1F7C2022B349817C22FC72C474CD33FFABE93* L_70;
-				L_70 = JsonObjectContract_get_ExtensionDataNameResolver_mB674A053C14DFE1645DF4682CAA15D12EF5A9734_inline(L_69, NULL);
-				String_t* L_71 = V_11;
-				String_t* L_72;
-				L_72 = Func_2_Invoke_mED071D4A847678204A843F11D77F10D168FE4D2D_inline(L_70, L_71, NULL);
-				G_B20_0 = L_72;
+				JsonObjectContract_tFB5A615E22891D84348260AE06D7B31D9A4F62D3* L_70 = ___2_contract;
+				Func_2_t85D1F7C2022B349817C22FC72C474CD33FFABE93* L_71;
+				L_71 = JsonObjectContract_get_ExtensionDataNameResolver_mB674A053C14DFE1645DF4682CAA15D12EF5A9734_inline(L_70, NULL);
+				String_t* L_72 = V_11;
+				String_t* L_73;
+				L_73 = Func_2_Invoke_mED071D4A847678204A843F11D77F10D168FE4D2D_inline(L_71, L_72, NULL);
+				G_B20_0 = L_73;
 			}
 
 IL_011e_1:
 			{
 				V_11 = G_B20_0;
-				RuntimeObject* L_73;
-				L_73 = KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_inline((&V_8), KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_RuntimeMethod_var);
-				JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* L_74 = V_10;
-				JsonObjectContract_tFB5A615E22891D84348260AE06D7B31D9A4F62D3* L_75 = ___2_contract;
-				JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* L_76 = ___3_member;
-				bool L_77;
-				L_77 = JsonSerializerInternalWriter_ShouldWriteReference_mE7FEFC8DF15EA92D0DAFB8715B4E3AE6C189F840(__this, L_73, (JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3*)NULL, L_74, L_75, L_76, NULL);
-				if (!L_77)
+				RuntimeObject* L_74;
+				L_74 = KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_inline((&V_8), KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_RuntimeMethod_var);
+				JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* L_75 = V_10;
+				JsonObjectContract_tFB5A615E22891D84348260AE06D7B31D9A4F62D3* L_76 = ___2_contract;
+				JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* L_77 = ___3_member;
+				bool L_78;
+				L_78 = JsonSerializerInternalWriter_ShouldWriteReference_mE7FEFC8DF15EA92D0DAFB8715B4E3AE6C189F840(__this, L_74, (JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3*)NULL, L_75, L_76, L_77, NULL);
+				if (!L_78)
 				{
 					goto IL_014d_1;
 				}
 			}
 			{
-				JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_78 = ___0_writer;
-				String_t* L_79 = V_11;
-				VirtualActionInvoker1< String_t* >::Invoke(13, L_78, L_79);
-				JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_80 = ___0_writer;
-				RuntimeObject* L_81;
-				L_81 = KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_inline((&V_8), KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_RuntimeMethod_var);
-				JsonSerializerInternalWriter_WriteReference_mB21F3155E83BB4303F761E460AC27E2C37B6B687(__this, L_80, L_81, NULL);
+				JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_79 = ___0_writer;
+				String_t* L_80 = V_11;
+				VirtualActionInvoker1< String_t* >::Invoke(13, L_79, L_80);
+				JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_81 = ___0_writer;
+				RuntimeObject* L_82;
+				L_82 = KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_inline((&V_8), KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_RuntimeMethod_var);
+				JsonSerializerInternalWriter_WriteReference_mB21F3155E83BB4303F761E460AC27E2C37B6B687(__this, L_81, L_82, NULL);
 				goto IL_017f_1;
 			}
 
 IL_014d_1:
 			{
-				JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_82 = ___0_writer;
-				RuntimeObject* L_83;
-				L_83 = KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_inline((&V_8), KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_RuntimeMethod_var);
-				JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* L_84 = V_10;
-				JsonObjectContract_tFB5A615E22891D84348260AE06D7B31D9A4F62D3* L_85 = ___2_contract;
-				JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* L_86 = ___3_member;
-				bool L_87;
-				L_87 = JsonSerializerInternalWriter_CheckForCircularReference_m6C095C45DF61AFF70BB9206D2806B0FD4CF44E28(__this, L_82, L_83, (JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3*)NULL, L_84, L_85, L_86, NULL);
-				if (!L_87)
+				JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_83 = ___0_writer;
+				RuntimeObject* L_84;
+				L_84 = KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_inline((&V_8), KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_RuntimeMethod_var);
+				JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* L_85 = V_10;
+				JsonObjectContract_tFB5A615E22891D84348260AE06D7B31D9A4F62D3* L_86 = ___2_contract;
+				JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* L_87 = ___3_member;
+				bool L_88;
+				L_88 = JsonSerializerInternalWriter_CheckForCircularReference_m6C095C45DF61AFF70BB9206D2806B0FD4CF44E28(__this, L_83, L_84, (JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3*)NULL, L_85, L_86, L_87, NULL);
+				if (!L_88)
 				{
 					goto IL_017f_1;
 				}
 			}
 			{
-				JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_88 = ___0_writer;
-				String_t* L_89 = V_11;
-				VirtualActionInvoker1< String_t* >::Invoke(13, L_88, L_89);
-				JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_90 = ___0_writer;
-				RuntimeObject* L_91;
-				L_91 = KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_inline((&V_8), KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_RuntimeMethod_var);
-				JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* L_92 = V_10;
-				JsonObjectContract_tFB5A615E22891D84348260AE06D7B31D9A4F62D3* L_93 = ___2_contract;
-				JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* L_94 = ___3_member;
-				JsonSerializerInternalWriter_SerializeValue_m9E2AE84CF7CBD3978BE0FC2E30EE576CEBD4449D(__this, L_90, L_91, L_92, (JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3*)NULL, L_93, L_94, NULL);
+				JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_89 = ___0_writer;
+				String_t* L_90 = V_11;
+				VirtualActionInvoker1< String_t* >::Invoke(13, L_89, L_90);
+				JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_91 = ___0_writer;
+				RuntimeObject* L_92;
+				L_92 = KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_inline((&V_8), KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_RuntimeMethod_var);
+				JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* L_93 = V_10;
+				JsonObjectContract_tFB5A615E22891D84348260AE06D7B31D9A4F62D3* L_94 = ___2_contract;
+				JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* L_95 = ___3_member;
+				JsonSerializerInternalWriter_SerializeValue_m9E2AE84CF7CBD3978BE0FC2E30EE576CEBD4449D(__this, L_91, L_92, L_93, (JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3*)NULL, L_94, L_95, NULL);
 			}
 
 IL_017f_1:
 			{
-				RuntimeObject* L_95 = V_7;
-				bool L_96;
-				L_96 = InterfaceFuncInvoker0< bool >::Invoke(0, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_95);
-				if (L_96)
+				RuntimeObject* L_96 = V_7;
+				bool L_97;
+				L_97 = InterfaceFuncInvoker0< bool >::Invoke(0, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_96);
+				if (L_97)
 				{
 					goto IL_00ca_1;
 				}
@@ -25235,17 +25442,17 @@ IL_017f_1:
 
 IL_0199:
 	{
-		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_97 = ___0_writer;
-		VirtualActionInvoker0::Invoke(8, L_97);
-		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_98 = __this->____serializeStack;
+		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_98 = ___0_writer;
+		VirtualActionInvoker0::Invoke(8, L_98);
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_99 = __this->____serializeStack;
-		int32_t L_100;
-		L_100 = List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_inline(L_99, List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_RuntimeMethod_var);
-		List_1_RemoveAt_m54F62297ADEE4D4FDA697F49ED807BF901201B54(L_98, ((int32_t)il2cpp_codegen_subtract(L_100, 1)), List_1_RemoveAt_m54F62297ADEE4D4FDA697F49ED807BF901201B54_RuntimeMethod_var);
-		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_101 = ___0_writer;
-		JsonObjectContract_tFB5A615E22891D84348260AE06D7B31D9A4F62D3* L_102 = ___2_contract;
-		RuntimeObject* L_103 = ___1_value;
-		JsonSerializerInternalWriter_OnSerialized_m6671114B713D4ABC359EE5E6B4F06A8D0AA0EB1F(__this, L_101, L_102, L_103, NULL);
+		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_100 = __this->____serializeStack;
+		int32_t L_101;
+		L_101 = List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_inline(L_100, List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_RuntimeMethod_var);
+		List_1_RemoveAt_m54F62297ADEE4D4FDA697F49ED807BF901201B54(L_99, ((int32_t)il2cpp_codegen_subtract(L_101, 1)), List_1_RemoveAt_m54F62297ADEE4D4FDA697F49ED807BF901201B54_RuntimeMethod_var);
+		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_102 = ___0_writer;
+		JsonObjectContract_tFB5A615E22891D84348260AE06D7B31D9A4F62D3* L_103 = ___2_contract;
+		RuntimeObject* L_104 = ___1_value;
+		JsonSerializerInternalWriter_OnSerialized_m6671114B713D4ABC359EE5E6B4F06A8D0AA0EB1F(__this, L_102, L_103, L_104, NULL);
 		return;
 	}
 }
@@ -26240,38 +26447,39 @@ IL_00ae_3:
 CATCH_00b0_2:
 					{
 						{
-							V_8 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
-							RuntimeObject* L_51 = V_0;
-							JsonArrayContract_tC43D0F0F57E8E29E041F9679010D7824E2C3AF90* L_52 = ___2_contract;
-							int32_t L_53 = V_4;
-							int32_t L_54 = L_53;
-							RuntimeObject* L_55 = Box(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var)), &L_54);
-							JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_56 = ___0_writer;
-							String_t* L_57;
-							L_57 = JsonWriter_get_ContainerPath_mEEB68127DE05B60631203B908206E58C653E459C(L_56, NULL);
-							Exception_t* L_58 = V_8;
-							bool L_59;
-							L_59 = JsonSerializerInternalBase_IsErrorHandled_m03744F32BCD5F528B09B5324219085C2CCF59C91(__this, L_51, L_52, L_55, (RuntimeObject*)NULL, L_57, L_58, NULL);
-							if (!L_59)
+							Exception_t* L_51 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+							V_8 = L_51;
+							RuntimeObject* L_52 = V_0;
+							JsonArrayContract_tC43D0F0F57E8E29E041F9679010D7824E2C3AF90* L_53 = ___2_contract;
+							int32_t L_54 = V_4;
+							int32_t L_55 = L_54;
+							RuntimeObject* L_56 = Box(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var)), &L_55);
+							JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_57 = ___0_writer;
+							String_t* L_58;
+							L_58 = JsonWriter_get_ContainerPath_mEEB68127DE05B60631203B908206E58C653E459C(L_57, NULL);
+							Exception_t* L_59 = V_8;
+							bool L_60;
+							L_60 = JsonSerializerInternalBase_IsErrorHandled_m03744F32BCD5F528B09B5324219085C2CCF59C91(__this, L_52, L_53, L_56, (RuntimeObject*)NULL, L_58, L_59, NULL);
+							if (!L_60)
 							{
 								goto IL_00d6_2;
 							}
 						}
 						{
-							JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_60 = ___0_writer;
-							int32_t L_61 = V_3;
-							JsonSerializerInternalWriter_HandleError_m5F64C5A4BD5021B0B893BC28B5FEE82EA78BF138(__this, L_60, L_61, NULL);
+							JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_61 = ___0_writer;
+							int32_t L_62 = V_3;
+							JsonSerializerInternalWriter_HandleError_m5F64C5A4BD5021B0B893BC28B5FEE82EA78BF138(__this, L_61, L_62, NULL);
 							goto IL_00d8_2;
 						}
 
 IL_00d6_2:
 						{
-							IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+							IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*));
 						}
 
 IL_00d8_2:
 						{
-							IL2CPP_POP_ACTIVE_EXCEPTION();
+							IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 							goto IL_00e1_1;
 						}
 					}
@@ -26284,10 +26492,10 @@ IL_00d8_2:
 
 IL_00e1_1:
 			{
-				RuntimeObject* L_62 = V_5;
-				bool L_63;
-				L_63 = InterfaceFuncInvoker0< bool >::Invoke(0, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_62);
-				if (L_63)
+				RuntimeObject* L_63 = V_5;
+				bool L_64;
+				L_64 = InterfaceFuncInvoker0< bool >::Invoke(0, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_63);
+				if (L_64)
 				{
 					goto IL_0056_1;
 				}
@@ -26304,30 +26512,30 @@ IL_00e1_1:
 
 IL_0104:
 	{
-		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_64 = ___0_writer;
-		VirtualActionInvoker0::Invoke(10, L_64);
-		bool L_65 = V_2;
-		if (!L_65)
+		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_65 = ___0_writer;
+		VirtualActionInvoker0::Invoke(10, L_65);
+		bool L_66 = V_2;
+		if (!L_66)
 		{
 			goto IL_0113;
 		}
 	}
 	{
-		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_66 = ___0_writer;
-		VirtualActionInvoker0::Invoke(8, L_66);
+		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_67 = ___0_writer;
+		VirtualActionInvoker0::Invoke(8, L_67);
 	}
 
 IL_0113:
 	{
-		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_67 = __this->____serializeStack;
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_68 = __this->____serializeStack;
-		int32_t L_69;
-		L_69 = List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_inline(L_68, List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_RuntimeMethod_var);
-		List_1_RemoveAt_m54F62297ADEE4D4FDA697F49ED807BF901201B54(L_67, ((int32_t)il2cpp_codegen_subtract(L_69, 1)), List_1_RemoveAt_m54F62297ADEE4D4FDA697F49ED807BF901201B54_RuntimeMethod_var);
-		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_70 = ___0_writer;
-		JsonArrayContract_tC43D0F0F57E8E29E041F9679010D7824E2C3AF90* L_71 = ___2_contract;
-		RuntimeObject* L_72 = V_0;
-		JsonSerializerInternalWriter_OnSerialized_m6671114B713D4ABC359EE5E6B4F06A8D0AA0EB1F(__this, L_70, L_71, L_72, NULL);
+		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_69 = __this->____serializeStack;
+		int32_t L_70;
+		L_70 = List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_inline(L_69, List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_RuntimeMethod_var);
+		List_1_RemoveAt_m54F62297ADEE4D4FDA697F49ED807BF901201B54(L_68, ((int32_t)il2cpp_codegen_subtract(L_70, 1)), List_1_RemoveAt_m54F62297ADEE4D4FDA697F49ED807BF901201B54_RuntimeMethod_var);
+		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_71 = ___0_writer;
+		JsonArrayContract_tC43D0F0F57E8E29E041F9679010D7824E2C3AF90* L_72 = ___2_contract;
+		RuntimeObject* L_73 = V_0;
+		JsonSerializerInternalWriter_OnSerialized_m6671114B713D4ABC359EE5E6B4F06A8D0AA0EB1F(__this, L_71, L_72, L_73, NULL);
 		return;
 	}
 }
@@ -26558,74 +26766,75 @@ IL_00a0_1:
 CATCH_00a2:
 	{
 		{
-			V_6 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
-			RuntimeArray* L_48 = ___1_values;
-			JsonArrayContract_tC43D0F0F57E8E29E041F9679010D7824E2C3AF90* L_49 = ___2_contract;
-			int32_t L_50 = V_3;
-			int32_t L_51 = L_50;
-			RuntimeObject* L_52 = Box(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var)), &L_51);
-			JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_53 = ___0_writer;
-			String_t* L_54;
-			L_54 = JsonWriter_get_ContainerPath_mEEB68127DE05B60631203B908206E58C653E459C(L_53, NULL);
-			Exception_t* L_55 = V_6;
-			bool L_56;
-			L_56 = JsonSerializerInternalBase_IsErrorHandled_m03744F32BCD5F528B09B5324219085C2CCF59C91(__this, L_48, L_49, L_52, (RuntimeObject*)NULL, L_54, L_55, NULL);
-			if (!L_56)
+			Exception_t* L_48 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+			V_6 = L_48;
+			RuntimeArray* L_49 = ___1_values;
+			JsonArrayContract_tC43D0F0F57E8E29E041F9679010D7824E2C3AF90* L_50 = ___2_contract;
+			int32_t L_51 = V_3;
+			int32_t L_52 = L_51;
+			RuntimeObject* L_53 = Box(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var)), &L_52);
+			JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_54 = ___0_writer;
+			String_t* L_55;
+			L_55 = JsonWriter_get_ContainerPath_mEEB68127DE05B60631203B908206E58C653E459C(L_54, NULL);
+			Exception_t* L_56 = V_6;
+			bool L_57;
+			L_57 = JsonSerializerInternalBase_IsErrorHandled_m03744F32BCD5F528B09B5324219085C2CCF59C91(__this, L_49, L_50, L_53, (RuntimeObject*)NULL, L_55, L_56, NULL);
+			if (!L_57)
 			{
 				goto IL_00ca;
 			}
 		}
 		{
-			JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_57 = ___0_writer;
-			int32_t L_58 = ___4_initialDepth;
-			JsonSerializerInternalWriter_HandleError_m5F64C5A4BD5021B0B893BC28B5FEE82EA78BF138(__this, L_57, ((int32_t)il2cpp_codegen_add(L_58, 1)), NULL);
+			JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_58 = ___0_writer;
+			int32_t L_59 = ___4_initialDepth;
+			JsonSerializerInternalWriter_HandleError_m5F64C5A4BD5021B0B893BC28B5FEE82EA78BF138(__this, L_58, ((int32_t)il2cpp_codegen_add(L_59, 1)), NULL);
 			goto IL_00cc;
 		}
 
 IL_00ca:
 		{
-			IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+			IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*));
 		}
 
 IL_00cc:
 		{
-			IL2CPP_POP_ACTIVE_EXCEPTION();
+			IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 			goto IL_00de;
 		}
 	}
 
 IL_00ce:
 	{
-		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_59 = ___0_writer;
-		RuntimeArray* L_60 = ___1_values;
-		JsonArrayContract_tC43D0F0F57E8E29E041F9679010D7824E2C3AF90* L_61 = ___2_contract;
-		JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* L_62 = ___3_member;
-		int32_t L_63 = ___4_initialDepth;
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_64 = V_1;
-		JsonSerializerInternalWriter_SerializeMultidimensionalArray_m10A5E084F8C0A33F9C916D3F1F8CB1049B27362C(__this, L_59, L_60, L_61, L_62, ((int32_t)il2cpp_codegen_add(L_63, 1)), L_64, NULL);
+		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_60 = ___0_writer;
+		RuntimeArray* L_61 = ___1_values;
+		JsonArrayContract_tC43D0F0F57E8E29E041F9679010D7824E2C3AF90* L_62 = ___2_contract;
+		JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* L_63 = ___3_member;
+		int32_t L_64 = ___4_initialDepth;
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_65 = V_1;
+		JsonSerializerInternalWriter_SerializeMultidimensionalArray_m10A5E084F8C0A33F9C916D3F1F8CB1049B27362C(__this, L_60, L_61, L_62, L_63, ((int32_t)il2cpp_codegen_add(L_64, 1)), L_65, NULL);
 	}
 
 IL_00de:
 	{
-		int32_t L_65 = V_3;
-		V_3 = ((int32_t)il2cpp_codegen_add(L_65, 1));
+		int32_t L_66 = V_3;
+		V_3 = ((int32_t)il2cpp_codegen_add(L_66, 1));
 	}
 
 IL_00e2:
 	{
-		int32_t L_66 = V_3;
-		RuntimeArray* L_67 = ___1_values;
-		int32_t L_68 = V_0;
-		int32_t L_69;
-		L_69 = Array_GetUpperBound_m64006116D5244EB8DA52188A9E49929AA7D08E4E(L_67, L_68, NULL);
-		if ((((int32_t)L_66) <= ((int32_t)L_69)))
+		int32_t L_67 = V_3;
+		RuntimeArray* L_68 = ___1_values;
+		int32_t L_69 = V_0;
+		int32_t L_70;
+		L_70 = Array_GetUpperBound_m64006116D5244EB8DA52188A9E49929AA7D08E4E(L_68, L_69, NULL);
+		if ((((int32_t)L_67) <= ((int32_t)L_70)))
 		{
 			goto IL_0034;
 		}
 	}
 	{
-		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_70 = ___0_writer;
-		VirtualActionInvoker0::Invoke(10, L_70);
+		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_71 = ___0_writer;
+		VirtualActionInvoker0::Invoke(10, L_71);
 		return;
 	}
 }
@@ -27162,68 +27371,69 @@ IL_0058_1:
 CATCH_006f:
 	{
 		{
-			V_5 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
-			RuntimeObject* L_33 = ___1_value;
-			JsonDynamicContract_tBC6579B25A72AA016EAB86A685912C5684C99344* L_34 = ___2_contract;
-			JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* L_35 = V_2;
-			String_t* L_36;
-			L_36 = JsonProperty_get_PropertyName_m66C0A76B6380773DCA04B91C40032EE6CC0F7FFE_inline(L_35, NULL);
-			JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_37 = ___0_writer;
-			String_t* L_38;
-			L_38 = JsonWriter_get_ContainerPath_mEEB68127DE05B60631203B908206E58C653E459C(L_37, NULL);
-			Exception_t* L_39 = V_5;
-			bool L_40;
-			L_40 = JsonSerializerInternalBase_IsErrorHandled_m03744F32BCD5F528B09B5324219085C2CCF59C91(__this, L_33, L_34, L_36, (RuntimeObject*)NULL, L_38, L_39, NULL);
-			if (!L_40)
+			Exception_t* L_33 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+			V_5 = L_33;
+			RuntimeObject* L_34 = ___1_value;
+			JsonDynamicContract_tBC6579B25A72AA016EAB86A685912C5684C99344* L_35 = ___2_contract;
+			JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* L_36 = V_2;
+			String_t* L_37;
+			L_37 = JsonProperty_get_PropertyName_m66C0A76B6380773DCA04B91C40032EE6CC0F7FFE_inline(L_36, NULL);
+			JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_38 = ___0_writer;
+			String_t* L_39;
+			L_39 = JsonWriter_get_ContainerPath_mEEB68127DE05B60631203B908206E58C653E459C(L_38, NULL);
+			Exception_t* L_40 = V_5;
+			bool L_41;
+			L_41 = JsonSerializerInternalBase_IsErrorHandled_m03744F32BCD5F528B09B5324219085C2CCF59C91(__this, L_34, L_35, L_37, (RuntimeObject*)NULL, L_39, L_40, NULL);
+			if (!L_41)
 			{
 				goto IL_0094;
 			}
 		}
 		{
-			JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_41 = ___0_writer;
-			int32_t L_42 = V_0;
-			JsonSerializerInternalWriter_HandleError_m5F64C5A4BD5021B0B893BC28B5FEE82EA78BF138(__this, L_41, L_42, NULL);
+			JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_42 = ___0_writer;
+			int32_t L_43 = V_0;
+			JsonSerializerInternalWriter_HandleError_m5F64C5A4BD5021B0B893BC28B5FEE82EA78BF138(__this, L_42, L_43, NULL);
 			goto IL_0096;
 		}
 
 IL_0094:
 		{
-			IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+			IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*));
 		}
 
 IL_0096:
 		{
-			IL2CPP_POP_ACTIVE_EXCEPTION();
+			IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 			goto IL_0098;
 		}
 	}
 
 IL_0098:
 	{
-		int32_t L_43 = V_1;
-		V_1 = ((int32_t)il2cpp_codegen_add(L_43, 1));
+		int32_t L_44 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_44, 1));
 	}
 
 IL_009c:
 	{
-		int32_t L_44 = V_1;
-		JsonDynamicContract_tBC6579B25A72AA016EAB86A685912C5684C99344* L_45 = ___2_contract;
-		JsonPropertyCollection_t93082116A28103BD144B10160CDC36F9809D48C6* L_46;
-		L_46 = JsonDynamicContract_get_Properties_mA9553F6347C8594C6ED70DA78B77545DC352566D_inline(L_45, NULL);
-		int32_t L_47;
-		L_47 = Collection_1_get_Count_m4FC381C3B0671131ED872E0710579343D7182938(L_46, Collection_1_get_Count_m4FC381C3B0671131ED872E0710579343D7182938_RuntimeMethod_var);
-		if ((((int32_t)L_44) < ((int32_t)L_47)))
+		int32_t L_45 = V_1;
+		JsonDynamicContract_tBC6579B25A72AA016EAB86A685912C5684C99344* L_46 = ___2_contract;
+		JsonPropertyCollection_t93082116A28103BD144B10160CDC36F9809D48C6* L_47;
+		L_47 = JsonDynamicContract_get_Properties_mA9553F6347C8594C6ED70DA78B77545DC352566D_inline(L_46, NULL);
+		int32_t L_48;
+		L_48 = Collection_1_get_Count_m4FC381C3B0671131ED872E0710579343D7182938(L_47, Collection_1_get_Count_m4FC381C3B0671131ED872E0710579343D7182938_RuntimeMethod_var);
+		if ((((int32_t)L_45) < ((int32_t)L_48)))
 		{
 			goto IL_002f;
 		}
 	}
 	{
-		RuntimeObject* L_48 = ___1_value;
-		RuntimeObject* L_49;
-		L_49 = DynamicUtils_GetDynamicMemberNames_mA3D791C10C1F9EA8B7CA2934837E7A6209133778(L_48, NULL);
+		RuntimeObject* L_49 = ___1_value;
 		RuntimeObject* L_50;
-		L_50 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0, IEnumerable_1_t349E66EC5F09B881A8E52EE40A1AB9EC60E08E44_il2cpp_TypeInfo_var, L_49);
-		V_6 = L_50;
+		L_50 = DynamicUtils_GetDynamicMemberNames_mA3D791C10C1F9EA8B7CA2934837E7A6209133778(L_49, NULL);
+		RuntimeObject* L_51;
+		L_51 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0, IEnumerable_1_t349E66EC5F09B881A8E52EE40A1AB9EC60E08E44_il2cpp_TypeInfo_var, L_50);
+		V_6 = L_51;
 	}
 	{
 		auto __finallyBlock = il2cpp::utils::Finally([&]
@@ -27232,15 +27442,15 @@ IL_009c:
 FINALLY_0163:
 			{
 				{
-					RuntimeObject* L_51 = V_6;
-					if (!L_51)
+					RuntimeObject* L_52 = V_6;
+					if (!L_52)
 					{
 						goto IL_016e;
 					}
 				}
 				{
-					RuntimeObject* L_52 = V_6;
-					InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_52);
+					RuntimeObject* L_53 = V_6;
+					InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_53);
 				}
 
 IL_016e:
@@ -27257,16 +27467,16 @@ IL_016e:
 
 IL_00bc_1:
 			{
-				RuntimeObject* L_53 = V_6;
-				String_t* L_54;
-				L_54 = InterfaceFuncInvoker0< String_t* >::Invoke(0, IEnumerator_1_t73FD060C436E3C4264A734C8F8DCC01DFF6046B8_il2cpp_TypeInfo_var, L_53);
-				V_7 = L_54;
-				JsonDynamicContract_tBC6579B25A72AA016EAB86A685912C5684C99344* L_55 = ___2_contract;
-				RuntimeObject* L_56 = ___1_value;
-				String_t* L_57 = V_7;
-				bool L_58;
-				L_58 = JsonDynamicContract_TryGetMember_m6B64FF1BA88CFF3ABCFFDF5520248CDED2E8E872(L_55, L_56, L_57, (&V_8), NULL);
-				if (!L_58)
+				RuntimeObject* L_54 = V_6;
+				String_t* L_55;
+				L_55 = InterfaceFuncInvoker0< String_t* >::Invoke(0, IEnumerator_1_t73FD060C436E3C4264A734C8F8DCC01DFF6046B8_il2cpp_TypeInfo_var, L_54);
+				V_7 = L_55;
+				JsonDynamicContract_tBC6579B25A72AA016EAB86A685912C5684C99344* L_56 = ___2_contract;
+				RuntimeObject* L_57 = ___1_value;
+				String_t* L_58 = V_7;
+				bool L_59;
+				L_59 = JsonDynamicContract_TryGetMember_m6B64FF1BA88CFF3ABCFFDF5520248CDED2E8E872(L_56, L_57, L_58, (&V_8), NULL);
+				if (!L_59)
 				{
 					goto IL_0155_1;
 				}
@@ -27274,14 +27484,14 @@ IL_00bc_1:
 			try
 			{
 				{
-					RuntimeObject* L_59 = V_8;
-					JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* L_60;
-					L_60 = JsonSerializerInternalWriter_GetContractSafe_mD9ACF3FC60B6B54EF02783392B3AE86D8351B865(__this, L_59, NULL);
-					V_9 = L_60;
-					RuntimeObject* L_61 = V_8;
-					bool L_62;
-					L_62 = JsonSerializerInternalWriter_ShouldWriteDynamicProperty_m4D92356044C1B2CCB18A0386D5F0C5F73D13A8F2(__this, L_61, NULL);
-					if (L_62)
+					RuntimeObject* L_60 = V_8;
+					JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* L_61;
+					L_61 = JsonSerializerInternalWriter_GetContractSafe_mD9ACF3FC60B6B54EF02783392B3AE86D8351B865(__this, L_60, NULL);
+					V_9 = L_61;
+					RuntimeObject* L_62 = V_8;
+					bool L_63;
+					L_63 = JsonSerializerInternalWriter_ShouldWriteDynamicProperty_m4D92356044C1B2CCB18A0386D5F0C5F73D13A8F2(__this, L_62, NULL);
+					if (L_63)
 					{
 						goto IL_00eb_2;
 					}
@@ -27292,56 +27502,56 @@ IL_00bc_1:
 
 IL_00eb_2:
 				{
-					JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_63 = ___0_writer;
-					RuntimeObject* L_64 = V_8;
-					JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* L_65 = V_9;
-					JsonDynamicContract_tBC6579B25A72AA016EAB86A685912C5684C99344* L_66 = ___2_contract;
-					JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* L_67 = ___3_member;
-					bool L_68;
-					L_68 = JsonSerializerInternalWriter_CheckForCircularReference_m6C095C45DF61AFF70BB9206D2806B0FD4CF44E28(__this, L_63, L_64, (JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3*)NULL, L_65, L_66, L_67, NULL);
-					if (!L_68)
+					JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_64 = ___0_writer;
+					RuntimeObject* L_65 = V_8;
+					JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* L_66 = V_9;
+					JsonDynamicContract_tBC6579B25A72AA016EAB86A685912C5684C99344* L_67 = ___2_contract;
+					JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* L_68 = ___3_member;
+					bool L_69;
+					L_69 = JsonSerializerInternalWriter_CheckForCircularReference_m6C095C45DF61AFF70BB9206D2806B0FD4CF44E28(__this, L_64, L_65, (JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3*)NULL, L_66, L_67, L_68, NULL);
+					if (!L_69)
 					{
 						goto IL_012e_2;
 					}
 				}
 				{
-					JsonDynamicContract_tBC6579B25A72AA016EAB86A685912C5684C99344* L_69 = ___2_contract;
-					Func_2_t85D1F7C2022B349817C22FC72C474CD33FFABE93* L_70;
-					L_70 = JsonDynamicContract_get_PropertyNameResolver_mD03A6765A23F9819F972C9A195492AE8298324ED_inline(L_69, NULL);
-					if (L_70)
+					JsonDynamicContract_tBC6579B25A72AA016EAB86A685912C5684C99344* L_70 = ___2_contract;
+					Func_2_t85D1F7C2022B349817C22FC72C474CD33FFABE93* L_71;
+					L_71 = JsonDynamicContract_get_PropertyNameResolver_mD03A6765A23F9819F972C9A195492AE8298324ED_inline(L_70, NULL);
+					if (L_71)
 					{
 						goto IL_0108_2;
 					}
 				}
 				{
-					String_t* L_71 = V_7;
-					G_B20_0 = L_71;
+					String_t* L_72 = V_7;
+					G_B20_0 = L_72;
 					goto IL_0115_2;
 				}
 
 IL_0108_2:
 				{
-					JsonDynamicContract_tBC6579B25A72AA016EAB86A685912C5684C99344* L_72 = ___2_contract;
-					Func_2_t85D1F7C2022B349817C22FC72C474CD33FFABE93* L_73;
-					L_73 = JsonDynamicContract_get_PropertyNameResolver_mD03A6765A23F9819F972C9A195492AE8298324ED_inline(L_72, NULL);
-					String_t* L_74 = V_7;
-					String_t* L_75;
-					L_75 = Func_2_Invoke_mED071D4A847678204A843F11D77F10D168FE4D2D_inline(L_73, L_74, NULL);
-					G_B20_0 = L_75;
+					JsonDynamicContract_tBC6579B25A72AA016EAB86A685912C5684C99344* L_73 = ___2_contract;
+					Func_2_t85D1F7C2022B349817C22FC72C474CD33FFABE93* L_74;
+					L_74 = JsonDynamicContract_get_PropertyNameResolver_mD03A6765A23F9819F972C9A195492AE8298324ED_inline(L_73, NULL);
+					String_t* L_75 = V_7;
+					String_t* L_76;
+					L_76 = Func_2_Invoke_mED071D4A847678204A843F11D77F10D168FE4D2D_inline(L_74, L_75, NULL);
+					G_B20_0 = L_76;
 				}
 
 IL_0115_2:
 				{
 					V_10 = G_B20_0;
-					JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_76 = ___0_writer;
-					String_t* L_77 = V_10;
-					VirtualActionInvoker1< String_t* >::Invoke(13, L_76, L_77);
-					JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_78 = ___0_writer;
-					RuntimeObject* L_79 = V_8;
-					JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* L_80 = V_9;
-					JsonDynamicContract_tBC6579B25A72AA016EAB86A685912C5684C99344* L_81 = ___2_contract;
-					JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* L_82 = ___3_member;
-					JsonSerializerInternalWriter_SerializeValue_m9E2AE84CF7CBD3978BE0FC2E30EE576CEBD4449D(__this, L_78, L_79, L_80, (JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3*)NULL, L_81, L_82, NULL);
+					JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_77 = ___0_writer;
+					String_t* L_78 = V_10;
+					VirtualActionInvoker1< String_t* >::Invoke(13, L_77, L_78);
+					JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_79 = ___0_writer;
+					RuntimeObject* L_80 = V_8;
+					JsonContract_tE6A7D4E99E3396B56718606824E99F870FCCF4BA* L_81 = V_9;
+					JsonDynamicContract_tBC6579B25A72AA016EAB86A685912C5684C99344* L_82 = ___2_contract;
+					JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3* L_83 = ___3_member;
+					JsonSerializerInternalWriter_SerializeValue_m9E2AE84CF7CBD3978BE0FC2E30EE576CEBD4449D(__this, L_79, L_80, L_81, (JsonProperty_t8AC6AE6C6E97559E27739FDD2B6A3DA659FF04F3*)NULL, L_82, L_83, NULL);
 				}
 
 IL_012e_2:
@@ -27362,46 +27572,47 @@ IL_012e_2:
 CATCH_0130_1:
 			{
 				{
-					V_11 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
-					RuntimeObject* L_83 = ___1_value;
-					JsonDynamicContract_tBC6579B25A72AA016EAB86A685912C5684C99344* L_84 = ___2_contract;
-					String_t* L_85 = V_7;
-					JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_86 = ___0_writer;
-					String_t* L_87;
-					L_87 = JsonWriter_get_ContainerPath_mEEB68127DE05B60631203B908206E58C653E459C(L_86, NULL);
-					Exception_t* L_88 = V_11;
-					bool L_89;
-					L_89 = JsonSerializerInternalBase_IsErrorHandled_m03744F32BCD5F528B09B5324219085C2CCF59C91(__this, L_83, L_84, L_85, (RuntimeObject*)NULL, L_87, L_88, NULL);
-					if (!L_89)
+					Exception_t* L_84 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+					V_11 = L_84;
+					RuntimeObject* L_85 = ___1_value;
+					JsonDynamicContract_tBC6579B25A72AA016EAB86A685912C5684C99344* L_86 = ___2_contract;
+					String_t* L_87 = V_7;
+					JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_88 = ___0_writer;
+					String_t* L_89;
+					L_89 = JsonWriter_get_ContainerPath_mEEB68127DE05B60631203B908206E58C653E459C(L_88, NULL);
+					Exception_t* L_90 = V_11;
+					bool L_91;
+					L_91 = JsonSerializerInternalBase_IsErrorHandled_m03744F32BCD5F528B09B5324219085C2CCF59C91(__this, L_85, L_86, L_87, (RuntimeObject*)NULL, L_89, L_90, NULL);
+					if (!L_91)
 					{
 						goto IL_0151_1;
 					}
 				}
 				{
-					JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_90 = ___0_writer;
-					int32_t L_91 = V_0;
-					JsonSerializerInternalWriter_HandleError_m5F64C5A4BD5021B0B893BC28B5FEE82EA78BF138(__this, L_90, L_91, NULL);
+					JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_92 = ___0_writer;
+					int32_t L_93 = V_0;
+					JsonSerializerInternalWriter_HandleError_m5F64C5A4BD5021B0B893BC28B5FEE82EA78BF138(__this, L_92, L_93, NULL);
 					goto IL_0153_1;
 				}
 
 IL_0151_1:
 				{
-					IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+					IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*));
 				}
 
 IL_0153_1:
 				{
-					IL2CPP_POP_ACTIVE_EXCEPTION();
+					IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 					goto IL_0155_1;
 				}
 			}
 
 IL_0155_1:
 			{
-				RuntimeObject* L_92 = V_6;
-				bool L_93;
-				L_93 = InterfaceFuncInvoker0< bool >::Invoke(0, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_92);
-				if (L_93)
+				RuntimeObject* L_94 = V_6;
+				bool L_95;
+				L_95 = InterfaceFuncInvoker0< bool >::Invoke(0, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_94);
+				if (L_95)
 				{
 					goto IL_00bc_1;
 				}
@@ -27418,17 +27629,17 @@ IL_0155_1:
 
 IL_016f:
 	{
-		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_94 = ___0_writer;
-		VirtualActionInvoker0::Invoke(8, L_94);
-		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_95 = __this->____serializeStack;
-		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_96 = __this->____serializeStack;
-		int32_t L_97;
-		L_97 = List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_inline(L_96, List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_RuntimeMethod_var);
-		List_1_RemoveAt_m54F62297ADEE4D4FDA697F49ED807BF901201B54(L_95, ((int32_t)il2cpp_codegen_subtract(L_97, 1)), List_1_RemoveAt_m54F62297ADEE4D4FDA697F49ED807BF901201B54_RuntimeMethod_var);
-		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_98 = ___0_writer;
-		JsonDynamicContract_tBC6579B25A72AA016EAB86A685912C5684C99344* L_99 = ___2_contract;
-		RuntimeObject* L_100 = ___1_value;
-		JsonSerializerInternalWriter_OnSerialized_m6671114B713D4ABC359EE5E6B4F06A8D0AA0EB1F(__this, L_98, L_99, L_100, NULL);
+		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_96 = ___0_writer;
+		VirtualActionInvoker0::Invoke(8, L_96);
+		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_97 = __this->____serializeStack;
+		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_98 = __this->____serializeStack;
+		int32_t L_99;
+		L_99 = List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_inline(L_98, List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_RuntimeMethod_var);
+		List_1_RemoveAt_m54F62297ADEE4D4FDA697F49ED807BF901201B54(L_97, ((int32_t)il2cpp_codegen_subtract(L_99, 1)), List_1_RemoveAt_m54F62297ADEE4D4FDA697F49ED807BF901201B54_RuntimeMethod_var);
+		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_100 = ___0_writer;
+		JsonDynamicContract_tBC6579B25A72AA016EAB86A685912C5684C99344* L_101 = ___2_contract;
+		RuntimeObject* L_102 = ___1_value;
+		JsonSerializerInternalWriter_OnSerialized_m6671114B713D4ABC359EE5E6B4F06A8D0AA0EB1F(__this, L_100, L_101, L_102, NULL);
 		return;
 	}
 }
@@ -28169,46 +28380,47 @@ IL_0158_2:
 CATCH_015a_1:
 			{
 				{
-					V_9 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
-					RuntimeObject* L_88 = V_0;
-					JsonDictionaryContract_t49C7DBCBDE647BADAD67E786D9EB328F52FF97F1* L_89 = ___2_contract;
-					String_t* L_90 = V_5;
-					JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_91 = ___0_writer;
-					String_t* L_92;
-					L_92 = JsonWriter_get_ContainerPath_mEEB68127DE05B60631203B908206E58C653E459C(L_91, NULL);
-					Exception_t* L_93 = V_9;
-					bool L_94;
-					L_94 = JsonSerializerInternalBase_IsErrorHandled_m03744F32BCD5F528B09B5324219085C2CCF59C91(__this, L_88, L_89, L_90, (RuntimeObject*)NULL, L_92, L_93, NULL);
-					if (!L_94)
+					Exception_t* L_88 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+					V_9 = L_88;
+					RuntimeObject* L_89 = V_0;
+					JsonDictionaryContract_t49C7DBCBDE647BADAD67E786D9EB328F52FF97F1* L_90 = ___2_contract;
+					String_t* L_91 = V_5;
+					JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_92 = ___0_writer;
+					String_t* L_93;
+					L_93 = JsonWriter_get_ContainerPath_mEEB68127DE05B60631203B908206E58C653E459C(L_92, NULL);
+					Exception_t* L_94 = V_9;
+					bool L_95;
+					L_95 = JsonSerializerInternalBase_IsErrorHandled_m03744F32BCD5F528B09B5324219085C2CCF59C91(__this, L_89, L_90, L_91, (RuntimeObject*)NULL, L_93, L_94, NULL);
+					if (!L_95)
 					{
 						goto IL_017b_1;
 					}
 				}
 				{
-					JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_95 = ___0_writer;
-					int32_t L_96 = V_2;
-					JsonSerializerInternalWriter_HandleError_m5F64C5A4BD5021B0B893BC28B5FEE82EA78BF138(__this, L_95, L_96, NULL);
+					JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_96 = ___0_writer;
+					int32_t L_97 = V_2;
+					JsonSerializerInternalWriter_HandleError_m5F64C5A4BD5021B0B893BC28B5FEE82EA78BF138(__this, L_96, L_97, NULL);
 					goto IL_017d_1;
 				}
 
 IL_017b_1:
 				{
-					IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+					IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*));
 				}
 
 IL_017d_1:
 				{
-					IL2CPP_POP_ACTIVE_EXCEPTION();
+					IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 					goto IL_017f_1;
 				}
 			}
 
 IL_017f_1:
 			{
-				RuntimeObject* L_97 = V_3;
-				bool L_98;
-				L_98 = InterfaceFuncInvoker0< bool >::Invoke(0, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_97);
-				if (L_98)
+				RuntimeObject* L_98 = V_3;
+				bool L_99;
+				L_99 = InterfaceFuncInvoker0< bool >::Invoke(0, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_98);
+				if (L_99)
 				{
 					goto IL_00af_1;
 				}
@@ -28225,17 +28437,17 @@ IL_017f_1:
 
 IL_019e:
 	{
-		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_99 = ___0_writer;
-		VirtualActionInvoker0::Invoke(8, L_99);
-		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_100 = __this->____serializeStack;
+		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_100 = ___0_writer;
+		VirtualActionInvoker0::Invoke(8, L_100);
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_101 = __this->____serializeStack;
-		int32_t L_102;
-		L_102 = List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_inline(L_101, List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_RuntimeMethod_var);
-		List_1_RemoveAt_m54F62297ADEE4D4FDA697F49ED807BF901201B54(L_100, ((int32_t)il2cpp_codegen_subtract(L_102, 1)), List_1_RemoveAt_m54F62297ADEE4D4FDA697F49ED807BF901201B54_RuntimeMethod_var);
-		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_103 = ___0_writer;
-		JsonDictionaryContract_t49C7DBCBDE647BADAD67E786D9EB328F52FF97F1* L_104 = ___2_contract;
-		RuntimeObject* L_105 = V_0;
-		JsonSerializerInternalWriter_OnSerialized_m6671114B713D4ABC359EE5E6B4F06A8D0AA0EB1F(__this, L_103, L_104, L_105, NULL);
+		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_102 = __this->____serializeStack;
+		int32_t L_103;
+		L_103 = List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_inline(L_102, List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_RuntimeMethod_var);
+		List_1_RemoveAt_m54F62297ADEE4D4FDA697F49ED807BF901201B54(L_101, ((int32_t)il2cpp_codegen_subtract(L_103, 1)), List_1_RemoveAt_m54F62297ADEE4D4FDA697F49ED807BF901201B54_RuntimeMethod_var);
+		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_104 = ___0_writer;
+		JsonDictionaryContract_t49C7DBCBDE647BADAD67E786D9EB328F52FF97F1* L_105 = ___2_contract;
+		RuntimeObject* L_106 = V_0;
+		JsonSerializerInternalWriter_OnSerialized_m6671114B713D4ABC359EE5E6B4F06A8D0AA0EB1F(__this, L_104, L_105, L_106, NULL);
 		return;
 	}
 }

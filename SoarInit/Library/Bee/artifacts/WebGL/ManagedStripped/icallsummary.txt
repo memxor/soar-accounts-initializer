@@ -105,6 +105,7 @@ UnityEngine.AndroidJNI::DeleteWeakGlobalRef
 UnityEngine.AndroidJNI::ExceptionClear
 UnityEngine.AndroidJNI::SetObjectArrayElement
 UnityEngine.AnimationCurve::Internal_Equals
+UnityEngine.AnimationCurve::GetHashCode
 UnityEngine.AnimationCurve::Internal_Create
 UnityEngine.AnimationCurve::Internal_Destroy
 UnityEngine.Animations.AnimationLayerMixerPlayable::SetSingleLayerOptimizationInternal
@@ -172,6 +173,7 @@ UnityEngine.CanvasGroup::get_ignoreParentGroups
 UnityEngine.CanvasGroup::get_interactable
 UnityEngine.CanvasGroup::get_alpha
 UnityEngine.CanvasGroup::set_alpha
+UnityEngine.CanvasGroup::set_ignoreParentGroups
 UnityEngine.CanvasRenderer::get_cull
 UnityEngine.CanvasRenderer::get_cullTransparentMesh
 UnityEngine.CanvasRenderer::get_hasMoved

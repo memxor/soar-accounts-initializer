@@ -52,8 +52,11 @@ extern void DownloadHandler_GetData_mCAAC65F3AB3352C789E169EB7D9C7C75BEA74BAC (v
 extern void DownloadHandler_GetText_m19ABD4540E4BE6A4D4340933E01D5DE687020E85 (void);
 extern void DownloadHandler_GetTextEncoder_m1D26E8E7DE1CC2FA00EF56F1741B1DDAE4885BF5 (void);
 extern void DownloadHandler_GetContentType_m678AE10691E33BEE69FFFDB02CACA8AD8AAADDDC (void);
+extern void DownloadHandler_ReceiveData_mF892EB77524A60DF1F82A2DA00F17BECB480CD93 (void);
 extern void DownloadHandler_ReceiveContentLengthHeader_m545073C4FB5AB9BB6640D24FC2F32070E5FE3F17 (void);
 extern void DownloadHandler_ReceiveContentLength_m058DE0B56C3EBE8ECE3F9570852024EE2A84DE4F (void);
+extern void DownloadHandler_CompleteContent_m0FFC337906FF9BF8BDD546906D48DA57F52F81CA (void);
+extern void DownloadHandler_GetProgress_mB440AC38C72F2E14DD53259E1D0C9D7612F0791F (void);
 extern void DownloadHandler_InternalGetByteArray_m17F536D05E82827A3DB9883C89F3D40102AA0302 (void);
 extern void DownloadHandler_InternalGetByteArray_m27F42C529228C204142EEF609AD8E96E7FC38CF6 (void);
 extern void DownloadHandler_InternalGetNativeArray_mE622083BC3893B43BC8E7C467A1895664C3B6B89 (void);
@@ -128,7 +131,7 @@ extern void UploadHandlerRaw_Create_m47BC9C3516DF02A1B09B7611D01BEED2B9E74075 (v
 extern void UploadHandlerRaw__ctor_m168C957B67E29CB3072E3542044D37E2F16C42B7 (void);
 extern void UploadHandlerRaw__ctor_mF9F2BAB1D9987051714541669B3D22EC9DBDCFEF (void);
 extern void UploadHandlerRaw_Dispose_m7BC523C04CD5582382B23AF4FC019149DE328A1B (void);
-static Il2CppMethodPointer s_methodPointers[117] = 
+static Il2CppMethodPointer s_methodPointers[120] = 
 {
 	WebRequestUtils_RedirectTo_m63855E63B6B6EAFD4BCE65395BB744AAF5BD6AB4,
 	WebRequestUtils_MakeInitialUrl_m30A37413A904FEB4E4E45607E929B4E90ECE044C,
@@ -170,8 +173,11 @@ static Il2CppMethodPointer s_methodPointers[117] =
 	DownloadHandler_GetText_m19ABD4540E4BE6A4D4340933E01D5DE687020E85,
 	DownloadHandler_GetTextEncoder_m1D26E8E7DE1CC2FA00EF56F1741B1DDAE4885BF5,
 	DownloadHandler_GetContentType_m678AE10691E33BEE69FFFDB02CACA8AD8AAADDDC,
+	DownloadHandler_ReceiveData_mF892EB77524A60DF1F82A2DA00F17BECB480CD93,
 	DownloadHandler_ReceiveContentLengthHeader_m545073C4FB5AB9BB6640D24FC2F32070E5FE3F17,
 	DownloadHandler_ReceiveContentLength_m058DE0B56C3EBE8ECE3F9570852024EE2A84DE4F,
+	DownloadHandler_CompleteContent_m0FFC337906FF9BF8BDD546906D48DA57F52F81CA,
+	DownloadHandler_GetProgress_mB440AC38C72F2E14DD53259E1D0C9D7612F0791F,
 	NULL,
 	DownloadHandler_InternalGetByteArray_m17F536D05E82827A3DB9883C89F3D40102AA0302,
 	DownloadHandler_InternalGetByteArray_m27F42C529228C204142EEF609AD8E96E7FC38CF6,
@@ -248,7 +254,7 @@ static Il2CppMethodPointer s_methodPointers[117] =
 	UploadHandlerRaw__ctor_mF9F2BAB1D9987051714541669B3D22EC9DBDCFEF,
 	UploadHandlerRaw_Dispose_m7BC523C04CD5582382B23AF4FC019149DE328A1B,
 };
-static const int32_t s_InvokerIndices[117] = 
+static const int32_t s_InvokerIndices[120] = 
 {
 	7969,
 	7969,
@@ -290,8 +296,11 @@ static const int32_t s_InvokerIndices[117] =
 	5921,
 	5921,
 	5921,
+	1805,
 	5034,
 	4909,
+	6043,
+	5964,
 	0,
 	7652,
 	8602,
@@ -370,7 +379,7 @@ static const int32_t s_InvokerIndices[117] =
 };
 static const Il2CppTokenRangePair s_rgctxIndices[1] = 
 {
-	{ 0x0600002B, { 0, 1 } },
+	{ 0x0600002E, { 0, 1 } },
 };
 extern const uint32_t g_rgctx_T_tFFCAAE7718C1762E7E7A8A53F51E4622DEB0DC99;
 static const Il2CppRGCTXDefinition s_rgctxValues[1] = 
@@ -381,7 +390,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_UnityWebRequestModule_Co
 const Il2CppCodeGenModule g_UnityEngine_UnityWebRequestModule_CodeGenModule = 
 {
 	"UnityEngine.UnityWebRequestModule.dll",
-	117,
+	120,
 	s_methodPointers,
 	0,
 	NULL,

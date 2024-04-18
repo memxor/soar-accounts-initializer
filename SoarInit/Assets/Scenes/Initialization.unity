@@ -745,7 +745,7 @@ MonoBehaviour:
   leaderboardDescription: {fileID: 1666465606}
   leaderboardScoresToRetain: {fileID: 711989645}
   leaderboardScoresOrder: {fileID: 1934418780}
-  leaderboardMultilpeScore: {fileID: 0}
+  leaderboardMultilpeScore: {fileID: 523528501}
   leaderboardOutput: {fileID: 1563537778}
 --- !u!1 &114129031
 GameObject:
